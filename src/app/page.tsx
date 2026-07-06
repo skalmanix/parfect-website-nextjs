@@ -10,10 +10,15 @@ import { CtaSection } from "@/components/cta-section";
 import { Footer } from "@/components/footer";
 import { ScrollReveal } from "@/components/scroll-reveal";
 import { StickyCta } from "@/components/sticky-cta";
+import { getFaqSchema } from "@/lib/schema";
 
 export default function Home() {
 	return (
 		<>
+			<script
+				type="application/ld+json"
+				dangerouslySetInnerHTML={{ __html: JSON.stringify(getFaqSchema()) }}
+			/>
 			<ScrollReveal />
 			<Header />
 			<main>

@@ -1,7 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Hanken_Grotesk, Newsreader } from "next/font/google";
 import {
-	getFaqSchema,
 	getOrganizationSchema,
 	getSoftwareApplicationSchema,
 	getWebSiteSchema,
@@ -104,7 +103,6 @@ export default function RootLayout({
 		getOrganizationSchema(),
 		getSoftwareApplicationSchema(),
 		getWebSiteSchema(),
-		getFaqSchema(),
 	];
 
 	return (

@@ -1,12 +1,7 @@
 import { Logo } from "./logo";
 import { MobileMenu } from "./mobile-menu";
-
-const navLinks = [
-	{ href: "/#experience", label: "Experience" },
-	{ href: "/#pillars", label: "Features" },
-	{ href: "/#how-it-works", label: "How it works" },
-	{ href: "/#privacy", label: "Privacy" },
-] as const;
+import { MegaMenu } from "./mega-menu";
+import { NAV_ANCHORS } from "@/lib/nav";
 
 export function Header() {
 	return (
@@ -18,7 +13,11 @@ export function Header() {
 					className="hidden lg:flex items-center gap-8 text-sm text-muted"
 					aria-label="Main navigation"
 				>
-					{navLinks.map((link) => (
+					<a href={NAV_ANCHORS[0].href} className="nav-link">
+						{NAV_ANCHORS[0].label}
+					</a>
+					<MegaMenu />
+					{NAV_ANCHORS.slice(1).map((link) => (
 						<a key={link.href} href={link.href} className="nav-link">
 							{link.label}
 						</a>
@@ -33,7 +32,7 @@ export function Header() {
 						Get the app
 					</a>
 
-					<MobileMenu links={navLinks} />
+					<MobileMenu />
 				</div>
 			</div>
 		</header>

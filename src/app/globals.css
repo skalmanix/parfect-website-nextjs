@@ -431,6 +431,71 @@ button {
 	color: var(--foreground);
 }
 
+/* Desktop mega menu */
+.mega-menu-panel {
+	position: absolute;
+	top: calc(100% + 0.4rem);
+	left: 50%;
+	width: 620px;
+	padding: 1.5rem;
+	border-radius: 1.25rem;
+	border: 1px solid var(--border);
+	background: var(--chrome);
+	box-shadow: 0 24px 60px -24px rgba(0, 0, 0, 0.6);
+	transform: translateX(-50%) translateY(-6px);
+	opacity: 0;
+	visibility: hidden;
+	transition:
+		transform 0.22s cubic-bezier(0.22, 1, 0.36, 1),
+		opacity 0.22s ease,
+		visibility 0s linear 0.22s;
+}
+
+.mega-menu-open {
+	transform: translateX(-50%) translateY(0);
+	opacity: 1;
+	visibility: visible;
+	transition:
+		transform 0.22s cubic-bezier(0.22, 1, 0.36, 1),
+		opacity 0.22s ease,
+		visibility 0s;
+}
+
+.mega-menu-card {
+	display: block;
+	padding: 0.5rem;
+	margin: -0.5rem;
+	border-radius: 0.9rem;
+	transition: background-color 0.2s ease;
+}
+
+.mega-menu-card:hover {
+	background: color-mix(in srgb, var(--surface) 70%, transparent);
+}
+
+.mega-menu-row {
+	display: block;
+	padding: 0.6rem 0.75rem;
+	margin-inline: -0.75rem;
+	border-radius: 0.75rem;
+	transition: background-color 0.2s ease;
+}
+
+.mega-menu-row:hover {
+	background: color-mix(in srgb, var(--surface) 70%, transparent);
+}
+
+.mega-menu-cta {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.4rem;
+	margin-top: 1rem;
+	font-size: 0.875rem;
+	font-weight: 500;
+	color: var(--primary-strong);
+	min-height: 40px;
+}
+
 /* Mobile navigation panel */
 .mobile-menu-panel {
 	position: fixed;
@@ -439,10 +504,12 @@ button {
 	right: 0;
 	z-index: 55;
 	padding: 0.75rem clamp(1.25rem, 5vw, 2rem) 1.5rem;
-	background: color-mix(in srgb, var(--chrome) 92%, transparent);
+	background: var(--chrome);
 	backdrop-filter: blur(20px);
 	-webkit-backdrop-filter: blur(20px);
 	border-bottom: 1px solid var(--border);
+	max-height: calc(100dvh - 4rem);
+	overflow-y: auto;
 	transform: translateY(-8px);
 	opacity: 0;
 	visibility: hidden;
@@ -476,6 +543,19 @@ button {
 
 .mobile-menu-link:hover {
 	color: var(--primary-strong);
+}
+
+.mobile-feature-card {
+	display: block;
+	padding: 0.5rem;
+	border-radius: 0.9rem;
+	border: 1px solid color-mix(in srgb, var(--border) 60%, transparent);
+	background: color-mix(in srgb, var(--surface) 45%, transparent);
+	transition: background-color 0.2s ease;
+}
+
+.mobile-feature-card:active {
+	background: color-mix(in srgb, var(--surface) 80%, transparent);
 }
 
 .mobile-menu-backdrop {
