@@ -41,13 +41,13 @@ export function Features() {
 			aria-labelledby="features-heading"
 		>
 			<div className="container-wide section-padding">
-				<div className="text-center max-w-2xl mx-auto mb-14">
-					<p className="text-rose text-sm font-medium tracking-widest uppercase mb-3">
+				<div data-reveal className="text-center max-w-2xl mx-auto mb-14">
+					<p className="eyebrow text-rose mb-3">
 						Built for your relationship
 					</p>
 					<h2
 						id="features-heading"
-						className="font-display text-3xl sm:text-4xl font-medium tracking-tight mb-4"
+						className="font-display text-3xl sm:text-4xl font-medium tracking-tight mb-4 text-balance"
 					>
 						More than messaging
 					</h2>
@@ -58,10 +58,12 @@ export function Features() {
 				</div>
 
 				<div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
-					{FEATURES.map((feature) => (
+					{FEATURES.map((feature, index) => (
 						<article
 							key={feature.title}
-							className={`group relative rounded-2xl border border-border/60 bg-surface/60 p-6 transition-colors hover:border-primary/30 hover:bg-surface ${
+							data-reveal
+							style={{ transitionDelay: `${(index % 3) * 80}ms` }}
+							className={`group relative rounded-2xl border border-border/60 bg-surface/60 p-6 transition-[border-color,background-color,transform,box-shadow] duration-200 hover:border-primary/30 hover:bg-surface hover:-translate-y-1 hover:shadow-[0_16px_40px_-20px_rgba(232,132,155,0.35)] ${
 								"image" in feature && feature.image
 									? "sm:col-span-2 lg:col-span-1 overflow-hidden"
 									: ""

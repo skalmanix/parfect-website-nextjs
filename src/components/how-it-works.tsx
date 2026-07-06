@@ -10,13 +10,13 @@ export function HowItWorks() {
 		>
 			<div className="container-wide section-padding">
 				<div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-					<div>
-						<p className="text-gold text-sm font-medium tracking-widest uppercase mb-3">
+					<div data-reveal>
+						<p className="eyebrow text-gold mb-3">
 							How it works
 						</p>
 						<h2
 							id="how-heading"
-							className="font-display text-3xl sm:text-4xl font-medium tracking-tight mb-4"
+							className="font-display text-3xl sm:text-4xl font-medium tracking-tight mb-4 text-balance"
 						>
 							From first message to date night
 						</h2>
@@ -26,8 +26,13 @@ export function HowItWorks() {
 						</p>
 
 						<ol className="space-y-8">
-							{STEPS.map((step) => (
-								<li key={step.step} className="flex gap-5">
+							{STEPS.map((step, index) => (
+								<li
+									key={step.step}
+									data-reveal
+									style={{ transitionDelay: `${index * 100}ms` }}
+									className="flex gap-5"
+								>
 									<span className="font-display text-3xl text-primary/60 font-medium shrink-0 w-12">
 										{step.step}
 									</span>
@@ -44,7 +49,7 @@ export function HowItWorks() {
 						</ol>
 					</div>
 
-					<div className="relative">
+					<div data-reveal className="relative" style={{ transitionDelay: "150ms" }}>
 						<div className="grid grid-cols-2 gap-4">
 							<div className="rounded-2xl overflow-hidden border border-border/60 card-glow mt-8">
 								<Image

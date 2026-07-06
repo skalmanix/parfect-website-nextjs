@@ -10,13 +10,13 @@ export function CtaSection() {
 			<div className="absolute inset-0 app-gradient-bg opacity-80" aria-hidden="true" />
 
 			<div className="container-wide section-padding relative">
-				<div className="rounded-[2rem] border border-border/60 hero-card p-8 md:p-12 lg:p-16 text-center max-w-3xl mx-auto">
+				<div data-reveal className="rounded-[2rem] border border-border/60 hero-card p-8 md:p-12 lg:p-16 text-center max-w-3xl mx-auto">
 					<div className="flex justify-center mb-6">
 						<Logo size={64} showWordmark={false} />
 					</div>
 					<h2
 						id="cta-heading"
-						className="font-display text-3xl sm:text-4xl md:text-5xl font-medium tracking-tight mb-4"
+						className="font-display text-3xl sm:text-4xl md:text-5xl font-medium tracking-tight mb-4 text-balance"
 					>
 						Your next step starts here
 					</h2>

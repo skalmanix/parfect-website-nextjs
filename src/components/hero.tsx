@@ -23,7 +23,7 @@ export function Hero() {
 							Just the two of you
 						</p>
 
-						<h1 className="animate-fade-up-delay-1 font-display text-[2.75rem] sm:text-5xl lg:text-[3.5rem] font-medium leading-[1.05] tracking-tight mb-5">
+						<h1 className="animate-fade-up-delay-1 font-display text-[2.75rem] sm:text-5xl lg:text-[3.5rem] font-medium leading-[1.05] tracking-tight mb-5 text-balance">
 							Take the{" "}
 							<span className="text-gradient">next step</span>{" "}
 							together
@@ -38,10 +38,27 @@ export function Hero() {
 							id="download"
 							className="animate-fade-up-delay-2 scroll-mt-28 flex flex-col items-center lg:items-start"
 						>
-							<StoreBadges size="lg" className="mb-4" />
-							<p className="text-muted-deep text-sm">
-								Free on iOS & Android · Ages 18+
-							</p>
+							<StoreBadges size="lg" className="mb-5" />
+							<ul className="flex flex-wrap justify-center lg:justify-start items-center gap-x-5 gap-y-2 text-sm text-muted-deep">
+								<li className="flex items-center gap-1.5">
+									<svg className="w-4 h-4 text-sage" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.75} aria-hidden="true">
+										<path strokeLinecap="round" strokeLinejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+									</svg>
+									End-to-end encrypted
+								</li>
+								<li className="flex items-center gap-1.5">
+									<svg className="w-4 h-4 text-sage" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.75} aria-hidden="true">
+										<path strokeLinecap="round" strokeLinejoin="round" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636" />
+									</svg>
+									No ads, ever
+								</li>
+								<li className="flex items-center gap-1.5">
+									<svg className="w-4 h-4 text-sage" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.75} aria-hidden="true">
+										<path strokeLinecap="round" strokeLinejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+									</svg>
+									Free · Ages 18+
+								</li>
+							</ul>
 						</div>
 					</div>
 
@@ -49,6 +66,17 @@ export function Hero() {
 						<HeroShowcase />
 					</div>
 				</div>
+
+				<a
+					href="#experience"
+					className="hidden md:flex flex-col items-center gap-1.5 text-muted-deep hover:text-muted transition-colors mx-auto mt-10 text-xs tracking-widest uppercase"
+					aria-label="Scroll to explore the app"
+				>
+					Explore
+					<svg className="w-4 h-4 animate-float" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} aria-hidden="true">
+						<path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+					</svg>
+				</a>
 			</div>
 		</section>
 	);

@@ -27,11 +27,11 @@ export function Pillars() {
 			aria-labelledby="pillars-heading"
 		>
 			<div className="container-wide section-padding">
-				<div className="text-center max-w-2xl mx-auto mb-16">
+				<div data-reveal className="text-center max-w-2xl mx-auto mb-16">
 					<p className="eyebrow text-primary mb-3">Three pillars</p>
 					<h2
 						id="pillars-heading"
-						className="font-display text-3xl sm:text-4xl md:text-5xl font-medium tracking-tight mb-4"
+						className="font-display text-3xl sm:text-4xl md:text-5xl font-medium tracking-tight mb-4 text-balance"
 					>
 						Built the way your relationship actually works
 					</h2>
@@ -47,6 +47,7 @@ export function Pillars() {
 						return (
 							<article
 								key={pillar.id}
+								data-reveal
 								className={`pillar-card grid lg:grid-cols-[1fr_1.1fr] gap-8 lg:gap-12 items-center p-6 md:p-8 ${
 									index % 2 === 1 ? "lg:[&>*:first-child]:order-2" : ""
 								}`}

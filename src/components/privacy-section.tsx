@@ -31,13 +31,13 @@ export function PrivacySection() {
 			aria-labelledby="privacy-heading"
 		>
 			<div className="container-wide section-padding">
-				<div className="max-w-2xl mx-auto text-center mb-14">
-					<p className="text-sage text-sm font-medium tracking-widest uppercase mb-3">
+				<div data-reveal className="max-w-2xl mx-auto text-center mb-14">
+					<p className="eyebrow text-sage mb-3">
 						Privacy & trust
 					</p>
 					<h2
 						id="privacy-heading"
-						className="font-display text-3xl sm:text-4xl font-medium tracking-tight mb-4"
+						className="font-display text-3xl sm:text-4xl font-medium tracking-tight mb-4 text-balance"
 					>
 						Your relationship deserves a safe space
 					</h2>
@@ -48,9 +48,11 @@ export function PrivacySection() {
 				</div>
 
 				<div className="grid sm:grid-cols-2 gap-5 md:gap-6 max-w-4xl mx-auto">
-					{trustPoints.map((point) => (
+					{trustPoints.map((point, index) => (
 						<article
 							key={point.title}
+							data-reveal
+							style={{ transitionDelay: `${(index % 2) * 90}ms` }}
 							className="rounded-2xl border border-border/60 bg-surface/40 p-6"
 						>
 							<h3 className="font-display text-lg font-medium mb-2 flex items-center gap-2">

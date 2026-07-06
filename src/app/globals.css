@@ -47,6 +47,16 @@ body {
 	background: var(--background);
 	color: var(--foreground);
 	font-family: var(--font-hanken), system-ui, sans-serif;
+	overflow-x: clip;
+}
+
+a,
+button {
+	touch-action: manipulation;
+}
+
+.text-balance {
+	text-wrap: balance;
 }
 
 .font-display {
@@ -109,6 +119,21 @@ body {
 	animation: float 6s ease-in-out infinite;
 }
 
+/* Scroll reveal: hidden only once JS confirms it can reveal (.reveal-ready) */
+.reveal-ready [data-reveal] {
+	opacity: 0;
+	transform: translateY(22px);
+	transition:
+		opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+		transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+	will-change: opacity, transform;
+}
+
+.reveal-ready [data-reveal].revealed {
+	opacity: 1;
+	transform: translateY(0);
+}
+
 @media (prefers-reduced-motion: reduce) {
 	*,
 	*::before,
@@ -117,6 +142,11 @@ body {
 		animation-iteration-count: 1 !important;
 		transition-duration: 0.01ms !important;
 		scroll-behavior: auto !important;
+	}
+
+	.reveal-ready [data-reveal] {
+		opacity: 1;
+		transform: none;
 	}
 }
 
@@ -375,4 +405,121 @@ body {
 	font-size: 1.125rem;
 	font-weight: 500;
 	margin-bottom: 0.15rem;
+}
+
+.preview-chip {
+	flex-shrink: 0;
+	white-space: nowrap;
+	padding: 0.6rem 1.1rem;
+	border-radius: 999px;
+	border: 1px solid color-mix(in srgb, var(--border) 80%, transparent);
+	background: color-mix(in srgb, var(--surface) 50%, transparent);
+	color: var(--muted);
+	font-size: 0.875rem;
+	font-weight: 500;
+	min-height: 44px;
+	transition:
+		color 0.2s ease,
+		border-color 0.2s ease,
+		background 0.2s ease;
+	cursor: pointer;
+}
+
+.preview-chip-active {
+	color: var(--foreground);
+	border-color: color-mix(in srgb, var(--primary) 55%, var(--border));
+	background: color-mix(in srgb, var(--primary) 14%, var(--surface));
+}
+
+/* Sticky mobile download bar */
+.sticky-cta {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 60;
+	padding: 0.75rem clamp(1rem, 4vw, 1.5rem);
+	padding-bottom: calc(0.75rem + env(safe-area-inset-bottom, 0px));
+	background: color-mix(in srgb, var(--chrome) 88%, transparent);
+	border-top: 1px solid var(--border);
+	backdrop-filter: blur(16px);
+	-webkit-backdrop-filter: blur(16px);
+	transform: translateY(110%);
+	transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.sticky-cta-visible {
+	transform: translateY(0);
+}
+
+.sticky-cta-store {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 44px;
+	height: 44px;
+	border-radius: 0.875rem;
+	background: linear-gradient(135deg, var(--primary), var(--primary-strong));
+	color: var(--on-primary);
+	transition: transform 0.15s ease;
+}
+
+.sticky-cta-store:active {
+	transform: scale(0.94);
+}
+
+/* Chat demo (moments section) */
+.chat-demo {
+	border-radius: 1.5rem;
+	border: 1px solid color-mix(in srgb, var(--border) 80%, transparent);
+	background: linear-gradient(
+		165deg,
+		color-mix(in srgb, var(--background-elevated) 92%, transparent),
+		color-mix(in srgb, var(--surface) 88%, transparent)
+	);
+	padding: 1.5rem;
+	box-shadow:
+		0 0 0 1px color-mix(in srgb, var(--rose) 8%, transparent),
+		0 30px 60px -30px color-mix(in srgb, var(--primary) 25%, transparent);
+}
+
+.chat-bubble-partner,
+.chat-bubble-me {
+	max-width: 82%;
+	padding: 0.65rem 0.9rem;
+	border-radius: 1.15rem;
+}
+
+.chat-bubble-partner {
+	background: var(--surface-alt);
+	border: 1px solid color-mix(in srgb, var(--border) 70%, transparent);
+	border-bottom-left-radius: 0.35rem;
+	color: var(--foreground);
+}
+
+.chat-bubble-me {
+	background: linear-gradient(
+		135deg,
+		color-mix(in srgb, var(--primary) 85%, var(--background)),
+		color-mix(in srgb, var(--primary-strong) 85%, var(--background))
+	);
+	border-bottom-right-radius: 0.35rem;
+	color: var(--on-primary);
+}
+
+/* Section flow helpers */
+.section-divider {
+	height: 1px;
+	background: linear-gradient(
+		90deg,
+		transparent,
+		color-mix(in srgb, var(--border) 90%, transparent),
+		transparent
+	);
+}
+
+@media (max-width: 640px) {
+	.phone-screen {
+		min-height: 440px;
+	}
 }
