@@ -30,6 +30,12 @@
 		"wrangler": "4.88.0"
 	},
 	"private": true,
+	"browserslist": [
+		"chrome >= 111",
+		"edge >= 111",
+		"firefox >= 128",
+		"safari >= 16.4"
+	],
 	"scripts": {
 		"build": "next build",
 		"cf-typegen": "wrangler types --env-interface CloudflareEnv env.d.ts",

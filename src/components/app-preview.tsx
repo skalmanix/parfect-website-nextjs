@@ -70,26 +70,30 @@ export function AppPreview() {
 					<div
 						data-reveal
 						className="hidden lg:flex flex-col gap-3 order-2 lg:order-1"
-						role="tablist"
-						aria-label="App screens"
 					>
-						{APP_SCREENS.map((screen, index) => (
-							<button
-								key={screen.id}
-								type="button"
-								role="tab"
-								aria-selected={active === index}
-								onClick={() => setActive(index)}
-								className={`preview-pill text-left ${
-									active === index ? "preview-pill-active" : ""
-								}`}
-							>
-								<span className="preview-pill-label">{screen.label}</span>
-								<span className="text-muted text-sm capitalize">
-									{screen.tab} tab
-								</span>
-							</button>
-						))}
+						<div
+							role="tablist"
+							aria-label="App screens"
+							className="flex flex-col gap-3"
+						>
+							{APP_SCREENS.map((screen, index) => (
+								<button
+									key={screen.id}
+									type="button"
+									role="tab"
+									aria-selected={active === index}
+									onClick={() => setActive(index)}
+									className={`preview-pill text-left ${
+										active === index ? "preview-pill-active" : ""
+									}`}
+								>
+									<span className="preview-pill-label">{screen.label}</span>
+									<span className="text-muted text-sm capitalize">
+										{screen.tab} tab
+									</span>
+								</button>
+							))}
+						</div>
 
 						<a
 							href="#download"

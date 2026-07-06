@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Logo } from "./logo";
 import { StoreBadges } from "./store-badges";
 import { AppTabs } from "./app-tabs";
@@ -7,10 +8,18 @@ export function Hero() {
 	return (
 		<section className="relative min-h-[100svh] overflow-hidden">
 			<div className="absolute inset-0 app-gradient-bg" aria-hidden="true" />
-			<div
-				className="absolute inset-0 bg-[url('/images/hero-onboarding.webp')] bg-cover bg-center opacity-30"
-				aria-hidden="true"
-			/>
+			<div className="absolute inset-0 opacity-30" aria-hidden="true">
+				<Image
+					src="/images/hero-onboarding.webp"
+					alt=""
+					fill
+					loading="eager"
+					fetchPriority="low"
+					className="object-cover"
+					sizes="100vw"
+					quality={60}
+				/>
+			</div>
 			<div className="absolute inset-0 welcome-scrim" aria-hidden="true" />
 			<div className="absolute inset-0 grain-overlay" aria-hidden="true" />
 
@@ -25,7 +34,7 @@ export function Hero() {
 							Just the two of you
 						</p>
 
-						<h1 className="animate-fade-up-delay-1 font-display text-[2.75rem] sm:text-5xl lg:text-[3.5rem] font-medium leading-[1.05] tracking-tight mb-5 text-balance">
+						<h1 className="font-display text-[2.75rem] sm:text-5xl lg:text-[3.5rem] font-medium leading-[1.05] tracking-tight mb-5 text-balance">
 							Take the{" "}
 							<span className="text-gradient">next step</span>{" "}
 							together

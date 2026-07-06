@@ -13,12 +13,14 @@ const hanken = Hanken_Grotesk({
 	variable: "--font-hanken",
 	subsets: ["latin"],
 	display: "swap",
+	adjustFontFallback: true,
 });
 
 const newsreader = Newsreader({
 	variable: "--font-newsreader",
 	subsets: ["latin"],
 	display: "swap",
+	adjustFontFallback: true,
 });
 
 export const viewport: Viewport = {
@@ -84,8 +86,8 @@ export const metadata: Metadata = {
 		},
 	},
 	icons: {
-		icon: "/favicon.png",
-		apple: "/images/icon.png",
+		icon: [{ url: "/favicon.png", sizes: "96x96", type: "image/png" }],
+		apple: [{ url: "/images/icon.png", sizes: "512x512", type: "image/png" }],
 	},
 	alternates: {
 		canonical: SITE_URL,

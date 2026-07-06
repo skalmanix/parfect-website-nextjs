@@ -38,8 +38,9 @@ export function HomeScreen() {
 				alt=""
 				fill
 				className="object-cover"
-				sizes="340px"
-				priority
+				sizes="300px"
+				loading="eager"
+				fetchPriority="low"
 				aria-hidden="true"
 			/>
 			<div
@@ -50,9 +51,9 @@ export function HomeScreen() {
 				<StatusBar />
 				<div className="px-4 pt-4">
 					<p className="text-[0.65rem] text-muted mb-0.5">Good evening</p>
-					<h3 className="font-display text-xl font-medium leading-tight">
+					<p className="font-display text-xl font-medium leading-tight">
 						Emma &amp; Liam
-					</h3>
+					</p>
 					<span className="mt-2 inline-flex items-center gap-1.5 rounded-full border border-gold/40 bg-gold/10 px-2.5 py-1 text-[0.6rem] font-semibold text-gold">
 						<svg className="w-2.5 h-2.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
 							<path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
@@ -198,7 +199,7 @@ export function FantasiesScreen() {
 			<div className="relative flex flex-col h-full">
 				<StatusBar />
 				<div className="flex items-center justify-between px-4 py-3">
-					<h3 className="font-display text-lg font-medium">Fantasies</h3>
+					<p className="font-display text-lg font-medium">Fantasies</p>
 					<div className="w-7 h-7 rounded-full bg-rose/25 border border-rose/40 flex items-center justify-center text-[0.65rem] font-semibold text-rose">
 						E
 					</div>
@@ -258,7 +259,7 @@ export function TogetherScreen() {
 			<div className="relative flex flex-col h-full">
 				<StatusBar />
 				<div className="flex items-center justify-between px-4 py-3">
-					<h3 className="font-display text-lg font-medium">Together</h3>
+					<p className="font-display text-lg font-medium">Together</p>
 					<div className="w-7 h-7 rounded-full bg-rose/25 border border-rose/40 flex items-center justify-center text-[0.65rem] font-semibold text-rose">
 						E
 					</div>
@@ -351,7 +352,7 @@ export function DateScreen() {
 					<svg className="w-4 h-4 text-muted" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} aria-hidden="true">
 						<path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
 					</svg>
-					<h3 className="font-display text-lg font-medium">Date night</h3>
+					<p className="font-display text-lg font-medium">Date night</p>
 				</div>
 
 				<div className="flex-1 flex flex-col justify-end px-3.5 pb-16">
