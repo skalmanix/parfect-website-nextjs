@@ -1,26 +1,378 @@
 @import "tailwindcss";
 
 :root {
-	--background: #ffffff;
-	--foreground: #171717;
+	--background: #160910;
+	--background-elevated: #2a1322;
+	--surface: #271320;
+	--surface-alt: #321828;
+	--foreground: #f6e7ea;
+	--muted: #b39aa4;
+	--muted-deep: #8a6e78;
+	--border: #42263a;
+	--primary: #e8849b;
+	--primary-strong: #f59caa;
+	--rose: #f0a3b6;
+	--gold: #f0cf94;
+	--sage: #9cb89f;
+	--chrome: #0e050a;
+	--on-primary: #2a0c16;
 }
 
 @theme inline {
 	--color-background: var(--background);
+	--color-background-elevated: var(--background-elevated);
+	--color-surface: var(--surface);
+	--color-surface-alt: var(--surface-alt);
 	--color-foreground: var(--foreground);
-	--font-sans: var(--font-geist-sans);
-	--font-mono: var(--font-geist-mono);
+	--color-muted: var(--muted);
+	--color-muted-deep: var(--muted-deep);
+	--color-border: var(--border);
+	--color-primary: var(--primary);
+	--color-primary-strong: var(--primary-strong);
+	--color-rose: var(--rose);
+	--color-gold: var(--gold);
+	--color-sage: var(--sage);
+	--color-chrome: var(--chrome);
+	--color-on-primary: var(--on-primary);
+	--font-sans: var(--font-hanken);
+	--font-display: var(--font-newsreader);
+	--font-family-display: var(--font-newsreader), Georgia, serif;
 }
 
-@media (prefers-color-scheme: dark) {
-	:root {
-		--background: #0a0a0a;
-		--foreground: #ededed;
-	}
+html {
+	scroll-behavior: smooth;
 }
 
 body {
 	background: var(--background);
 	color: var(--foreground);
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: var(--font-hanken), system-ui, sans-serif;
+}
+
+.font-display {
+	font-family: var(--font-newsreader), Georgia, "Times New Roman", serif;
+}
+
+::selection {
+	background: color-mix(in srgb, var(--primary) 35%, transparent);
+	color: var(--foreground);
+}
+
+@keyframes fade-up {
+	from {
+		opacity: 0;
+		transform: translateY(24px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes glow-pulse {
+	0%,
+	100% {
+		opacity: 0.4;
+	}
+	50% {
+		opacity: 0.7;
+	}
+}
+
+@keyframes float {
+	0%,
+	100% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-8px);
+	}
+}
+
+.animate-fade-up {
+	animation: fade-up 0.8s ease-out both;
+}
+
+.animate-fade-up-delay-1 {
+	animation: fade-up 0.8s ease-out 0.15s both;
+}
+
+.animate-fade-up-delay-2 {
+	animation: fade-up 0.8s ease-out 0.3s both;
+}
+
+.animate-glow {
+	animation: glow-pulse 4s ease-in-out infinite;
+}
+
+.animate-float {
+	animation: float 6s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}
+
+.grain-overlay::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	opacity: 0.03;
+	pointer-events: none;
+	background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+}
+
+.gradient-hero {
+	background:
+		radial-gradient(
+			ellipse 80% 60% at 50% -10%,
+			color-mix(in srgb, var(--primary) 18%, transparent),
+			transparent
+		),
+		radial-gradient(
+			ellipse 50% 40% at 90% 20%,
+			color-mix(in srgb, var(--rose) 12%, transparent),
+			transparent
+		),
+		var(--background);
+}
+
+.text-gradient {
+	background: linear-gradient(
+		135deg,
+		var(--foreground) 0%,
+		var(--primary-strong) 50%,
+		var(--rose) 100%
+	);
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+}
+
+.card-glow {
+	box-shadow:
+		0 0 0 1px color-mix(in srgb, var(--border) 80%, transparent),
+		0 20px 50px -20px color-mix(in srgb, var(--primary) 15%, transparent);
+}
+
+.btn-primary {
+	background: linear-gradient(
+		135deg,
+		var(--primary) 0%,
+		var(--primary-strong) 100%
+	);
+	color: var(--on-primary);
+	font-weight: 600;
+	transition:
+		transform 0.2s ease,
+		box-shadow 0.2s ease,
+		opacity 0.2s ease;
+}
+
+.btn-primary:hover {
+	transform: scale(1.02);
+	box-shadow: 0 8px 32px color-mix(in srgb, var(--primary) 35%, transparent);
+}
+
+.btn-primary:active {
+	transform: scale(0.98);
+}
+
+.btn-secondary {
+	background: color-mix(in srgb, var(--surface) 80%, transparent);
+	border: 1px solid var(--border);
+	color: var(--foreground);
+	transition:
+		background 0.2s ease,
+		border-color 0.2s ease;
+}
+
+.btn-secondary:hover {
+	background: var(--surface-alt);
+	border-color: color-mix(in srgb, var(--primary) 40%, var(--border));
+}
+
+.section-padding {
+	padding-inline: clamp(1.25rem, 5vw, 2rem);
+}
+
+.container-wide {
+	max-width: 72rem;
+	margin-inline: auto;
+}
+
+.container-narrow {
+	max-width: 48rem;
+	margin-inline: auto;
+}
+
+.eyebrow {
+	font-size: 0.75rem;
+	font-weight: 600;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+	color: var(--primary);
+}
+
+.app-gradient-bg {
+	background:
+		linear-gradient(
+			180deg,
+			var(--background-elevated) 0%,
+			var(--background) 50%,
+			var(--background) 100%
+		),
+		radial-gradient(
+			ellipse 90% 50% at 50% 0%,
+			color-mix(in srgb, var(--rose) 22%, transparent),
+			transparent 70%
+		),
+		radial-gradient(
+			ellipse 70% 40% at 50% 100%,
+			color-mix(in srgb, var(--primary) 12%, transparent),
+			transparent 65%
+		);
+}
+
+.welcome-scrim {
+	background: linear-gradient(
+		180deg,
+		transparent 0%,
+		color-mix(in srgb, var(--background) 60%, transparent) 35%,
+		color-mix(in srgb, var(--background) 87%, transparent) 60%,
+		var(--background) 85%
+	);
+}
+
+.hero-card {
+	border-radius: 1.25rem;
+	border: 1px solid color-mix(in srgb, var(--border) 80%, transparent);
+	background: linear-gradient(
+		135deg,
+		color-mix(in srgb, var(--background-elevated) 90%, transparent),
+		color-mix(in srgb, var(--surface) 85%, transparent)
+	);
+	box-shadow:
+		0 0 0 1px color-mix(in srgb, var(--rose) 8%, transparent),
+		0 16px 40px -24px color-mix(in srgb, var(--primary) 25%, transparent);
+	position: relative;
+	overflow: hidden;
+}
+
+.hero-card::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 55%;
+	height: 55%;
+	background: radial-gradient(
+		circle at top right,
+		color-mix(in srgb, var(--rose) 14%, transparent),
+		transparent 70%
+	);
+	pointer-events: none;
+}
+
+.pillar-card {
+	border-radius: 1.75rem;
+	border: 1px solid color-mix(in srgb, var(--border) 70%, transparent);
+	background: color-mix(in srgb, var(--surface) 55%, transparent);
+	box-shadow: 0 24px 60px -40px color-mix(in srgb, var(--primary) 20%, transparent);
+}
+
+.phone-frame {
+	position: relative;
+	width: 100%;
+	max-width: 300px;
+	border-radius: 2.5rem;
+	padding: 0.65rem;
+	background: linear-gradient(160deg, #3a2a35 0%, #1a1018 40%, #0e050a 100%);
+	border: 1px solid color-mix(in srgb, var(--border) 90%, transparent);
+	box-shadow:
+		0 0 0 1px color-mix(in srgb, var(--rose) 10%, transparent),
+		0 30px 70px -30px color-mix(in srgb, var(--primary) 30%, transparent);
+}
+
+.phone-notch {
+	position: absolute;
+	top: 0.85rem;
+	left: 50%;
+	translate: -50% 0;
+	width: 28%;
+	height: 1.35rem;
+	border-radius: 999px;
+	background: #0e050a;
+	z-index: 5;
+}
+
+.phone-screen {
+	border-radius: 2rem;
+	overflow: hidden;
+	background: var(--background);
+	min-height: 520px;
+	position: relative;
+}
+
+.app-tab-bar {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	padding: 0.65rem 0.5rem 0.85rem;
+	background: color-mix(in srgb, var(--chrome) 92%, transparent);
+	border-top: 1px solid var(--border);
+	border-radius: 0 0 2rem 2rem;
+	backdrop-filter: blur(12px);
+}
+
+.app-tab {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.2rem;
+	font-size: 0.625rem;
+	font-weight: 600;
+	color: var(--muted);
+	min-width: 4.5rem;
+}
+
+.app-tab-active {
+	color: var(--primary);
+}
+
+.preview-pill {
+	padding: 1rem 1.25rem;
+	border-radius: 1rem;
+	border: 1px solid color-mix(in srgb, var(--border) 70%, transparent);
+	background: color-mix(in srgb, var(--surface) 40%, transparent);
+	transition:
+		border-color 0.2s ease,
+		background 0.2s ease,
+		transform 0.2s ease;
+	cursor: pointer;
+}
+
+.preview-pill:hover {
+	border-color: color-mix(in srgb, var(--primary) 35%, var(--border));
+}
+
+.preview-pill-active {
+	border-color: color-mix(in srgb, var(--primary) 50%, var(--border));
+	background: color-mix(in srgb, var(--primary) 10%, var(--surface));
+	transform: translateX(4px);
+}
+
+.preview-pill-label {
+	display: block;
+	font-family: var(--font-newsreader), Georgia, serif;
+	font-size: 1.125rem;
+	font-weight: 500;
+	margin-bottom: 0.15rem;
 }
