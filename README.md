@@ -1,63 +1,102 @@
-# Next.js Framework Starter
+# Parfect Website
 
-[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/cloudflare/templates/tree/main/next-starter-template)
+Marketing site for [Parfect](https://github.com/skalmanix/Parfect) — the private couples app for intimate chat, shared fantasies, and turning dreams into real date nights.
 
-<!-- dash-content-start -->
+**Live site:** [parfect.app](https://parfect.app)
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app). It's deployed on Cloudflare Workers as a [static website](https://developers.cloudflare.com/workers/static-assets/).
+## Overview
 
-This template uses [OpenNext](https://opennext.js.org/) via the [OpenNext Cloudflare adapter](https://opennext.js.org/cloudflare), which works by taking the Next.js build output and transforming it, so that it can run in Cloudflare Workers.
+This is a fast, SEO-optimized Next.js landing page designed to drive App Store and Play Store downloads. The design mirrors the mobile app's warm, intimate aesthetic so visitors feel the connection before they install.
 
-<!-- dash-content-end -->
+Built with:
 
-Outside of this repo, you can start a new project with this template using [C3](https://developers.cloudflare.com/pages/get-started/c3/) (the `create-cloudflare` CLI):
+- **Next.js 16** (App Router, static generation)
+- **React 19**
+- **Tailwind CSS 4**
+- **OpenNext Cloudflare** adapter for deployment on Cloudflare Workers
 
-```bash
-npm create cloudflare@latest -- --template=cloudflare/templates/next-starter-template
-```
+## Features
 
-A live public deployment of this template is available at [https://next-starter-template.templates.workers.dev](https://next-starter-template.templates.workers.dev)
+- Couples-focused landing page with hero, app preview, three pillars, and CTA sections
+- Brand assets and copy sourced from the Parfect app repo
+- Official App Store and Google Play download badges
+- SEO: metadata, Open Graph, JSON-LD schema, sitemap, robots.txt, web manifest
+- Fully responsive layout for mobile, tablet, and desktop
+- Minimal client JavaScript for fast load times
 
 ## Getting Started
 
-First, run:
+### Prerequisites
+
+- Node.js 18+
+- npm 9+
+
+### Install & run
 
 ```bash
+git clone https://github.com/skalmanix/parfect-website-nextjs.git
+cd parfect-website-nextjs
 npm install
-# or
-yarn install
-# or
-pnpm install
-# or
-bun install
-```
-
-Then run the development server (using the package manager of your choice):
-
-```bash
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) (Next.js will use another port if 3000 is taken).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Environment variables
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Create a `.env.local` file for production URLs:
 
-## Deploying To Production
+```bash
+NEXT_PUBLIC_SITE_URL=https://parfect.app
+NEXT_PUBLIC_APP_STORE_URL=https://apps.apple.com/app/idYOUR_APP_ID
+NEXT_PUBLIC_PLAY_STORE_URL=https://play.google.com/store/apps/details?id=com.app.parfect
+```
 
-| Command                           | Action                                       |
-| :-------------------------------- | :------------------------------------------- |
-| `npm run build`                   | Build your production site                   |
-| `npm run preview`                 | Preview your build locally, before deploying |
-| `npm run build && npm run deploy` | Deploy your production site to Cloudflare    |
-| `npm wrangler tail`               | View real-time logs for all Workers          |
+| Variable | Description |
+|----------|-------------|
+| `NEXT_PUBLIC_SITE_URL` | Canonical site URL for SEO and sitemap |
+| `NEXT_PUBLIC_APP_STORE_URL` | Apple App Store listing URL |
+| `NEXT_PUBLIC_PLAY_STORE_URL` | Google Play listing URL |
 
-## Learn More
+## Scripts
 
-To learn more about Next.js, take a look at the following resources:
+| Command | Description |
+|---------|-------------|
+| `npm run dev` | Start local development server |
+| `npm run build` | Build for production |
+| `npm run start` | Run production build locally |
+| `npm run lint` | Run ESLint |
+| `npm run check` | Build and type-check |
+| `npm run preview` | Preview Cloudflare build locally |
+| `npm run deploy` | Build and deploy to Cloudflare Workers |
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Project Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```
+src/
+  app/              # Next.js routes, layout, global styles, SEO files
+  components/       # Landing page sections (hero, pillars, CTA, etc.)
+  lib/              # Constants and JSON-LD schema helpers
+public/
+  images/           # App screenshots, logo, and store badges
+```
+
+## Deployment
+
+The site deploys to Cloudflare Workers via OpenNext:
+
+```bash
+npm run deploy
+```
+
+Configure your domain in the Cloudflare dashboard to point to the Worker.
+
+## Related
+
+- **Mobile app:** [github.com/skalmanix/Parfect](https://github.com/skalmanix/Parfect)
+- **API:** [api.parfect.app](https://api.parfect.app)
+- **Privacy:** [api.parfect.app/privacy](https://api.parfect.app/privacy)
+
+## License
+
+Private project. All rights reserved.
