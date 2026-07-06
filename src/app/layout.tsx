@@ -6,6 +6,10 @@ import {
 	getWebSiteSchema,
 } from "@/lib/schema";
 import { SITE_URL } from "@/lib/constants";
+import {
+	GoogleTagManager,
+	GoogleTagManagerNoScript,
+} from "@/components/gtm";
 import "./globals.css";
 
 const hanken = Hanken_Grotesk({
@@ -118,7 +122,9 @@ export default function RootLayout({
 			<body
 				className={`${hanken.variable} ${newsreader.variable} antialiased`}
 			>
+				<GoogleTagManagerNoScript />
 				{children}
+				<GoogleTagManager />
 			</body>
 		</html>
 	);
