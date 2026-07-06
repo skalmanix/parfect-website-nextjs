@@ -107,6 +107,13 @@ const content: FeaturePageContent = {
 			},
 		],
 	},
+	testimonial: {
+		quote:
+			"Our list started with 'learn to make pasta' and now has a road trip on it. Checking things off together is weirdly addictive — in the best way.",
+		names: "Amira & Daniel",
+		context: "Together 3 years",
+		image: "/images/people/couple-amira-daniel.webp",
+	},
 	faqs: [
 		{
 			question: "How is this different from a shared notes app?",

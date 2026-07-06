@@ -107,6 +107,13 @@ const content: FeaturePageContent = {
 			},
 		],
 	},
+	testimonial: {
+		quote:
+			"Different time zones, same ritual. The daily question keeps us inside each other's day, and the bucket list has become our countdown to the next reunion.",
+		names: "Amira & Daniel",
+		context: "Long-distance · Oslo–Lisbon",
+		image: "/images/people/couple-amira-daniel.webp",
+	},
 	faqs: [
 		{
 			question: "Does Parfect work across countries and time zones?",

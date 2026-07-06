@@ -107,6 +107,13 @@ const content: FeaturePageContent = {
 			},
 		],
 	},
+	testimonial: {
+		quote:
+			"After 31 years of marriage we assumed we knew everything about each other. We didn't. It feels playful again — that surprised us both.",
+		names: "Kerstin & Lars",
+		context: "Married 31 years",
+		image: "/images/people/couple-kerstin-lars.webp",
+	},
 	faqs: [
 		{
 			question: "We've been married 15 years. Isn't this for new couples?",

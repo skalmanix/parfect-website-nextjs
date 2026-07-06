@@ -107,6 +107,13 @@ const content: FeaturePageContent = {
 			},
 		],
 	},
+	testimonial: {
+		quote:
+			"We said 'we should go out more' for two years. Parfect made it embarrassing to keep saying it — the ideas were right there, so we just started booking them.",
+		names: "Hanna & Viktor",
+		context: "Together 6 years · Stockholm",
+		image: "/images/people/couple-laughing.webp",
+	},
 	faqs: [
 		{
 			question: "How is this better than a shared Google Calendar?",

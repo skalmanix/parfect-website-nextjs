@@ -3,6 +3,8 @@ import { Logo } from "./logo";
 import { StoreBadges } from "./store-badges";
 import { AppTabs } from "./app-tabs";
 import { HomeScreen } from "./app-screens";
+import { AvatarCluster, RatingStars } from "./testimonials";
+import { RATING_LINE } from "@/lib/testimonials";
 
 export function Hero() {
 	return (
@@ -70,6 +72,19 @@ export function Hero() {
 									Free · Ages 18+
 								</li>
 							</ul>
+
+							<a
+								href="#couples"
+								className="mt-6 inline-flex items-center gap-3 group"
+							>
+								<AvatarCluster />
+								<span className="text-left">
+									<RatingStars size="w-3.5 h-3.5" />
+									<span className="block text-xs text-muted-deep group-hover:text-muted transition-colors">
+										{RATING_LINE}
+									</span>
+								</span>
+							</a>
 						</div>
 					</div>
 

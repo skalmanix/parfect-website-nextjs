@@ -107,6 +107,13 @@ const content: FeaturePageContent = {
 			},
 		],
 	},
+	testimonial: {
+		quote:
+			"Two kids, zero spontaneity — date night was a guilty wish. Now it's twice a month, and the sitter step means it actually happens instead of falling apart on Friday.",
+		names: "Sara & Marcus",
+		context: "Parents of two",
+		image: "/images/people/couple-sara-marcus.webp",
+	},
 	faqs: [
 		{
 			question: "We barely have ten minutes a day. Is this realistic?",

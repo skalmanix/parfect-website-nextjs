@@ -5,6 +5,7 @@ import { AppPreview } from "@/components/app-preview";
 import { Pillars } from "@/components/pillars";
 import { Features } from "@/components/features";
 import { HowItWorks } from "@/components/how-it-works";
+import { Testimonials } from "@/components/testimonials";
 import { PrivacySection } from "@/components/privacy-section";
 import { CtaSection } from "@/components/cta-section";
 import { Footer } from "@/components/footer";
@@ -28,6 +29,7 @@ export default function Home() {
 				<Pillars />
 				<Features />
 				<HowItWorks />
+				<Testimonials />
 				<PrivacySection />
 				<CtaSection />
 			</main>

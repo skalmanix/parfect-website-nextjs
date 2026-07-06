@@ -7,6 +7,7 @@ import { StoreBadges } from "./store-badges";
 import { ScrollReveal } from "./scroll-reveal";
 import { AppTabs } from "./app-tabs";
 import { SITE_URL } from "@/lib/constants";
+import { RatingStars } from "./testimonials";
 import {
 	ChatScreen,
 	DateScreen,
@@ -43,6 +44,12 @@ export type FeaturePageContent = {
 		heading: string;
 		intro: string;
 		items: { title: string; description: string }[];
+	};
+	testimonial?: {
+		quote: string;
+		names: string;
+		context: string;
+		image: string;
 	};
 	faqs: { question: string; answer: string }[];
 	related: { href: string; label: string; description: string }[];
@@ -324,6 +331,38 @@ export function FeaturePage({ content }: { content: FeaturePageContent }) {
 						</ol>
 					</div>
 				</section>
+
+				{/* Testimonial */}
+				{content.testimonial && (
+					<section className="pb-16 md:pb-24" aria-label="What couples say">
+						<div className="container-narrow section-padding">
+							<figure
+								data-reveal
+								className="rounded-2xl border border-border/60 bg-surface/50 card-glow p-8 md:p-10 flex flex-col sm:flex-row items-center gap-6 md:gap-8"
+							>
+								<span className="relative w-24 h-24 md:w-28 md:h-28 rounded-full overflow-hidden shrink-0 border-2 border-primary/30">
+									<Image
+										src={content.testimonial.image}
+										alt={content.testimonial.names}
+										fill
+										sizes="112px"
+										className="object-cover"
+									/>
+								</span>
+								<div className="text-center sm:text-left">
+									<RatingStars className="mb-3" />
+									<blockquote className="font-display text-xl md:text-2xl leading-snug text-balance mb-4">
+										&ldquo;{content.testimonial.quote}&rdquo;
+									</blockquote>
+									<figcaption className="text-sm">
+										<span className="font-medium">{content.testimonial.names}</span>
+										<span className="text-muted"> · {content.testimonial.context}</span>
+									</figcaption>
+								</div>
+							</figure>
+						</div>
+					</section>
+				)}
 
 				{/* FAQ */}
 				<section

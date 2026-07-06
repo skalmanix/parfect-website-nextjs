@@ -107,6 +107,13 @@ const content: FeaturePageContent = {
 			},
 		],
 	},
+	testimonial: {
+		quote:
+			"We message all day on regular apps — groceries, pickups, logistics. Parfect is where we're still a couple. Opening it feels like closing a door behind us.",
+		names: "Mia & Oscar",
+		context: "Together 9 years",
+		image: "/images/people/couple-sofa.webp",
+	},
 	faqs: [
 		{
 			question: "Is Parfect's chat really private?",

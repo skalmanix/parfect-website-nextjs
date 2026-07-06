@@ -107,6 +107,13 @@ const content: FeaturePageContent = {
 			},
 		],
 	},
+	testimonial: {
+		quote:
+			"The prompts started conversations we'd been avoiding for years. Knowing 'not right now' is always okay made all the difference — we finally felt safe to be honest.",
+		names: "Elin & Jonas",
+		context: "Together 8 years",
+		image: "/images/people/couple-elin-jonas.webp",
+	},
 	faqs: [
 		{
 			question: "What if my partner isn't ready to share?",

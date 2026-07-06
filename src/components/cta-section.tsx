@@ -1,5 +1,7 @@
 import { Logo } from "./logo";
 import { StoreBadges } from "./store-badges";
+import { AvatarCluster, RatingStars } from "./testimonials";
+import { RATING_LINE } from "@/lib/testimonials";
 
 export function CtaSection() {
 	return (
@@ -25,7 +27,14 @@ export function CtaSection() {
 						that brings you closer — one message, one dream, one date night
 						at a time.
 					</p>
-					<StoreBadges size="lg" className="justify-center mb-4" />
+					<StoreBadges size="lg" className="justify-center mb-5" />
+					<div className="flex items-center justify-center gap-3 mb-2">
+						<AvatarCluster />
+						<span className="text-left">
+							<RatingStars size="w-3.5 h-3.5" />
+							<span className="block text-xs text-muted-deep">{RATING_LINE}</span>
+						</span>
+					</div>
 					<p className="text-muted-deep text-sm">
 						Available on iOS and Android · Free download
 					</p>
