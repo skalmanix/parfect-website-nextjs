@@ -2,10 +2,10 @@ import { Logo } from "./logo";
 import { MobileMenu } from "./mobile-menu";
 
 const navLinks = [
-	{ href: "#experience", label: "Experience" },
-	{ href: "#pillars", label: "Features" },
-	{ href: "#how-it-works", label: "How it works" },
-	{ href: "#privacy", label: "Privacy" },
+	{ href: "/#experience", label: "Experience" },
+	{ href: "/#pillars", label: "Features" },
+	{ href: "/#how-it-works", label: "How it works" },
+	{ href: "/#privacy", label: "Privacy" },
 ] as const;
 
 export function Header() {
@@ -27,7 +27,7 @@ export function Header() {
 
 				<div className="flex items-center gap-2">
 					<a
-						href="#download"
+						href="/#download"
 						className="btn-primary hidden sm:inline-flex items-center px-5 py-2.5 rounded-full text-sm"
 					>
 						Get the app

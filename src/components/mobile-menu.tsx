@@ -68,7 +68,7 @@ export function MobileMenu({ links }: MobileMenuProps) {
 					))}
 				</nav>
 				<a
-					href="#download"
+					href="/#download"
 					onClick={() => setOpen(false)}
 					tabIndex={open ? 0 : -1}
 					className="btn-primary flex items-center justify-center px-5 py-3.5 rounded-full text-sm mt-4"

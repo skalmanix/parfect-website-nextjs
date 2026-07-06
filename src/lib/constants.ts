@@ -11,9 +11,11 @@ export const PLAY_STORE_URL =
 	process.env.NEXT_PUBLIC_PLAY_STORE_URL ??
 	`https://play.google.com/store/apps/details?id=${ANDROID_PACKAGE}`;
 
-export const PRIVACY_URL = "https://api.parfect.app/privacy";
-export const TERMS_URL = "https://api.parfect.app/terms";
-export const SUPPORT_URL = "https://api.parfect.app/support";
+export const SUPPORT_EMAIL = "support@parfect.app";
+
+export const PRIVACY_URL = "/privacy";
+export const TERMS_URL = "/terms";
+export const SUPPORT_URL = "/support";
 
 export const APP_TABS = [
 	{ id: "chat", label: "Chat", icon: "chat" },

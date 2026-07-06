@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Logo } from "./logo";
 import { LEGAL_LINKS } from "@/lib/schema";
 
@@ -20,42 +21,27 @@ export function Footer() {
 						<h3 className="text-sm font-medium mb-4">Explore</h3>
 						<ul className="space-y-2 text-sm text-muted">
 							<li>
-								<a
-									href="#experience"
-									className="footer-link"
-								>
+								<a href="/#experience" className="footer-link">
 									Experience
 								</a>
 							</li>
 							<li>
-								<a
-									href="#pillars"
-									className="footer-link"
-								>
+								<a href="/#pillars" className="footer-link">
 									Features
 								</a>
 							</li>
 							<li>
-								<a
-									href="#how-it-works"
-									className="footer-link"
-								>
+								<a href="/#how-it-works" className="footer-link">
 									How it works
 								</a>
 							</li>
 							<li>
-								<a
-									href="#privacy"
-									className="footer-link"
-								>
+								<a href="/#privacy" className="footer-link">
 									Privacy
 								</a>
 							</li>
 							<li>
-								<a
-									href="#download"
-									className="footer-link"
-								>
+								<a href="/#download" className="footer-link">
 									Download
 								</a>
 							</li>
@@ -66,34 +52,19 @@ export function Footer() {
 						<h3 className="text-sm font-medium mb-4">Legal</h3>
 						<ul className="space-y-2 text-sm text-muted">
 							<li>
-								<a
-									href={LEGAL_LINKS.privacy}
-									className="footer-link"
-									target="_blank"
-									rel="noopener noreferrer"
-								>
+								<Link href={LEGAL_LINKS.privacy} className="footer-link">
 									Privacy Policy
-								</a>
+								</Link>
 							</li>
 							<li>
-								<a
-									href={LEGAL_LINKS.terms}
-									className="footer-link"
-									target="_blank"
-									rel="noopener noreferrer"
-								>
+								<Link href={LEGAL_LINKS.terms} className="footer-link">
 									Terms of Service
-								</a>
+								</Link>
 							</li>
 							<li>
-								<a
-									href={LEGAL_LINKS.support}
-									className="footer-link"
-									target="_blank"
-									rel="noopener noreferrer"
-								>
+								<Link href={LEGAL_LINKS.support} className="footer-link">
 									Support
-								</a>
+								</Link>
 							</li>
 						</ul>
 					</div>

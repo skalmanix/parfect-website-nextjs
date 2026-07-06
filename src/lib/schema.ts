@@ -4,6 +4,7 @@ import {
 	PRIVACY_URL,
 	SITE_URL,
 	SUPPORT_URL,
+	TERMS_URL,
 } from "./constants";
 
 export function getOrganizationSchema() {
@@ -101,6 +102,6 @@ export function getFaqSchema() {
 
 export const LEGAL_LINKS = {
 	privacy: PRIVACY_URL,
-	terms: "https://api.parfect.app/terms",
+	terms: TERMS_URL,
 	support: SUPPORT_URL,
 } as const;

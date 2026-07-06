@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { LEGAL_LINKS } from "@/lib/schema";
 
 const trustPoints = [
@@ -68,30 +69,24 @@ export function PrivacySection() {
 				</div>
 
 				<div className="flex flex-wrap justify-center gap-6 mt-10 text-sm text-muted">
-					<a
+					<Link
 						href={LEGAL_LINKS.privacy}
 						className="hover:text-foreground transition-colors underline-offset-4 hover:underline"
-						target="_blank"
-						rel="noopener noreferrer"
 					>
 						Privacy Policy
-					</a>
-					<a
+					</Link>
+					<Link
 						href={LEGAL_LINKS.terms}
 						className="hover:text-foreground transition-colors underline-offset-4 hover:underline"
-						target="_blank"
-						rel="noopener noreferrer"
 					>
 						Terms of Service
-					</a>
-					<a
+					</Link>
+					<Link
 						href={LEGAL_LINKS.support}
 						className="hover:text-foreground transition-colors underline-offset-4 hover:underline"
-						target="_blank"
-						rel="noopener noreferrer"
 					>
 						Support
-					</a>
+					</Link>
 				</div>
 			</div>
 		</section>

@@ -610,6 +610,91 @@ button {
 	color: var(--on-primary);
 }
 
+/* Long-form content pages (privacy, terms, support) */
+.legal-prose {
+	color: var(--muted);
+	line-height: 1.75;
+}
+
+.legal-prose h2 {
+	font-family: var(--font-newsreader), Georgia, serif;
+	font-size: 1.5rem;
+	font-weight: 500;
+	letter-spacing: -0.01em;
+	color: var(--foreground);
+	margin-top: 2.75rem;
+	margin-bottom: 0.85rem;
+	padding-top: 2.25rem;
+	border-top: 1px solid color-mix(in srgb, var(--border) 60%, transparent);
+}
+
+.legal-prose h2:first-child {
+	margin-top: 0;
+	padding-top: 0;
+	border-top: none;
+}
+
+.legal-prose h3 {
+	font-size: 1.05rem;
+	font-weight: 600;
+	color: var(--foreground);
+	margin-top: 1.75rem;
+	margin-bottom: 0.5rem;
+}
+
+.legal-prose p {
+	margin-bottom: 1rem;
+}
+
+.legal-prose ul {
+	list-style: none;
+	margin-bottom: 1.25rem;
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.legal-prose ul li {
+	position: relative;
+	padding-left: 1.35rem;
+}
+
+.legal-prose ul li::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0.65em;
+	width: 0.4rem;
+	height: 0.4rem;
+	border-radius: 999px;
+	background: color-mix(in srgb, var(--primary) 70%, transparent);
+}
+
+.legal-prose a {
+	color: var(--primary-strong);
+	text-decoration: underline;
+	text-underline-offset: 4px;
+	text-decoration-color: color-mix(in srgb, var(--primary) 40%, transparent);
+	transition: text-decoration-color 0.2s ease;
+}
+
+.legal-prose a:hover {
+	text-decoration-color: var(--primary-strong);
+}
+
+.legal-prose strong {
+	color: var(--foreground);
+	font-weight: 600;
+}
+
+.legal-callout {
+	border-radius: 1rem;
+	border: 1px solid color-mix(in srgb, var(--sage) 35%, var(--border));
+	background: color-mix(in srgb, var(--sage) 8%, var(--surface));
+	padding: 1.25rem 1.5rem;
+	margin: 1.5rem 0;
+}
+
 /* Section flow helpers */
 .section-divider {
 	height: 1px;
