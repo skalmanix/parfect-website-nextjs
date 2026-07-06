@@ -1,5 +1,7 @@
 import { Logo } from "./logo";
 import { StoreBadges } from "./store-badges";
+import { AppTabs } from "./app-tabs";
+import { HomeScreen } from "./app-screens";
 
 export function Hero() {
 	return (
@@ -38,7 +40,7 @@ export function Hero() {
 							id="download"
 							className="animate-fade-up-delay-2 scroll-mt-28 flex flex-col items-center lg:items-start"
 						>
-							<StoreBadges size="lg" className="mb-5" />
+							<StoreBadges size="lg" className="mb-5 justify-center lg:justify-start" />
 							<ul className="flex flex-wrap justify-center lg:justify-start items-center gap-x-5 gap-y-2 text-sm text-muted-deep">
 								<li className="flex items-center gap-1.5">
 									<svg className="w-4 h-4 text-sage" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.75} aria-hidden="true">
@@ -84,39 +86,17 @@ export function Hero() {
 
 function HeroShowcase() {
 	return (
-		<div className="relative w-full max-w-[340px]">
-			<div className="hero-card mb-4 p-5">
-				<div className="flex items-center gap-2 mb-3">
-					<svg
-						className="w-3.5 h-3.5 text-gold"
-						fill="currentColor"
-						viewBox="0 0 20 20"
-						aria-hidden="true"
-					>
-						<path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-					</svg>
-					<span className="eyebrow text-gold">Tonight&apos;s prompt</span>
-				</div>
-				<p className="font-display text-xl leading-snug">
-					What&apos;s one small thing your partner did lately that made you
-					feel loved?
-				</p>
-			</div>
-
+		<div className="relative w-full max-w-[300px]">
 			<div className="phone-frame relative">
 				<div className="phone-notch" aria-hidden="true" />
-				<div
-					className="phone-screen bg-cover bg-center min-h-[520px]"
-					style={{ backgroundImage: "url('/images/hero-home.webp')" }}
-					role="img"
-					aria-label="Parfect app home screen preview"
-				/>
+				<div className="phone-screen">
+					<HomeScreen />
+					<div className="absolute bottom-0 inset-x-0 z-10">
+						<AppTabs active="fantasies" />
+					</div>
+				</div>
 			</div>
 
-			<div className="absolute -bottom-3 -left-3 sm:-left-6 hero-card p-4 max-w-[220px] hidden sm:block">
-				<p className="text-xs text-sage font-medium mb-1">Date night planned</p>
-				<p className="text-sm font-display">Saturday · 7:30 PM</p>
-			</div>
 		</div>
 	);
 }

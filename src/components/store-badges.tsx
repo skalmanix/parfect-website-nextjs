@@ -4,47 +4,39 @@ import { APP_STORE_URL, PLAY_STORE_URL } from "@/lib/constants";
 type StoreBadgesProps = {
 	size?: "sm" | "md" | "lg";
 	className?: string;
-	layout?: "row" | "column";
 };
 
 const heights = {
 	sm: 40,
 	md: 48,
-	lg: 56,
+	lg: 54,
 } as const;
 
-export function StoreBadges({
-	size = "md",
-	className = "",
-	layout = "row",
-}: StoreBadgesProps) {
+/*
+ * Official badge intrinsic dimensions (Play badge cropped to content bounds):
+ * Apple SVG 119.66×40 (ratio 2.99), Google PNG 564×168 (ratio 3.357).
+ * Rendering both at the same fixed height keeps them visually matched.
+ */
+export function StoreBadges({ size = "md", className = "" }: StoreBadgesProps) {
 	const height = heights[size];
 
 	return (
-		<div
-			className={`flex ${
-				layout === "column"
-					? "flex-col items-stretch"
-					: "flex-col sm:flex-row items-stretch sm:items-center"
-			} gap-3 ${className}`}
-		>
+		<div className={`flex flex-wrap items-center gap-3 ${className}`}>
 			<StoreLink href={APP_STORE_URL} label="Download Parfect on the App Store">
 				<Image
 					src="/images/badges/app-store.svg"
 					alt="Download on the App Store"
-					width={Math.round(height * 3.25)}
+					width={Math.round(height * 2.99)}
 					height={height}
-					className="h-auto w-auto"
 					style={{ height, width: "auto" }}
 				/>
 			</StoreLink>
 			<StoreLink href={PLAY_STORE_URL} label="Get Parfect on Google Play">
 				<Image
-					src="/images/badges/google-play.png"
+					src="/images/badges/google-play-badge.png"
 					alt="Get it on Google Play"
-					width={Math.round(height * 3.35)}
+					width={Math.round(height * 3.357)}
 					height={height}
-					className="h-auto w-auto"
 					style={{ height, width: "auto" }}
 				/>
 			</StoreLink>
@@ -66,7 +58,7 @@ function StoreLink({
 	return (
 		<a
 			href={href}
-			className="inline-flex transition-opacity hover:opacity-85 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary rounded-lg"
+			className="store-badge-link"
 			aria-label={label}
 			{...(isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})}
 		>

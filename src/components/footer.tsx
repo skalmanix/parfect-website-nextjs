@@ -22,7 +22,7 @@ export function Footer() {
 							<li>
 								<a
 									href="#experience"
-									className="hover:text-foreground transition-colors"
+									className="footer-link"
 								>
 									Experience
 								</a>
@@ -30,7 +30,7 @@ export function Footer() {
 							<li>
 								<a
 									href="#pillars"
-									className="hover:text-foreground transition-colors"
+									className="footer-link"
 								>
 									Features
 								</a>
@@ -38,7 +38,7 @@ export function Footer() {
 							<li>
 								<a
 									href="#how-it-works"
-									className="hover:text-foreground transition-colors"
+									className="footer-link"
 								>
 									How it works
 								</a>
@@ -46,7 +46,7 @@ export function Footer() {
 							<li>
 								<a
 									href="#privacy"
-									className="hover:text-foreground transition-colors"
+									className="footer-link"
 								>
 									Privacy
 								</a>
@@ -54,7 +54,7 @@ export function Footer() {
 							<li>
 								<a
 									href="#download"
-									className="hover:text-foreground transition-colors"
+									className="footer-link"
 								>
 									Download
 								</a>
@@ -68,7 +68,7 @@ export function Footer() {
 							<li>
 								<a
 									href={LEGAL_LINKS.privacy}
-									className="hover:text-foreground transition-colors"
+									className="footer-link"
 									target="_blank"
 									rel="noopener noreferrer"
 								>
@@ -78,7 +78,7 @@ export function Footer() {
 							<li>
 								<a
 									href={LEGAL_LINKS.terms}
-									className="hover:text-foreground transition-colors"
+									className="footer-link"
 									target="_blank"
 									rel="noopener noreferrer"
 								>
@@ -88,7 +88,7 @@ export function Footer() {
 							<li>
 								<a
 									href={LEGAL_LINKS.support}
-									className="hover:text-foreground transition-colors"
+									className="footer-link"
 									target="_blank"
 									rel="noopener noreferrer"
 								>
@@ -101,7 +101,6 @@ export function Footer() {
 
 				<div className="pt-8 border-t border-border/40 flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-muted-deep">
 					<p>&copy; {year} Parfect. All rights reserved.</p>
-					<p>Made for couples aged 18+</p>
 				</div>
 			</div>
 		</footer>

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { PILLARS } from "@/lib/constants";
 import {
 	ChatIllustration,
@@ -6,11 +5,18 @@ import {
 	TogetherIllustration,
 } from "./pillar-illustrations";
 import { AppTabs } from "./app-tabs";
+import { ChatScreen, FantasiesScreen, TogetherScreen } from "./app-screens";
 
 const illustrations = {
 	chat: ChatIllustration,
 	fantasies: FantasyIllustration,
 	together: TogetherIllustration,
+} as const;
+
+const screens = {
+	chat: ChatScreen,
+	fantasies: FantasiesScreen,
+	together: TogetherScreen,
 } as const;
 
 const accentColors = {
@@ -44,6 +50,7 @@ export function Pillars() {
 				<div className="space-y-8 md:space-y-10">
 					{PILLARS.map((pillar, index) => {
 						const Illustration = illustrations[pillar.id];
+						const Screen = screens[pillar.id];
 						return (
 							<article
 								key={pillar.id}
@@ -93,16 +100,11 @@ export function Pillars() {
 									<div className="phone-frame">
 										<div className="phone-notch" aria-hidden="true" />
 										<div className="phone-screen relative">
-											<Image
-												src={pillar.image}
-												alt={`Parfect ${pillar.tagline} screen`}
-												width={720}
-												height={1280}
-												className="w-full h-full object-cover object-top"
-												sizes="300px"
-											/>
+											<Screen />
+											<div className="absolute bottom-0 inset-x-0 z-10">
+												<AppTabs active={pillar.tab} />
+											</div>
 										</div>
-										<AppTabs active={pillar.tab} />
 									</div>
 								</div>
 							</article>

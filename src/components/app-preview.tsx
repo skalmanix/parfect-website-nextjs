@@ -1,13 +1,25 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
-import { APP_SCREENSHOTS } from "@/lib/constants";
+import { APP_SCREENS, type AppScreenId } from "@/lib/constants";
 import { AppTabs } from "./app-tabs";
+import {
+	ChatScreen,
+	DateScreen,
+	FantasiesScreen,
+	TogetherScreen,
+} from "./app-screens";
+
+const screens: Record<AppScreenId, React.ComponentType> = {
+	chat: ChatScreen,
+	fantasies: FantasiesScreen,
+	together: TogetherScreen,
+	date: DateScreen,
+};
 
 export function AppPreview() {
 	const [active, setActive] = useState(0);
-	const current = APP_SCREENSHOTS[active];
+	const current = APP_SCREENS[active];
 
 	return (
 		<section
@@ -38,7 +50,7 @@ export function AppPreview() {
 					role="tablist"
 					aria-label="App screens"
 				>
-					{APP_SCREENSHOTS.map((screen, index) => (
+					{APP_SCREENS.map((screen, index) => (
 						<button
 							key={screen.id}
 							type="button"
@@ -61,7 +73,7 @@ export function AppPreview() {
 						role="tablist"
 						aria-label="App screens"
 					>
-						{APP_SCREENSHOTS.map((screen, index) => (
+						{APP_SCREENS.map((screen, index) => (
 							<button
 								key={screen.id}
 								type="button"
@@ -91,26 +103,30 @@ export function AppPreview() {
 					</div>
 
 					<div data-reveal className="order-1 lg:order-2 flex justify-center">
-						<div className="phone-frame relative w-[min(100%,300px)]">
-							<div className="phone-notch" aria-hidden="true" />
-							<div className="phone-screen">
-								{APP_SCREENSHOTS.map((screen, index) => (
-									<Image
-										key={screen.id}
-										src={screen.src}
-										alt={active === index ? `Parfect app — ${screen.label}` : ""}
-										width={720}
-										height={1560}
-										priority={index === 0}
-										className={`absolute inset-0 w-full h-full object-cover object-top transition-opacity duration-300 ${
-											active === index ? "opacity-100" : "opacity-0"
-										}`}
-										sizes="300px"
-									/>
-								))}
-							</div>
-							<div className="absolute bottom-0 inset-x-0 z-10">
-								<AppTabs active={current.tab} />
+						<div className="w-[300px] max-w-full shrink-0">
+							<div className="phone-frame relative">
+								<div className="phone-notch" aria-hidden="true" />
+								<div className="phone-screen">
+									{APP_SCREENS.map((screen, index) => {
+										const Screen = screens[screen.id];
+										return (
+											<div
+												key={screen.id}
+												className={`absolute inset-0 transition-opacity duration-300 ${
+													active === index
+														? "opacity-100"
+														: "opacity-0 pointer-events-none"
+												}`}
+												aria-hidden={active !== index}
+											>
+												<Screen />
+											</div>
+										);
+									})}
+									<div className="absolute bottom-0 inset-x-0 z-10">
+										<AppTabs active={current.tab} />
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>

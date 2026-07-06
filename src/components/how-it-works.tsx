@@ -51,26 +51,30 @@ export function HowItWorks() {
 
 					<div data-reveal className="relative" style={{ transitionDelay: "150ms" }}>
 						<div className="grid grid-cols-2 gap-4">
-							<div className="rounded-2xl overflow-hidden border border-border/60 card-glow mt-8">
+							<figure className="relative aspect-[3/4] rounded-2xl overflow-hidden border border-border/60 card-glow mt-10">
 								<Image
 									src="/images/hero-onboarding.webp"
-									alt="Parfect onboarding — pair with your partner"
-									width={400}
-									height={700}
-									className="w-full h-auto"
+									alt="Couple sitting close together watching a twilight sky"
+									fill
+									className="object-cover"
 									sizes="(max-width: 768px) 45vw, 250px"
 								/>
-							</div>
-							<div className="rounded-2xl overflow-hidden border border-border/60 card-glow">
+								<figcaption className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-chrome/90 to-transparent px-4 pt-8 pb-3">
+									<p className="font-display text-sm">Closer every evening</p>
+								</figcaption>
+							</figure>
+							<figure className="relative aspect-[3/4] rounded-2xl overflow-hidden border border-border/60 card-glow">
 								<Image
-									src="/images/hero-date.webp"
-									alt="Parfect date night planning screen"
-									width={400}
-									height={700}
-									className="w-full h-auto"
+									src="/images/hero-together.webp"
+									alt="Two hands reaching for each other surrounded by rose petals"
+									fill
+									className="object-cover"
 									sizes="(max-width: 768px) 45vw, 250px"
 								/>
-							</div>
+								<figcaption className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-chrome/90 to-transparent px-4 pt-8 pb-3">
+									<p className="font-display text-sm">The next step is yours</p>
+								</figcaption>
+							</figure>
 						</div>
 					</div>
 				</div>

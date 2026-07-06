@@ -29,7 +29,6 @@ export const PILLARS = [
 		tagline: "Chat",
 		description:
 			"A private thread that's just yours. Set messages to disappear, speak freely, and stay close even when you're apart.",
-		image: "/images/pattern-chat.webp",
 		accent: "primary" as const,
 		highlights: [
 			"Real-time messaging for two",
@@ -44,7 +43,6 @@ export const PILLARS = [
 		tagline: "Fantasies",
 		description:
 			"Send a fantasy or ask for one. Gentle prompts help you open up, and \"not right now\" is always okay.",
-		image: "/images/hero-home.webp",
 		accent: "rose" as const,
 		highlights: [
 			"Daily prompts to spark curiosity",
@@ -59,7 +57,6 @@ export const PILLARS = [
 		tagline: "Together",
 		description:
 			"Turn sparks into a shared bucket list, plan date nights, even line up a sitter — together.",
-		image: "/images/hero-together.webp",
 		accent: "gold" as const,
 		highlights: [
 			"Shared bucket list & date planning",
@@ -69,32 +66,14 @@ export const PILLARS = [
 	},
 ] as const;
 
-export const APP_SCREENSHOTS = [
-	{
-		id: "chat",
-		src: "/images/pattern-chat.webp",
-		label: "Private chat",
-		tab: "chat" as const,
-	},
-	{
-		id: "home",
-		src: "/images/hero-home.webp",
-		label: "Fantasies home",
-		tab: "fantasies" as const,
-	},
-	{
-		id: "together",
-		src: "/images/hero-together.webp",
-		label: "Together tab",
-		tab: "together" as const,
-	},
-	{
-		id: "date",
-		src: "/images/hero-date.webp",
-		label: "Date night",
-		tab: "together" as const,
-	},
+export const APP_SCREENS = [
+	{ id: "chat", label: "Private chat", tab: "chat" as const },
+	{ id: "fantasies", label: "Fantasies", tab: "fantasies" as const },
+	{ id: "together", label: "Together", tab: "together" as const },
+	{ id: "date", label: "Date night", tab: "together" as const },
 ] as const;
+
+export type AppScreenId = (typeof APP_SCREENS)[number]["id"];
 
 export const FEATURES = [
 	{
@@ -152,7 +131,7 @@ export const STEPS = [
 	},
 	{
 		step: "03",
-		title: "Take the next step",
+		title: "Improve your relationship",
 		description:
 			"Turn ideas into date nights, coordinate the details, and celebrate what brings you closer.",
 	},

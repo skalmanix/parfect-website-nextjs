@@ -407,6 +407,109 @@ button {
 	margin-bottom: 0.15rem;
 }
 
+/* Comfortable tap targets for text links without shifting layout */
+.footer-link {
+	display: inline-block;
+	padding-block: 0.4rem;
+	margin-block: -0.4rem;
+	transition: color 0.2s ease;
+}
+
+.footer-link:hover {
+	color: var(--foreground);
+}
+
+.nav-link {
+	display: inline-flex;
+	align-items: center;
+	min-height: 44px;
+	padding-inline: 0.25rem;
+	transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+	color: var(--foreground);
+}
+
+/* Mobile navigation panel */
+.mobile-menu-panel {
+	position: fixed;
+	top: 4rem;
+	left: 0;
+	right: 0;
+	z-index: 55;
+	padding: 0.75rem clamp(1.25rem, 5vw, 2rem) 1.5rem;
+	background: color-mix(in srgb, var(--chrome) 92%, transparent);
+	backdrop-filter: blur(20px);
+	-webkit-backdrop-filter: blur(20px);
+	border-bottom: 1px solid var(--border);
+	transform: translateY(-8px);
+	opacity: 0;
+	visibility: hidden;
+	transition:
+		transform 0.25s cubic-bezier(0.22, 1, 0.36, 1),
+		opacity 0.25s ease,
+		visibility 0s linear 0.25s;
+}
+
+.mobile-menu-open {
+	transform: translateY(0);
+	opacity: 1;
+	visibility: visible;
+	transition:
+		transform 0.25s cubic-bezier(0.22, 1, 0.36, 1),
+		opacity 0.25s ease,
+		visibility 0s;
+}
+
+.mobile-menu-link {
+	display: flex;
+	align-items: center;
+	min-height: 48px;
+	font-family: var(--font-newsreader), Georgia, serif;
+	font-size: 1.25rem;
+	font-weight: 500;
+	color: var(--foreground);
+	border-bottom: 1px solid color-mix(in srgb, var(--border) 50%, transparent);
+	transition: color 0.2s ease;
+}
+
+.mobile-menu-link:hover {
+	color: var(--primary-strong);
+}
+
+.mobile-menu-backdrop {
+	position: fixed;
+	inset: 4rem 0 0 0;
+	z-index: 54;
+	background: color-mix(in srgb, var(--background) 55%, transparent);
+	backdrop-filter: blur(2px);
+	-webkit-backdrop-filter: blur(2px);
+	cursor: default;
+}
+
+.store-badge-link {
+	display: inline-flex;
+	border-radius: 0.6rem;
+	transition:
+		transform 0.2s cubic-bezier(0.22, 1, 0.36, 1),
+		opacity 0.2s ease;
+}
+
+.store-badge-link:hover {
+	transform: translateY(-2px);
+	opacity: 0.92;
+}
+
+.store-badge-link:active {
+	transform: scale(0.97);
+}
+
+.store-badge-link:focus-visible {
+	outline: 2px solid var(--primary);
+	outline-offset: 3px;
+}
+
 .preview-chip {
 	flex-shrink: 0;
 	white-space: nowrap;
