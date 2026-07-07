@@ -25,22 +25,35 @@ function MegaMenuShell({
 }) {
 	const [open, setOpen] = useState(false);
 	const rootRef = useRef<HTMLDivElement>(null);
+	const panelRef = useRef<HTMLDivElement>(null);
+	const buttonRef = useRef<HTMLButtonElement>(null);
 	const closeTimer = useRef<number | undefined>(undefined);
+
+	const returnFocus = () => {
+		if (panelRef.current?.contains(document.activeElement)) {
+			buttonRef.current?.focus();
+		}
+	};
+
+	const closeMenu = () => {
+		returnFocus();
+		setOpen(false);
+	};
 
 	const cancelClose = () => window.clearTimeout(closeTimer.current);
 	const scheduleClose = () => {
 		cancelClose();
-		closeTimer.current = window.setTimeout(() => setOpen(false), 120);
+		closeTimer.current = window.setTimeout(closeMenu, 120);
 	};
 
 	useEffect(() => {
 		if (!open) return;
 
 		const onKeyDown = (event: KeyboardEvent) => {
-			if (event.key === "Escape") setOpen(false);
+			if (event.key === "Escape") closeMenu();
 		};
 		const onPointerDown = (event: PointerEvent) => {
-			if (!rootRef.current?.contains(event.target as Node)) setOpen(false);
+			if (!rootRef.current?.contains(event.target as Node)) closeMenu();
 		};
 		document.addEventListener("keydown", onKeyDown);
 		document.addEventListener("pointerdown", onPointerDown);
@@ -61,6 +74,7 @@ function MegaMenuShell({
 			onMouseLeave={scheduleClose}
 		>
 			<button
+				ref={buttonRef}
 				type="button"
 				className="nav-link gap-1.5"
 				aria-expanded={open}
@@ -81,10 +95,12 @@ function MegaMenuShell({
 			</button>
 
 			<div
+				ref={panelRef}
 				className={`mega-menu-panel ${panelClassName} ${open ? "mega-menu-open" : ""}`}
+				inert={!open || undefined}
 				aria-hidden={!open}
 			>
-				{children(open, () => setOpen(false))}
+				{children(open, closeMenu)}
 			</div>
 		</div>
 	);

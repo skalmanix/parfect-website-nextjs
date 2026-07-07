@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
@@ -27,13 +27,21 @@ export function MobileMenu() {
 	const locale = useLocale() as Locale;
 	const guides = getGuides(locale);
 	const [open, setOpen] = useState(false);
-	const close = () => setOpen(false);
+	const buttonRef = useRef<HTMLButtonElement>(null);
+	const menuRef = useRef<HTMLDivElement>(null);
+
+	const close = () => {
+		if (menuRef.current?.contains(document.activeElement)) {
+			buttonRef.current?.focus();
+		}
+		setOpen(false);
+	};
 
 	useEffect(() => {
 		if (!open) return;
 
 		const onKeyDown = (event: KeyboardEvent) => {
-			if (event.key === "Escape") setOpen(false);
+			if (event.key === "Escape") close();
 		};
 		document.addEventListener("keydown", onKeyDown);
 		document.body.style.overflow = "hidden";
@@ -48,6 +56,7 @@ export function MobileMenu() {
 	return (
 		<div className="lg:hidden">
 			<button
+				ref={buttonRef}
 				type="button"
 				onClick={() => setOpen((v) => !v)}
 				aria-expanded={open}
@@ -72,8 +81,10 @@ export function MobileMenu() {
 			</button>
 
 			<div
+				ref={menuRef}
 				id="mobile-menu"
 				className={`mobile-menu-panel ${open ? "mobile-menu-open" : ""}`}
+				inert={!open || undefined}
 				aria-hidden={!open}
 			>
 				<nav aria-label={t("nav.mainNav")}>

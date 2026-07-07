@@ -126,7 +126,7 @@ export default async function LocaleLayout({ children, params }: Props) {
 	]);
 
 	return (
-		<html lang={locale} className="dark">
+		<html lang={locale} className="dark" data-scroll-behavior="smooth">
 			<body
 				className={`${hanken.variable} ${newsreader.variable} antialiased`}
 			>

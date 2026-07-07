@@ -133,6 +133,8 @@ export default async function AboutPage({ params }: Props) {
 										alt=""
 										fill
 										sizes="(min-width: 1024px) 420px, 90vw"
+										loading="eager"
+										fetchPriority="low"
 										className="object-cover"
 										quality={70}
 									/>

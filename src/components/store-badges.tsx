@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { APP_STORE_URL, PLAY_STORE_URL } from "@/lib/constants";
 
@@ -22,21 +21,19 @@ export function StoreBadges({ size = "md", className = "" }: StoreBadgesProps) {
 	return (
 		<div className={`flex flex-wrap items-center gap-3 ${className}`}>
 			<StoreLink href={APP_STORE_URL} label={t("appStore")}>
-				<Image
+				<img
 					src="/images/badges/app-store.svg"
 					alt={t("appStore")}
-					width={Math.round(height * 2.99)}
 					height={height}
-					style={{ height, width: "auto" }}
+					style={{ height: `${height}px`, width: "auto" }}
 				/>
 			</StoreLink>
 			<StoreLink href={PLAY_STORE_URL} label={t("playStore")}>
-				<Image
+				<img
 					src="/images/badges/google-play-badge.png"
 					alt={t("playStore")}
-					width={Math.round(height * 3.357)}
 					height={height}
-					style={{ height, width: "auto" }}
+					style={{ height: `${height}px`, width: "auto" }}
 				/>
 			</StoreLink>
 		</div>
