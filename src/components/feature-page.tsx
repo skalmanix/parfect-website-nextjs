@@ -170,6 +170,9 @@ export function getFeaturePageJsonLd(content: FeaturePageContent) {
 export function FeaturePage({ content }: { content: FeaturePageContent }) {
 	const Screen = screens[content.screen];
 	const jsonLd = getFeaturePageJsonLd(content);
+	const heroImage = content.slug.startsWith("/features/")
+		? `/images/features/${content.slug.split("/").pop()}.webp`
+		: "/images/people/couple-night-walk.webp";
 
 	return (
 		<>
@@ -185,11 +188,7 @@ export function FeaturePage({ content }: { content: FeaturePageContent }) {
 					<div className="absolute inset-0 app-gradient-bg" aria-hidden="true" />
 					<div className="absolute inset-0 opacity-50" aria-hidden="true">
 						<Image
-							src={
-								content.slug.startsWith("/for/")
-									? "/images/people/couple-night-walk.webp"
-									: "/images/people/couple-dance-kitchen.webp"
-							}
+							src={heroImage}
 							alt=""
 							fill
 							loading="eager"

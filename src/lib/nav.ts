@@ -10,25 +10,25 @@ export const FEATURE_LINKS = [
 		href: "/features/private-chat",
 		label: "Private chat",
 		description: "Encrypted messaging made only for two.",
-		image: "/images/hero-lock.webp",
+		image: "/images/features/private-chat.webp",
 	},
 	{
 		href: "/features/fantasies",
 		label: "Fantasies",
 		description: "Share what you've never said out loud.",
-		image: "/images/hero-together.webp",
+		image: "/images/features/fantasies.webp",
 	},
 	{
 		href: "/features/date-planner",
 		label: "Date planner",
 		description: "From \u201cwe should\u201d to a booked Saturday.",
-		image: "/images/hero-date.webp",
+		image: "/images/features/date-planner.webp",
 	},
 	{
 		href: "/features/bucket-list",
 		label: "Bucket list",
 		description: "Shared dreams that actually happen.",
-		image: "/images/hero-home.webp",
+		image: "/images/features/bucket-list.webp",
 	},
 ] as const;
 
