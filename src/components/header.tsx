@@ -4,9 +4,9 @@ import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { Logo } from "./logo";
 import { MobileMenu } from "./mobile-menu";
-import { MegaMenu, IdeasMegaMenu } from "./mega-menu";
+import { MegaMenu, IdeasMegaMenu, WhyParfectMenu } from "./mega-menu";
 import { LanguageSwitcher } from "./language-switcher";
-import { DOWNLOAD_PATH, NAV_ANCHORS } from "@/lib/nav";
+import { DOWNLOAD_PATH, HOW_IT_WORKS_LINK } from "@/lib/nav";
 
 export function Header() {
 	const t = useTranslations("Common");
@@ -24,16 +24,12 @@ export function Header() {
 					className="hidden lg:flex items-center gap-8 text-sm text-muted"
 					aria-label={t("nav.mainNav")}
 				>
-					<a href={NAV_ANCHORS[0].href} className="nav-link">
-						{t(`nav.${NAV_ANCHORS[0].key}`)}
-					</a>
 					<MegaMenu />
+					<a href={HOW_IT_WORKS_LINK.href} className="nav-link">
+						{t(`nav.${HOW_IT_WORKS_LINK.key}`)}
+					</a>
 					<IdeasMegaMenu />
-					{NAV_ANCHORS.slice(1).map((link) => (
-						<a key={link.href} href={link.href} className="nav-link">
-							{t(`nav.${link.key}`)}
-						</a>
-					))}
+					<WhyParfectMenu />
 				</nav>
 
 				<div className="flex items-center gap-2">

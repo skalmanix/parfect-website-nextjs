@@ -1,0 +1,38 @@
+{
+	"About": {
+		"metaTitle": "About Parfect — Why we built a private app for two",
+		"metaDescription": "Parfect is made in Sweden by people who needed it themselves: a private space for two in a world of feeds. Here's why it exists and what we believe.",
+		"eyebrow": "About Parfect",
+		"title": "Made for two, by people who needed it",
+		"intro": "Parfect wasn't born in a boardroom. It started at a kitchen table in Sweden, with two calendars, a grocery list, and a relationship that deserved better than the leftovers of the day.",
+		"storyHeading": "Why Parfect exists",
+		"story": [
+			"Like most couples, we didn't drift apart because something went wrong. We drifted because everything else went right on schedule: work, family logistics, the endless list of things a shared life needs. Our conversations slowly turned into coordination — who picks up, who cooks, what's left to pay.",
+			"The apps on our phones didn't help. Every one of them was built for an audience: feeds to scroll, followers to impress, strangers to match with. There was no app for the one relationship that actually mattered — the person next to us on the sofa.",
+			"So we built it. A space for exactly two people: a chat that feels intimate again, a question each evening that isn't about logistics, a place for the fantasies you never quite say out loud, and plans that turn \"we should\" into a date on the calendar.",
+			"Parfect is the app we wish someone had handed us years ago. We use it ourselves, every day — which is also why we care so much about how it's built."
+		],
+		"valuesHeading": "What we believe",
+		"values": [
+			{
+				"title": "Private by design",
+				"text": "No feeds, no followers, no audience. What you share is between the two of you — encrypted, invite-only, and yours to delete."
+			},
+			{
+				"title": "Two is the whole point",
+				"text": "We'll never add discovery, matching, or social features. Parfect starts where dating apps end."
+			},
+			{
+				"title": "Small moments beat grand gestures",
+				"text": "Relationships aren't saved by one big trip a year. They're kept alive by two minutes of real conversation on a Tuesday."
+			},
+			{
+				"title": "An honest business",
+				"text": "The core is free. Premium is optional. We sell no ads and no data — you're the customer, never the product."
+			}
+		],
+		"madeInHeading": "Made in Sweden",
+		"madeInText": "Parfect is designed and built in Sweden, and shaped by the couples who use it. If something feels off — or you have an idea that would make your relationship easier to care for — we genuinely want to hear it.",
+		"ctaHeading": "Try it together"
+	}
+}

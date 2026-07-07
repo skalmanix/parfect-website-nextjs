@@ -9,15 +9,18 @@ import {
 	DOWNLOAD_PATH,
 	FEATURE_LINKS,
 	IDEAS_PATH,
+	WHY_PARFECT_LINKS,
 } from "@/lib/nav";
 import { getGuides } from "@/lib/guides";
 import type { Locale } from "@/i18n/routing";
 
 function MegaMenuShell({
 	label,
+	panelClassName = "",
 	children,
 }: {
 	label: string;
+	panelClassName?: string;
 	children: (open: boolean, close: () => void) => ReactNode;
 }) {
 	const [open, setOpen] = useState(false);
@@ -78,7 +81,7 @@ function MegaMenuShell({
 			</button>
 
 			<div
-				className={`mega-menu-panel ${open ? "mega-menu-open" : ""}`}
+				className={`mega-menu-panel ${panelClassName} ${open ? "mega-menu-open" : ""}`}
 				aria-hidden={!open}
 			>
 				{children(open, () => setOpen(false))}
@@ -190,6 +193,36 @@ export function MegaMenu() {
 						/>
 					</div>
 				</div>
+			)}
+		</MegaMenuShell>
+	);
+}
+
+export function WhyParfectMenu() {
+	const t = useTranslations("Common");
+
+	return (
+		<MegaMenuShell label={t("nav.whyParfect")} panelClassName="mega-menu-panel-sm">
+			{(open, close) => (
+				<ul className="flex flex-col gap-1">
+					{WHY_PARFECT_LINKS.map((item) => (
+						<li key={item.href}>
+							<Link
+								href={item.href}
+								tabIndex={open ? 0 : -1}
+								onClick={close}
+								className="mega-menu-row group"
+							>
+								<span className="block font-medium text-sm text-foreground group-hover:text-primary-strong transition-colors">
+									{t(`links.${item.key}`)}
+								</span>
+								<span className="block text-xs text-muted leading-relaxed mt-0.5">
+									{t(`linkDescriptions.${item.key}`)}
+								</span>
+							</Link>
+						</li>
+					))}
+				</ul>
 			)}
 		</MegaMenuShell>
 	);

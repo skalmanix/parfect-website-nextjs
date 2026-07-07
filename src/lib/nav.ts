@@ -1,10 +1,15 @@
 /** Route paths with translation keys for labels. */
 
-export const NAV_ANCHORS = [
-	{ href: "/#experience", key: "experience" },
-	{ href: "/#how-it-works", key: "howItWorks" },
+export const HOW_IT_WORKS_LINK = {
+	href: "/#how-it-works",
+	key: "howItWorks",
+} as const;
+
+/** Trust cluster: social proof, who we are, safety. */
+export const WHY_PARFECT_LINKS = [
 	{ href: "/#couples", key: "testimonials" },
-	{ href: "/#privacy", key: "privacy" },
+	{ href: "/about", key: "aboutUs" },
+	{ href: "/#privacy", key: "privacySecurity" },
 ] as const;
 
 export const IDEAS_PATH = "/ideas";

@@ -17,7 +17,8 @@
 			"seasonal": "De temporada",
 			"openMenu": "Abrir menú",
 			"closeMenu": "Cerrar menú",
-			"mainNav": "Navegación principal"
+			"mainNav": "Navegación principal",
+			"whyParfect": "Por qué Parfect"
 		},
 		"footer": {
 			"tagline": "Una app privada para parejas — para charlas íntimas, sueños compartidos y planes que se hacen realidad.",
@@ -30,7 +31,9 @@
 			"privacyPolicy": "Política de privacidad",
 			"termsOfService": "Términos de servicio",
 			"support": "Soporte",
-			"copyright": "© {year} Parfect. Todos los derechos reservados."
+			"copyright": "© {year} Parfect. Todos los derechos reservados.",
+			"about": "Sobre Parfect",
+			"faq": "FAQ"
 		},
 		"languageSwitcher": {
 			"label": "Idioma",
@@ -78,7 +81,10 @@
 			"bucketList": "Bucket list",
 			"forParents": "Para padres",
 			"forLongDistance": "Para larga distancia",
-			"forMarriedCouples": "Para parejas casadas"
+			"forMarriedCouples": "Para parejas casadas",
+			"testimonials": "Historias de parejas",
+			"aboutUs": "Sobre Parfect",
+			"privacySecurity": "Privacidad y seguridad"
 		},
 		"linkDescriptions": {
 			"privateChat": "Mensajes cifrados — solo para vosotros dos.",
@@ -87,7 +93,14 @@
 			"bucketList": "Sueños compartidos que de verdad se cumplen.",
 			"forParents": "Pareja — no solo copadres.",
 			"forLongDistance": "Cerca, estéis donde estéis.",
-			"forMarriedCouples": "Seguid eligiéndoos."
+			"forMarriedCouples": "Seguid eligiéndoos.",
+			"testimonials": "Lo que dicen las parejas tras probar Parfect juntas.",
+			"aboutUs": "Quién está detrás de la app y por qué existe.",
+			"privacySecurity": "Cifrada, solo por invitación y hecha para dos."
+		},
+		"notFound": {
+			"title": "Esta página se ha perdido",
+			"text": "La página que buscas no existe o se ha movido. Quizá una de estas te ayude:"
 		}
 	}
 }

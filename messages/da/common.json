@@ -17,7 +17,8 @@
 			"seasonal": "Sæson",
 			"openMenu": "Åbn menu",
 			"closeMenu": "Luk menu",
-			"mainNav": "Hovednavigation"
+			"mainNav": "Hovednavigation",
+			"whyParfect": "Derfor Parfect"
 		},
 		"footer": {
 			"tagline": "En privat app til par — til intime samtaler, fælles drømme og planer, der bliver til virkelighed.",
@@ -30,7 +31,9 @@
 			"privacyPolicy": "Privatlivspolitik",
 			"termsOfService": "Servicevilkår",
 			"support": "Support",
-			"copyright": "© {year} Parfect. Alle rettigheder forbeholdes."
+			"copyright": "© {year} Parfect. Alle rettigheder forbeholdes.",
+			"about": "Om Parfect",
+			"faq": "FAQ"
 		},
 		"languageSwitcher": {
 			"label": "Sprog",
@@ -78,7 +81,10 @@
 			"bucketList": "Bucket list",
 			"forParents": "Til forældre",
 			"forLongDistance": "Til langdistancepar",
-			"forMarriedCouples": "Til gifte par"
+			"forMarriedCouples": "Til gifte par",
+			"testimonials": "Parrenes historier",
+			"aboutUs": "Om Parfect",
+			"privacySecurity": "Privatliv & sikkerhed"
 		},
 		"linkDescriptions": {
 			"privateChat": "Krypteret beskeder — kun til jer to.",
@@ -87,7 +93,14 @@
 			"bucketList": "Fælles drømme, der faktisk bliver til noget.",
 			"forParents": "Partnere — ikke bare medforældre.",
 			"forLongDistance": "Tæt på, uanset afstand.",
-			"forMarriedCouples": "Bliv ved med at vælge hinanden."
+			"forMarriedCouples": "Bliv ved med at vælge hinanden.",
+			"testimonials": "Hvad par siger efter at have prøvet Parfect sammen.",
+			"aboutUs": "Hvem der står bag appen, og hvorfor den findes.",
+			"privacySecurity": "Krypteret, kun via invitation og bygget til to."
+		},
+		"notFound": {
+			"title": "Denne side er blevet væk",
+			"text": "Siden du leder efter findes ikke eller er flyttet. Måske kan en af disse hjælpe:"
 		}
 	}
 }

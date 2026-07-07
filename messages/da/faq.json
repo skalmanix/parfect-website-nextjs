@@ -1,0 +1,102 @@
+{
+	"Faq": {
+		"metaTitle": "FAQ — Ofte stillede spørgsmål",
+		"metaDescription": "Alt par spørger om Parfect: hvordan parring fungerer, understøttelse af iPhone og Android, privatliv og kryptering, hvad der er gratis, og hvordan Premium fungerer.",
+		"eyebrow": "FAQ",
+		"title": "Ofte stillede spørgsmål",
+		"intro": "Korte, ærlige svar på det, par oftest spørger os om. Kan du ikke finde dit spørgsmål? Vi er kun en e-mail væk.",
+		"contactHeading": "Har du flere spørgsmål?",
+		"contactText": "Vores supportsider går dybere ned i fejlfinding — og for alt andet, skriv til os. Et rigtigt menneske læser hver besked.",
+		"contactLink": "Gå til support",
+		"categories": [
+			{
+				"id": "about",
+				"title": "Om Parfect",
+				"items": [
+					{
+						"question": "Hvad er Parfect?",
+						"answer": "Parfect er en privat app til præcis to personer: dig og din partner. Den kombinerer en intim chat, et aftenspørgsmål I besvarer sammen, et rum til at dele fantasier, en dateplanlægger og en fælles bucket list — uden feeds, følgere eller publikum."
+					},
+					{
+						"question": "Hvem er Parfect til?",
+						"answer": "Alle par, der vil holde sammen med vilje: nye par, der bygger vaner, forældre, der vil forblive partnere og ikke kun medforældre, langdistancepar og dem, der har været gift i årtier. Er I to, der vælger hinanden, er den til jer."
+					},
+					{
+						"question": "Er Parfect en datingapp?",
+						"answer": "Nej. Parfect er det modsatte af en datingapp — den begynder, hvor datingapps slutter. Der er ingen matching med fremmede og ingen profiler at bladre i. Du parrer dig med én person: din."
+					},
+					{
+						"question": "Virker Parfect på både iPhone og Android?",
+						"answer": "Ja. Parfect findes til både iOS og Android, og parringen virker på tværs af platforme — den ene kan have iPhone og den anden Android uden at miste nogen funktioner."
+					}
+				]
+			},
+			{
+				"id": "getting-started",
+				"title": "Kom godt i gang",
+				"items": [
+					{
+						"question": "Hvordan kommer vi i gang?",
+						"answer": "I downloader begge Parfect gratis. Den ene opretter jeres fælles rum og inviterer den anden. Fra download til parret tager det som regel under et minut."
+					},
+					{
+						"question": "Skal vi begge have appen?",
+						"answer": "Ja — Parfect er bygget til to. Chatten, aftenspørgsmålene og de delte lister lever mellem to parrede konti, så oplevelsen bliver først komplet, når din partner er med."
+					},
+					{
+						"question": "Er der en aldersgrænse?",
+						"answer": "Ja. Parfect er for voksne fra 18 år, da dele af appen — som fantasirummet — er designet til samtykkende voksne i et forhold."
+					},
+					{
+						"question": "Hvilke sprog findes Parfect på?",
+						"answer": "Parfect-hjemmesiden findes på engelsk, svensk, norsk, dansk, tysk og spansk. I appen skriver I til hinanden på det sprog, I vil — det er jeres private rum."
+					}
+				]
+			},
+			{
+				"id": "privacy",
+				"title": "Privatliv & sikkerhed",
+				"items": [
+					{
+						"question": "Hvem kan se det, vi deler?",
+						"answer": "Kun jer to. Der er ingen offentlige profiler, ingen feeds, og intet af det, I deler, er synligt for andre brugere. Jeres rum kræver invitation og forbliver privat."
+					},
+					{
+						"question": "Er vores beskeder krypterede?",
+						"answer": "Ja — beskeder krypteres under overførsel, og den private chat understøtter valgfri end-to-end-kryptering som et ekstra lag. I kan også slå forsvindende beskeder til, så følsomme samtaler ikke bliver liggende."
+					},
+					{
+						"question": "Hvad sker der med vores data, hvis vi går fra hinanden?",
+						"answer": "I kan til enhver tid ophæve parringen og slette jeres fælles rum. Sletningen fjerner det delte indhold for begge parter i overensstemmelse med vores privatlivspolitik — rummet tilhører jer begge, så det slutter for jer begge."
+					},
+					{
+						"question": "Kan jeg slette min konto og mine data?",
+						"answer": "Ja. Du kan slette din konto direkte i appen, og dine data fjernes som beskrevet i vores privatlivspolitik. Er noget uklart, hjælper vores support dig gerne."
+					}
+				]
+			},
+			{
+				"id": "premium",
+				"title": "Gratis & Premium",
+				"items": [
+					{
+						"question": "Hvad koster Parfect?",
+						"answer": "Parfect er gratis at downloade og gratis at bruge — chatten, spørgsmålene og de delte planer er en del af gratisoplevelsen. Premium er et valgfrit abonnement for par, der vil have mere."
+					},
+					{
+						"question": "Hvad er inkluderet i Premium?",
+						"answer": "Premium låser op for hele Parfect-oplevelsen oven på den gratis kerne. De præcise funktioner og aktuelle priser for din region vises altid på Premium-skærmen i appen."
+					},
+					{
+						"question": "Hvordan opsiger jeg Premium?",
+						"answer": "Abonnementer håndteres af App Store eller Google Play, så du opsiger der — i abonnementsindstillingerne på din butikskonto. Du beholder Premium indtil udgangen af den periode, du har betalt for."
+					},
+					{
+						"question": "Kan jeg få refusion?",
+						"answer": "Køb går gennem Apple og Google, så refusioner følger deres politikker og anmodes om gennem den butik, du købte fra. Går du i stå, så kontakt vores support, og vi peger dig i den rigtige retning."
+					}
+				]
+			}
+		]
+	}
+}

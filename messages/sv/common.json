@@ -17,7 +17,8 @@
 			"seasonal": "Säsong",
 			"openMenu": "Öppna menyn",
 			"closeMenu": "Stäng menyn",
-			"mainNav": "Huvudnavigering"
+			"mainNav": "Huvudnavigering",
+			"whyParfect": "Därför Parfect"
 		},
 		"footer": {
 			"tagline": "En privat app för par — för intim chatt, gemensamma drömmar och att göra dem till verklighet.",
@@ -30,7 +31,9 @@
 			"privacyPolicy": "Integritetspolicy",
 			"termsOfService": "Användarvillkor",
 			"support": "Support",
-			"copyright": "© {year} Parfect. Alla rättigheter förbehållna."
+			"copyright": "© {year} Parfect. Alla rättigheter förbehållna.",
+			"about": "Om Parfect",
+			"faq": "FAQ"
 		},
 		"languageSwitcher": {
 			"label": "Språk",
@@ -78,7 +81,10 @@
 			"bucketList": "Bucket list",
 			"forParents": "För föräldrar",
 			"forLongDistance": "För distansförhållanden",
-			"forMarriedCouples": "För gifta par"
+			"forMarriedCouples": "För gifta par",
+			"testimonials": "Parens berättelser",
+			"aboutUs": "Om Parfect",
+			"privacySecurity": "Integritet & säkerhet"
 		},
 		"linkDescriptions": {
 			"privateChat": "Krypterad chatt skapad bara för två.",
@@ -87,7 +93,14 @@
 			"bucketList": "Gemensamma drömmar som faktiskt blir av.",
 			"forParents": "Partners, inte bara medföräldrar.",
 			"forLongDistance": "Nära varandra, var ni än är.",
-			"forMarriedCouples": "Fortsätt välja varandra."
+			"forMarriedCouples": "Fortsätt välja varandra.",
+			"testimonials": "Vad par säger efter att ha provat Parfect tillsammans.",
+			"aboutUs": "Vilka som står bakom appen och varför den finns.",
+			"privacySecurity": "Krypterat, endast via inbjudan och byggt för två."
+		},
+		"notFound": {
+			"title": "Den här sidan har gått vilse",
+			"text": "Sidan du letar efter finns inte eller har flyttats. Kanske hjälper någon av dessa:"
 		}
 	}
 }

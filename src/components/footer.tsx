@@ -99,12 +99,22 @@ export function Footer() {
 									{t("footer.download")}
 								</Link>
 							</li>
+							<li>
+								<Link href="/about" className="footer-link">
+									{t("footer.about")}
+								</Link>
+							</li>
 						</ul>
 					</div>
 
 					<div>
 						<h3 className="text-sm font-medium mb-4">{t("footer.legal")}</h3>
 						<ul className="space-y-2 text-sm text-muted">
+							<li>
+								<Link href="/faq" className="footer-link">
+									{t("footer.faq")}
+								</Link>
+							</li>
 							<li>
 								<Link href={LEGAL_LINKS.privacy} className="footer-link">
 									{t("footer.privacyPolicy")}

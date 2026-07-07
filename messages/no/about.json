@@ -1,0 +1,38 @@
+{
+	"About": {
+		"metaTitle": "Om Parfect — Derfor bygde vi en privat app for to",
+		"metaDescription": "Parfect er laget i Sverige av folk som trengte den selv: et privat rom for to i en verden av feeder. Her er hvorfor den finnes og hva vi tror på.",
+		"eyebrow": "Om Parfect",
+		"title": "Laget for to, av folk som trengte den",
+		"intro": "Parfect ble ikke født i et styrerom. Den begynte ved et kjøkkenbord i Sverige, med to kalendere, en handleliste og et forhold som fortjente mer enn dagens rester.",
+		"storyHeading": "Derfor finnes Parfect",
+		"story": [
+			"Som de fleste par gled vi ikke fra hverandre fordi noe gikk galt. Vi gled fra hverandre fordi alt annet gikk riktig etter planen: jobb, familielogistikk og den endeløse listen av ting et felles liv krever. Samtalene våre ble sakte til koordinering — hvem henter, hvem lager mat, hva gjenstår å betale.",
+			"Appene på telefonene våre hjalp ikke. Hver eneste en var bygget for et publikum: feeder å scrolle, følgere å imponere, fremmede å matche med. Det fantes ingen app for det ene forholdet som faktisk betydde noe — personen ved siden av oss i sofaen.",
+			"Så vi bygde den. Et rom for nøyaktig to personer: en chat som føles intim igjen, et spørsmål hver kveld som ikke handler om logistikk, et sted for fantasiene man aldri helt sier høyt, og planer som gjør «vi burde» til en dato i kalenderen.",
+			"Parfect er appen vi skulle ønske noen hadde gitt oss for flere år siden. Vi bruker den selv, hver dag — og det er også derfor vi bryr oss så mye om hvordan den er bygget."
+		],
+		"valuesHeading": "Hva vi tror på",
+		"values": [
+			{
+				"title": "Privat i sin kjerne",
+				"text": "Ingen feeder, ingen følgere, ikke noe publikum. Det dere deler blir mellom dere to — kryptert, kun via invitasjon og deres å slette."
+			},
+			{
+				"title": "To er hele poenget",
+				"text": "Vi kommer aldri til å legge til matching eller sosiale funksjoner. Parfect begynner der datingapper slutter."
+			},
+			{
+				"title": "Små øyeblikk slår store gester",
+				"text": "Forhold reddes ikke av én stor reise i året. De holdes i live av to minutter ekte samtale en helt vanlig tirsdag."
+			},
+			{
+				"title": "En ærlig forretningsmodell",
+				"text": "Kjernen er gratis. Premium er valgfritt. Vi selger ingen annonser og ingen data — du er kunden, aldri produktet."
+			}
+		],
+		"madeInHeading": "Laget i Sverige",
+		"madeInText": "Parfect designes og bygges i Sverige og formes av parene som bruker den. Kjennes noe feil — eller har du en idé som ville gjort det lettere å ta vare på forholdet deres — vil vi gjerne høre den.",
+		"ctaHeading": "Prøv den sammen"
+	}
+}

@@ -53,7 +53,7 @@ function getGuideJsonLd(guide: Guide, locale: Locale, breadcrumbIdeas: string) {
 			author: {
 				"@type": "Organization",
 				name: "Parfect",
-				url: SITE_URL,
+				url: `${SITE_URL}/about`,
 			},
 			publisher: {
 				"@type": "Organization",

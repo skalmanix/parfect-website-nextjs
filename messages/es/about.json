@@ -1,0 +1,38 @@
+{
+	"About": {
+		"metaTitle": "Sobre Parfect — Por qué creamos una app privada para dos",
+		"metaDescription": "Parfect se hace en Suecia por personas que la necesitaban: un espacio privado para dos en un mundo de feeds. Por qué existe y en qué creemos.",
+		"eyebrow": "Sobre Parfect",
+		"title": "Hecha para dos, por personas que la necesitaban",
+		"intro": "Parfect no nació en una sala de juntas. Empezó en una mesa de cocina en Suecia, con dos calendarios, una lista de la compra y una relación que merecía algo mejor que las sobras del día.",
+		"storyHeading": "Por qué existe Parfect",
+		"story": [
+			"Como la mayoría de las parejas, no nos distanciamos porque algo saliera mal. Nos distanciamos porque todo lo demás salía bien según lo previsto: el trabajo, la logística familiar, la lista interminable de cosas que exige una vida compartida. Nuestras conversaciones se convirtieron poco a poco en coordinación — quién recoge, quién cocina, qué queda por pagar.",
+			"Las apps de nuestros móviles no ayudaban. Todas estaban hechas para un público: feeds que recorrer, seguidores a los que impresionar, desconocidos con los que hacer match. No había ninguna app para la única relación que de verdad importaba — la persona sentada a nuestro lado en el sofá.",
+			"Así que la construimos. Un espacio para exactamente dos personas: un chat que vuelve a sentirse íntimo, una pregunta cada noche que no va de logística, un lugar para esas fantasías que nunca llegas a decir en voz alta, y planes que convierten el \"deberíamos\" en una fecha en el calendario.",
+			"Parfect es la app que nos habría gustado que alguien nos diera hace años. La usamos nosotros mismos, cada día — y por eso nos importa tanto cómo está construida."
+		],
+		"valuesHeading": "En qué creemos",
+		"values": [
+			{
+				"title": "Privada por diseño",
+				"text": "Sin feeds, sin seguidores, sin público. Lo que compartís queda entre vosotros dos — cifrado, solo por invitación y vuestro para borrarlo."
+			},
+			{
+				"title": "Dos es todo el sentido",
+				"text": "Nunca añadiremos matching ni funciones sociales. Parfect empieza donde terminan las apps de citas."
+			},
+			{
+				"title": "Los pequeños momentos ganan a los grandes gestos",
+				"text": "Las relaciones no se salvan con un gran viaje al año. Se mantienen vivas con dos minutos de conversación real un martes cualquiera."
+			},
+			{
+				"title": "Un negocio honesto",
+				"text": "Lo esencial es gratis. Premium es opcional. No vendemos anuncios ni datos — tú eres el cliente, nunca el producto."
+			}
+		],
+		"madeInHeading": "Hecha en Suecia",
+		"madeInText": "Parfect se diseña y se construye en Suecia, y la moldean las parejas que la usan. Si algo no encaja — o tienes una idea que haría más fácil cuidar vuestra relación — de verdad queremos escucharla.",
+		"ctaHeading": "Probadla juntos"
+	}
+}

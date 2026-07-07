@@ -1,0 +1,38 @@
+{
+	"About": {
+		"metaTitle": "Om Parfect — Därför byggde vi en privat app för två",
+		"metaDescription": "Parfect är skapad i Sverige av människor som själva behövde den: ett privat utrymme för två i en värld av flöden. Här är varför den finns och vad vi tror på.",
+		"eyebrow": "Om Parfect",
+		"title": "Skapad för två, av människor som behövde den",
+		"intro": "Parfect föddes inte i ett styrelserum. Den började vid ett köksbord i Sverige, med två kalendrar, en inköpslista och en relation som förtjänade mer än dagens rester.",
+		"storyHeading": "Därför finns Parfect",
+		"story": [
+			"Som de flesta par gled vi inte isär för att något gick fel. Vi gled isär för att allt annat gick rätt enligt schemat: jobb, familjelogistik och den oändliga listan av saker ett gemensamt liv kräver. Våra samtal blev sakta till samordning — vem hämtar, vem lagar mat, vad är kvar att betala.",
+			"Apparna i våra telefoner hjälpte inte. Varenda en var byggd för en publik: flöden att scrolla, följare att imponera på, främlingar att matcha med. Det fanns ingen app för den enda relation som faktiskt betydde något — personen bredvid oss i soffan.",
+			"Så vi byggde den. Ett utrymme för exakt två personer: en chatt som känns intim igen, en fråga varje kväll som inte handlar om logistik, en plats för fantasierna man aldrig riktigt säger högt, och planer som gör \"vi borde\" till ett datum i kalendern.",
+			"Parfect är appen vi önskar att någon hade gett oss för flera år sedan. Vi använder den själva, varje dag — och det är också därför vi bryr oss så mycket om hur den är byggd."
+		],
+		"valuesHeading": "Vad vi tror på",
+		"values": [
+			{
+				"title": "Privat i grunden",
+				"text": "Inga flöden, inga följare, ingen publik. Det ni delar stannar mellan er två — krypterat, endast via inbjudan och ert att radera."
+			},
+			{
+				"title": "Två är hela poängen",
+				"text": "Vi kommer aldrig att lägga till matchning eller sociala funktioner. Parfect börjar där dejtingappar slutar."
+			},
+			{
+				"title": "Små stunder slår stora gester",
+				"text": "Relationer räddas inte av en stor resa om året. De hålls levande av två minuter äkta samtal en helt vanlig tisdag."
+			},
+			{
+				"title": "En ärlig affärsmodell",
+				"text": "Kärnan är gratis. Premium är frivilligt. Vi säljer inga annonser och inga data — du är kunden, aldrig produkten."
+			}
+		],
+		"madeInHeading": "Skapad i Sverige",
+		"madeInText": "Parfect designas och byggs i Sverige och formas av paren som använder den. Känns något fel — eller har du en idé som skulle göra det lättare att vårda er relation — vill vi verkligen höra den.",
+		"ctaHeading": "Prova tillsammans"
+	}
+}

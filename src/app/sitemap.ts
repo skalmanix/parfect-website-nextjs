@@ -18,6 +18,8 @@ const STATIC_PAGES = [
 	"/",
 	"/download",
 	"/ideas",
+	"/about",
+	"/faq",
 	"/support",
 	"/privacy",
 	"/terms",

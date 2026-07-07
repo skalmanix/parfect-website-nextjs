@@ -8,8 +8,9 @@ import {
 	AUDIENCE_LINKS,
 	DOWNLOAD_PATH,
 	FEATURE_LINKS,
+	HOW_IT_WORKS_LINK,
 	IDEAS_PATH,
-	NAV_ANCHORS,
+	WHY_PARFECT_LINKS,
 } from "@/lib/nav";
 import { getGuides } from "@/lib/guides";
 import type { Locale } from "@/i18n/routing";
@@ -149,18 +150,28 @@ export function MobileMenu() {
 						</li>
 					</ul>
 
-					<p className="eyebrow text-xs mt-5 mb-1">{t("footer.explore")}</p>
+					<p className="eyebrow text-xs mt-5 mb-1">{t("nav.whyParfect")}</p>
 					<ul>
-						{NAV_ANCHORS.map((link) => (
+						<li>
+							<a
+								href={HOW_IT_WORKS_LINK.href}
+								onClick={close}
+								tabIndex={tabIndex}
+								className="mobile-menu-link"
+							>
+								{t(`nav.${HOW_IT_WORKS_LINK.key}`)}
+							</a>
+						</li>
+						{WHY_PARFECT_LINKS.map((link) => (
 							<li key={link.href}>
-								<a
+								<Link
 									href={link.href}
 									onClick={close}
 									tabIndex={tabIndex}
 									className="mobile-menu-link"
 								>
-									{t(`nav.${link.key}`)}
-								</a>
+									{t(`links.${link.key}`)}
+								</Link>
 							</li>
 						))}
 					</ul>

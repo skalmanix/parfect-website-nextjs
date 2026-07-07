@@ -1,0 +1,102 @@
+{
+	"Faq": {
+		"metaTitle": "FAQ — Frequently Asked Questions",
+		"metaDescription": "Everything couples ask about Parfect: how pairing works, iPhone and Android support, privacy and encryption, what's free, and how Premium works.",
+		"eyebrow": "FAQ",
+		"title": "Frequently asked questions",
+		"intro": "Short, honest answers to what couples ask us most. Can't find yours? We're one email away.",
+		"contactHeading": "Still have a question?",
+		"contactText": "Our support pages cover troubleshooting in more depth — and for everything else, write to us. A real person reads every message.",
+		"contactLink": "Visit support",
+		"categories": [
+			{
+				"id": "about",
+				"title": "About Parfect",
+				"items": [
+					{
+						"question": "What is Parfect?",
+						"answer": "Parfect is a private app for exactly two people: you and your partner. It combines an intimate chat, a nightly question to answer together, a space for sharing fantasies, a date planner, and a shared bucket list — with no feeds, no followers, and no audience."
+					},
+					{
+						"question": "Who is Parfect for?",
+						"answer": "Any couple that wants to stay close on purpose: new couples building habits, parents trying to stay partners and not just co-parents, long-distance couples, and people married for decades. If you're two people who choose each other, it's for you."
+					},
+					{
+						"question": "Is Parfect a dating app?",
+						"answer": "No. Parfect is the opposite of a dating app — it starts where dating apps end. There's no discovery, no matching with strangers, and no profiles to browse. You pair with one person: yours."
+					},
+					{
+						"question": "Does Parfect work on both iPhone and Android?",
+						"answer": "Yes. Parfect runs on both iOS and Android, and pairing works across platforms — one of you can be on iPhone and the other on Android without losing any features."
+					}
+				]
+			},
+			{
+				"id": "getting-started",
+				"title": "Getting started",
+				"items": [
+					{
+						"question": "How do we get started?",
+						"answer": "Both of you download Parfect for free. One partner creates your shared space and sends the other an invite. From download to paired usually takes under a minute."
+					},
+					{
+						"question": "Do we both need the app?",
+						"answer": "Yes — Parfect is built for two. The chat, the nightly prompts, and the shared lists all live between two paired accounts, so the experience only makes sense once your partner joins."
+					},
+					{
+						"question": "Is there an age requirement?",
+						"answer": "Yes. Parfect is for adults aged 18 and over, since parts of the app — like the fantasies space — are designed for consenting adults in a relationship."
+					},
+					{
+						"question": "What languages is Parfect available in?",
+						"answer": "The Parfect website is available in English, Swedish, Norwegian, Danish, German, and Spanish. In the app, you can write to each other in any language you like — it's your private space."
+					}
+				]
+			},
+			{
+				"id": "privacy",
+				"title": "Privacy & security",
+				"items": [
+					{
+						"question": "Who can see what we share?",
+						"answer": "Only the two of you. There are no public profiles, no feeds, and nothing you share is visible to other users. Your space is invite-only and stays that way."
+					},
+					{
+						"question": "Are our messages encrypted?",
+						"answer": "Yes — messages are encrypted in transit, and the private chat supports optional end-to-end encryption for an extra layer. You can also turn on disappearing messages so sensitive conversations don't stick around."
+					},
+					{
+						"question": "What happens to our data if we break up?",
+						"answer": "You can unpair and delete your shared space at any time. Deleting removes the shared content for both partners in line with our Privacy Policy — the space belongs to both of you, so it ends for both of you."
+					},
+					{
+						"question": "Can I delete my account and data?",
+						"answer": "Yes. You can delete your account from inside the app, and your data is removed as described in our Privacy Policy. If anything is unclear, our support team will help you through it."
+					}
+				]
+			},
+			{
+				"id": "premium",
+				"title": "Free & Premium",
+				"items": [
+					{
+						"question": "How much does Parfect cost?",
+						"answer": "Parfect is free to download and free to use — the chat, prompts, and shared plans are all part of the free experience. Premium is an optional subscription for couples who want more."
+					},
+					{
+						"question": "What's included in Premium?",
+						"answer": "Premium unlocks the full Parfect experience on top of the free core. The exact features and current pricing for your region are always shown on the Premium screen inside the app."
+					},
+					{
+						"question": "How do I cancel Premium?",
+						"answer": "Subscriptions are handled by the App Store or Google Play, so you cancel there — in your store account's subscription settings. You keep Premium until the end of the period you've paid for."
+					},
+					{
+						"question": "Can I get a refund?",
+						"answer": "Purchases go through Apple and Google, so refunds follow their policies and are requested through the store you bought from. If you get stuck, contact our support and we'll point you in the right direction."
+					}
+				]
+			}
+		]
+	}
+}
