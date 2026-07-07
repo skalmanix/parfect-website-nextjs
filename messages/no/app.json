@@ -1,0 +1,79 @@
+{
+	"AppPreview": {
+		"eyebrow": "Føles som appen",
+		"heading": "Se hva dere går inn i",
+		"description": "Utforsk skjermene akkurat slik de ser ut i Parfect — før dere i det hele tatt laster ned.",
+		"cta": "Prøv selv — gratis",
+		"tabLabel": "{tab}-fanen",
+		"screenLabels": {
+			"chat": "Privat chat",
+			"fantasies": "Fantasier",
+			"together": "Sammen",
+			"date": "Datekveld"
+		},
+		"tablistAria": "Appskjermer"
+	},
+	"AppTabs": {
+		"chat": "Chat",
+		"fantasies": "Fantasier",
+		"together": "Sammen",
+		"ariaLabel": "Forhåndsvisning av appnavigasjon"
+	},
+	"HomeScreen": {
+		"ariaLabel": "Parfect-hjemskjerm med kveldens spørsmål og hurtighandlinger",
+		"goodEvening": "God kveld",
+		"coupleNames": "Emma & Liam",
+		"streakDays": "12 dagers streak",
+		"tonightsPrompt": "Kveldens spørsmål",
+		"promptQuestion": "Hva er en liten ting partneren din gjorde nylig som fikk deg til å føle deg elsket?",
+		"dateNightPlanned": "Datekveld planlagt",
+		"dateTime": "Lørdag · 19:30"
+	},
+	"ChatScreen": {
+		"ariaLabel": "Parfect privat chat med en intim samtale",
+		"partnerName": "Emma",
+		"onlineNow": "online nå",
+		"todayTime": "I dag 21:12",
+		"message1": "I kveld, etter at barna har sovnet… jeg har en overraskelse til deg",
+		"message2": "Nå kan jeg ikke slutte å tenke på det 😏",
+		"message3": "Bra. Ha på deg det smilet jeg elsker.",
+		"disappearingMessages": "Forsvinnende meldinger på",
+		"messagePlaceholder": "Melding…"
+	},
+	"FantasiesScreen": {
+		"ariaLabel": "Parfect fantasiskjerm med kveldens spørsmål og en invitasjon",
+		"title": "Fantasier",
+		"tonightsPrompt": "Kveldens spørsmål",
+		"promptQuestion": "Hvilken fantasi har du aldri sagt høyt?",
+		"shareYours": "Del din",
+		"inviteSent": "Emma sendte deg en invitasjon",
+		"invitePreview": "\"Noe jeg har fantasert om til vår jubileum…\"",
+		"respond": "Svar",
+		"notRightNow": "Ikke akkurat nå",
+		"bothSaidYes": "Dere sa begge ja",
+		"bucketListAdded": "En helg borte, ingen planer — den er nå på bucket listen deres."
+	},
+	"TogetherScreen": {
+		"ariaLabel": "Parfect sammen-skjerm med kommende date og bucket list",
+		"title": "Sammen",
+		"planned": "PLANLAGT",
+		"rooftopDinner": "Middag på taket",
+		"dateDetails": "Lørdag · 19:30 · Barnepasser bekreftet",
+		"bucketList": "Bucket list",
+		"itemCompleted": "Langsom dans på kjøkkenet",
+		"itemFromFantasy": "Helgetur til kystby",
+		"fromAFantasy": "FRA EN FANTASI",
+		"itemPending": "Soloppgangstur, bare oss",
+		"addSomethingNew": "Legg til noe nytt"
+	},
+	"DateScreen": {
+		"ariaLabel": "Parfect datekveld-detaljskjerm",
+		"title": "Datekveld",
+		"planned": "PLANLAGT",
+		"rooftopDinner": "Middag på taket",
+		"dateTime": "Lørdag 12. juli · 19:30",
+		"location": "Terrazza, sentrum",
+		"babysitterConfirmed": "Barnepasser bekreftet",
+		"itsADate": "Det blir en date"
+	}
+}

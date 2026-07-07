@@ -1,0 +1,921 @@
+{
+	"FeaturePages": {
+		"privateChat": {
+			"slug": "/features/private-chat",
+			"metaTitle": "Private Chat for Couples — Encrypted Messaging for Two",
+			"metaDescription": "A private, encrypted chat built only for you and your partner. Disappearing messages, content-free notifications, and no one else in the room. Free on iOS & Android.",
+			"ogTitle": "Private Chat for Couples | Parfect",
+			"ogDescription": "An encrypted chat made only for two — disappearing messages, app lock, and conversations that stay yours.",
+			"eyebrow": "Private chat",
+			"titlePlain": "Private Chat for Couples",
+			"titleBefore": "A chat that belongs to",
+			"titleHighlight": "you two",
+			"titleAfter": "— and no one else",
+			"intro": "Most messaging apps carry your whole life: work threads, group chats, family logistics. Parfect gives your relationship its own room — encrypted, intimate, and free of distractions.",
+			"screen": "chat",
+			"tab": "chat",
+			"story": {
+				"heading": "Why couples need a separate space to talk",
+				"paragraphs": [
+					"Think about where your most intimate conversations live right now. Squeezed between a delivery notification and a work ping, in an app where a mistyped name could send a private thought to the wrong group chat. That context changes what you're willing to say — most couples simply stop saying certain things at all.",
+					"Parfect is different by design. When you open it, there is exactly one conversation, with exactly one person. No feeds to scroll, no contacts list, no status games. Just the thread you share with your partner — which makes it easier to be honest, playful, and vulnerable in ways a general-purpose messenger never invites.",
+					"And because some words are meant for a moment rather than a permanent record, you can set messages to disappear. Say the bold thing. It doesn't have to live in a searchable archive forever."
+				]
+			},
+			"image": {
+				"src": "/images/hero-onboarding.webp",
+				"alt": "A couple sitting close together under string lights at dusk",
+				"caption": "Some conversations deserve their own room."
+			},
+			"benefits": {
+				"heading": "Built for intimacy, not for everyone",
+				"intro": "Every design decision in Parfect's chat answers one question: does this make it easier for two people to feel close?",
+				"items": [
+					{
+						"title": "End-to-end encryption",
+						"description": "Optional E2EE means your message text is encrypted on your device before it's sent. Not even Parfect can read it.",
+						"icon": "lock"
+					},
+					{
+						"title": "Disappearing messages",
+						"description": "Set messages to vanish after they've been seen. Perfect for the things you want to say once — not archive forever.",
+						"icon": "clock"
+					},
+					{
+						"title": "Content-free notifications",
+						"description": "Push alerts never show what was written — only that your partner reached out. Nothing intimate on your lock screen.",
+						"icon": "bell"
+					},
+					{
+						"title": "App lock & biometrics",
+						"description": "Protect the app with a PIN or Face ID. Hand your phone to a friend or your kid without a second thought.",
+						"icon": "shield"
+					},
+					{
+						"title": "Read receipts that matter",
+						"description": "With only one person in the room, a read receipt isn't anxiety — it's connection. You always know you've been heard.",
+						"icon": "chat"
+					},
+					{
+						"title": "From words to plans",
+						"description": "When a message sparks an idea — a trip, a date, a promise — send it to your shared bucket list without leaving the conversation.",
+						"icon": "star"
+					}
+				]
+			},
+			"steps": {
+				"heading": "How private chat works in Parfect",
+				"intro": "From download to your first message in under two minutes.",
+				"items": [
+					{
+						"title": "Pair with your partner",
+						"description": "Create your account and send your partner a private invite code. Once they enter it, the room is yours — permanently, and only yours."
+					},
+					{
+						"title": "Make it yours",
+						"description": "Turn on end-to-end encryption, choose how long disappearing messages live, and set up app lock — each in one tap from Settings."
+					},
+					{
+						"title": "Say the first thing",
+						"description": "Start with something small or something brave. Daily prompts are there when you want a spark, and it's okay to start slow."
+					}
+				]
+			},
+			"testimonial": {
+				"quote": "We message all day on regular apps — groceries, pickups, logistics. Parfect is where we're still a couple. Opening it feels like closing a door behind us.",
+				"names": "Mia & Oscar",
+				"context": "Together 9 years",
+				"image": "/images/people/couple-sofa.webp"
+			},
+			"faqs": [
+				{
+					"question": "Is Parfect's chat really private?",
+					"answer": "Yes. Parfect is built for exactly two people. There are no group chats, no public profiles, and no discovery features. Message text can be end-to-end encrypted so that no one — including Parfect — can read it, and push notifications never reveal message content."
+				},
+				{
+					"question": "How do disappearing messages work?",
+					"answer": "You can set messages to automatically delete after they've been seen. This is ideal for intimate messages you'd rather not keep in a permanent archive. Both partners can see when disappearing mode is on, so there are never surprises."
+				},
+				{
+					"question": "Can anyone else join our chat?",
+					"answer": "No. Pairing requires a single-use private invite code, and each account can only be paired with one partner. If you ever unlink, your couple's shared data is removed from Parfect's servers."
+				},
+				{
+					"question": "What happens if someone picks up my phone?",
+					"answer": "You can protect Parfect with a PIN code or biometrics (Face ID / fingerprint), so the app stays locked even if your phone is unlocked. Notifications are content-free by default, so nothing intimate ever appears on your lock screen."
+				},
+				{
+					"question": "Is the chat free?",
+					"answer": "Yes — Parfect is free to download on iOS and Android, and private chat is a core part of the free experience."
+				}
+			],
+			"related": [
+				{
+					"href": "/features/fantasies",
+					"label": "Fantasies",
+					"description": "Gentle prompts that help you share what you've never said out loud."
+				},
+				{
+					"href": "/features/date-planner",
+					"label": "Date planner",
+					"description": "Turn good conversations into real plans — date nights, sitter and all."
+				},
+				{
+					"href": "/for/long-distance",
+					"label": "For long-distance couples",
+					"description": "How couples use Parfect to stay close across time zones."
+				}
+			],
+			"cta": {
+				"heading": "Give your relationship its own room",
+				"text": "Download Parfect free, pair with your partner in under two minutes, and start the conversation that's just for you two."
+			}
+		},
+		"fantasies": {
+			"slug": "/features/fantasies",
+			"metaTitle": "Fantasies — Share What You Imagine, at Your Own Pace",
+			"metaDescription": "Parfect's fantasy prompts help couples open up about desires safely — share when you're ready, and 'not right now' is always okay. Private, encrypted, free.",
+			"ogTitle": "Share Your Fantasies Safely | Parfect",
+			"ogDescription": "Gentle prompts that help couples say the things they've been meaning to say — at their own pace, in private.",
+			"eyebrow": "Fantasies",
+			"titlePlain": "Fantasies",
+			"titleBefore": "Say the things you've",
+			"titleHighlight": "never said",
+			"titleAfter": "out loud",
+			"intro": "Every couple has dreams and desires that stay unspoken — not because they don't matter, but because starting the conversation feels impossible. Parfect gives you a gentle, private way to begin.",
+			"screen": "fantasies",
+			"tab": "fantasies",
+			"story": {
+				"heading": "The conversation most couples never have",
+				"paragraphs": [
+					"Research on long-term relationships keeps pointing to the same thing: couples who talk openly about their desires report deeper satisfaction and stronger connection. And yet it's the conversation most of us avoid — the fear of being misunderstood, of awkwardness, of rocking a good thing, keeps fantasies locked away for years.",
+					"Parfect lowers the stakes. Instead of a high-pressure face-to-face confession, you get a private space with thoughtful prompts — from sweet to daring — that make sharing feel like a game you play together rather than a test you can fail. You choose what to share and when. Your partner responds when they're ready.",
+					"Crucially, \"not right now\" is a first-class answer. Declining an invite is always okay and never punished — because real openness only grows where there's real safety. Over time, the small shares become bigger ones, and the things you both imagined quietly become plans you make together."
+				]
+			},
+			"image": {
+				"src": "/images/hero-together.webp",
+				"alt": "Two hands reaching toward each other surrounded by rose petals",
+				"caption": "Openness grows where it feels safe."
+			},
+			"benefits": {
+				"heading": "Designed to make opening up feel easy",
+				"intro": "Fantasies in Parfect are built around consent, pace, and play — never pressure.",
+				"items": [
+					{
+						"title": "Daily prompts",
+						"description": "A fresh question each day — from playful to profound — so you never have to invent the conversation from scratch.",
+						"icon": "sparkles"
+					},
+					{
+						"title": "Share or ask",
+						"description": "Send a fantasy of your own, or invite your partner to share one. Either way, it starts with curiosity, not confrontation.",
+						"icon": "chat"
+					},
+					{
+						"title": "\"Not right now\" is okay",
+						"description": "Every invite can be gently declined. No guilt, no scoreboard — just respect for each other's pace.",
+						"icon": "heart"
+					},
+					{
+						"title": "Completely private",
+						"description": "Fantasies live inside your encrypted couple space. No community, no strangers, no algorithm reading along.",
+						"icon": "lock"
+					},
+					{
+						"title": "From dream to bucket list",
+						"description": "When a shared fantasy is ready to become real, promote it to your bucket list and start planning it together.",
+						"icon": "star"
+					},
+					{
+						"title": "Grows with you",
+						"description": "Start sweet and go deeper over time. The prompts adapt to what you're both comfortable with — you set the temperature.",
+						"icon": "map"
+					}
+				]
+			},
+			"steps": {
+				"heading": "How sharing a fantasy works",
+				"intro": "Three small steps between \"never said it\" and \"we're planning it\".",
+				"items": [
+					{
+						"title": "Get a spark",
+						"description": "Open tonight's prompt, or start from something that's been on your mind. Write it down privately first — no one sees it until you decide."
+					},
+					{
+						"title": "Share when ready",
+						"description": "Send it to your partner as an invite. They can respond, ask questions, share their own — or say \"not right now\" with one tap."
+					},
+					{
+						"title": "Make it real (if you want)",
+						"description": "Some fantasies are lovely as words. Others deserve a date on the calendar. Promote the ones you both choose to your shared bucket list."
+					}
+				]
+			},
+			"testimonial": {
+				"quote": "The prompts started conversations we'd been avoiding for years. Knowing 'not right now' is always okay made all the difference — we finally felt safe to be honest.",
+				"names": "Elin & Jonas",
+				"context": "Together 8 years",
+				"image": "/images/people/couple-elin-jonas.webp"
+			},
+			"faqs": [
+				{
+					"question": "What if my partner isn't ready to share?",
+					"answer": "That's built into the design. Every invite can be declined with a gentle \"not right now\", and nothing is ever forced or scored. Many couples start with the sweet, low-stakes prompts and grow into deeper sharing over weeks or months — at whatever pace feels right."
+				},
+				{
+					"question": "Can anyone else see what we share?",
+					"answer": "No. Fantasies exist only inside your private couple space. Parfect has no feeds, no community features, and no strangers. Chat text supports end-to-end encryption, notifications never reveal content, and you can lock the app behind Face ID or a PIN."
+				},
+				{
+					"question": "Are the prompts explicit?",
+					"answer": "They range from sweet and romantic to daring — and you control the depth. Parfect is made for adults (18+), but it's built around emotional intimacy first: many prompts are about dreams, memories, and connection rather than anything explicit."
+				},
+				{
+					"question": "What happens to a fantasy after we share it?",
+					"answer": "Whatever you choose. It can stay as a conversation, be revisited later, or be promoted to your shared bucket list — where it becomes something you actively plan together, like a date night or a trip."
+				},
+				{
+					"question": "Is this feature free?",
+					"answer": "Yes. Parfect is free on iOS and Android, and fantasy prompts are part of the core experience."
+				}
+			],
+			"related": [
+				{
+					"href": "/features/private-chat",
+					"label": "Private chat",
+					"description": "The encrypted, two-person chat where every conversation lives."
+				},
+				{
+					"href": "/features/bucket-list",
+					"label": "Bucket list",
+					"description": "Where shared dreams become plans you actually carry out."
+				},
+				{
+					"href": "/for/married-couples",
+					"label": "For married couples",
+					"description": "Keeping curiosity alive after years together."
+				}
+			],
+			"cta": {
+				"heading": "Start the conversation tonight",
+				"text": "Download Parfect free and let a single gentle prompt do what years of \"we should talk about this someday\" couldn't."
+			}
+		},
+		"datePlanner": {
+			"slug": "/features/date-planner",
+			"metaTitle": "Date Night Planner for Couples — Plan It Together",
+			"metaDescription": "Plan date nights together in one place: shared calendar, babysitter coordination, and ideas straight from your bucket list. Free on iOS & Android.",
+			"ogTitle": "Date Night Planner | Parfect",
+			"ogDescription": "From \"we should go out more\" to a booked Saturday — shared planning, sitter coordination, and anniversary reminders.",
+			"eyebrow": "Date planner",
+			"titlePlain": "Date Night Planner",
+			"titleBefore": "From",
+			"titleHighlight": "\"we should go out more\"",
+			"titleAfter": "to a booked Saturday",
+			"intro": "Every couple says it. Few calendars show it. Parfect turns date night from a vague intention into a plan with a time, a place — and a babysitter who's already confirmed.",
+			"screen": "date",
+			"tab": "together",
+			"story": {
+				"heading": "Why date nights keep not happening",
+				"paragraphs": [
+					"It's rarely about love, and almost always about logistics. Someone has to pick a day, find something to do, check the other's schedule, sort out the kids — and because that invisible work usually lands on one partner, it quietly turns romance into project management. Eventually, it's easier to just watch something.",
+					"Parfect splits the load. Date planning lives in your shared space, where both of you can suggest ideas, pick dates, and see everything in one calendar. Ideas don't have to come from a blank page either — your bucket list and shared fantasies feed straight into it, so the question changes from \"what should we do?\" to \"which one should we do first?\"",
+					"For parents, the app handles the step that kills most plans: the sitter. Coordinate babysitting right inside the plan, so \"Saturday, 19:30, sitter confirmed\" is a single glance — not a three-day text relay."
+				]
+			},
+			"image": {
+				"src": "/images/hero-date.webp",
+				"alt": "A candlelit dinner table for two on a rooftop overlooking city lights",
+				"caption": "The best dates start three days earlier — with a plan."
+			},
+			"benefits": {
+				"heading": "Everything a date needs, in one place",
+				"intro": "Less coordination overhead, more actual romance. Here's what the planner takes off your plate.",
+				"items": [
+					{
+						"title": "Shared planning",
+						"description": "Both partners see, suggest, and edit plans. No more one person carrying the whole mental load of romance.",
+						"icon": "calendar"
+					},
+					{
+						"title": "Babysitter coordination",
+						"description": "Line up the sitter as part of the plan itself. When it says confirmed, the night is actually happening.",
+						"icon": "shield"
+					},
+					{
+						"title": "Ideas on tap",
+						"description": "Pull from your shared bucket list and fantasies instead of staring at a blank page every time.",
+						"icon": "sparkles"
+					},
+					{
+						"title": "Anniversaries & milestones",
+						"description": "Birthdays, anniversaries, the day you met — tracked in your shared calendar so they never sneak up on you again.",
+						"icon": "heart"
+					},
+					{
+						"title": "Gentle reminders",
+						"description": "Content-free notifications nudge you before the big night — without spoiling any surprises on your lock screen.",
+						"icon": "bell"
+					},
+					{
+						"title": "Memories that stack",
+						"description": "Completed dates become part of your shared story in the app — proof that you're building the relationship you want.",
+						"icon": "star"
+					}
+				]
+			},
+			"steps": {
+				"heading": "How planning a date works",
+				"intro": "From idea to confirmed plans in three steps.",
+				"items": [
+					{
+						"title": "Pick the spark",
+						"description": "Choose an idea from your bucket list, a shared fantasy, or start fresh. \"Rooftop dinner\" is a fine place to begin."
+					},
+					{
+						"title": "Set the details together",
+						"description": "Agree on the day and time in your shared calendar, add the place, and — if you need one — coordinate the babysitter right in the plan."
+					},
+					{
+						"title": "Show up and enjoy",
+						"description": "You both get a gentle reminder before the night. All that's left is the fun part: being there, together."
+					}
+				]
+			},
+			"testimonial": {
+				"quote": "We said 'we should go out more' for two years. Parfect made it embarrassing to keep saying it — the ideas were right there, so we just started booking them.",
+				"names": "Hanna & Viktor",
+				"context": "Together 6 years · Stockholm",
+				"image": "/images/people/couple-laughing.webp"
+			},
+			"faqs": [
+				{
+					"question": "How is this better than a shared Google Calendar?",
+					"answer": "A general calendar stores events; Parfect plans dates. Ideas flow in from your bucket list and shared fantasies, babysitter coordination is built into the plan, anniversaries are tracked automatically, and it all lives in the same private space as your couple's chat — not between dentist appointments and work meetings."
+				},
+				{
+					"question": "Does it work for couples without kids?",
+					"answer": "Absolutely. Babysitter coordination is optional — most of the planner is about ideas, shared scheduling, and making sure intentions become actual nights out (or in)."
+				},
+				{
+					"question": "Can we plan at-home date nights too?",
+					"answer": "Of course. A date is anything you do on purpose together — a cooking night, a movie marathon, a slow dance in the kitchen. The planner cares that it happens, not where."
+				},
+				{
+					"question": "What about anniversaries and important dates?",
+					"answer": "Add them once and Parfect keeps track — your anniversary, birthdays, and the milestones that matter to you two. You'll get a heads-up in time to plan something, not an apology-flowers situation the day after."
+				},
+				{
+					"question": "Is the date planner free?",
+					"answer": "Yes. Parfect is free to download on iOS and Android, and date planning is part of the core experience."
+				}
+			],
+			"related": [
+				{
+					"href": "/features/bucket-list",
+					"label": "Bucket list",
+					"description": "The shared list of everything you two want to do — the planner's best friend."
+				},
+				{
+					"href": "/for/parents",
+					"label": "For parents",
+					"description": "How couples with kids get date night back on the calendar."
+				},
+				{
+					"href": "/features/private-chat",
+					"label": "Private chat",
+					"description": "Where the \"what if we…\" conversations start."
+				}
+			],
+			"cta": {
+				"heading": "Put the next date on the calendar",
+				"text": "Download Parfect free and turn this week's \"we really should\" into an actual reservation."
+			}
+		},
+		"bucketList": {
+			"slug": "/features/bucket-list",
+			"metaTitle": "Couples Bucket List App — Dream It, Plan It, Do It",
+			"metaDescription": "Build a shared bucket list with your partner: collect dreams, turn them into planned dates, and check them off together. Free on iOS & Android.",
+			"ogTitle": "Shared Bucket List for Couples | Parfect",
+			"ogDescription": "One list for everything you two want to do — from slow dances in the kitchen to the trip you keep talking about.",
+			"eyebrow": "Bucket list",
+			"titlePlain": "Couples Bucket List",
+			"titleBefore": "One list for everything",
+			"titleHighlight": "you two",
+			"titleAfter": "keep talking about",
+			"intro": "The beach town you'd run away to. The restaurant you keep passing. The slow dance in the kitchen. Parfect keeps every \"someday\" in one shared place — and helps you actually get to them.",
+			"screen": "together",
+			"tab": "together",
+			"story": {
+				"heading": "Someday is not a plan",
+				"paragraphs": [
+					"Couples generate wonderful ideas all the time — on walks, over wine, in the middle of the night. And then the ideas evaporate, because they live in the least reliable storage ever invented: \"we should really do that sometime.\" A year later you're saying the same sentence about the same trip.",
+					"A shared bucket list changes the physics of this. The moment an idea is written down where both of you can see it, it stops being a passing comment and becomes a small mutual promise. Parfect keeps that list in the same private space as your chat and your fantasies, so capturing an idea takes two taps — mid-conversation, mid-walk, mid-anything.",
+					"And the list isn't a graveyard of good intentions. Any item can be promoted into a planned date with a day, time, and sitter if you need one. Checking things off together — and watching the checked list grow — becomes its own quiet proof that you're building the life you talk about."
+				]
+			},
+			"image": {
+				"src": "/images/hero-home.webp",
+				"alt": "A couple walking hand in hand down a lantern-lit path at dusk",
+				"caption": "The someday list, finally getting shorter."
+			},
+			"benefits": {
+				"heading": "A someday list that actually moves",
+				"intro": "Three things make Parfect's bucket list different from a note on your phone.",
+				"items": [
+					{
+						"title": "Truly shared",
+						"description": "Both of you add, edit, and check off. It's not one partner's wish list — it's a running agreement about the life you want.",
+						"icon": "heart"
+					},
+					{
+						"title": "Fed by your fantasies",
+						"description": "Shared dreams from the Fantasies space can graduate straight onto the list — marked so you remember where they came from.",
+						"icon": "sparkles"
+					},
+					{
+						"title": "One tap from planned",
+						"description": "Any item becomes a date night with a day and time. \"Beach town getaway\" stops being a phrase and starts being an itinerary.",
+						"icon": "calendar"
+					},
+					{
+						"title": "Big and small",
+						"description": "Sunrise hikes next to round-the-world trips. The best lists mix five-minute wins with five-year dreams.",
+						"icon": "list"
+					},
+					{
+						"title": "Private by default",
+						"description": "Your list lives in your encrypted couple space. No social feed, no performative travel goals — just what you two actually want.",
+						"icon": "lock"
+					},
+					{
+						"title": "A shared story",
+						"description": "Every checked item is a memory you made on purpose. Scroll back anytime and see how far you've come together.",
+						"icon": "star"
+					}
+				]
+			},
+			"steps": {
+				"heading": "How the bucket list works",
+				"intro": "Capture, choose, do — then repeat for the rest of your lives.",
+				"items": [
+					{
+						"title": "Capture every idea",
+						"description": "Add items the moment they come up — from chat, from a fantasy, or straight onto the list. Nothing gets lost in \"sometime\" again."
+					},
+					{
+						"title": "Pick what's next",
+						"description": "Browse the list together and choose the one that fits this month — or this Tuesday. Promote it to a planned date in one tap."
+					},
+					{
+						"title": "Check it off together",
+						"description": "Do the thing, tick the box, and enjoy the underrated pleasure of a shared dream marked done. Then pick the next one."
+					}
+				]
+			},
+			"testimonial": {
+				"quote": "Our list started with 'learn to make pasta' and now has a road trip on it. Checking things off together is weirdly addictive — in the best way.",
+				"names": "Amira & Daniel",
+				"context": "Together 3 years",
+				"image": "/images/people/couple-amira-daniel.webp"
+			},
+			"faqs": [
+				{
+					"question": "How is this different from a shared notes app?",
+					"answer": "A note stores text; Parfect's bucket list is connected to the rest of your relationship. Items flow in from shared fantasies, flow out into planned date nights with reminders and sitter coordination, and live in the same private, encrypted space as your couple's chat."
+				},
+				{
+					"question": "What should we put on a couples bucket list?",
+					"answer": "Mix sizes: tiny weeknight wins (slow dance in the kitchen, sunrise coffee), local adventures (that restaurant, a day trip), and big dreams (the beach town, learning something together). Small items keep the list moving; big ones give it a horizon."
+				},
+				{
+					"question": "Can bucket list items come from our fantasies?",
+					"answer": "Yes — that's one of Parfect's favorite moments. When a shared fantasy is something you both want to make real, promote it to the bucket list. It keeps a small marker showing it started as a dream."
+				},
+				{
+					"question": "Do both partners see the same list?",
+					"answer": "Yes. The list is fully shared: both of you can add, edit, complete, and plan items. It updates in real time, so an idea added on a lunch break is waiting at home."
+				},
+				{
+					"question": "Is the bucket list free?",
+					"answer": "Yes. Parfect is free on iOS and Android, and the shared bucket list is part of the core experience."
+				}
+			],
+			"related": [
+				{
+					"href": "/features/date-planner",
+					"label": "Date planner",
+					"description": "Where bucket list items become booked Saturdays."
+				},
+				{
+					"href": "/features/fantasies",
+					"label": "Fantasies",
+					"description": "The gentle way shared dreams get spoken in the first place."
+				},
+				{
+					"href": "/for/married-couples",
+					"label": "For married couples",
+					"description": "Why a shared list matters even more after years together."
+				}
+			],
+			"cta": {
+				"heading": "Start your list tonight",
+				"text": "Download Parfect free, add the first three things you keep talking about, and watch \"someday\" get a date."
+			}
+		},
+		"forParents": {
+			"slug": "/for/parents",
+			"metaTitle": "The Couples App for Parents — Stay Partners, Not Just Co-Parents",
+			"metaDescription": "Between school runs and bedtimes, the relationship comes last. Parfect helps parents reconnect: date nights with sitter coordination, private chat, and small daily rituals.",
+			"ogTitle": "Parfect for Parents",
+			"ogDescription": "Date night with the sitter handled, a chat that's just yours, and small rituals that keep you close between bedtimes.",
+			"eyebrow": "For parents",
+			"titlePlain": "Parfect for Parents",
+			"titleBefore": "Still",
+			"titleHighlight": "partners",
+			"titleAfter": "— not just co-parents",
+			"intro": "You love your kids. You also miss each other. Parfect helps busy parents protect the relationship that started the whole family — in the ten-minute gaps a parent's day actually has.",
+			"screen": "home",
+			"tab": "together",
+			"story": {
+				"heading": "The couple usually comes last. Let's fix that.",
+				"paragraphs": [
+					"After kids, most couples' conversations quietly turn into logistics: pickups, dinners, whose turn it is. It's not that the love goes anywhere — it's that the relationship stops getting any dedicated time or space. Weeks pass in perfect teamwork and zero romance, and both of you feel it.",
+					"The standard advice is \"prioritize date night\", and it's good advice — but anyone with kids knows the real boss fight is logistics. Picking a day, agreeing on a plan, and above all, sorting the sitter. That's exactly the part Parfect handles: date plans live in a shared space, ideas come from your own bucket list, and babysitter coordination is built into the plan itself.",
+					"Between date nights, Parfect keeps a thread of just-us running through ordinary days. A private chat that isn't the family group. A daily prompt you can answer from the sofa after bedtime. A message that disappears after it's read. Small things — but small things, repeated, are what closeness is made of."
+				]
+			},
+			"image": {
+				"src": "/images/hero-date.webp",
+				"alt": "A candlelit dinner table set for two with city lights in the background",
+				"caption": "The sitter is booked. The night is yours."
+			},
+			"benefits": {
+				"heading": "Built around a parent's reality",
+				"intro": "No grand gestures required — just tools that fit into the day you actually have.",
+				"items": [
+					{
+						"title": "Sitter-proof date nights",
+						"description": "Coordinate the babysitter inside the plan itself. When Parfect says confirmed, date night is actually happening.",
+						"icon": "shield"
+					},
+					{
+						"title": "A chat that isn't logistics",
+						"description": "Keep flirting somewhere the school schedule can't reach. Your Parfect thread is for you two — not for \"we're out of milk\".",
+						"icon": "chat"
+					},
+					{
+						"title": "Ten-minute rituals",
+						"description": "Daily prompts and check-ins that fit between bedtime and collapsing on the couch. Closeness in the gaps.",
+						"icon": "clock"
+					},
+					{
+						"title": "A shared someday list",
+						"description": "The trip for your anniversary, the restaurant without a kids' menu — kept safe on your bucket list until it's their turn.",
+						"icon": "list"
+					},
+					{
+						"title": "Nothing on the lock screen",
+						"description": "Content-free notifications and app lock mean a curious kid with your phone sees nothing they shouldn't.",
+						"icon": "lock"
+					},
+					{
+						"title": "Anniversaries, remembered",
+						"description": "Your shared calendar tracks the dates that matter, so they never get lost under school events again.",
+						"icon": "calendar"
+					}
+				]
+			},
+			"steps": {
+				"heading": "Getting started (in one nap time)",
+				"intro": "Parfect takes less time to set up than a school permission slip.",
+				"items": [
+					{
+						"title": "Pair up",
+						"description": "Download the app, create your account, and send your partner the invite code. Two minutes, start to finish."
+					},
+					{
+						"title": "Put one date on the calendar",
+						"description": "Pick something small — dinner out, or even a proper at-home date after bedtime. Sort the sitter in the plan if you need one."
+					},
+					{
+						"title": "Let the small rituals run",
+						"description": "Answer the daily prompt when you can. Send the occasional message that has nothing to do with the kids. Watch what it does to the week."
+					}
+				]
+			},
+			"testimonial": {
+				"quote": "Two kids, zero spontaneity — date night was a guilty wish. Now it's twice a month, and the sitter step means it actually happens instead of falling apart on Friday.",
+				"names": "Sara & Marcus",
+				"context": "Parents of two",
+				"image": "/images/people/couple-sara-marcus.webp"
+			},
+			"faqs": [
+				{
+					"question": "We barely have ten minutes a day. Is this realistic?",
+					"answer": "Parfect is designed for exactly that. A daily prompt takes a minute to answer, a message takes seconds, and date planning happens asynchronously — you suggest, your partner confirms when they can. It's built for the gaps in a parent's day, not for people with endless free evenings."
+				},
+				{
+					"question": "How does the babysitter coordination work?",
+					"answer": "When you plan a date, sorting the sitter becomes part of the plan itself instead of a separate text thread. Both partners can see the status at a glance — so \"Saturday 19:30, sitter confirmed\" means the night is real."
+				},
+				{
+					"question": "What if my kid picks up my phone?",
+					"answer": "Parfect can be locked behind a PIN or Face ID, and push notifications never show message content — only that your partner reached out. Your private space stays private, even on a shared-ish family phone."
+				},
+				{
+					"question": "Is this only about date nights?",
+					"answer": "No — date nights are just the most visible part. Most of Parfect's value for parents is in the everyday: a private chat that isn't household logistics, gentle daily prompts, a shared bucket list, and anniversaries that don't get forgotten."
+				},
+				{
+					"question": "How much does it cost?",
+					"answer": "Parfect is free to download on iOS and Android, and everything described here is part of the core experience."
+				}
+			],
+			"related": [
+				{
+					"href": "/features/date-planner",
+					"label": "Date planner",
+					"description": "Shared plans, sitter coordination, and reminders — the full tour."
+				},
+				{
+					"href": "/features/private-chat",
+					"label": "Private chat",
+					"description": "An encrypted thread for the two of you — no logistics allowed."
+				},
+				{
+					"href": "/features/bucket-list",
+					"label": "Bucket list",
+					"description": "Keep every \"after the kids are older\" dream somewhere safe."
+				}
+			],
+			"cta": {
+				"heading": "Date night is overdue",
+				"text": "Download Parfect free, pair up during nap time, and put one night for the two of you back on the calendar this week."
+			}
+		},
+		"forLongDistance": {
+			"slug": "/for/long-distance",
+			"metaTitle": "The App for Long-Distance Couples — Close, From Anywhere",
+			"metaDescription": "A private space for long-distance relationships: encrypted chat, daily rituals across time zones, and a shared bucket list for your next reunion. Free on iOS & Android.",
+			"ogTitle": "Parfect for Long-Distance Couples",
+			"ogDescription": "Daily rituals, an encrypted chat that's just yours, and a countdown of plans for when you're together again.",
+			"eyebrow": "For long-distance couples",
+			"titlePlain": "Parfect for Long-Distance Couples",
+			"titleBefore": "The distance is real. So is",
+			"titleHighlight": "the closeness",
+			"titleAfter": ".",
+			"intro": "Miles apart, you can't share a couch — but you can share a ritual, a secret, and a list of everything you'll do next time. Parfect gives long-distance couples one private place to stay genuinely close.",
+			"screen": "chat",
+			"tab": "chat",
+			"story": {
+				"heading": "Long-distance fails on drift, not distance",
+				"paragraphs": [
+					"Ask couples who've survived long distance and they'll rarely say the hard part was the miles. It was the drift: conversations flattening into \"how was your day — good, yours\", intimacy postponed until the next visit, the relationship slowly becoming something you maintain instead of something you live.",
+					"What works, consistently, is ritual and depth. A shared thing you do every day, however small, keeps the thread alive across time zones. And conversations that go past logistics — dreams, memories, desires — do more for closeness than hours of dutiful video calls. Parfect is built to supply exactly those two things: a daily prompt that lands for both of you, and a fantasies space that makes deep conversations easy to start, even from far away.",
+					"Then there's the future — the thing long-distance couples live on. Your shared bucket list becomes the reunion plan: every restaurant, every lazy morning, every trip gets captured the moment one of you thinks of it. By the time you're together again, the question is never \"what should we do?\" It's \"which one first?\""
+				]
+			},
+			"image": {
+				"src": "/images/hero-together.webp",
+				"alt": "Two hands reaching toward each other with rose petals in the air",
+				"caption": "Every message a bridge. Every plan a countdown."
+			},
+			"benefits": {
+				"heading": "Made for the space between visits",
+				"intro": "Everything in Parfect works asynchronously and privately — perfect when your evenings don't overlap.",
+				"items": [
+					{
+						"title": "A room across time zones",
+						"description": "One private, encrypted chat that's always where you left it. Wake up to something warm from a time zone away.",
+						"icon": "chat"
+					},
+					{
+						"title": "Daily shared rituals",
+						"description": "The same prompt lands for both of you each day. Answer in your morning, read theirs in your evening — the thread never breaks.",
+						"icon": "clock"
+					},
+					{
+						"title": "Depth on demand",
+						"description": "Fantasies and prompts take conversations past small talk — the intimacy that video calls alone rarely reach.",
+						"icon": "sparkles"
+					},
+					{
+						"title": "The reunion list",
+						"description": "Every \"when I see you\" idea goes on the shared bucket list. Your next visit plans itself as you go.",
+						"icon": "list"
+					},
+					{
+						"title": "Countdown to the dates that matter",
+						"description": "Visits, anniversaries, the day you met — tracked in your shared calendar, counted down together.",
+						"icon": "calendar"
+					},
+					{
+						"title": "Private, even far apart",
+						"description": "End-to-end encryption, disappearing messages, and content-free notifications. Intimate stays intimate — on any network, in any country.",
+						"icon": "lock"
+					}
+				]
+			},
+			"steps": {
+				"heading": "How long-distance couples use Parfect",
+				"intro": "A rhythm that survives time zones, exam seasons, and deployments.",
+				"items": [
+					{
+						"title": "Pair once, from anywhere",
+						"description": "One of you downloads the app and sends an invite code; the other joins from wherever they are. Your private space works across any distance."
+					},
+					{
+						"title": "Anchor the day",
+						"description": "Let the daily prompt be your fixed point. Even on the busiest days, two answers passing in the night keep you in each other's inner world."
+					},
+					{
+						"title": "Build the next visit",
+						"description": "Add every idea to the bucket list as it comes. When the reunion date lands, promote the best ones into real plans."
+					}
+				]
+			},
+			"testimonial": {
+				"quote": "Different time zones, same ritual. The daily question keeps us inside each other's day, and the bucket list has become our countdown to the next reunion.",
+				"names": "Amira & Daniel",
+				"context": "Long-distance · Oslo–Lisbon",
+				"image": "/images/people/couple-amira-daniel.webp"
+			},
+			"faqs": [
+				{
+					"question": "Does Parfect work across countries and time zones?",
+					"answer": "Yes. Everything in Parfect is asynchronous by design — messages, prompts, and plans are always there when your partner wakes up. Pairing works across any two countries, and there are no calls to schedule around."
+				},
+				{
+					"question": "How is this better than texting on WhatsApp?",
+					"answer": "A general messenger gives you a thread; Parfect gives you a relationship space. Daily shared prompts create a ritual, the fantasies feature deepens conversations that texting flattens, and the shared bucket list turns \"I miss you\" into concrete plans for the next visit — all in one private, encrypted place."
+				},
+				{
+					"question": "Can it help when we run out of things to say?",
+					"answer": "That's one of the main reasons long-distance couples use it. Daily prompts hand you a fresh, meaningful question every day, and the fantasies space opens conversations most couples never manage to start — no blank-page pressure."
+				},
+				{
+					"question": "Is it secure enough for intimate conversations?",
+					"answer": "Yes. Message text supports end-to-end encryption, messages can be set to disappear after they're seen, notifications never show content, and the app can be locked with a PIN or biometrics — sensible when you're on shared Wi-Fi or living with roommates."
+				},
+				{
+					"question": "What does it cost?",
+					"answer": "Parfect is free on iOS and Android. Chat, prompts, fantasies, and the bucket list are all part of the core experience."
+				}
+			],
+			"related": [
+				{
+					"href": "/features/private-chat",
+					"label": "Private chat",
+					"description": "Encryption, disappearing messages, and a room that's only yours."
+				},
+				{
+					"href": "/features/fantasies",
+					"label": "Fantasies",
+					"description": "Deep conversations, started gently — even from far away."
+				},
+				{
+					"href": "/features/bucket-list",
+					"label": "Bucket list",
+					"description": "Where every \"when I see you\" becomes a plan."
+				}
+			],
+			"cta": {
+				"heading": "Shrink the distance tonight",
+				"text": "Download Parfect free, send your partner the invite code, and start the ritual that makes far away feel close."
+			}
+		},
+		"forMarriedCouples": {
+			"slug": "/for/married-couples",
+			"metaTitle": "The App for Married Couples — Keep Choosing Each Other",
+			"metaDescription": "Comfortable is good. Curious is better. Parfect helps married couples rediscover each other with daily prompts, honest conversations, and dates that actually happen.",
+			"ogTitle": "Parfect for Married Couples",
+			"ogDescription": "Daily prompts, gentle honesty, and a shared someday list — for couples who intend to keep choosing each other.",
+			"eyebrow": "For married couples",
+			"titlePlain": "Parfect for Married Couples",
+			"titleBefore": "Comfortable is good.",
+			"titleHighlight": "Curious",
+			"titleAfter": "is better.",
+			"intro": "Years in, you know each other's coffee order, moods, and browser tabs. Parfect is for what comes next: staying curious about the person sleeping next to you — on purpose.",
+			"screen": "home",
+			"tab": "fantasies",
+			"story": {
+				"heading": "The quiet risk of a good marriage",
+				"paragraphs": [
+					"Nobody warns you that the biggest threat to a long marriage isn't conflict — it's autopilot. You function beautifully together: bills paid, house running, weekends full. And somewhere in all that competence, the questions stop. You assume you know each other completely, so you stop checking. That's how two people who love each other end up feeling like well-coordinated roommates.",
+					"The antidote isn't dramatic. Relationship researchers keep finding the same thing: couples stay close through small, frequent bids for connection — a real question, a shared laugh, a plan made together. Parfect turns those bids into a daily habit: one prompt a day that gets you past \"how was work\", a private space to say things that don't fit at the dinner table, and a fantasies feature for the conversations that twenty years of marriage somehow never quite got around to.",
+					"And because long marriages are rich in \"we should really\" — the trip, the dance class, the restaurant from your honeymoon — the shared bucket list and date planner make sure those intentions stop rolling over year after year. Not a project. Just a gentle system for keeping the promise you already made: to keep choosing each other."
+				]
+			},
+			"image": {
+				"src": "/images/hero-onboarding.webp",
+				"alt": "A couple laughing together under warm string lights in the evening",
+				"caption": "Twenty years in, still finding out new things."
+			},
+			"benefits": {
+				"heading": "Small habits, remarkable marriage",
+				"intro": "Nothing here demands a weekend retreat. Just a few minutes a day, aimed well.",
+				"items": [
+					{
+						"title": "One real question a day",
+						"description": "Daily prompts that get past logistics — memories, dreams, opinions you've never compared. Autopilot doesn't survive them.",
+						"icon": "sparkles"
+					},
+					{
+						"title": "The overdue conversations",
+						"description": "The fantasies space gently opens what's stayed unsaid for years — at your pace, with \"not right now\" always allowed.",
+						"icon": "heart"
+					},
+					{
+						"title": "A flirt channel",
+						"description": "A private, encrypted chat that isn't the family thread. Somewhere to be partners, not household managers.",
+						"icon": "chat"
+					},
+					{
+						"title": "\"We should really\" — handled",
+						"description": "The shared bucket list catches every intention, and the date planner turns them into actual Saturdays.",
+						"icon": "list"
+					},
+					{
+						"title": "Anniversaries that land",
+						"description": "Your dates, tracked and counted down — with time to plan something worthy of them, not a last-minute save.",
+						"icon": "calendar"
+					},
+					{
+						"title": "Private at home too",
+						"description": "App lock and content-free notifications keep your space yours — even with teenagers who borrow phones.",
+						"icon": "lock"
+					}
+				]
+			},
+			"steps": {
+				"heading": "How married couples settle into Parfect",
+				"intro": "Start smaller than feels necessary. That's the trick.",
+				"items": [
+					{
+						"title": "Pair over coffee",
+						"description": "Download the app together some slow morning and link with an invite code. Two minutes, and the space is yours."
+					},
+					{
+						"title": "Answer one prompt a day",
+						"description": "Just the daily question, for a week. Most couples are surprised within days by an answer they didn't see coming."
+					},
+					{
+						"title": "Let it deepen",
+						"description": "When it feels natural, wander into fantasies, load up the bucket list, and put a date on the calendar. No schedule — your marriage, your pace."
+					}
+				]
+			},
+			"testimonial": {
+				"quote": "After 31 years of marriage we assumed we knew everything about each other. We didn't. It feels playful again — that surprised us both.",
+				"names": "Kerstin & Lars",
+				"context": "Married 31 years",
+				"image": "/images/people/couple-kerstin-lars.webp"
+			},
+			"faqs": [
+				{
+					"question": "We've been married 15 years. Isn't this for new couples?",
+					"answer": "It's arguably built for you. New couples generate novelty for free; long marriages have to create it on purpose. Parfect's prompts, fantasies, and shared lists are designed precisely for couples who know each other deeply and want to keep discovering — which is a different, richer project than getting acquainted."
+				},
+				{
+					"question": "My spouse isn't an app person. Will this work?",
+					"answer": "Parfect asks very little: one question a day takes under a minute, and there's no feed, no streak pressure, no gamification guilt. Many couples have one partner who starts and one who warms up — the daily prompt tends to do the convincing."
+				},
+				{
+					"question": "Is this marriage counseling?",
+					"answer": "No. Parfect is not therapy and doesn't replace it. It's a private space for connection — conversation, playfulness, and plans. Plenty of couples use it alongside counseling, and plenty use it simply to keep a good marriage curious."
+				},
+				{
+					"question": "What about conversations we've avoided for years?",
+					"answer": "That's what the fantasies feature is for. It replaces the impossible face-to-face opener with a gentle, private invitation your partner can answer when ready — and declining is always okay. Pace, consent, and safety are the whole design."
+				},
+				{
+					"question": "How much does it cost?",
+					"answer": "Parfect is free to download on iOS and Android. Daily prompts, private chat, fantasies, the bucket list, and date planning are all part of the core experience."
+				}
+			],
+			"related": [
+				{
+					"href": "/features/fantasies",
+					"label": "Fantasies",
+					"description": "The gentle way into conversations twenty years postponed."
+				},
+				{
+					"href": "/features/date-planner",
+					"label": "Date planner",
+					"description": "Anniversaries remembered, Saturdays reclaimed."
+				},
+				{
+					"href": "/for/parents",
+					"label": "For parents",
+					"description": "When the marriage also comes with a school run."
+				}
+			],
+			"cta": {
+				"heading": "Stay curious about each other",
+				"text": "Download Parfect free and answer one real question together tonight. See where a week of them takes you."
+			}
+		}
+	}
+}

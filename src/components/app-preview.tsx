@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { APP_SCREENS, type AppScreenId } from "@/lib/constants";
+import { useTranslations } from "next-intl";
 import { AppTabs } from "./app-tabs";
 import {
 	ChatScreen,
@@ -10,16 +10,26 @@ import {
 	TogetherScreen,
 } from "./app-screens";
 
-const screens: Record<AppScreenId, React.ComponentType> = {
+const screenIds = ["chat", "fantasies", "together", "date"] as const;
+const screens = {
 	chat: ChatScreen,
 	fantasies: FantasiesScreen,
 	together: TogetherScreen,
 	date: DateScreen,
-};
+} as const;
+const tabByScreen = {
+	chat: "chat",
+	fantasies: "fantasies",
+	together: "together",
+	date: "together",
+} as const;
 
 export function AppPreview() {
+	const t = useTranslations("AppPreview");
+	const tTabs = useTranslations("AppTabs");
 	const [active, setActive] = useState(0);
-	const current = APP_SCREENS[active];
+	const currentId = screenIds[active];
+	const currentTab = tabByScreen[currentId];
 
 	return (
 		<section
@@ -31,17 +41,14 @@ export function AppPreview() {
 
 			<div className="container-wide section-padding relative">
 				<div data-reveal className="text-center max-w-2xl mx-auto mb-10 md:mb-12">
-					<p className="eyebrow text-rose mb-3">Feels like the app</p>
+					<p className="eyebrow text-rose mb-3">{t("eyebrow")}</p>
 					<h2
 						id="experience-heading"
 						className="font-display text-3xl sm:text-4xl md:text-5xl font-medium tracking-tight mb-4 text-balance"
 					>
-						See what you&apos;re stepping into
+						{t("heading")}
 					</h2>
-					<p className="text-muted text-lg">
-						Explore the screens exactly as they appear in Parfect — before
-						you even download.
-					</p>
+					<p className="text-muted text-lg">{t("description")}</p>
 				</div>
 
 				<div
@@ -50,12 +57,12 @@ export function AppPreview() {
 				>
 					<div
 						role="tablist"
-						aria-label="App screens"
+						aria-label={t("tablistAria")}
 						className="flex gap-2 w-max mx-auto"
 					>
-						{APP_SCREENS.map((screen, index) => (
+						{screenIds.map((id, index) => (
 							<button
-								key={screen.id}
+								key={id}
 								type="button"
 								role="tab"
 								aria-selected={active === index}
@@ -64,7 +71,7 @@ export function AppPreview() {
 									active === index ? "preview-chip-active" : ""
 								}`}
 							>
-								{screen.label}
+								{t(`screenLabels.${id}`)}
 							</button>
 						))}
 					</div>
@@ -77,12 +84,12 @@ export function AppPreview() {
 					>
 						<div
 							role="tablist"
-							aria-label="App screens"
+							aria-label={t("tablistAria")}
 							className="flex flex-col gap-3"
 						>
-							{APP_SCREENS.map((screen, index) => (
+							{screenIds.map((id, index) => (
 								<button
-									key={screen.id}
+									key={id}
 									type="button"
 									role="tab"
 									aria-selected={active === index}
@@ -91,9 +98,11 @@ export function AppPreview() {
 										active === index ? "preview-pill-active" : ""
 									}`}
 								>
-									<span className="preview-pill-label">{screen.label}</span>
+									<span className="preview-pill-label">
+										{t(`screenLabels.${id}`)}
+									</span>
 									<span className="text-muted text-sm capitalize">
-										{screen.tab} tab
+										{t("tabLabel", { tab: tTabs(tabByScreen[id]) })}
 									</span>
 								</button>
 							))}
@@ -103,7 +112,7 @@ export function AppPreview() {
 							href="#download"
 							className="btn-primary mt-4 inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full text-sm self-start"
 						>
-							Try it yourselves — free
+							{t("cta")}
 							<svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} aria-hidden="true">
 								<path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
 							</svg>
@@ -115,11 +124,11 @@ export function AppPreview() {
 							<div className="phone-frame relative">
 								<div className="phone-notch" aria-hidden="true" />
 								<div className="phone-screen">
-									{APP_SCREENS.map((screen, index) => {
-										const Screen = screens[screen.id];
+									{screenIds.map((id, index) => {
+										const Screen = screens[id];
 										return (
 											<div
-												key={screen.id}
+												key={id}
 												className={`absolute inset-0 transition-opacity duration-300 ${
 													active === index
 														? "opacity-100"
@@ -132,7 +141,7 @@ export function AppPreview() {
 										);
 									})}
 									<div className="absolute bottom-0 inset-x-0 z-10">
-										<AppTabs active={current.tab} />
+										<AppTabs active={currentTab} />
 									</div>
 								</div>
 							</div>
@@ -145,7 +154,7 @@ export function AppPreview() {
 						href="#download"
 						className="btn-primary inline-flex items-center gap-2 px-6 py-3.5 rounded-full text-sm"
 					>
-						Try it yourselves — free
+						{t("cta")}
 						<svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} aria-hidden="true">
 							<path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
 						</svg>

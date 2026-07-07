@@ -1,0 +1,331 @@
+{
+	"Privacy": {
+		"metaTitle": "Personvernerklæring",
+		"metaDescription": "Hvordan Parfect samler inn, bruker og beskytter dataene dine. Bygget for intimitet, ikke eksponering — ingen annonser, ingen salg av data og personvernkontroller du faktisk forstår.",
+		"eyebrow": "Juridisk",
+		"title": "Personvernerklæring",
+		"intro": "Parfect er en privat app for to. Denne erklæringen forklarer — på klart språk — hva vi samler inn, hvorfor vi gjør det, hvor lenge vi beholder det og hvilke rettigheter du har over dataene dine.",
+		"updated": "6. juli 2026",
+		"sections": [
+			{
+				"id": "controller",
+				"heading": "Hvem vi er",
+				"blocks": [
+					{
+						"type": "paragraph",
+						"text": "Parfect driver Parfect-appen og API-et på api.parfect.app, og er behandlingsansvarlig for personopplysninger som behandles gjennom dem. For alt som gjelder personvern, kontakt oss på {email}.",
+						"strong": ["api.parfect.app"]
+					}
+				]
+			},
+			{
+				"id": "what-we-collect",
+				"heading": "Hva vi samler inn",
+				"blocks": [
+					{
+						"type": "list",
+						"items": [
+							{ "strong": "Kontoinformasjon", "text": "— e-postadressen din, visningsnavn og en passordhash. Vi lagrer aldri passordet ditt i klartekst." },
+							{ "strong": "Par-data", "text": "— koblingsinformasjon, profilinnstillinger og samtykketidsstempler." },
+							{ "strong": "Innhold du synkroniserer", "text": "— meldinger, fantasier, kalenderhendelser, delte lister og metadata for media, slik at dere begge kan få tilgang på tvers av enheter." },
+							{ "strong": "Delt media", "text": "— bilder, videoer og lyd du deler i chatten, lagret på våre servere." },
+							{ "strong": "Push-tokens", "text": "— kun hvis du aktiverer varsler." },
+							{ "strong": "Tekniske logger", "text": "— det minimum som trengs for å drive, sikre og feilsøke tjenesten." }
+						]
+					}
+				]
+			},
+			{
+				"id": "what-we-dont-do",
+				"heading": "Hva vi aldri gjør",
+				"blocks": [
+					{
+						"type": "callout",
+						"items": [
+							"Vi selger ikke personopplysningene dine.",
+							"Vi bruker ikke forholdsinnholdet deres til reklame.",
+							"Vi deler ikke dataene dine med tredjeparter, bortsett fra infrastrukturleverandørene som trengs for å drive appen."
+						]
+					}
+				]
+			},
+			{
+				"id": "encryption",
+				"heading": "Ende-til-ende-kryptering",
+				"blocks": [
+					{
+						"type": "paragraph",
+						"text": "Chatmeldinger kan krypteres på enheten din før de sendes. Når ende-til-ende-kryptering er aktivert, kan Parfect ikke lese innholdet i disse meldingene. Mediefiler og annen delt appdata lagres på våre servere slik at begge partnere kan få tilgang.",
+						"strong": ["Parfect kan ikke lese innholdet i disse meldingene"]
+					}
+				]
+			},
+			{
+				"id": "how-we-use",
+				"heading": "Hvordan vi bruker dataene dine",
+				"blocks": [
+					{
+						"type": "list",
+						"items": [
+							{ "text": "For å autentisere deg og synkronisere data mellom enhetene dine og partneren din." },
+							{ "text": "For å levere sanntidsoppdateringer og valgfrie push-varsler — som aldri inneholder meldingsinnhold." },
+							{ "text": "For å vedlikeholde, sikre og forbedre tjenesten." }
+						]
+					}
+				]
+			},
+			{
+				"id": "lawful-basis",
+				"heading": "Rettslig grunnlag (GDPR)",
+				"blocks": [
+					{
+						"type": "list",
+						"items": [
+							{ "strong": "Avtale", "text": "— for å tilby appen, synkronisere data mellom deg og partneren din og autentisere deg." },
+							{ "strong": "Samtykke", "text": "— for valgfrie varsler, sikkerhetssamtykke etter kobling og 18+-bekreftelse." },
+							{ "strong": "Berettiget interesse", "text": "— for å sikre tjenesten, forebygge misbruk og forbedre påliteligheten." }
+						]
+					}
+				]
+			},
+			{
+				"id": "subprocessors",
+				"heading": "Hosting og underleverandører",
+				"blocks": [
+					{
+						"type": "paragraph",
+						"text": "Vi bruker infrastrukturleverandører til å hoste API-et, databasen, medialagring og push-levering (inkludert skyhosting og Expo push-tjenester). Dataene dine behandles kun for å drive tjenesten — ingenting annet."
+					}
+				]
+			},
+			{
+				"id": "cookies",
+				"heading": "Informasjonskapsler og økter",
+				"blocks": [
+					{
+						"type": "paragraph",
+						"text": "Nettversjonen bruker én HttpOnly-øktinformasjonskapsel for å holde deg innlogget. Mobilappen lagrer en økttoken i sikker enhetslagring. Vi bruker ingen reklame- eller sporingskapsler."
+					}
+				]
+			},
+			{
+				"id": "retention",
+				"heading": "Hvor lenge vi beholder data",
+				"blocks": [
+					{
+						"type": "list",
+						"items": [
+							{ "text": "Konto- og synkroniserte data beholdes så lenge kontoen din er aktiv." },
+							{ "text": "Når du kobler fra eller sletter kontoen din, fjerner vi parets delte data, meldinger og media fra våre servere." },
+							{ "text": "Tekniske logger beholdes i en begrenset periode for sikkerhet og drift, og slettes deretter." }
+						]
+					}
+				]
+			},
+			{
+				"id": "your-rights",
+				"heading": "Dine rettigheter",
+				"blocks": [
+					{ "type": "paragraph", "text": "Avhengig av hvor du befinner deg, kan du ha rett til å:" },
+					{
+						"type": "list",
+						"items": [
+							{ "text": "Få tilgang til, rette eller slette personopplysningene dine." },
+							{ "text": "Eksportere dataene dine — kontakt {email}." },
+							{ "text": "Protestere mot eller begrense visse behandlinger." },
+							{ "text": "Trekke tilbake samtykke der behandlingen er basert på samtykke." },
+							{ "text": "Sende inn en klage til din lokale datatilsynsmyndighet." }
+						]
+					}
+				]
+			},
+			{
+				"id": "delete",
+				"heading": "Slette kontoen din",
+				"blocks": [
+					{
+						"type": "paragraph",
+						"text": "Du kan slette kontoen din i appen under Innstillinger → Konto → Slett konto. Dette fjerner permanent kontoen din og tilhørende par-data fra våre servere. Du kan også sende e-post til {email}, så ordner vi det.",
+						"strong": ["Innstillinger → Konto → Slett konto"]
+					}
+				]
+			},
+			{
+				"id": "safety",
+				"heading": "Sikkerhet og rapportering",
+				"blocks": [
+					{
+						"type": "paragraph",
+						"text": "Hvis du har en sikkerhetsbekymring, bruk Innstillinger → Rapporter en bekymring i appen eller send e-post til {email}. Du kan koble fra partneren din når som helst fra Innstillinger.",
+						"strong": ["Innstillinger → Rapporter en bekymring"]
+					}
+				]
+			},
+			{
+				"id": "contact",
+				"heading": "Spørsmål?",
+				"blocks": [
+					{
+						"type": "paragraph",
+						"text": "Vi forklarer gjerne alt i denne erklæringen. Kontakt oss på {email}."
+					}
+				]
+			}
+		]
+	},
+	"Terms": {
+		"metaTitle": "Vilkår for bruk",
+		"metaDescription": "Vilkårene som styrer din bruk av Parfect — kvalifikasjon, kontoen din, akseptabel bruk, privat parinnhold og tjenestens tilgjengelighet.",
+		"eyebrow": "Juridisk",
+		"title": "Vilkår for bruk",
+		"intro": "Disse vilkårene holder Parfect som et trygt og respektfullt sted for hvert par. Ved å opprette en konto eller bruke appen godtar du dem.",
+		"updated": "6. juli 2026",
+		"sections": [
+			{
+				"id": "eligibility",
+				"heading": "Kvalifikasjon",
+				"blocks": [
+					{
+						"type": "paragraph",
+						"text": "Parfect er for voksne som er 18 år eller eldre. Ved å bruke appen bekrefter du at du oppfyller dette kravet.",
+						"strong": ["18 år eller eldre"]
+					}
+				]
+			},
+			{
+				"id": "account",
+				"heading": "Kontoen din",
+				"blocks": [
+					{
+						"type": "paragraph",
+						"text": "Du er ansvarlig for å holde innloggingsopplysningene dine sikre og for aktivitet som skjer på kontoen din. Du kan slette kontoen din når som helst fra Innstillinger → Konto → Slett konto.",
+						"strong": ["Innstillinger → Konto → Slett konto"]
+					}
+				]
+			},
+			{
+				"id": "acceptable-use",
+				"heading": "Akseptabel bruk og innhold",
+				"blocks": [
+					{ "type": "paragraph", "text": "Du godtar å ikke:" },
+					{
+						"type": "list",
+						"items": [
+							{ "text": "Misbruke tjenesten eller forsøke å kompromittere plattformen." },
+							{ "text": "Trakassere, true eller skade andre." },
+							{ "text": "Laste opp eller dele ulovlig innhold." }
+						]
+					},
+					{
+						"type": "paragraph",
+						"text": "Du er ansvarlig for innholdet du deler med din koblede partner. Del aldri intimt media eller meldinger uten gjensidig samtykke. Vi kan suspendere kontoer som bryter disse vilkårene eller gjeldende lov.",
+						"strong": ["Del aldri intimt media eller meldinger uten gjensidig samtykke."]
+					},
+					{
+						"type": "callout",
+						"text": "Hvis noe føles galt, rapporter det. Bruk Innstillinger → Rapporter en bekymring i appen eller send e-post til {email}. Vi tar sikkerhetsrapporter på alvor.",
+						"strong": ["Innstillinger → Rapporter en bekymring"]
+					}
+				]
+			},
+			{
+				"id": "couple-content",
+				"heading": "Privat parinnhold",
+				"blocks": [
+					{
+						"type": "paragraph",
+						"text": "Du og din koblede partner kontrollerer innholdet dere deler i appen. Kobling er en tillitsbeslutning: koble kun med noen du stoler på med informasjonen du deler. Du kan koble fra partneren din når som helst fra Innstillinger."
+					}
+				]
+			},
+			{
+				"id": "availability",
+				"heading": "Tjenestens tilgjengelighet",
+				"blocks": [
+					{
+						"type": "paragraph",
+						"text": "Vi jobber hardt for å holde Parfect tilgjengelig og sikkert, men tjenesten leveres som den er, uten garantert oppetid."
+					}
+				]
+			},
+			{
+				"id": "termination",
+				"heading": "Oppsigelse",
+				"blocks": [
+					{
+						"type": "paragraph",
+						"text": "Du kan slutte å bruke Parfect når som helst. Vi kan suspendere eller avslutte kontoer som bryter disse vilkårene."
+					}
+				]
+			},
+			{
+				"id": "privacy",
+				"heading": "Personvern",
+				"blocks": [
+					{
+						"type": "paragraph",
+						"text": "Hvordan vi håndterer dataene dine er beskrevet i vår Personvernerklæring — inkludert hva vi samler inn, ende-til-ende-kryptering og hvordan du sletter dataene dine.",
+						"linkText": "Personvernerklæring"
+					}
+				]
+			},
+			{
+				"id": "contact",
+				"heading": "Spørsmål?",
+				"blocks": [
+					{
+						"type": "paragraph",
+						"text": "Kontakt oss når som helst på {email}."
+					}
+				]
+			}
+		]
+	},
+	"Support": {
+		"metaTitle": "Support",
+		"metaDescription": "Få hjelp med Parfect — koble med partneren din, innloggingsproblemer, varsler og administrere eller slette kontoen din.",
+		"eyebrow": "Hjelp",
+		"title": "Support",
+		"intro": "Sitter du fast med kobling, innlogging, varsler eller kontoen din? De fleste svarene finner du nedenfor — og hvis ditt ikke er der, er vi bare en e-post unna.",
+		"contactLabel": "Kontakt oss:",
+		"contactText": "Vi leser hver melding og svarer vanligvis innen et par dager.",
+		"faqs": [
+			{
+				"id": "pairing",
+				"question": "Hvordan kobler jeg meg med partneren min?",
+				"answer": "Opprett kontoen din, og send deretter partneren din den private invitasjonskoden fra koblingsskjermen. De skriver den inn etter registrering, og dere er koblet. Koder er engangs — hvis en utløper eller forsvinner, genererer du bare en ny."
+			},
+			{
+				"id": "login",
+				"question": "Jeg kan ikke logge inn",
+				"answer": "Dobbeltsjekk e-postadressen din og bruk lenken for tilbakestilling av passord på innloggingsskjermen om nødvendig. Hvis du fortsatt ikke kommer inn — for eksempel etter å ha byttet enhet — send oss e-post, så hjelper vi deg med å gjenopprette kontoen."
+			},
+			{
+				"id": "notifications",
+				"question": "Varsler kommer ikke frem",
+				"answer": "Sørg for at varsler er aktivert for Parfect i telefonens systeminnstillinger, og at de er slått på i appen under Innstillinger → Varsler. Merk at våre varsler er innholdsfrie av design: de viser aldri hva partneren din skrev."
+			},
+			{
+				"id": "unlink",
+				"question": "Hvordan kobler jeg fra partneren min?",
+				"answer": "Du kan koble fra når som helst fra Innstillinger. Å koble fra fjerner parets delte data fra våre servere. Hvis dere kobler sammen igjen senere, starter dere på nytt."
+			},
+			{
+				"id": "delete",
+				"question": "Hvordan sletter jeg kontoen min?",
+				"answer": "Gå til Innstillinger → Konto → Slett konto. Dette fjerner permanent kontoen din og parets delte data, meldinger og media fra våre servere. Du kan også sende oss e-post, så sletter vi den for deg."
+			},
+			{
+				"id": "safety",
+				"question": "Jeg har en sikkerhetsbekymring",
+				"answer": "Bruk Innstillinger → Rapporter en bekymring i appen, eller send oss e-post direkte. Du kan koble fra partneren din når som helst, og vi tar hver rapport på alvor."
+			}
+		],
+		"moreHeading": "Personvern og vilkår",
+		"moreText": "Nysgjerrig på hvordan dataene dine håndteres? Les vår",
+		"moreTextBetween": " og ",
+		"moreTextEnd": ".",
+		"privacyLink": "Personvernerklæring",
+		"termsLink": "Vilkår for bruk"
+	}
+}

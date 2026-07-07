@@ -1,55 +1,54 @@
+/** Route paths with translation keys for labels. */
+
 export const NAV_ANCHORS = [
-	{ href: "/#experience", label: "Experience" },
-	{ href: "/#how-it-works", label: "How it works" },
-	{ href: "/#couples", label: "Testimonials" },
-	{ href: "/#privacy", label: "Privacy" },
+	{ href: "/#experience", key: "experience" },
+	{ href: "/#how-it-works", key: "howItWorks" },
+	{ href: "/#couples", key: "testimonials" },
+	{ href: "/#privacy", key: "privacy" },
 ] as const;
 
-export const IDEAS_LINK = { href: "/ideas", label: "Ideas" } as const;
-
-export const DOWNLOAD_LINK = { href: "/download", label: "Get the app" } as const;
+export const IDEAS_PATH = "/ideas";
+export const DOWNLOAD_PATH = "/download";
 
 export const FEATURE_LINKS = [
 	{
 		href: "/features/private-chat",
-		label: "Private chat",
-		description: "Encrypted messaging made only for two.",
+		key: "privateChat",
 		image: "/images/features/private-chat.webp",
 	},
 	{
 		href: "/features/fantasies",
-		label: "Fantasies",
-		description: "Share what you've never said out loud.",
+		key: "fantasies",
 		image: "/images/features/fantasies.webp",
 	},
 	{
 		href: "/features/date-planner",
-		label: "Date planner",
-		description: "From \u201cwe should\u201d to a booked Saturday.",
+		key: "datePlanner",
 		image: "/images/features/date-planner.webp",
 	},
 	{
 		href: "/features/bucket-list",
-		label: "Bucket list",
-		description: "Shared dreams that actually happen.",
+		key: "bucketList",
 		image: "/images/features/bucket-list.webp",
 	},
 ] as const;
 
 export const AUDIENCE_LINKS = [
-	{
-		href: "/for/parents",
-		label: "For parents",
-		description: "Partners, not just co-parents.",
-	},
-	{
-		href: "/for/long-distance",
-		label: "For long-distance",
-		description: "Close, from anywhere.",
-	},
-	{
-		href: "/for/married-couples",
-		label: "For married couples",
-		description: "Keep choosing each other.",
-	},
+	{ href: "/for/parents", key: "forParents" },
+	{ href: "/for/long-distance", key: "forLongDistance" },
+	{ href: "/for/married-couples", key: "forMarriedCouples" },
+] as const;
+
+/** @deprecated Use DOWNLOAD_PATH with translations */
+export const DOWNLOAD_LINK = { href: DOWNLOAD_PATH, label: "Get the app" } as const;
+
+/** @deprecated Use IDEAS_PATH with translations */
+export const IDEAS_LINK = { href: IDEAS_PATH, label: "Ideas" } as const;
+
+/** @deprecated Use NAV_ANCHORS with translations */
+export const NAV_ANCHORS_LEGACY = [
+	{ href: "/#experience", label: "Experience" },
+	{ href: "/#how-it-works", label: "How it works" },
+	{ href: "/#couples", label: "Testimonials" },
+	{ href: "/#privacy", label: "Privacy" },
 ] as const;

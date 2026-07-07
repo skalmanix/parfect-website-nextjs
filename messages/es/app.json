@@ -1,0 +1,79 @@
+{
+	"AppPreview": {
+		"eyebrow": "Se siente como la app",
+		"heading": "Mira a lo que te estás metiendo",
+		"description": "Explora las pantallas exactamente como aparecen en Parfect — antes incluso de descargar.",
+		"cta": "Probadlo vosotros — gratis",
+		"tabLabel": "Pestaña {tab}",
+		"screenLabels": {
+			"chat": "Chat privado",
+			"fantasies": "Fantasías",
+			"together": "Juntos",
+			"date": "Noche de cita"
+		},
+		"tablistAria": "Pantallas de la app"
+	},
+	"AppTabs": {
+		"chat": "Chat",
+		"fantasies": "Fantasías",
+		"together": "Juntos",
+		"ariaLabel": "Vista previa de navegación de la app"
+	},
+	"HomeScreen": {
+		"ariaLabel": "Pantalla de inicio de Parfect con la pregunta de esta noche y acciones rápidas",
+		"goodEvening": "Buenas noches",
+		"coupleNames": "Emma & Liam",
+		"streakDays": "Racha de 12 días",
+		"tonightsPrompt": "Pregunta de esta noche",
+		"promptQuestion": "¿Qué pequeña cosa hizo tu pareja últimamente que te hizo sentir amado/a?",
+		"dateNightPlanned": "Noche de cita planificada",
+		"dateTime": "Sábado · 19:30"
+	},
+	"ChatScreen": {
+		"ariaLabel": "Chat privado de Parfect con una conversación íntima",
+		"partnerName": "Emma",
+		"onlineNow": "en línea ahora",
+		"todayTime": "Hoy 21:12",
+		"message1": "Esta noche, cuando los niños se duerman… tengo una sorpresa para ti",
+		"message2": "Ahora no puedo dejar de pensar en ello 😏",
+		"message3": "Bien. Ponte esa sonrisa que amo.",
+		"disappearingMessages": "Mensajes que desaparecen activados",
+		"messagePlaceholder": "Mensaje…"
+	},
+	"FantasiesScreen": {
+		"ariaLabel": "Pantalla de fantasías de Parfect con la pregunta de esta noche y una invitación",
+		"title": "Fantasías",
+		"tonightsPrompt": "Pregunta de esta noche",
+		"promptQuestion": "¿Qué fantasía nunca has dicho en voz alta?",
+		"shareYours": "Comparte la tuya",
+		"inviteSent": "Emma te envió una invitación",
+		"invitePreview": "\"Algo que he estado imaginando para nuestro aniversario…\"",
+		"respond": "Responder",
+		"notRightNow": "Ahora no",
+		"bothSaidYes": "Los dos dijisteis que sí",
+		"bucketListAdded": "Un fin de semana fuera, sin planes — ya está en vuestra bucket list."
+	},
+	"TogetherScreen": {
+		"ariaLabel": "Pantalla juntos de Parfect con una cita próxima y bucket list",
+		"title": "Juntos",
+		"planned": "PLANIFICADO",
+		"rooftopDinner": "Cena en la azotea",
+		"dateDetails": "Sábado · 19:30 · Canguro confirmado",
+		"bucketList": "Bucket list",
+		"itemCompleted": "Baile lento en la cocina",
+		"itemFromFantasy": "Escapada a pueblo costero",
+		"fromAFantasy": "DE UNA FANTASÍA",
+		"itemPending": "Caminata al amanecer, solo nosotros",
+		"addSomethingNew": "Añadir algo nuevo"
+	},
+	"DateScreen": {
+		"ariaLabel": "Pantalla de detalle de noche de cita de Parfect",
+		"title": "Noche de cita",
+		"planned": "PLANIFICADO",
+		"rooftopDinner": "Cena en la azotea",
+		"dateTime": "Sábado, 12 jul · 19:30",
+		"location": "Terrazza, centro",
+		"babysitterConfirmed": "Canguro confirmado",
+		"itsADate": "Es una cita"
+	}
+}

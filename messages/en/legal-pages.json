@@ -1,0 +1,331 @@
+{
+	"Privacy": {
+		"metaTitle": "Privacy Policy",
+		"metaDescription": "How Parfect collects, uses, and protects your data. Built for intimacy, not exposure — no ads, no data sales, and privacy controls you can actually understand.",
+		"eyebrow": "Legal",
+		"title": "Privacy Policy",
+		"intro": "Parfect is a private app for two. This policy explains — in plain language — what we collect, why we collect it, how long we keep it, and the rights you have over your data.",
+		"updated": "July 6, 2026",
+		"sections": [
+			{
+				"id": "controller",
+				"heading": "Who we are",
+				"blocks": [
+					{
+						"type": "paragraph",
+						"text": "Parfect operates the Parfect app and the API at api.parfect.app, and is the data controller for personal data processed through them. For anything privacy-related, contact us at {email}.",
+						"strong": ["api.parfect.app"]
+					}
+				]
+			},
+			{
+				"id": "what-we-collect",
+				"heading": "What we collect",
+				"blocks": [
+					{
+						"type": "list",
+						"items": [
+							{ "strong": "Account information", "text": "— your email, display name, and a password hash. We never store your password in plain text." },
+							{ "strong": "Couple data", "text": "— pairing information, profile settings, and consent timestamps." },
+							{ "strong": "Content you sync", "text": "— messages, fantasies, calendar events, shared lists, and media metadata, so both of you can access them across devices." },
+							{ "strong": "Shared media", "text": "— photos, videos, and audio you share in chat, stored on our servers." },
+							{ "strong": "Push tokens", "text": "— only if you enable notifications." },
+							{ "strong": "Technical logs", "text": "— the minimum needed to operate, secure, and debug the service." }
+						]
+					}
+				]
+			},
+			{
+				"id": "what-we-dont-do",
+				"heading": "What we never do",
+				"blocks": [
+					{
+						"type": "callout",
+						"items": [
+							"We do not sell your personal data.",
+							"We do not use your relationship content for advertising.",
+							"We do not share your data with third parties, except the infrastructure providers needed to run the app."
+						]
+					}
+				]
+			},
+			{
+				"id": "encryption",
+				"heading": "End-to-end encryption",
+				"blocks": [
+					{
+						"type": "paragraph",
+						"text": "Chat message text can be encrypted on your device before it is sent. When end-to-end encryption is enabled, Parfect cannot read the contents of those messages. Media files and other shared app data are stored on our servers so both partners can access them.",
+						"strong": ["Parfect cannot read the contents of those messages"]
+					}
+				]
+			},
+			{
+				"id": "how-we-use",
+				"heading": "How we use your data",
+				"blocks": [
+					{
+						"type": "list",
+						"items": [
+							{ "text": "To authenticate you and sync data between your devices and your partner." },
+							{ "text": "To deliver realtime updates and optional push notifications — which never include message content." },
+							{ "text": "To maintain, secure, and improve the service." }
+						]
+					}
+				]
+			},
+			{
+				"id": "lawful-basis",
+				"heading": "Lawful basis (GDPR)",
+				"blocks": [
+					{
+						"type": "list",
+						"items": [
+							{ "strong": "Contract", "text": "— to provide the app, sync data between you and your partner, and authenticate you." },
+							{ "strong": "Consent", "text": "— for optional notifications, post-pairing safety consent, and 18+ confirmation." },
+							{ "strong": "Legitimate interests", "text": "— to secure the service, prevent abuse, and improve reliability." }
+						]
+					}
+				]
+			},
+			{
+				"id": "subprocessors",
+				"heading": "Hosting & subprocessors",
+				"blocks": [
+					{
+						"type": "paragraph",
+						"text": "We use infrastructure providers to host the API, database, media storage, and push delivery (including cloud hosting and Expo push services). Your data is processed only to operate the service — nothing else."
+					}
+				]
+			},
+			{
+				"id": "cookies",
+				"heading": "Cookies & sessions",
+				"blocks": [
+					{
+						"type": "paragraph",
+						"text": "The web version uses a single HttpOnly session cookie to keep you signed in. The mobile app stores a session token in secure device storage. We do not use advertising or tracking cookies."
+					}
+				]
+			},
+			{
+				"id": "retention",
+				"heading": "How long we keep data",
+				"blocks": [
+					{
+						"type": "list",
+						"items": [
+							{ "text": "Account and synced data are kept while your account is active." },
+							{ "text": "When you unlink or delete your account, we remove your couple's shared data, messages, and media from our servers." },
+							{ "text": "Technical logs are retained for a limited period for security and operations, then deleted." }
+						]
+					}
+				]
+			},
+			{
+				"id": "your-rights",
+				"heading": "Your rights",
+				"blocks": [
+					{ "type": "paragraph", "text": "Depending on your location, you may have the right to:" },
+					{
+						"type": "list",
+						"items": [
+							{ "text": "Access, correct, or delete your personal data." },
+							{ "text": "Export your data — contact {email}." },
+							{ "text": "Object to or restrict certain processing." },
+							{ "text": "Withdraw consent where processing is consent-based." },
+							{ "text": "Lodge a complaint with your local data protection authority." }
+						]
+					}
+				]
+			},
+			{
+				"id": "delete",
+				"heading": "Deleting your account",
+				"blocks": [
+					{
+						"type": "paragraph",
+						"text": "You can delete your account in the app under Settings → Account → Delete account. This permanently removes your account and associated couple data from our servers. You can also email {email} and we'll take care of it.",
+						"strong": ["Settings → Account → Delete account"]
+					}
+				]
+			},
+			{
+				"id": "safety",
+				"heading": "Safety & reporting",
+				"blocks": [
+					{
+						"type": "paragraph",
+						"text": "If you have a safety concern, use Settings → Report a concern in the app or email {email}. You can unlink from your partner at any time from Settings.",
+						"strong": ["Settings → Report a concern"]
+					}
+				]
+			},
+			{
+				"id": "contact",
+				"heading": "Questions?",
+				"blocks": [
+					{
+						"type": "paragraph",
+						"text": "We're happy to explain anything in this policy. Reach us at {email}."
+					}
+				]
+			}
+		]
+	},
+	"Terms": {
+		"metaTitle": "Terms of Service",
+		"metaDescription": "The terms that govern your use of Parfect — eligibility, your account, acceptable use, private couple content, and service availability.",
+		"eyebrow": "Legal",
+		"title": "Terms of Service",
+		"intro": "These terms keep Parfect a safe, respectful space for every couple. By creating an account or using the app, you agree to them.",
+		"updated": "July 6, 2026",
+		"sections": [
+			{
+				"id": "eligibility",
+				"heading": "Eligibility",
+				"blocks": [
+					{
+						"type": "paragraph",
+						"text": "Parfect is for adults 18 years or older. By using the app, you confirm that you meet this requirement.",
+						"strong": ["18 years or older"]
+					}
+				]
+			},
+			{
+				"id": "account",
+				"heading": "Your account",
+				"blocks": [
+					{
+						"type": "paragraph",
+						"text": "You are responsible for keeping your login credentials secure and for activity that happens on your account. You may delete your account at any time from Settings → Account → Delete account.",
+						"strong": ["Settings → Account → Delete account"]
+					}
+				]
+			},
+			{
+				"id": "acceptable-use",
+				"heading": "Acceptable use & content",
+				"blocks": [
+					{ "type": "paragraph", "text": "You agree not to:" },
+					{
+						"type": "list",
+						"items": [
+							{ "text": "Misuse the service or attempt to compromise the platform." },
+							{ "text": "Harass, threaten, or harm others." },
+							{ "text": "Upload or share illegal content." }
+						]
+					},
+					{
+						"type": "paragraph",
+						"text": "You are responsible for the content you share with your paired partner. Never share intimate media or messages without mutual consent. We may suspend accounts that violate these terms or applicable law.",
+						"strong": ["Never share intimate media or messages without mutual consent."]
+					},
+					{
+						"type": "callout",
+						"text": "If something feels wrong, report it. Use Settings → Report a concern in the app or email {email}. We take safety reports seriously.",
+						"strong": ["Settings → Report a concern"]
+					}
+				]
+			},
+			{
+				"id": "couple-content",
+				"heading": "Private couple content",
+				"blocks": [
+					{
+						"type": "paragraph",
+						"text": "You and your paired partner control the content you share in the app. Pairing is a trust decision: only pair with someone you trust with the information you share. You can unlink from your partner at any time from Settings."
+					}
+				]
+			},
+			{
+				"id": "availability",
+				"heading": "Service availability",
+				"blocks": [
+					{
+						"type": "paragraph",
+						"text": "We work hard to keep Parfect available and secure, but the service is provided as-is, without guaranteed uptime."
+					}
+				]
+			},
+			{
+				"id": "termination",
+				"heading": "Termination",
+				"blocks": [
+					{
+						"type": "paragraph",
+						"text": "You may stop using Parfect at any time. We may suspend or terminate accounts that violate these terms."
+					}
+				]
+			},
+			{
+				"id": "privacy",
+				"heading": "Privacy",
+				"blocks": [
+					{
+						"type": "paragraph",
+						"text": "How we handle your data is covered in our Privacy Policy — including what we collect, end-to-end encryption, and how to delete your data.",
+						"linkText": "Privacy Policy"
+					}
+				]
+			},
+			{
+				"id": "contact",
+				"heading": "Questions?",
+				"blocks": [
+					{
+						"type": "paragraph",
+						"text": "Reach us anytime at {email}."
+					}
+				]
+			}
+		]
+	},
+	"Support": {
+		"metaTitle": "Support",
+		"metaDescription": "Get help with Parfect — pairing with your partner, login issues, notifications, and managing or deleting your account.",
+		"eyebrow": "Help",
+		"title": "Support",
+		"intro": "Stuck on pairing, login, notifications, or your account? Most answers are below — and if yours isn't, we're one email away.",
+		"contactLabel": "Contact us:",
+		"contactText": "We read every message and usually reply within a couple of days.",
+		"faqs": [
+			{
+				"id": "pairing",
+				"question": "How do I pair with my partner?",
+				"answer": "Create your account, then send your partner the private invite code from the pairing screen. They enter it after signing up and you're connected. Codes are single-use — if one expires or gets lost, just generate a new one."
+			},
+			{
+				"id": "login",
+				"question": "I can't log in",
+				"answer": "Double-check your email address and use the password reset link on the login screen if needed. If you still can't get in — for example after changing devices — email us and we'll help you recover your account."
+			},
+			{
+				"id": "notifications",
+				"question": "Notifications aren't arriving",
+				"answer": "Make sure notifications are enabled for Parfect in your phone's system settings, and that they're turned on inside the app under Settings → Notifications. Note that our notifications are content-free by design: they never show what your partner wrote."
+			},
+			{
+				"id": "unlink",
+				"question": "How do I unlink from my partner?",
+				"answer": "You can unlink at any time from Settings. Unlinking removes your couple's shared data from our servers. If you pair again later, you start fresh."
+			},
+			{
+				"id": "delete",
+				"question": "How do I delete my account?",
+				"answer": "Go to Settings → Account → Delete account. This permanently removes your account and your couple's shared data, messages, and media from our servers. You can also email us and we'll delete it for you."
+			},
+			{
+				"id": "safety",
+				"question": "I have a safety concern",
+				"answer": "Use Settings → Report a concern in the app, or email us directly. You can unlink from your partner at any time, and we take every report seriously."
+			}
+		],
+		"moreHeading": "Privacy & terms",
+		"moreText": "Curious how your data is handled? Read our",
+		"moreTextBetween": " and ",
+		"moreTextEnd": ".",
+		"privacyLink": "Privacy Policy",
+		"termsLink": "Terms of Service"
+	}
+}

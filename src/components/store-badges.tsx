@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 import { APP_STORE_URL, PLAY_STORE_URL } from "@/lib/constants";
 
 type StoreBadgesProps = {
@@ -12,29 +15,25 @@ const heights = {
 	lg: 54,
 } as const;
 
-/*
- * Official badge intrinsic dimensions (Play badge cropped to content bounds):
- * Apple SVG 119.66×40 (ratio 2.99), Google PNG 564×168 (ratio 3.357).
- * Rendering both at the same fixed height keeps them visually matched.
- */
 export function StoreBadges({ size = "md", className = "" }: StoreBadgesProps) {
+	const t = useTranslations("Common.storeBadges");
 	const height = heights[size];
 
 	return (
 		<div className={`flex flex-wrap items-center gap-3 ${className}`}>
-			<StoreLink href={APP_STORE_URL} label="Download Parfect on the App Store">
+			<StoreLink href={APP_STORE_URL} label={t("appStore")}>
 				<Image
 					src="/images/badges/app-store.svg"
-					alt="Download on the App Store"
+					alt={t("appStore")}
 					width={Math.round(height * 2.99)}
 					height={height}
 					style={{ height, width: "auto" }}
 				/>
 			</StoreLink>
-			<StoreLink href={PLAY_STORE_URL} label="Get Parfect on Google Play">
+			<StoreLink href={PLAY_STORE_URL} label={t("playStore")}>
 				<Image
 					src="/images/badges/google-play-badge.png"
-					alt="Get it on Google Play"
+					alt={t("playStore")}
 					width={Math.round(height * 3.357)}
 					height={height}
 					style={{ height, width: "auto" }}

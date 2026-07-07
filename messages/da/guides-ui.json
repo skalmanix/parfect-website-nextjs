@@ -1,0 +1,26 @@
+{
+	"GuidesUI": {
+		"pageTitle": "Idéer til par",
+		"pageDescription": "Date nights, samtaler og fælles drømme — praktiske guides, der hjælper jer med at blive tættere.",
+		"heroEyebrow": "Idéer til par",
+		"heroTitle": "Guides, der hjælper jer med at blive tættere",
+		"heroDescription": "Praktiske idéer til date nights, dybere samtaler og de drømme, I vil dele — skrevet til rigtige par med rigtige kalendere.",
+		"ctaHeading": "Gør idéer til virkelige øjeblikke",
+		"ctaText": "Parfect hjælper jer med at tale, drømme og planlægge — sammen.",
+		"clusters": {
+			"date-nights": {
+				"label": "Date nights",
+				"description": "Idéer til hjemmeaftener, udflugter og at gøre almindelige aftener særlige."
+			},
+			"conversations": {
+				"label": "Samtaler",
+				"description": "Spørgsmål og prompts, der hjælper jer med at tale om det, der betyder noget."
+			},
+			"dreams-and-plans": {
+				"label": "Drømme og planer",
+				"description": "Bucket lists, milepæle og at gøre fælles drømme til planer."
+			}
+		},
+		"breadcrumbIdeas": "Idéer til par"
+	}
+}

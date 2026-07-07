@@ -1,0 +1,26 @@
+{
+	"GuidesUI": {
+		"pageTitle": "Ideas for couples",
+		"pageDescription": "Date nights, conversations, and shared dreams — practical guides to help you grow closer.",
+		"heroEyebrow": "Ideas for couples",
+		"heroTitle": "Guides to help you grow closer",
+		"heroDescription": "Practical ideas for date nights, deeper conversations, and the dreams you want to share — written for real couples with real schedules.",
+		"ctaHeading": "Turn ideas into real moments",
+		"ctaText": "Parfect helps you talk, dream, and plan — together.",
+		"clusters": {
+			"date-nights": {
+				"label": "Date nights",
+				"description": "Ideas for nights in, nights out, and making ordinary evenings feel special."
+			},
+			"conversations": {
+				"label": "Conversations",
+				"description": "Questions and prompts to help you talk about what matters."
+			},
+			"dreams-and-plans": {
+				"label": "Dreams & plans",
+				"description": "Bucket lists, milestones, and turning shared dreams into plans."
+			}
+		},
+		"breadcrumbIdeas": "Ideas for couples"
+	}
+}

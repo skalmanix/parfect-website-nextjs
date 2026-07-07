@@ -1,0 +1,26 @@
+{
+	"GuidesUI": {
+		"pageTitle": "Ideen für Paare",
+		"pageDescription": "Date Nights, Gespräche und gemeinsame Träume — praktische Guides, die euch näher bringen.",
+		"heroEyebrow": "Ideen für Paare",
+		"heroTitle": "Guides, die euch näher bringen",
+		"heroDescription": "Praktische Ideen für Date Nights, tiefere Gespräche und die Träume, die ihr teilen wollt — geschrieben für echte Paare mit echten Terminkalendern.",
+		"ctaHeading": "Ideen in echte Momente verwandeln",
+		"ctaText": "Parfect hilft euch, zu reden, zu träumen und zu planen — zusammen.",
+		"clusters": {
+			"date-nights": {
+				"label": "Date Nights",
+				"description": "Ideen für Abende zu Hause, Ausflüge und gewöhnliche Abende, die sich besonders anfühlen."
+			},
+			"conversations": {
+				"label": "Gespräche",
+				"description": "Fragen und Impulse, die euch helfen, über das zu sprechen, was zählt."
+			},
+			"dreams-and-plans": {
+				"label": "Träume & Pläne",
+				"description": "Bucket Lists, Meilensteine und gemeinsame Träume in Pläne verwandeln."
+			}
+		},
+		"breadcrumbIdeas": "Ideen für Paare"
+	}
+}

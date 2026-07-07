@@ -1,5 +1,19 @@
 import Image from "next/image";
-import { FEATURES } from "@/lib/constants";
+import { getTranslations } from "next-intl/server";
+
+const featureKeys = [
+	"checkin",
+	"calendar",
+	"lock",
+	"constellation",
+	"shield",
+	"rings",
+] as const;
+const iconsWithImages = new Set(["lock", "rings"]);
+const iconImages: Record<string, string> = {
+	lock: "/images/hero-lock.webp",
+	rings: "/images/hero-onboarding.webp",
+};
 
 const icons: Record<string, React.JSX.Element> = {
 	checkin: (
@@ -34,7 +48,9 @@ const icons: Record<string, React.JSX.Element> = {
 	),
 };
 
-export function Features() {
+export async function Features() {
+	const t = await getTranslations("Home.features");
+
 	return (
 		<section
 			className="py-20 md:py-28 bg-background-elevated/50 border-y border-border/40"
@@ -42,37 +58,32 @@ export function Features() {
 		>
 			<div className="container-wide section-padding">
 				<div data-reveal className="text-center max-w-2xl mx-auto mb-14">
-					<p className="eyebrow text-rose mb-3">
-						Built for your relationship
-					</p>
+					<p className="eyebrow text-rose mb-3">{t("eyebrow")}</p>
 					<h2
 						id="features-heading"
 						className="font-display text-3xl sm:text-4xl font-medium tracking-tight mb-4 text-balance"
 					>
-						More than messaging
+						{t("heading")}
 					</h2>
-					<p className="text-muted text-lg">
-						Thoughtful tools that help you check in, plan ahead, and protect
-						what matters — without the noise of social media.
-					</p>
+					<p className="text-muted text-lg">{t("description")}</p>
 				</div>
 
 				<div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
-					{FEATURES.map((feature, index) => (
+					{featureKeys.map((key, index) => (
 						<article
-							key={feature.title}
+							key={key}
 							data-reveal
 							style={{ transitionDelay: `${(index % 3) * 80}ms` }}
 							className={`group relative rounded-2xl border border-border/60 bg-surface/60 p-6 transition-[border-color,background-color,transform,box-shadow] duration-200 hover:border-primary/30 hover:bg-surface hover:-translate-y-1 hover:shadow-[0_16px_40px_-20px_rgba(232,132,155,0.35)] ${
-								"image" in feature && feature.image
+								iconsWithImages.has(key)
 									? "sm:col-span-2 lg:col-span-1 overflow-hidden"
 									: ""
 							}`}
 						>
-							{"image" in feature && feature.image && (
+							{iconsWithImages.has(key) && (
 								<div className="absolute inset-0 opacity-20 group-hover:opacity-30 transition-opacity">
 									<Image
-										src={feature.image}
+										src={iconImages[key]}
 										alt=""
 										fill
 										className="object-cover"
@@ -83,13 +94,13 @@ export function Features() {
 							)}
 							<div className="relative">
 								<div className="w-11 h-11 rounded-xl bg-primary/15 text-primary flex items-center justify-center mb-4">
-									{icons[feature.icon]}
+									{icons[key]}
 								</div>
 								<h3 className="font-display text-xl font-medium mb-2">
-									{feature.title}
+									{t(`items.${key}.title`)}
 								</h3>
 								<p className="text-muted leading-relaxed">
-									{feature.description}
+									{t(`items.${key}.description`)}
 								</p>
 							</div>
 						</article>

@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 import Image from "next/image";
-import Link from "next/link";
+import { getTranslations } from "next-intl/server";
+import { Link } from "@/i18n/navigation";
 import { Header } from "./header";
 import { Footer } from "./footer";
 import { StoreBadges } from "./store-badges";
@@ -167,7 +168,8 @@ export function getFeaturePageJsonLd(content: FeaturePageContent) {
 	];
 }
 
-export function FeaturePage({ content }: { content: FeaturePageContent }) {
+export async function FeaturePage({ content }: { content: FeaturePageContent }) {
+	const t = await getTranslations("Common.featurePage");
 	const Screen = screens[content.screen];
 	const jsonLd = getFeaturePageJsonLd(content);
 	const heroImage = content.slug.startsWith("/features/")
@@ -214,7 +216,7 @@ export function FeaturePage({ content }: { content: FeaturePageContent }) {
 								<div className="animate-fade-up-delay-2 flex flex-col items-center lg:items-start">
 									<StoreBadges size="lg" className="mb-4 justify-center lg:justify-start" />
 									<p className="text-sm text-muted-deep">
-										Free download · Made for two · Ages 18+
+										{t("trustLine")}
 									</p>
 								</div>
 							</div>
@@ -350,7 +352,7 @@ export function FeaturePage({ content }: { content: FeaturePageContent }) {
 
 				{/* Testimonial */}
 				{content.testimonial && (
-					<section className="pb-16 md:pb-24" aria-label="What couples say">
+					<section className="pb-16 md:pb-24" aria-label={t("whatCouplesSay")}>
 						<div className="container-narrow section-padding">
 							<figure
 								data-reveal
@@ -391,7 +393,7 @@ export function FeaturePage({ content }: { content: FeaturePageContent }) {
 							data-reveal
 							className="font-display text-3xl sm:text-4xl font-medium tracking-tight mb-10 text-balance"
 						>
-							Common questions
+							{t("commonQuestions")}
 						</h2>
 						<div className="space-y-5">
 							{content.faqs.map((faq, index) => (
@@ -419,7 +421,7 @@ export function FeaturePage({ content }: { content: FeaturePageContent }) {
 							data-reveal
 							className="font-display text-2xl sm:text-3xl font-medium tracking-tight mb-8 text-balance"
 						>
-							Keep exploring
+							{t("keepExploring")}
 						</h2>
 						<div className="grid sm:grid-cols-3 gap-5">
 							{content.related.map((item, index) => (

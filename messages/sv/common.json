@@ -1,0 +1,93 @@
+{
+	"Common": {
+		"brand": "Parfect",
+		"logoHome": "Parfect startsida",
+		"nav": {
+			"experience": "Upplevelsen",
+			"howItWorks": "Så funkar det",
+			"testimonials": "Omdömen",
+			"privacy": "Integritet",
+			"features": "Funktioner",
+			"ideas": "Idéer",
+			"getApp": "Ladda ner appen",
+			"madeFor": "Skapad för",
+			"popularGuides": "Populära guider",
+			"moreGuides": "Fler guider",
+			"allGuides": "Alla guider",
+			"seasonal": "Säsong",
+			"openMenu": "Öppna menyn",
+			"closeMenu": "Stäng menyn",
+			"mainNav": "Huvudnavigering"
+		},
+		"footer": {
+			"tagline": "En privat app för par — för intim chatt, gemensamma drömmar och att göra dem till verklighet.",
+			"features": "Funktioner",
+			"ideasForCouples": "Idéer för par",
+			"explore": "Utforska",
+			"legal": "Juridiskt",
+			"allGuides": "Alla guider",
+			"download": "Ladda ner",
+			"privacyPolicy": "Integritetspolicy",
+			"termsOfService": "Användarvillkor",
+			"support": "Support",
+			"copyright": "© {year} Parfect. Alla rättigheter förbehållna."
+		},
+		"languageSwitcher": {
+			"label": "Språk",
+			"current": "Nuvarande språk: {language}"
+		},
+		"storeBadges": {
+			"appStore": "Ladda ner på App Store",
+			"playStore": "Hämta på Google Play"
+		},
+		"stickyCta": {
+			"tagline": "Gratis · Bara ni två"
+		},
+		"rating": {
+			"stars": "Betyg 4,9 av 5",
+			"line": "4,9 / 5 från par i early access"
+		},
+		"featurePage": {
+			"trustLine": "Gratis nedladdning · Skapad för två · 18+",
+			"commonQuestions": "Vanliga frågor",
+			"keepExploring": "Fortsätt utforska",
+			"whatCouplesSay": "Vad par säger",
+			"breadcrumbHome": "Parfect"
+		},
+		"guidePage": {
+			"breadcrumbHome": "Hem",
+			"breadcrumbIdeas": "Idéer",
+			"updated": "Uppdaterad",
+			"worthRemembering": "Värt att komma ihåg",
+			"commonQuestions": "Vanliga frågor",
+			"moreIdeas": "Fler idéer för er två",
+			"ctaHeading": "Gör idéer till riktiga stunder",
+			"ctaText": "Parfect hjälper er att prata, drömma och planera — tillsammans. Gratis på iOS och Android.",
+			"ctaButton": "Prova Parfect",
+			"tryParfect": "Prova Parfect"
+		},
+		"subpage": {
+			"backToHome": "Tillbaka till Parfect",
+			"lastUpdated": "Senast uppdaterad:",
+			"notFoundMessage": "Sidan hittades inte"
+		},
+		"links": {
+			"privateChat": "Privat chatt",
+			"fantasies": "Fantasier",
+			"datePlanner": "Dejtplanerare",
+			"bucketList": "Bucket list",
+			"forParents": "För föräldrar",
+			"forLongDistance": "För distansförhållanden",
+			"forMarriedCouples": "För gifta par"
+		},
+		"linkDescriptions": {
+			"privateChat": "Krypterad chatt skapad bara för två.",
+			"fantasies": "Dela det ni aldrig sagt högt.",
+			"datePlanner": "Från \"vi borde\" till en bokad lördag.",
+			"bucketList": "Gemensamma drömmar som faktiskt blir av.",
+			"forParents": "Partners, inte bara medföräldrar.",
+			"forLongDistance": "Nära varandra, var ni än är.",
+			"forMarriedCouples": "Fortsätt välja varandra."
+		}
+	}
+}

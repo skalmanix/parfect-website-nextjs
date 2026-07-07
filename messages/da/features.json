@@ -1,0 +1,921 @@
+{
+	"FeaturePages": {
+		"privateChat": {
+			"slug": "/features/private-chat",
+			"metaTitle": "Privat chat til par — krypterede beskeder til to",
+			"metaDescription": "En privat, krypteret chat skabt kun til jer og jeres partner. Forsvindende beskeder, indholdsfri notifikationer og ingen andre i rummet. Gratis på iOS og Android.",
+			"ogTitle": "Privat chat til par | Parfect",
+			"ogDescription": "En krypteret chat kun til to — forsvindende beskeder, app-lås og samtaler, der forbliver jeres.",
+			"eyebrow": "Privat chat",
+			"titlePlain": "Privat chat til par",
+			"titleBefore": "En chat, der tilhører",
+			"titleHighlight": "jer to",
+			"titleAfter": "— og ingen andre",
+			"intro": "De fleste beskedapps rummer hele jeres liv: arbejdschats, gruppechats, familielogistik. Parfect giver jeres forhold sit eget rum — krypteret, intimt og uden distraktioner.",
+			"screen": "chat",
+			"tab": "chat",
+			"story": {
+				"heading": "Hvorfor par har brug for et separat rum at tale i",
+				"paragraphs": [
+					"Tænk på, hvor jeres mest intime samtaler lever lige nu. Klemt mellem en leveringsnotifikation og en arbejdsbesked, i en app hvor et fejltryk kan sende en privat tanke til den forkerte gruppechat. Den kontekst ændrer, hvad I tør sige — de fleste par holder simpelthen op med at sige visse ting overhovedet.",
+					"Parfect er anderledes af design. Når I åbner den, er der præcis én samtale med præcis én person. Ingen feeds at scrolle, ingen kontaktliste, ingen statusspil. Bare tråden, I deler med jeres partner — hvilket gør det lettere at være ærlig, legesyg og sårbar på måder, en almindelig messenger aldrig inviterer til.",
+					"Og fordi nogle ord er ment for et øjeblik frem for en permanent optegnelse, kan I sætte beskeder til at forsvinde. Sig det modige. Det behøver ikke ligge i et søgbart arkiv for evigt."
+				]
+			},
+			"image": {
+				"src": "/images/hero-onboarding.webp",
+				"alt": "Et par sidder tæt sammen under lyskæder i skumringen",
+				"caption": "Nogle samtaler fortjener deres eget rum."
+			},
+			"benefits": {
+				"heading": "Bygget til intimitet, ikke til alle",
+				"intro": "Hver designbeslutning i Parfects chat besvarer ét spørgsmål: gør det lettere for to mennesker at føle sig tæt på hinanden?",
+				"items": [
+					{
+						"title": "End-to-end kryptering",
+						"description": "Valgfri E2EE betyder, at jeres beskedtekst krypteres på jeres enhed, før den sendes. Ikke engang Parfect kan læse den.",
+						"icon": "lock"
+					},
+					{
+						"title": "Forsvindende beskeder",
+						"description": "Sæt beskeder til at forsvinde, efter de er set. Perfekt til det, I vil sige én gang — ikke arkivere for evigt.",
+						"icon": "clock"
+					},
+					{
+						"title": "Indholdsfri notifikationer",
+						"description": "Push-beskeder viser aldrig, hvad der blev skrevet — kun at jeres partner har skrevet. Intet intimt på jeres låseskærm.",
+						"icon": "bell"
+					},
+					{
+						"title": "App-lås og biometri",
+						"description": "Beskyt appen med en PIN eller Face ID. Giv din telefon til en ven eller dit barn uden at tænke over det.",
+						"icon": "shield"
+					},
+					{
+						"title": "Læst-kvitteringer, der betyder noget",
+						"description": "Med kun én person i rummet er en læst-kvittering ikke angst — det er forbindelse. I ved altid, at I er blevet hørt.",
+						"icon": "chat"
+					},
+					{
+						"title": "Fra ord til planer",
+						"description": "Når en besked giver en idé — en tur, en date, et løfte — send den til jeres fælles bucket list uden at forlade samtalen.",
+						"icon": "star"
+					}
+				]
+			},
+			"steps": {
+				"heading": "Sådan fungerer privat chat i Parfect",
+				"intro": "Fra download til jeres første besked på under to minutter.",
+				"items": [
+					{
+						"title": "Par med jeres partner",
+						"description": "Opret jeres konto og send jeres partner en privat invitationskode. Når de indtaster den, er rummet jeres — permanent, og kun jeres."
+					},
+					{
+						"title": "Gør det til jeres",
+						"description": "Slå end-to-end kryptering til, vælg hvor længe forsvindende beskeder lever, og opsæt app-lås — hver med ét tryk fra Indstillinger."
+					},
+					{
+						"title": "Sig det første",
+						"description": "Start med noget lille eller noget modigt. Daglige prompts er der, når I vil have en gnist, og det er okay at starte langsomt."
+					}
+				]
+			},
+			"testimonial": {
+				"quote": "Vi skriver hele dagen på almindelige apps — indkøb, afhentninger, logistik. Parfect er hvor vi stadig er et par. At åbne den føles som at lukke en dør bag os.",
+				"names": "Mia & Oscar",
+				"context": "Sammen i 9 år",
+				"image": "/images/people/couple-sofa.webp"
+			},
+			"faqs": [
+				{
+					"question": "Er Parfects chat virkelig privat?",
+					"answer": "Ja. Parfect er bygget til præcis to mennesker. Der er ingen gruppechats, ingen offentlige profiler og ingen opdagelsesfunktioner. Beskedtekst kan være end-to-end krypteret, så ingen — inklusive Parfect — kan læse den, og push-notifikationer afslører aldrig beskedindhold."
+				},
+				{
+					"question": "Hvordan fungerer forsvindende beskeder?",
+					"answer": "I kan sætte beskeder til automatisk at blive slettet, efter de er set. Det er ideelt til intime beskeder, I hellere ikke vil beholde i et permanent arkiv. Begge partnere kan se, når forsvindende tilstand er slået til, så der aldrig er overraskelser."
+				},
+				{
+					"question": "Kan andre deltage i vores chat?",
+					"answer": "Nej. Parring kræver en engangs privat invitationskode, og hver konto kan kun parres med én partner. Hvis I nogensinde fjerner parringen, slettes jeres fælles data fra Parfects servere."
+				},
+				{
+					"question": "Hvad sker der, hvis nogen tager min telefon?",
+					"answer": "I kan beskytte Parfect med en PIN-kode eller biometri (Face ID / fingeraftryk), så appen forbliver låst, selvom jeres telefon er ulåst. Notifikationer er indholdsfri som standard, så intet intimt vises på jeres låseskærm."
+				},
+				{
+					"question": "Er chatten gratis?",
+					"answer": "Ja — Parfect er gratis at downloade på iOS og Android, og privat chat er en kerne del af den gratis oplevelse."
+				}
+			],
+			"related": [
+				{
+					"href": "/features/fantasies",
+					"label": "Fantasier",
+					"description": "Blide prompts, der hjælper jer med at dele det, I aldrig har sagt højt."
+				},
+				{
+					"href": "/features/date-planner",
+					"label": "Date planner",
+					"description": "Gør gode samtaler til rigtige planer — date nights, babysitter og det hele."
+				},
+				{
+					"href": "/for/long-distance",
+					"label": "Til par på afstand",
+					"description": "Sådan bruger par Parfect til at holde kontakten på tværs af tidszoner."
+				}
+			],
+			"cta": {
+				"heading": "Giv jeres forhold sit eget rum",
+				"text": "Download Parfect gratis, par med jeres partner på under to minutter, og start samtalen, der kun er til jer to."
+			}
+		},
+		"fantasies": {
+			"slug": "/features/fantasies",
+			"metaTitle": "Fantasier — del det, I forestiller jer, i jeres eget tempo",
+			"metaDescription": "Parfects fantasiprompts hjælper par med at åbne op om ønsker sikkert — del når I er klar, og \"ikke lige nu\" er altid okay. Privat, krypteret, gratis.",
+			"ogTitle": "Del jeres fantasier sikkert | Parfect",
+			"ogDescription": "Blide prompts, der hjælper par med at sige det, de har ment at sige — i deres eget tempo, privat.",
+			"eyebrow": "Fantasier",
+			"titlePlain": "Fantasier",
+			"titleBefore": "Sig det, I har",
+			"titleHighlight": "aldrig sagt",
+			"titleAfter": "højt",
+			"intro": "Ethvert par har drømme og ønsker, der forbliver usagte — ikke fordi de ikke betyder noget, men fordi det føles umuligt at starte samtalen. Parfect giver jer en blid, privat måde at begynde på.",
+			"screen": "fantasies",
+			"tab": "fantasies",
+			"story": {
+				"heading": "Samtalen, de fleste par aldrig tager",
+				"paragraphs": [
+					"Forskning i langvarige forhold peger igen og igen på det samme: par, der taler åbent om deres ønsker, rapporterer dybere tilfredshed og stærkere forbindelse. Og alligevel er det samtalen, de fleste af os undgår — frygten for at blive misforstået, for akavethed, for at ryste noget godt, holder fantasier låst inde i årevis.",
+					"Parfect sænker indsatsen. I stedet for en højtryks ansigt-til-ansigt tilståelse får I et privat rum med gennemtænkte prompts — fra søde til dristige — der gør deling til et spil, I spiller sammen, frem for en test, I kan fejle. I vælger, hvad I deler og hvornår. Jeres partner svarer, når de er klar.",
+					"Afgørende er det, at \"ikke lige nu\" er et gyldigt svar. At afvise en invitation er altid okay og straffes aldrig — for ægte åbenhed vokser kun, hvor der er ægte tryghed. Over tid bliver de små delinger til større, og det, I begge forestillede jer stille, bliver til planer, I laver sammen."
+				]
+			},
+			"image": {
+				"src": "/images/hero-together.webp",
+				"alt": "To hænder, der rækker mod hinanden omgivet af rosenblade",
+				"caption": "Åbenhed vokser, hvor det føles trygt."
+			},
+			"benefits": {
+				"heading": "Designet til at gøre åbenhed let",
+				"intro": "Fantasier i Parfect er bygget omkring samtykke, tempo og leg — aldrig pres.",
+				"items": [
+					{
+						"title": "Daglige prompts",
+						"description": "Et nyt spørgsmål hver dag — fra legesyg til dyb — så I aldrig skal opfinde samtalen fra bunden.",
+						"icon": "sparkles"
+					},
+					{
+						"title": "Del eller spørg",
+						"description": "Send en fantasi af jeres egen, eller inviter jeres partner til at dele en. Uanset hvad starter det med nysgerrighed, ikke konfrontation.",
+						"icon": "chat"
+					},
+					{
+						"title": "\"Ikke lige nu\" er okay",
+						"description": "Hver invitation kan afvises blidt. Ingen skyld, ingen pointtavle — bare respekt for hinandens tempo.",
+						"icon": "heart"
+					},
+					{
+						"title": "Fuldstændig privat",
+						"description": "Fantasier lever i jeres krypterede parrum. Intet fællesskab, ingen fremmede, ingen algoritme, der læser med.",
+						"icon": "lock"
+					},
+					{
+						"title": "Fra drøm til bucket list",
+						"description": "Når en fælles fantasi er klar til at blive virkelig, flyt den til jeres bucket list og begynd at planlægge den sammen.",
+						"icon": "star"
+					},
+					{
+						"title": "Vokser med jer",
+						"description": "Start sødt og gå dybere over tid. Prompts tilpasser sig det, I begge er trygge ved — I sætter temperaturen.",
+						"icon": "map"
+					}
+				]
+			},
+			"steps": {
+				"heading": "Sådan fungerer det at dele en fantasi",
+				"intro": "Tre små skridt mellem \"aldrig sagt det\" og \"vi planlægger det\".",
+				"items": [
+					{
+						"title": "Få en gnist",
+						"description": "Åbn aftenens prompt, eller start fra noget, der har været på jeres sind. Skriv det privat først — ingen ser det, før I beslutter det."
+					},
+					{
+						"title": "Del når I er klar",
+						"description": "Send det til jeres partner som en invitation. De kan svare, stille spørgsmål, dele deres egen — eller sige \"ikke lige nu\" med ét tryk."
+					},
+					{
+						"title": "Gør det virkeligt (hvis I vil)",
+						"description": "Nogle fantasier er dejlige som ord. Andre fortjener en dato i kalenderen. Flyt dem, I begge vælger, til jeres fælles bucket list."
+					}
+				]
+			},
+			"testimonial": {
+				"quote": "Prompts startede samtaler, vi havde undgået i årevis. At vide, at \"ikke lige nu\" altid er okay, gjorde hele forskellen — vi følte os endelig trygge ved at være ærlige.",
+				"names": "Elin & Jonas",
+				"context": "Sammen i 8 år",
+				"image": "/images/people/couple-elin-jonas.webp"
+			},
+			"faqs": [
+				{
+					"question": "Hvad hvis min partner ikke er klar til at dele?",
+					"answer": "Det er indbygget i designet. Hver invitation kan afvises med et blidt \"ikke lige nu\", og intet tvinges eller scores nogensinde. Mange par starter med de søde, lavrisiko-prompts og vokser ind i dybere deling over uger eller måneder — i det tempo, der føles rigtigt."
+				},
+				{
+					"question": "Kan andre se, hvad vi deler?",
+					"answer": "Nej. Fantasier eksisterer kun i jeres private parrum. Parfect har ingen feeds, ingen fællesskabsfunktioner og ingen fremmede. Chattekst understøtter end-to-end kryptering, notifikationer afslører aldrig indhold, og I kan låse appen bag Face ID eller en PIN."
+				},
+				{
+					"question": "Er prompts eksplicitte?",
+					"answer": "De spænder fra søde og romantiske til dristige — og I styrer dybden. Parfect er lavet til voksne (18+), men bygget omkring følelsesmæssig intimitet først: mange prompts handler om drømme, minder og forbindelse frem for noget eksplicit."
+				},
+				{
+					"question": "Hvad sker der med en fantasi, efter vi har delt den?",
+					"answer": "Hvad I vælger. Den kan forblive som en samtale, genbesøges senere eller flyttes til jeres fælles bucket list — hvor den bliver noget, I aktivt planlægger sammen, som en date night eller en tur."
+				},
+				{
+					"question": "Er denne funktion gratis?",
+					"answer": "Ja. Parfect er gratis på iOS og Android, og fantasiprompts er en del af kerneoplevelsen."
+				}
+			],
+			"related": [
+				{
+					"href": "/features/private-chat",
+					"label": "Privat chat",
+					"description": "Den krypterede to-personers chat, hvor hver samtale lever."
+				},
+				{
+					"href": "/features/bucket-list",
+					"label": "Bucket list",
+					"description": "Hvor fælles drømme bliver til planer, I faktisk gennemfører."
+				},
+				{
+					"href": "/for/married-couples",
+					"label": "Til gifte par",
+					"description": "At holde nysgerrigheden i live efter mange år sammen."
+				}
+			],
+			"cta": {
+				"heading": "Start samtalen i aften",
+				"text": "Download Parfect gratis, og lad en enkelt blid prompt gøre det, som årevis af \"vi burde tale om det en dag\" ikke kunne."
+			}
+		},
+		"datePlanner": {
+			"slug": "/features/date-planner",
+			"metaTitle": "Date night planner til par — planlæg det sammen",
+			"metaDescription": "Planlæg date nights sammen ét sted: fælles kalender, babysitterkoordinering og idéer direkte fra jeres bucket list. Gratis på iOS og Android.",
+			"ogTitle": "Date night planner | Parfect",
+			"ogDescription": "Fra \"vi burde gå ud mere\" til en booket lørdag — fælles planlægning, babysitterkoordinering og jubilæumspåmindelser.",
+			"eyebrow": "Date planner",
+			"titlePlain": "Date night planner",
+			"titleBefore": "Fra",
+			"titleHighlight": "\"vi burde gå ud mere\"",
+			"titleAfter": "til en booket lørdag",
+			"intro": "Ethvert par siger det. Få kalendere viser det. Parfect gør date night fra en vag intention til en plan med tid, sted — og en babysitter, der allerede er bekræftet.",
+			"screen": "date",
+			"tab": "together",
+			"story": {
+				"heading": "Hvorfor date nights aldrig sker",
+				"paragraphs": [
+					"Det handler sjældent om kærlighed og næsten altid om logistik. Nogen skal vælge en dag, finde noget at lave, tjekke den andens kalender, ordne børnene — og fordi det usynlige arbejde ofte lander på én partner, forvandler det stille romance til projektledelse. Til sidst er det nemmere bare at se noget.",
+					"Parfect deler byrden. Dateplanlægning lever i jeres fælles rum, hvor I begge kan foreslå idéer, vælge datoer og se alt i én kalender. Idéer behøver heller ikke komme fra en blank side — jeres bucket list og fælles fantasier flyder direkte ind i den, så spørgsmålet skifter fra \"hvad skal vi lave?\" til \"hvilken skal vi tage først?\"",
+					"For forældre håndterer appen det trin, der dræber de fleste planer: babysitteren. Koordiner babysitting direkte i planen, så \"lørdag, 19:30, babysitter bekræftet\" er ét blik — ikke en tre-dages beskedkæde."
+				]
+			},
+			"image": {
+				"src": "/images/hero-date.webp",
+				"alt": "Et stearinlysbelyst middagsbord til to på en tagterrasse med udsigt over byens lys",
+				"caption": "De bedste dates starter tre dage før — med en plan."
+			},
+			"benefits": {
+				"heading": "Alt en date har brug for, ét sted",
+				"intro": "Mindre koordineringsarbejde, mere faktisk romance. Her er hvad planneren tager fra jeres tallerken.",
+				"items": [
+					{
+						"title": "Fælles planlægning",
+						"description": "Begge partnere ser, foreslår og redigerer planer. Ikke længere én person, der bærer hele det mentale arbejde med romance.",
+						"icon": "calendar"
+					},
+					{
+						"title": "Babysitterkoordinering",
+						"description": "Få babysitteren på plads som en del af selve planen. Når den siger bekræftet, sker aftenen faktisk.",
+						"icon": "shield"
+					},
+					{
+						"title": "Idéer klar til brug",
+						"description": "Hent fra jeres fælles bucket list og fantasier i stedet for at stirre på en blank side hver gang.",
+						"icon": "sparkles"
+					},
+					{
+						"title": "Jubilæer og milepæle",
+						"description": "Fødselsdage, jubilæer, dagen I mødtes — sporet i jeres fælles kalender, så de aldrig sniger sig op på jer igen.",
+						"icon": "heart"
+					},
+					{
+						"title": "Blide påmindelser",
+						"description": "Indholdsfri notifikationer giver jer et skub før den store aften — uden at ødelægge overraskelser på jeres låseskærm.",
+						"icon": "bell"
+					},
+					{
+						"title": "Minder der hober sig op",
+						"description": "Gennemførte dates bliver en del af jeres fælles historie i appen — bevis på, at I bygger det forhold, I ønsker.",
+						"icon": "star"
+					}
+				]
+			},
+			"steps": {
+				"heading": "Sådan fungerer det at planlægge en date",
+				"intro": "Fra idé til bekræftede planer i tre trin.",
+				"items": [
+					{
+						"title": "Vælg gnisten",
+						"description": "Vælg en idé fra jeres bucket list, en fælles fantasi, eller start forfra. \"Middag på tagterrassen\" er et fint sted at begynde."
+					},
+					{
+						"title": "Sæt detaljerne sammen",
+						"description": "Aftal dag og tid i jeres fælles kalender, tilføj stedet, og — hvis I har brug for det — koordiner babysitteren direkte i planen."
+					},
+					{
+						"title": "Mød op og nyd det",
+						"description": "I får begge en blid påmindelse før aftenen. Det eneste, der er tilbage, er den sjove del: at være der, sammen."
+					}
+				]
+			},
+			"testimonial": {
+				"quote": "Vi sagde \"vi burde gå ud mere\" i to år. Parfect gjorde det pinligt at blive ved med at sige det — idéerne var lige der, så vi begyndte bare at booke dem.",
+				"names": "Hanna & Viktor",
+				"context": "Sammen i 6 år · Stockholm",
+				"image": "/images/people/couple-laughing.webp"
+			},
+			"faqs": [
+				{
+					"question": "Hvordan er det bedre end en fælles Google Kalender?",
+					"answer": "En almindelig kalender gemmer begivenheder; Parfect planlægger dates. Idéer flyder ind fra jeres bucket list og fælles fantasier, babysitterkoordinering er indbygget i planen, jubilæer spores automatisk, og det hele lever i det samme private rum som jeres par-chat — ikke mellem tandlægeaftaler og arbejdsmøder."
+				},
+				{
+					"question": "Virker det for par uden børn?",
+					"answer": "Absolut. Babysitterkoordinering er valgfri — det meste af planneren handler om idéer, fælles planlægning og at sikre, at intentioner bliver til faktiske aftener ude (eller hjemme)."
+				},
+				{
+					"question": "Kan vi også planlægge date nights hjemme?",
+					"answer": "Selvfølgelig. En date er alt, I gør med vilje sammen — en madlavningsaften, en filmmaraton, en langsom dans i køkkenet. Planneren bekymrer sig om, at det sker, ikke hvor."
+				},
+				{
+					"question": "Hvad med jubilæer og vigtige datoer?",
+					"answer": "Tilføj dem én gang, og Parfect holder styr på dem — jeres jubilæum, fødselsdage og de milepæle, der betyder noget for jer to. I får besked i tide til at planlægge noget, ikke en undskyldnings-buket-situation dagen efter."
+				},
+				{
+					"question": "Er date planneren gratis?",
+					"answer": "Ja. Parfect er gratis at downloade på iOS og Android, og dateplanlægning er en del af kerneoplevelsen."
+				}
+			],
+			"related": [
+				{
+					"href": "/features/bucket-list",
+					"label": "Bucket list",
+					"description": "Den fælles liste over alt, I to vil lave — plannerens bedste ven."
+				},
+				{
+					"href": "/for/parents",
+					"label": "Til forældre",
+					"description": "Sådan får par med børn date night tilbage i kalenderen."
+				},
+				{
+					"href": "/features/private-chat",
+					"label": "Privat chat",
+					"description": "Hvor \"hvad nu hvis vi…\"-samtalerne starter."
+				}
+			],
+			"cta": {
+				"heading": "Sæt den næste date i kalenderen",
+				"text": "Download Parfect gratis, og gør denne uges \"vi burde virkelig\" til en faktisk reservation."
+			}
+		},
+		"bucketList": {
+			"slug": "/features/bucket-list",
+			"metaTitle": "Bucket list-app til par — drøm det, planlæg det, gør det",
+			"metaDescription": "Byg en fælles bucket list med jeres partner: saml drømme, gør dem til planlagte dates, og kryds dem af sammen. Gratis på iOS og Android.",
+			"ogTitle": "Fælles bucket list til par | Parfect",
+			"ogDescription": "Én liste over alt, I to vil lave — fra langsom dans i køkkenet til turen, I bliver ved med at tale om.",
+			"eyebrow": "Bucket list",
+			"titlePlain": "Bucket list til par",
+			"titleBefore": "Én liste over alt,",
+			"titleHighlight": "I to",
+			"titleAfter": "bliver ved med at tale om",
+			"intro": "Badebyen, I ville stikke af til. Restauranten, I bliver ved med at passere. Den langsomme dans i køkkenet. Parfect holder hvert \"en dag\" ét fælles sted — og hjælper jer med faktisk at nå dem.",
+			"screen": "together",
+			"tab": "together",
+			"story": {
+				"heading": "En dag er ikke en plan",
+				"paragraphs": [
+					"Par kommer med vidunderlige idéer hele tiden — på gåture, over vin, midt om natten. Og så fordamper idéerne, fordi de lever i den mindst pålidelige opbevaring, der findes: \"vi burde virkelig gøre det en dag.\" Et år senere siger I den samme sætning om den samme tur.",
+					"En fælles bucket list ændrer fysikken af det her. I det øjeblik en idé skrives ned, hvor I begge kan se den, stopper den med at være en flygtig kommentar og bliver et lille gensidigt løfte. Parfect holder listen i det samme private rum som jeres chat og fantasier, så det tager to tryk at fange en idé — midt i en samtale, midt på en gåtur, midt i hvad som helst.",
+					"Og listen er ikke en gravplads for gode intentioner. Ethvert punkt kan flyttes til en planlagt date med dag, tid og babysitter, hvis I har brug for det. At krydse ting af sammen — og se den afkrydsede liste vokse — bliver sit eget stille bevis på, at I bygger det liv, I taler om."
+				]
+			},
+			"image": {
+				"src": "/images/hero-home.webp",
+				"alt": "Et par går hånd i hånd ned ad en lanternebelyst sti i skumringen",
+				"caption": "En-dag-listen bliver endelig kortere."
+			},
+			"benefits": {
+				"heading": "En en-dag-liste, der faktisk bevæger sig",
+				"intro": "Tre ting gør Parfects bucket list anderledes end en note på jeres telefon.",
+				"items": [
+					{
+						"title": "Virkelig fælles",
+						"description": "I begge tilføjer, redigerer og krydser af. Det er ikke én partners ønskeliste — det er en løbende aftale om det liv, I ønsker.",
+						"icon": "heart"
+					},
+					{
+						"title": "Født af jeres fantasier",
+						"description": "Fælles drømme fra Fantasier-rummet kan flyttes direkte til listen — markeret, så I husker, hvor de kom fra.",
+						"icon": "sparkles"
+					},
+					{
+						"title": "Ét tryk fra planlagt",
+						"description": "Ethvert punkt bliver en date night med dag og tid. \"Badeby-weekend\" stopper med at være en sætning og bliver en rejseplan.",
+						"icon": "calendar"
+					},
+					{
+						"title": "Store og små",
+						"description": "Solopgangsture ved siden af ture rundt om jorden. De bedste lister blander fem-minutters sejre med fem-års drømme.",
+						"icon": "list"
+					},
+					{
+						"title": "Privat som standard",
+						"description": "Jeres liste lever i jeres krypterede parrum. Intet socialt feed, ingen performative rejsemål — bare det, I to faktisk vil.",
+						"icon": "lock"
+					},
+					{
+						"title": "En fælles historie",
+						"description": "Hvert afkrydset punkt er et minde, I skabte med vilje. Scroll tilbage når som helst og se, hvor langt I er kommet sammen.",
+						"icon": "star"
+					}
+				]
+			},
+			"steps": {
+				"heading": "Sådan fungerer bucket listen",
+				"intro": "Fang, vælg, gør — og gentag resten af jeres liv.",
+				"items": [
+					{
+						"title": "Fang hver idé",
+						"description": "Tilføj punkter i det øjeblik, de opstår — fra chat, fra en fantasi, eller direkte på listen. Intet går tabt i \"en dag\" igen."
+					},
+					{
+						"title": "Vælg det næste",
+						"description": "Gennemgå listen sammen og vælg det, der passer til denne måned — eller denne tirsdag. Flyt det til en planlagt date med ét tryk."
+					},
+					{
+						"title": "Kryds det af sammen",
+						"description": "Gør det, sæt flueben, og nyd den undervurderede fornøjelse ved en fælles drøm markeret som færdig. Vælg så det næste."
+					}
+				]
+			},
+			"testimonial": {
+				"quote": "Vores liste startede med \"lær at lave pasta\" og har nu en roadtrip på sig. At krydse ting af sammen er mærkeligt vanedannende — på den bedste måde.",
+				"names": "Amira & Daniel",
+				"context": "Sammen i 3 år",
+				"image": "/images/people/couple-amira-daniel.webp"
+			},
+			"faqs": [
+				{
+					"question": "Hvordan er det anderledes end en fælles notesapp?",
+					"answer": "En note gemmer tekst; Parfects bucket list er forbundet med resten af jeres forhold. Punkter flyder ind fra fælles fantasier, flyder ud til planlagte date nights med påmindelser og babysitterkoordinering, og lever i det samme private, krypterede rum som jeres par-chat."
+				},
+				{
+					"question": "Hvad skal vi sætte på en bucket list til par?",
+					"answer": "Bland størrelser: små hverdagssejre (langsom dans i køkkenet, solopgangskaffe), lokale eventyr (den restaurant, en dagstur) og store drømme (badebyen, at lære noget sammen). Små punkter holder listen i gang; store giver den en horisont."
+				},
+				{
+					"question": "Kan bucket list-punkter komme fra vores fantasier?",
+					"answer": "Ja — det er et af Parfects yndlingsøjeblikke. Når en fælles fantasi er noget, I begge vil gøre virkeligt, flyt den til bucket listen. Den beholder en lille markering, der viser, at den startede som en drøm."
+				},
+				{
+					"question": "Ser begge partnere den samme liste?",
+					"answer": "Ja. Listen er fuldt fælles: I begge kan tilføje, redigere, fuldføre og planlægge punkter. Den opdateres i realtid, så en idé tilføjet i frokostpausen venter, når I kommer hjem."
+				},
+				{
+					"question": "Er bucket listen gratis?",
+					"answer": "Ja. Parfect er gratis på iOS og Android, og den fælles bucket list er en del af kerneoplevelsen."
+				}
+			],
+			"related": [
+				{
+					"href": "/features/date-planner",
+					"label": "Date planner",
+					"description": "Hvor bucket list-punkter bliver til bookede lørdage."
+				},
+				{
+					"href": "/features/fantasies",
+					"label": "Fantasier",
+					"description": "Den blide måde, fælles drømme bliver sagt på i første omgang."
+				},
+				{
+					"href": "/for/married-couples",
+					"label": "Til gifte par",
+					"description": "Hvorfor en fælles liste betyder endnu mere efter mange år sammen."
+				}
+			],
+			"cta": {
+				"heading": "Start jeres liste i aften",
+				"text": "Download Parfect gratis, tilføj de første tre ting, I bliver ved med at tale om, og se \"en dag\" få en dato."
+			}
+		},
+		"forParents": {
+			"slug": "/for/parents",
+			"metaTitle": "Par-appen til forældre — forbliv partnere, ikke bare medforældre",
+			"metaDescription": "Mellem skoleafhentninger og sengetid kommer forholdet sidst. Parfect hjælper forældre med at genfinde hinanden: date nights med babysitterkoordinering, privat chat og små daglige ritualer.",
+			"ogTitle": "Parfect til forældre",
+			"ogDescription": "Date night med babysitter på plads, en chat der kun er jeres, og små ritualer, der holder jer tæt mellem sengetider.",
+			"eyebrow": "Til forældre",
+			"titlePlain": "Parfect til forældre",
+			"titleBefore": "Stadig",
+			"titleHighlight": "partnere",
+			"titleAfter": "— ikke bare medforældre",
+			"intro": "I elsker jeres børn. I savner også hinanden. Parfect hjælper travle forældre med at beskytte det forhold, der startede hele familien — i de ti-minutters huller, en forælders dag faktisk har.",
+			"screen": "home",
+			"tab": "together",
+			"story": {
+				"heading": "Parret kommer som regel sidst. Lad os rette op på det.",
+				"paragraphs": [
+					"Efter børn forvandler de fleste pars samtaler sig stille til logistik: afhentninger, middage, hvis tur det er. Det er ikke fordi kærligheden forsvinder — det er fordi forholdet stopper med at få dedikeret tid eller rum. Uger går i perfekt teamwork og nul romance, og I mærker det begge.",
+					"Det sædvanlige råd er \"prioriter date night\", og det er godt råd — men alle med børn ved, at den rigtige udfordring er logistikken. At vælge en dag, blive enige om en plan, og frem for alt at ordne babysitteren. Det er præcis den del, Parfect håndterer: dateplaner lever i et fælles rum, idéer kommer fra jeres egen bucket list, og babysitterkoordinering er indbygget i selve planen.",
+					"Mellem date nights holder Parfect en tråd af kun-os kørende gennem almindelige dage. En privat chat, der ikke er familiegruppen. En daglig prompt, I kan svare på fra sofaen efter sengetid. En besked, der forsvinder efter den er læst. Små ting — men små ting, gentaget, er det, nærhed er lavet af."
+				]
+			},
+			"image": {
+				"src": "/images/hero-date.webp",
+				"alt": "Et stearinlysbelyst middagsbord dækket til to med byens lys i baggrunden",
+				"caption": "Babysitteren er booket. Aftenen er jeres."
+			},
+			"benefits": {
+				"heading": "Bygget omkring en forælders virkelighed",
+				"intro": "Ingen store gestusser nødvendige — bare værktøjer, der passer ind i den dag, I faktisk har.",
+				"items": [
+					{
+						"title": "Babysitter-sikrede date nights",
+						"description": "Koordiner babysitteren inde i selve planen. Når Parfect siger bekræftet, sker date night faktisk.",
+						"icon": "shield"
+					},
+					{
+						"title": "En chat, der ikke er logistik",
+						"description": "Hold flirten et sted, skemaet ikke kan nå. Jeres Parfect-tråd er til jer to — ikke til \"vi er løbet tør for mælk\".",
+						"icon": "chat"
+					},
+					{
+						"title": "Ti-minutters ritualer",
+						"description": "Daglige prompts og check-ins, der passer mellem sengetid og at falde sammen på sofaen. Nærhed i hullerne.",
+						"icon": "clock"
+					},
+					{
+						"title": "En fælles en-dag-liste",
+						"description": "Turen til jeres jubilæum, restauranten uden børnemenu — gemt sikkert på jeres bucket list, indtil det er dens tur.",
+						"icon": "list"
+					},
+					{
+						"title": "Intet på låseskærmen",
+						"description": "Indholdsfri notifikationer og app-lås betyder, at et nysgerrigt barn med jeres telefon ikke ser noget, det ikke burde.",
+						"icon": "lock"
+					},
+					{
+						"title": "Jubilæer, husket",
+						"description": "Jeres fælles kalender holder styr på de datoer, der betyder noget, så de aldrig forsvinder under skolebegivenheder igen.",
+						"icon": "calendar"
+					}
+				]
+			},
+			"steps": {
+				"heading": "Kom i gang (i én lur)",
+				"intro": "Parfect tager mindre tid at sætte op end en skoletilladelse.",
+				"items": [
+					{
+						"title": "Par jer",
+						"description": "Download appen, opret jeres konto, og send jeres partner invitationskoden. To minutter, start til slut."
+					},
+					{
+						"title": "Sæt én date i kalenderen",
+						"description": "Vælg noget lille — middag ude, eller endda en ordentlig date hjemme efter sengetid. Ordne babysitteren i planen, hvis I har brug for det."
+					},
+					{
+						"title": "Lad de små ritualer køre",
+						"description": "Svar på den daglige prompt, når I kan. Send den lejlighedsvise besked, der intet har med børnene at gøre. Se, hvad det gør ved ugen."
+					}
+				]
+			},
+			"testimonial": {
+				"quote": "To børn, nul spontanitet — date night var et skyldigt ønske. Nu er det to gange om måneden, og babysitter-trinnet betyder, at det faktisk sker i stedet for at falde fra hinanden om fredagen.",
+				"names": "Sara & Marcus",
+				"context": "Forældre til to",
+				"image": "/images/people/couple-sara-marcus.webp"
+			},
+			"faqs": [
+				{
+					"question": "Vi har knap ti minutter om dagen. Er det realistisk?",
+					"answer": "Parfect er designet til præcis det. En daglig prompt tager et minut at svare på, en besked tager sekunder, og dateplanlægning sker asynkront — du foreslår, din partner bekræfter, når de kan. Det er bygget til hullerne i en forælders dag, ikke til folk med endeløse frie aftener."
+				},
+				{
+					"question": "Hvordan fungerer babysitterkoordineringen?",
+					"answer": "Når I planlægger en date, bliver babysitteren en del af selve planen i stedet for en separat beskedtråd. Begge partnere kan se status med ét blik — så \"lørdag 19:30, babysitter bekræftet\" betyder, at aftenen er reel."
+				},
+				{
+					"question": "Hvad hvis mit barn tager min telefon?",
+					"answer": "Parfect kan låses bag en PIN eller Face ID, og push-notifikationer viser aldrig beskedindhold — kun at jeres partner har skrevet. Jeres private rum forbliver privat, selv på en delvist fælles familietelefon."
+				},
+				{
+					"question": "Handler det kun om date nights?",
+					"answer": "Nej — date nights er bare den mest synlige del. Det meste af Parfects værdi for forældre ligger i hverdagen: en privat chat, der ikke er husholdningslogistik, blide daglige prompts, en fælles bucket list og jubilæer, der ikke glemmes."
+				},
+				{
+					"question": "Hvad koster det?",
+					"answer": "Parfect er gratis at downloade på iOS og Android, og alt beskrevet her er en del af kerneoplevelsen."
+				}
+			],
+			"related": [
+				{
+					"href": "/features/date-planner",
+					"label": "Date planner",
+					"description": "Fælles planer, babysitterkoordinering og påmindelser — den fulde rundtur."
+				},
+				{
+					"href": "/features/private-chat",
+					"label": "Privat chat",
+					"description": "En krypteret tråd til jer to — ingen logistik tilladt."
+				},
+				{
+					"href": "/features/bucket-list",
+					"label": "Bucket list",
+					"description": "Hold hver \"når børnene er ældre\"-drøm et sikkert sted."
+				}
+			],
+			"cta": {
+				"heading": "Date night er forsinket",
+				"text": "Download Parfect gratis, par jer under en lur, og sæt én aften for jer to tilbage i kalenderen denne uge."
+			}
+		},
+		"forLongDistance": {
+			"slug": "/for/long-distance",
+			"metaTitle": "Appen til par på afstand — tæt på, uanset hvor I er",
+			"metaDescription": "Et privat rum til langdistanceforhold: krypteret chat, daglige ritualer på tværs af tidszoner og en fælles bucket list til jeres næste genforening. Gratis på iOS og Android.",
+			"ogTitle": "Parfect til par på afstand",
+			"ogDescription": "Daglige ritualer, en krypteret chat der kun er jeres, og en nedtælling af planer til næste gang I er sammen.",
+			"eyebrow": "Til par på afstand",
+			"titlePlain": "Parfect til par på afstand",
+			"titleBefore": "Afstanden er reel. Det er",
+			"titleHighlight": "nærheden",
+			"titleAfter": "også.",
+			"intro": "Kilometer adskiller jer, I kan ikke dele en sofa — men I kan dele et ritual, en hemmelighed og en liste over alt, I vil lave næste gang. Parfect giver par på afstand ét privat sted at forblive genuint tætte.",
+			"screen": "chat",
+			"tab": "chat",
+			"story": {
+				"heading": "Langdistance fejler på drift, ikke afstand",
+				"paragraphs": [
+					"Spørg par, der har overlevet langdistance, og de siger sjældent, at det svære var kilometerne. Det var driften: samtaler, der flader ud til \"hvordan var din dag — god, din?\", intimitet udskudt til næste besøg, forholdet der langsomt bliver noget, I vedligeholder, i stedet for noget, I lever.",
+					"Hvad der virker, konsekvent, er ritual og dybde. En fælles ting, I gør hver dag, uanset hvor lille, holder tråden i live på tværs af tidszoner. Og samtaler, der går forbi logistik — drømme, minder, ønsker — gør mere for nærhed end timer af pligtsomme videoopkald. Parfect er bygget til at levere præcis de to ting: en daglig prompt, der lander for jer begge, og et fantasirum, der gør dybe samtaler lette at starte, selv fra langt væk.",
+					"Så er der fremtiden — det, par på afstand lever af. Jeres fælles bucket list bliver genforeningsplanen: hver restaurant, hver doven morgen, hver tur fanges i det øjeblik, en af jer tænker på den. Når I er sammen igen, er spørgsmålet aldrig \"hvad skal vi lave?\" Det er \"hvilken først?\""
+				]
+			},
+			"image": {
+				"src": "/images/hero-together.webp",
+				"alt": "To hænder, der rækker mod hinanden med rosenblade i luften",
+				"caption": "Hver besked en bro. Hver plan en nedtælling."
+			},
+			"benefits": {
+				"heading": "Lavet til rummet mellem besøg",
+				"intro": "Alt i Parfect fungerer asynkront og privat — perfekt, når jeres aftener ikke overlapper.",
+				"items": [
+					{
+						"title": "Et rum på tværs af tidszoner",
+						"description": "Én privat, krypteret chat, der altid er, hvor I efterlod den. Vågn op til noget varmt fra en tidszone væk.",
+						"icon": "chat"
+					},
+					{
+						"title": "Daglige fælles ritualer",
+						"description": "Den samme prompt lander for jer begge hver dag. Svar om morgenen, læs deres om aftenen — tråden brydes aldrig.",
+						"icon": "clock"
+					},
+					{
+						"title": "Dybde på kommando",
+						"description": "Fantasier og prompts tager samtaler forbi smalltalk — den intimitet, videoopkald alene sjældent når.",
+						"icon": "sparkles"
+					},
+					{
+						"title": "Genforeningslisten",
+						"description": "Hver \"når jeg ser dig\"-idé kommer på den fælles bucket list. Jeres næste besøg planlægger sig selv, mens I går.",
+						"icon": "list"
+					},
+					{
+						"title": "Nedtælling til de datoer, der betyder noget",
+						"description": "Besøg, jubilæer, dagen I mødtes — sporet i jeres fælles kalender, nedtalt sammen.",
+						"icon": "calendar"
+					},
+					{
+						"title": "Privat, selv langt fra hinanden",
+						"description": "End-to-end kryptering, forsvindende beskeder og indholdsfri notifikationer. Det intime forbliver intimt — på ethvert netværk, i ethvert land.",
+						"icon": "lock"
+					}
+				]
+			},
+			"steps": {
+				"heading": "Sådan bruger par på afstand Parfect",
+				"intro": "En rytme, der overlever tidszoner, eksamenssæsoner og udsendelser.",
+				"items": [
+					{
+						"title": "Par én gang, fra hvor som helst",
+						"description": "En af jer downloader appen og sender en invitationskode; den anden tilmelder sig, uanset hvor de er. Jeres private rum virker på tværs af enhver afstand."
+					},
+					{
+						"title": "Forankr dagen",
+						"description": "Lad den daglige prompt være jeres faste punkt. Selv på de travleste dage holder to svar, der passerer i natten, jer i hinandens indre verden."
+					},
+					{
+						"title": "Byg det næste besøg",
+						"description": "Tilføj hver idé til bucket listen, når den kommer. Når genforeningsdatoen lander, flyt de bedste til rigtige planer."
+					}
+				]
+			},
+			"testimonial": {
+				"quote": "Forskellige tidszoner, samme ritual. Det daglige spørgsmål holder os inde i hinandens dag, og bucket listen er blevet vores nedtælling til næste genforening.",
+				"names": "Amira & Daniel",
+				"context": "Langdistance · Oslo–Lisbon",
+				"image": "/images/people/couple-amira-daniel.webp"
+			},
+			"faqs": [
+				{
+					"question": "Virker Parfect på tværs af lande og tidszoner?",
+					"answer": "Ja. Alt i Parfect er asynkront af design — beskeder, prompts og planer er altid der, når jeres partner vågner. Parring virker på tværs af to lande, og der er ingen opkald at planlægge omkring."
+				},
+				{
+					"question": "Hvordan er det bedre end at skrive på WhatsApp?",
+					"answer": "En almindelig messenger giver jer en tråd; Parfect giver jer et forholdsrum. Daglige fælles prompts skaber et ritual, fantasifunktionen uddyber samtaler, som texting flader ud, og den fælles bucket list gør \"jeg savner dig\" til konkrete planer til næste besøg — alt sammen ét privat, krypteret sted."
+				},
+				{
+					"question": "Kan det hjælpe, når vi løber tør for ting at sige?",
+					"answer": "Det er en af hovedårsagerne til, at par på afstand bruger det. Daglige prompts giver jer et nyt, meningsfuldt spørgsmål hver dag, og fantasirummet åbner samtaler, de fleste par aldrig formår at starte — uden blank-side-pres."
+				},
+				{
+					"question": "Er det sikkert nok til intime samtaler?",
+					"answer": "Ja. Beskedtekst understøtter end-to-end kryptering, beskeder kan sættes til at forsvinde efter de er set, notifikationer viser aldrig indhold, og appen kan låses med en PIN eller biometri — fornuftigt, når I er på delt Wi-Fi eller bor med roommates."
+				},
+				{
+					"question": "Hvad koster det?",
+					"answer": "Parfect er gratis på iOS og Android. Chat, prompts, fantasier og bucket listen er alle en del af kerneoplevelsen."
+				}
+			],
+			"related": [
+				{
+					"href": "/features/private-chat",
+					"label": "Privat chat",
+					"description": "Kryptering, forsvindende beskeder og et rum, der kun er jeres."
+				},
+				{
+					"href": "/features/fantasies",
+					"label": "Fantasier",
+					"description": "Dybe samtaler, startet blidt — selv fra langt væk."
+				},
+				{
+					"href": "/features/bucket-list",
+					"label": "Bucket list",
+					"description": "Hvor hver \"når jeg ser dig\" bliver en plan."
+				}
+			],
+			"cta": {
+				"heading": "Formindsk afstanden i aften",
+				"text": "Download Parfect gratis, send jeres partner invitationskoden, og start det ritual, der får langt væk til at føles tæt på."
+			}
+		},
+		"forMarriedCouples": {
+			"slug": "/for/married-couples",
+			"metaTitle": "Appen til gifte par — bliv ved med at vælge hinanden",
+			"metaDescription": "Komfortabelt er godt. Nysgerrigt er bedre. Parfect hjælper gifte par med at genopdage hinanden med daglige prompts, ærlige samtaler og dates, der faktisk sker.",
+			"ogTitle": "Parfect til gifte par",
+			"ogDescription": "Daglige prompts, blid ærlighed og en fælles en-dag-liste — til par, der har til hensigt at blive ved med at vælge hinanden.",
+			"eyebrow": "Til gifte par",
+			"titlePlain": "Parfect til gifte par",
+			"titleBefore": "Komfortabelt er godt.",
+			"titleHighlight": "Nysgerrigt",
+			"titleAfter": "er bedre.",
+			"intro": "Efter mange år kender I hinandens kaffeordre, humør og browserfaner. Parfect er til det næste: at forblive nysgerrig på personen ved siden af jer — med vilje.",
+			"screen": "home",
+			"tab": "fantasies",
+			"story": {
+				"heading": "Den stille risiko ved et godt ægteskab",
+				"paragraphs": [
+					"Ingen advarer jer om, at den største trussel mod et langt ægteskab ikke er konflikt — det er autopilot. I fungerer smukt sammen: regninger betalt, hus kører, weekender fyldt. Og et sted i al den kompetence stopper spørgsmålene. I antager, at I kender hinanden fuldstændigt, så I stopper med at tjekke. Sådan ender to mennesker, der elsker hinanden, med at føles som velkoordinerede roommates.",
+					"Modgiften er ikke dramatisk. Relationsforskere finder igen og igen det samme: par forbliver tætte gennem små, hyppige bud på forbindelse — et rigtigt spørgsmål, et fælles grin, en plan lavet sammen. Parfect gør de bud til en daglig vane: ét spørgsmål om dagen, der tager jer forbi \"hvordan var arbejdet\", et privat rum til at sige ting, der ikke passer ved middagsbordet, og en fantasifunktion til samtalerne, som tyve års ægteskab på en eller anden måde aldrig helt nåede.",
+					"Og fordi lange ægteskaber er rige på \"vi burde virkelig\" — turen, dansetimen, restauranten fra jeres bryllupsrejse — sørger den fælles bucket list og date planner for, at de intentioner stopper med at rulle over år efter år. Ikke et projekt. Bare et blidt system til at holde det løfte, I allerede gav: at blive ved med at vælge hinanden."
+				]
+			},
+			"image": {
+				"src": "/images/hero-onboarding.webp",
+				"alt": "Et par griner sammen under varme lyskæder om aftenen",
+				"caption": "Tyve år inde, finder stadig nye ting."
+			},
+			"benefits": {
+				"heading": "Små vaner, bemærkelsesværdigt ægteskab",
+				"intro": "Intet her kræver en weekend-retreat. Bare et par minutter om dagen, rettet godt.",
+				"items": [
+					{
+						"title": "Ét rigtigt spørgsmål om dagen",
+						"description": "Daglige prompts, der kommer forbi logistik — minder, drømme, meninger, I aldrig har sammenlignet. Autopilot overlever dem ikke.",
+						"icon": "sparkles"
+					},
+					{
+						"title": "De forsinkede samtaler",
+						"description": "Fantasirummet åbner blidt det, der har været usagt i årevis — i jeres tempo, med \"ikke lige nu\" altid tilladt.",
+						"icon": "heart"
+					},
+					{
+						"title": "En flirtkanal",
+						"description": "En privat, krypteret chat, der ikke er familiegruppen. Et sted at være partnere, ikke husholdningsledere.",
+						"icon": "chat"
+					},
+					{
+						"title": "\"Vi burde virkelig\" — håndteret",
+						"description": "Den fælles bucket list fanger hver intention, og date planneren gør dem til faktiske lørdage.",
+						"icon": "list"
+					},
+					{
+						"title": "Jubilæer, der lander",
+						"description": "Jeres datoer, sporet og nedtalt — med tid til at planlægge noget værdigt, ikke en sidste-øjebliks redning.",
+						"icon": "calendar"
+					},
+					{
+						"title": "Privat også hjemme",
+						"description": "App-lås og indholdsfri notifikationer holder jeres rum jeres — selv med teenagere, der låner telefoner.",
+						"icon": "lock"
+					}
+				]
+			},
+			"steps": {
+				"heading": "Sådan falder gifte par til i Parfect",
+				"intro": "Start mindre end det føles nødvendigt. Det er tricket.",
+				"items": [
+					{
+						"title": "Par over kaffe",
+						"description": "Download appen sammen en langsom morgen og link med en invitationskode. To minutter, og rummet er jeres."
+					},
+					{
+						"title": "Svar på ét spørgsmål om dagen",
+						"description": "Bare det daglige spørgsmål, i en uge. De fleste par bliver overrasket inden for få dage over et svar, de ikke så komme."
+					},
+					{
+						"title": "Lad det uddybe sig",
+						"description": "Når det føles naturligt, gå ind i fantasier, fyld bucket listen op, og sæt en date i kalenderen. Ingen tidsplan — jeres ægteskab, jeres tempo."
+					}
+				]
+			},
+			"testimonial": {
+				"quote": "Efter 31 års ægteskab antog vi, at vi vidste alt om hinanden. Det gjorde vi ikke. Det føles legesygt igen — det overraskede os begge.",
+				"names": "Kerstin & Lars",
+				"context": "Gift i 31 år",
+				"image": "/images/people/couple-kerstin-lars.webp"
+			},
+			"faqs": [
+				{
+					"question": "Vi har været gift i 15 år. Er det ikke til nye par?",
+					"answer": "Det er måske netop bygget til jer. Nye par genererer nyhed gratis; lange ægteskaber skal skabe det med vilje. Parfects prompts, fantasier og fælles lister er designet præcis til par, der kender hinanden dybt og vil blive ved med at opdage — hvilket er et andet, rigere projekt end at lære hinanden at kende."
+				},
+				{
+					"question": "Min ægtefælle er ikke en app-person. Vil det virke?",
+					"answer": "Parfect kræver meget lidt: ét spørgsmål om dagen tager under et minut, og der er intet feed, intet streak-pres, ingen gamification-skyld. Mange par har én partner, der starter, og én der varmer op — den daglige prompt plejer at overbevise."
+				},
+				{
+					"question": "Er det ægteskabsrådgivning?",
+					"answer": "Nej. Parfect er ikke terapi og erstatter det ikke. Det er et privat rum til forbindelse — samtale, legesyge og planer. Mange par bruger det sammen med rådgivning, og mange bruger det simpelthen til at holde et godt ægteskab nysgerrigt."
+				},
+				{
+					"question": "Hvad med samtaler, vi har undgået i årevis?",
+					"answer": "Det er det, fantasifunktionen er til. Den erstatter den umulige ansigt-til-ansigt åbner med en blid, privat invitation, din partner kan svare på, når de er klar — og at afvise er altid okay. Tempo, samtykke og tryghed er hele designet."
+				},
+				{
+					"question": "Hvad koster det?",
+					"answer": "Parfect er gratis at downloade på iOS og Android. Daglige prompts, privat chat, fantasier, bucket listen og dateplanlægning er alle en del af kerneoplevelsen."
+				}
+			],
+			"related": [
+				{
+					"href": "/features/fantasies",
+					"label": "Fantasier",
+					"description": "Den blide vej ind i samtaler, tyve år udskudt."
+				},
+				{
+					"href": "/features/date-planner",
+					"label": "Date planner",
+					"description": "Jubilæer husket, lørdage genvundet."
+				},
+				{
+					"href": "/for/parents",
+					"label": "Til forældre",
+					"description": "Når ægteskabet også kommer med skoleafhentning."
+				}
+			],
+			"cta": {
+				"heading": "Forbliv nysgerrig på hinanden",
+				"text": "Download Parfect gratis, og svar på ét rigtigt spørgsmål sammen i aften. Se, hvor en uge af dem tager jer hen."
+			}
+		}
+	}
+}

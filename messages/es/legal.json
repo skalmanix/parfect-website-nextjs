@@ -1,0 +1,25 @@
+{
+	"Legal": {
+		"support": {
+			"title": "Soporte",
+			"description": "Ayuda con Parfect — cuenta, emparejamiento, privacidad y más.",
+			"eyebrow": "Ayuda",
+			"heading": "¿Cómo podemos ayudar?",
+			"intro": "Somos un equipo pequeño que crea Parfect para parejas como vosotros. Escribidnos y os responderemos lo antes posible.",
+			"emailLabel": "Escríbenos",
+			"faqHeading": "Preguntas frecuentes"
+		},
+		"privacy": {
+			"title": "Política de privacidad",
+			"description": "Cómo Parfect recopila, usa y protege vuestros datos — en lenguaje claro.",
+			"eyebrow": "Legal",
+			"heading": "Política de privacidad"
+		},
+		"terms": {
+			"title": "Términos de servicio",
+			"description": "Los términos que rigen el uso de Parfect.",
+			"eyebrow": "Legal",
+			"heading": "Términos de servicio"
+		}
+	}
+}

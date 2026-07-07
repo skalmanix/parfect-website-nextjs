@@ -1,0 +1,79 @@
+{
+	"AppPreview": {
+		"eyebrow": "Fühlt sich an wie die App",
+		"heading": "Sieh, worauf ihr euch einlasst",
+		"description": "Erkunde die Bildschirme genau so, wie sie in Parfect aussehen — bevor du überhaupt herunterlädst.",
+		"cta": "Probiert es selbst — kostenlos",
+		"tabLabel": "{tab}-Tab",
+		"screenLabels": {
+			"chat": "Privater Chat",
+			"fantasies": "Fantasien",
+			"together": "Zusammen",
+			"date": "Date-Abend"
+		},
+		"tablistAria": "App-Bildschirme"
+	},
+	"AppTabs": {
+		"chat": "Chat",
+		"fantasies": "Fantasien",
+		"together": "Zusammen",
+		"ariaLabel": "App-Navigationsvorschau"
+	},
+	"HomeScreen": {
+		"ariaLabel": "Parfect-Startbildschirm mit der heutigen Frage und Schnellaktionen",
+		"goodEvening": "Guten Abend",
+		"coupleNames": "Emma & Liam",
+		"streakDays": "12-Tage-Streak",
+		"tonightsPrompt": "Heutige Frage",
+		"promptQuestion": "Was ist eine kleine Sache, die dein Partner kürzlich getan hat, die dich geliebt fühlen ließ?",
+		"dateNightPlanned": "Date-Abend geplant",
+		"dateTime": "Samstag · 19:30"
+	},
+	"ChatScreen": {
+		"ariaLabel": "Parfect privater Chat mit einem intimen Gespräch",
+		"partnerName": "Emma",
+		"onlineNow": "jetzt online",
+		"todayTime": "Heute 21:12",
+		"message1": "Heute Abend, nachdem die Kinder schlafen… ich habe eine Überraschung für dich",
+		"message2": "Jetzt kann ich nicht aufhören daran zu denken 😏",
+		"message3": "Gut. Trag das Lächeln, das ich liebe.",
+		"disappearingMessages": "Verschwindende Nachrichten an",
+		"messagePlaceholder": "Nachricht…"
+	},
+	"FantasiesScreen": {
+		"ariaLabel": "Parfect Fantasien-Bildschirm mit der heutigen Frage und einer Einladung",
+		"title": "Fantasien",
+		"tonightsPrompt": "Heutige Frage",
+		"promptQuestion": "Welche Fantasie hast du noch nie laut ausgesprochen?",
+		"shareYours": "Teile deine",
+		"inviteSent": "Emma hat dir eine Einladung geschickt",
+		"invitePreview": "\"Etwas, das ich mir für unseren Jahrestag vorstelle…\"",
+		"respond": "Antworten",
+		"notRightNow": "Nicht jetzt",
+		"bothSaidYes": "Ihr habt beide ja gesagt",
+		"bucketListAdded": "Ein Wochenende weg, keine Pläne — es steht jetzt auf eurer Bucket List."
+	},
+	"TogetherScreen": {
+		"ariaLabel": "Parfect Zusammen-Bildschirm mit einem bevorstehenden Date und Bucket List",
+		"title": "Zusammen",
+		"planned": "GEPLANT",
+		"rooftopDinner": "Dinner auf dem Dach",
+		"dateDetails": "Samstag · 19:30 · Babysitter bestätigt",
+		"bucketList": "Bucket List",
+		"itemCompleted": "Langsamer Tanz in der Küche",
+		"itemFromFantasy": "Wochenendtrip ans Meer",
+		"fromAFantasy": "AUS EINER FANTASIE",
+		"itemPending": "Sonnenaufgangs-Wanderung, nur wir",
+		"addSomethingNew": "Etwas Neues hinzufügen"
+	},
+	"DateScreen": {
+		"ariaLabel": "Parfect Date-Abend-Detailbildschirm",
+		"title": "Date-Abend",
+		"planned": "GEPLANT",
+		"rooftopDinner": "Dinner auf dem Dach",
+		"dateTime": "Samstag, 12. Juli · 19:30",
+		"location": "Terrazza, Innenstadt",
+		"babysitterConfirmed": "Babysitter bestätigt",
+		"itsADate": "Es wird ein Date"
+	}
+}

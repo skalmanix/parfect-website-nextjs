@@ -1,11 +1,15 @@
 import Image from "next/image";
-import Link from "next/link";
+import { getTranslations } from "next-intl/server";
+import { Link } from "@/i18n/navigation";
 import { Header } from "./header";
 import { Footer } from "./footer";
 import { StoreBadges } from "./store-badges";
 import { ScrollReveal } from "./scroll-reveal";
 import { SITE_URL } from "@/lib/constants";
-import { CLUSTERS, getGuide, type Guide } from "@/lib/guides";
+import { getGuide, type Guide } from "@/lib/guides";
+import { localizedUrl } from "@/lib/i18n/metadata";
+import type { Locale } from "@/i18n/routing";
+import { openGraphLocales } from "@/i18n/routing";
 
 /* Long-form article layout for /ideas guides. */
 
@@ -33,7 +37,9 @@ function stripInline(text: string) {
 	return text.replace(/\[([^\]]+)\]\([^)]+\)/g, "$1");
 }
 
-function getGuideJsonLd(guide: Guide) {
+function getGuideJsonLd(guide: Guide, locale: Locale, breadcrumbIdeas: string) {
+	const pageUrl = localizedUrl(`/ideas/${guide.slug}`, locale);
+
 	return [
 		{
 			"@context": "https://schema.org",
@@ -43,6 +49,7 @@ function getGuideJsonLd(guide: Guide) {
 			image: `${SITE_URL}${guide.image.src}`,
 			datePublished: guide.datePublished,
 			dateModified: guide.dateModified,
+			inLanguage: openGraphLocales[locale].replace("_", "-"),
 			author: {
 				"@type": "Organization",
 				name: "Parfect",
@@ -56,7 +63,7 @@ function getGuideJsonLd(guide: Guide) {
 					url: `${SITE_URL}/images/icon.png`,
 				},
 			},
-			mainEntityOfPage: `${SITE_URL}/ideas/${guide.slug}`,
+			mainEntityOfPage: pageUrl,
 		},
 		{
 			"@context": "https://schema.org",
@@ -75,14 +82,14 @@ function getGuideJsonLd(guide: Guide) {
 				{
 					"@type": "ListItem",
 					position: 2,
-					name: "Ideas for couples",
-					item: `${SITE_URL}/ideas`,
+					name: breadcrumbIdeas,
+					item: localizedUrl("/ideas", locale),
 				},
 				{
 					"@type": "ListItem",
 					position: 3,
 					name: guide.cardTitle,
-					item: `${SITE_URL}/ideas/${guide.slug}`,
+					item: pageUrl,
 				},
 			],
 		},
@@ -134,11 +141,32 @@ function IdeaList({
 	);
 }
 
-export function GuidePage({ guide }: { guide: Guide }) {
-	const jsonLd = getGuideJsonLd(guide);
+export async function GuidePage({
+	guide,
+	locale,
+}: {
+	guide: Guide;
+	locale: Locale;
+}) {
+	const t = await getTranslations("Common.guidePage");
+	const tGuides = await getTranslations("GuidesUI");
+	const jsonLd = getGuideJsonLd(guide, locale, tGuides("breadcrumbIdeas"));
 	const related = guide.related
-		.map((slug) => getGuide(slug))
+		.map((slug) => getGuide(slug, locale))
 		.filter((g): g is Guide => Boolean(g));
+
+	const dateLocale =
+		locale === "sv"
+			? "sv-SE"
+			: locale === "no"
+				? "nb-NO"
+				: locale === "da"
+					? "da-DK"
+					: locale === "de"
+						? "de-DE"
+						: locale === "es"
+							? "es-ES"
+							: "en-US";
 
 	// Continuous numbering across compact (question-style) lists.
 	let compactCounter = 1;
@@ -162,7 +190,7 @@ export function GuidePage({ guide }: { guide: Guide }) {
 							<ol className="flex items-center gap-2 text-sm text-muted-deep">
 								<li>
 									<Link href="/" className="hover:text-foreground transition-colors">
-										Home
+										{t("breadcrumbHome")}
 									</Link>
 								</li>
 								<li aria-hidden="true">/</li>
@@ -171,7 +199,7 @@ export function GuidePage({ guide }: { guide: Guide }) {
 										href="/ideas"
 										className="hover:text-foreground transition-colors"
 									>
-										Ideas
+										{t("breadcrumbIdeas")}
 									</Link>
 								</li>
 								<li aria-hidden="true">/</li>
@@ -186,8 +214,8 @@ export function GuidePage({ guide }: { guide: Guide }) {
 							{guide.title}
 						</h1>
 						<p className="animate-fade-up-delay-2 text-sm text-muted-deep">
-							{guide.readingTime} · Updated{" "}
-							{new Date(guide.dateModified).toLocaleDateString("en-US", {
+							{guide.readingTime} · {t("updated")}{" "}
+							{new Date(guide.dateModified).toLocaleDateString(dateLocale, {
 								month: "long",
 								year: "numeric",
 							})}
@@ -258,7 +286,7 @@ export function GuidePage({ guide }: { guide: Guide }) {
 											className="mt-6 rounded-2xl border border-gold/30 bg-gold/[0.07] p-5 sm:p-6"
 										>
 											<p className="text-[0.7rem] font-semibold tracking-[0.14em] uppercase text-gold mb-1.5">
-												Worth remembering
+												{t("worthRemembering")}
 											</p>
 											<p className="leading-relaxed text-foreground/90">
 												{section.tip}
@@ -273,7 +301,7 @@ export function GuidePage({ guide }: { guide: Guide }) {
 						<aside
 							data-reveal
 							className="hero-card p-7 sm:p-9 mt-14 md:mt-16"
-							aria-label="Try Parfect"
+							aria-label={t("tryParfect")}
 						>
 							<h2 className="font-display text-2xl font-medium tracking-tight mb-3 text-balance">
 								{guide.appHook.heading}
@@ -302,7 +330,7 @@ export function GuidePage({ guide }: { guide: Guide }) {
 								data-reveal
 								className="font-display text-2xl sm:text-3xl font-medium tracking-tight mb-8 text-balance"
 							>
-								Common questions
+								{t("commonQuestions")}
 							</h2>
 							<div className="space-y-5">
 								{guide.faqs.map((faq, index) => (
@@ -337,7 +365,7 @@ export function GuidePage({ guide }: { guide: Guide }) {
 								data-reveal
 								className="font-display text-2xl sm:text-3xl font-medium tracking-tight mb-8 text-balance"
 							>
-								More ideas for you two
+								{t("moreIdeas")}
 							</h2>
 							<div className="grid sm:grid-cols-3 gap-5">
 								{related.map((item, index) => (
@@ -359,7 +387,7 @@ export function GuidePage({ guide }: { guide: Guide }) {
 										</div>
 										<div className="p-5">
 											<p className="text-[0.65rem] font-semibold tracking-[0.14em] uppercase text-muted-deep mb-1.5">
-												{CLUSTERS[item.cluster].label}
+												{tGuides(`clusters.${item.cluster}.label`)}
 											</p>
 											<p className="font-display text-lg font-medium mb-1 group-hover:text-primary-strong transition-colors">
 												{item.cardTitle}
@@ -383,11 +411,10 @@ export function GuidePage({ guide }: { guide: Guide }) {
 							data-reveal
 							className="font-display text-3xl sm:text-4xl font-medium tracking-tight mb-4 text-balance"
 						>
-							Make it happen — together
+							{t("ctaHeading")}
 						</h2>
 						<p data-reveal className="text-muted text-lg max-w-xl mx-auto mb-8">
-							Parfect is the private app where couples keep their questions,
-							plans, and someday-dreams in one place. Free to download.
+							{t("ctaText")}
 						</p>
 						<div data-reveal>
 							<StoreBadges size="lg" className="justify-center" />

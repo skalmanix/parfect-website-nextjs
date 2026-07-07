@@ -1,6 +1,8 @@
 import type { MetadataRoute } from "next";
 import { SITE_URL } from "@/lib/constants";
-import { GUIDES } from "@/lib/guides";
+import { getGuides } from "@/lib/guides";
+import { getLanguageAlternates, localizedUrl } from "@/lib/i18n/metadata";
+import { routing, type Locale } from "@/i18n/routing";
 
 const FEATURE_PAGES = [
 	"/features/private-chat",
@@ -12,56 +14,67 @@ const FEATURE_PAGES = [
 	"/for/married-couples",
 ];
 
+const STATIC_PAGES = [
+	"/",
+	"/download",
+	"/ideas",
+	"/support",
+	"/privacy",
+	"/terms",
+];
+
+function buildSitemapEntry(
+	path: string,
+	lastModified: Date,
+	priority: number,
+	changeFrequency: MetadataRoute.Sitemap[number]["changeFrequency"] = "monthly",
+) {
+	const languages = getLanguageAlternates(path);
+
+	return routing.locales.map((locale) => ({
+		url: localizedUrl(path, locale),
+		lastModified,
+		changeFrequency,
+		priority,
+		alternates: {
+			languages,
+		},
+	}));
+}
+
 export default function sitemap(): MetadataRoute.Sitemap {
 	const lastModified = new Date();
-	return [
-		{
-			url: SITE_URL,
-			lastModified,
-			changeFrequency: "weekly",
-			priority: 1,
-		},
-		...FEATURE_PAGES.map((path) => ({
-			url: `${SITE_URL}${path}`,
-			lastModified,
-			changeFrequency: "monthly" as const,
-			priority: 0.8,
-		})),
-		{
-			url: `${SITE_URL}/download`,
-			lastModified,
-			changeFrequency: "monthly",
-			priority: 0.9,
-		},
-		{
-			url: `${SITE_URL}/ideas`,
-			lastModified,
-			changeFrequency: "weekly",
-			priority: 0.8,
-		},
-		...GUIDES.map((guide) => ({
-			url: `${SITE_URL}/ideas/${guide.slug}`,
-			lastModified: new Date(guide.dateModified),
-			changeFrequency: "monthly" as const,
-			priority: 0.7,
-		})),
-		{
-			url: `${SITE_URL}/support`,
-			lastModified,
-			changeFrequency: "monthly",
-			priority: 0.6,
-		},
-		{
-			url: `${SITE_URL}/privacy`,
-			lastModified,
-			changeFrequency: "monthly",
-			priority: 0.4,
-		},
-		{
-			url: `${SITE_URL}/terms`,
-			lastModified,
-			changeFrequency: "monthly",
-			priority: 0.4,
-		},
-	];
+	const entries: MetadataRoute.Sitemap = [];
+
+	for (const path of STATIC_PAGES) {
+		entries.push(
+			...buildSitemapEntry(
+				path,
+				lastModified,
+				path === "/" ? 1 : path === "/download" ? 0.9 : 0.8,
+				path === "/" || path === "/ideas" ? "weekly" : "monthly",
+			),
+		);
+	}
+
+	for (const path of FEATURE_PAGES) {
+		entries.push(...buildSitemapEntry(path, lastModified, 0.8));
+	}
+
+	for (const locale of routing.locales) {
+		for (const guide of getGuides(locale)) {
+			const path = `/ideas/${guide.slug}`;
+			entries.push({
+				url: localizedUrl(path, locale),
+				lastModified: new Date(guide.dateModified),
+				changeFrequency: "monthly",
+				priority: 0.7,
+				alternates: {
+					languages: getLanguageAlternates(path),
+				},
+			});
+		}
+	}
+
+	return entries;
 }

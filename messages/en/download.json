@@ -1,0 +1,34 @@
+{
+	"Download": {
+		"metaTitle": "Download Parfect — The Private App for Couples",
+		"metaDescription": "Get Parfect free on iPhone and Android. Private chat, nightly questions, a shared bucket list, and a date planner — made only for two.",
+		"headerTagline": "Free · iPhone & Android",
+		"titleBefore": "Get Parfect — ",
+		"titleHighlight": "free, for the two of you",
+		"titleAfter": "",
+		"description": "Private chat, a nightly question, and shared plans that actually happen. Download on both phones and pair in under a minute.",
+		"qrAlt": "QR code — scan with your phone to download Parfect",
+		"qrHint": "On a computer? Scan with your phone to get the app.",
+		"points": [
+			{
+				"title": "Private by design",
+				"description": "One space for two. No feeds, no followers, no audience."
+			},
+			{
+				"title": "A nightly question",
+				"description": "Prompts that start the conversations you keep postponing."
+			},
+			{
+				"title": "Plans, not just talk",
+				"description": "A shared bucket list and date planner that make it real."
+			}
+		],
+		"testimonialQuote": "It's like we found a room in our house we didn't know was there.",
+		"testimonialNames": "Hanna & Viktor",
+		"testimonialContext": "Together 6 years · Stockholm",
+		"footerCopyright": "© {year} Parfect. All rights reserved.",
+		"privacyLink": "Privacy",
+		"termsLink": "Terms",
+		"supportLink": "Support"
+	}
+}

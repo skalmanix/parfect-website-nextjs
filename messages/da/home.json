@@ -1,0 +1,230 @@
+{
+	"Home": {
+		"hero": {
+			"eyebrow": "Kun jer to",
+			"titleBefore": "Tag det",
+			"titleHighlight": "næste skridt",
+			"titleAfter": "sammen",
+			"description": "Et privat rum til at tale, drømme og opleve de øjeblikke, I kun forestiller jer. Ingen feeds. Ingen følgere. Ingen andre.",
+			"encrypted": "End-to-end krypteret",
+			"noAds": "Ingen reklamer, nogensinde",
+			"freePremium": "Gratis + Premium",
+			"scrollExplore": "Udforsk",
+			"scrollAria": "Scroll for at udforske appen"
+		},
+		"moments": {
+			"eyebrow": "Det her er for os",
+			"heading": "Samtalen, I har tænkt på at tage",
+			"description": "Ethvert forhold har drømme, der bliver usagte, og date nights, der aldrig bliver til noget. Parfect gør dem til beskeder, planer og minder.",
+			"feelings": {
+				"miss": {
+					"title": "Til parret, der savner hinanden",
+					"text": "Selv i samme hus. Parfect giver jer et sted, hvor det altid kun er jer to."
+				},
+				"parents": {
+					"title": "Til forældrene, der glemte date night",
+					"text": "Bucket list, babysitter, kalender — logistikken er på plads, så romantikken ikke går tabt."
+				},
+				"curious": {
+					"title": "Til dem, der stadig er nysgerrige",
+					"text": "Blide prompts hjælper jer med at sige det, I har tænkt på at sige. I jeres eget tempo."
+				}
+			},
+			"chatDemo": {
+				"aria": "Eksempel på samtale i Parfect",
+				"online": "Din person er her",
+				"encrypted": "Krypteret",
+				"placeholder": "Sig det første…",
+				"messages": {
+					"0": "Husker du den lille badeby, vi sagde vi ville stikke af til? 🏝",
+					"1": "Står stadig på min liste. Lige ved siden af \"langsom dans i køkkenet\".",
+					"2": "Har tilføjet begge til vores bucket list. Babysitter er booket til lørdag…",
+					"3": "Det er en date. ❤️"
+				}
+			}
+		},
+		"appPreview": {
+			"eyebrow": "Se det i aktion",
+			"heading": "Jeres forhold, i én app",
+			"description": "Swipe gennem de faner, par bruger hver dag — chat, fantasier og de planer, I laver sammen.",
+			"cta": "Prøv det selv — gratis",
+			"tabLabel": "{tab}-fane"
+		},
+		"pillars": {
+			"eyebrow": "Tre søjler",
+			"heading": "Bygget, som jeres forhold faktisk fungerer",
+			"description": "Tal, del og gør det virkeligt — samme rejse, I følger inde i appen.",
+			"items": {
+				"chat": {
+					"tagline": "Chat",
+					"title": "Tal, som om det kun er jer to",
+					"description": "En privat tråd, der kun er jeres. Sæt beskeder til at forsvinde, tal frit og hold kontakten, selv når I er fra hinanden.",
+					"highlights": {
+						"0": "Beskeder i realtid til to",
+						"1": "Forsvindende beskeder og læst-kvitteringer",
+						"2": "Valgfri end-to-end kryptering"
+					}
+				},
+				"fantasies": {
+					"tagline": "Fantasier",
+					"title": "Del det, I forestiller jer",
+					"description": "Send en fantasi eller bed om en. Blide prompts hjælper jer med at åbne op, og \"ikke lige nu\" er altid okay.",
+					"highlights": {
+						"0": "Daglige prompts, der vækker nysgerrighed",
+						"1": "Spørg eller del i jeres eget tempo",
+						"2": "Gør fælles drømme til jeres bucket list"
+					}
+				},
+				"together": {
+					"tagline": "Sammen",
+					"title": "Gør øjeblikkene virkelige",
+					"description": "Gør gnister til en fælles bucket list, planlæg date nights, koordinér endda en babysitter — sammen.",
+					"highlights": {
+						"0": "Fælles bucket list og dateplanlægning",
+						"1": "Babysitter-koordinering indbygget",
+						"2": "Mærkedage og vigtige datoer"
+					}
+				}
+			}
+		},
+		"features": {
+			"eyebrow": "Skabt til jeres forhold",
+			"heading": "Mere end beskeder",
+			"description": "Gennemtænkte værktøjer, der hjælper jer med at tjekke ind, planlægge fremad og beskytte det, der betyder noget — uden støjen fra sociale medier.",
+			"items": {
+				"checkin": {
+					"title": "Ugentlige check-ins",
+					"description": "Reflekter sammen med gennemtænkte spørgsmål — afsløret side om side, når I begge er klar."
+				},
+				"calendar": {
+					"title": "Fælles kalender",
+					"description": "Gå aldrig glip af en mærkedag. Planlæg date nights og hold styr på de øjeblikke, der betyder noget."
+				},
+				"lock": {
+					"title": "App-lås og biometri",
+					"description": "PIN-lås og biometrisk beskyttelse holder jeres forhold privat på jeres enhed."
+				},
+				"constellation": {
+					"title": "Forbindelse, der vokser",
+					"description": "Se jeres konstellation vokse, mens I deler øjeblikke og bygger jeres historie sammen."
+				},
+				"shield": {
+					"title": "Privatliv først",
+					"description": "Indholdsfri notifikationer, pause-kontroller og tydelige datapolitikker."
+				},
+				"rings": {
+					"title": "Skabt til to",
+					"description": "Par én gang med en invitationskode. Ingen feeds, ingen følgere, ingen andre."
+				}
+			}
+		},
+		"howItWorks": {
+			"eyebrow": "Sådan virker det",
+			"heading": "Fra første besked til date night",
+			"description": "Det tager under to minutter at komme i gang. Par med jeres partner og begynd at bygge det forhold, I begge ønsker.",
+			"steps": {
+				"0": {
+					"title": "Download og par",
+					"description": "Hent appen, opret jeres konto og inviter jeres partner med en privat kode. Under to minutter."
+				},
+				"1": {
+					"title": "Tal, del, drøm",
+					"description": "Chat privat, udforsk fantasier med blide prompts og byg en bucket list sammen."
+				},
+				"2": {
+					"title": "Styrk jeres forhold",
+					"description": "Gør idéer til date nights, koordinér detaljerne og fejr det, der bringer jer tættere."
+				}
+			},
+			"images": {
+				"sofa": {
+					"alt": "Par krammer på sofaen og smiler sammen mod en telefon",
+					"caption": "Tættere hver aften"
+				},
+				"together": {
+					"alt": "To hænder, der rækker mod hinanden omgivet af rosenblade",
+					"caption": "Det næste skridt er jeres"
+				}
+			}
+		},
+		"testimonials": {
+			"eyebrow": "Rigtige par",
+			"heading": "Det virker allerede for par som jer",
+			"featured": {
+				"quote": "Vi har været sammen i seks år og taler hver eneste dag — men Parfect er det første sted, hvor vi faktisk siger tingene. Det er som om, vi fandt et rum i vores hus, vi ikke vidste fandtes.",
+				"names": "Hanna & Viktor",
+				"context": "Sammen i 6 år · Stockholm",
+				"alt": "Hanna & Viktor, et glad par der griner sammen"
+			},
+			"items": {
+				"0": {
+					"quote": "Promptsene startede samtaler, vi havde undgået i årevis. At vide, at \"ikke lige nu\" altid er okay, gjorde hele forskellen for os.",
+					"names": "Elin & Jonas",
+					"context": "Sammen i 8 år"
+				},
+				"1": {
+					"quote": "To børn, nul spontanitet — date night var et skyldigt ønske. Nu er det to gange om måneden, og babysitter-trinnet betyder, at det faktisk sker.",
+					"names": "Sara & Marcus",
+					"context": "Forældre til to"
+				},
+				"2": {
+					"quote": "Forskellige tidszoner, samme ritual. Det daglige spørgsmål holder os inde i hinandens dag, og bucket listen er vores genforenings-countdown.",
+					"names": "Amira & Daniel",
+					"context": "Langdistance · Oslo–Lissabon"
+				},
+				"3": {
+					"quote": "Efter 31 års ægteskab troede vi, vi vidste alt om hinanden. Det gjorde vi ikke. Det føles legende igen — det overraskede os begge.",
+					"names": "Kerstin & Lars",
+					"context": "Gift i 31 år"
+				}
+			}
+		},
+		"privacy": {
+			"eyebrow": "Privatliv og tillid",
+			"heading": "Jeres forhold fortjener et sikkert rum",
+			"description": "Parfect er bygget til intimitet, ikke eksponering. Ingen sociale feeds, ingen fremmede — og privatlivskontroller, I faktisk kan forstå.",
+			"points": {
+				"0": {
+					"title": "End-to-end kryptering",
+					"description": "Valgfri E2EE til chattekst. Jeres intime samtaler forbliver mellem jer to."
+				},
+				"1": {
+					"title": "Indholdsfri notifikationer",
+					"description": "Push-beskeder afslører aldrig, hvad jeres partner sagde — kun at de har skrevet."
+				},
+				"2": {
+					"title": "I har altid kontrollen",
+					"description": "Sæt kontakt på pause, fjern parring eller slet jeres konto når som helst. Tydelige politikker, ingen overraskelser."
+				},
+				"3": {
+					"title": "App-lås og biometri",
+					"description": "PIN og biometrisk beskyttelse holder jeres forhold privat på jeres enhed."
+				}
+			}
+		},
+		"cta": {
+			"heading": "Jeres næste skridt starter her",
+			"description": "Det her er for os. Download Parfect og begynd samtalen, der bringer jer tættere — én besked, én drøm, én date night ad gangen.",
+			"availability": "Tilgængelig på iOS og Android · Gratis download"
+		},
+		"faq": {
+			"0": {
+				"question": "Hvad er Parfect?",
+				"answer": "Parfect er en privat app til par, der kombinerer intime samtaler, fantasiprompts, dateplanlægning og relationsmilepæle i ét varmt, sikkert rum skabt til to."
+			},
+			"1": {
+				"question": "Er Parfect privat?",
+				"answer": "Ja. Parfect er bygget kun til par — par med en invitationskode, brug valgfri end-to-end kryptering, app-lås med biometri og indholdsfri push-notifikationer. Se vores privatlivspolitik for detaljer."
+			},
+			"2": {
+				"question": "Hvem er Parfect til?",
+				"answer": "Parfect er designet til forpligtede par over 18, der vil styrke deres forhold gennem meningsfuld kommunikation, fælles oplevelser og bevidst intimitet."
+			}
+		},
+		"schema": {
+			"organizationDescription": "En privat app til par — til intime samtaler, fælles fantasier og at gøre drømme til rigtige date nights.",
+			"appDescription": "Kun jer to. En privat app til par — til intime chat, fantasier, dateplanlægning og relationsvækst.",
+			"websiteDescription": "Download Parfect — den private app til par, der vil tale intimit, dele drømme og gøre dem til virkelighed."
+		}
+	}
+}

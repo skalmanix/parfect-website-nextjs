@@ -1,0 +1,25 @@
+{
+	"Legal": {
+		"support": {
+			"title": "Support",
+			"description": "Få hjälp med Parfect — kontoproblem, parkoppling, integritetsfrågor med mera.",
+			"eyebrow": "Hjälp",
+			"heading": "Hur kan vi hjälpa till?",
+			"intro": "Vi är ett litet team som bygger Parfect för par som ni. Hör av er så återkommer vi så snart vi kan.",
+			"emailLabel": "Mejla oss",
+			"faqHeading": "Vanliga frågor"
+		},
+		"privacy": {
+			"title": "Integritetspolicy",
+			"description": "Hur Parfect samlar in, använder och skyddar era data — skrivet på enkelt språk.",
+			"eyebrow": "Juridiskt",
+			"heading": "Integritetspolicy"
+		},
+		"terms": {
+			"title": "Användarvillkor",
+			"description": "Villkoren som styr er användning av Parfect.",
+			"eyebrow": "Juridiskt",
+			"heading": "Användarvillkor"
+		}
+	}
+}

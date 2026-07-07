@@ -1,4 +1,4 @@
-import { PILLARS } from "@/lib/constants";
+import { getTranslations } from "next-intl/server";
 import {
 	ChatIllustration,
 	FantasyIllustration,
@@ -7,25 +7,36 @@ import {
 import { AppTabs } from "./app-tabs";
 import { ChatScreen, FantasiesScreen, TogetherScreen } from "./app-screens";
 
-const illustrations = {
-	chat: ChatIllustration,
-	fantasies: FantasyIllustration,
-	together: TogetherIllustration,
-} as const;
-
+const pillarIds = ["chat", "fantasies", "together"] as const;
 const screens = {
 	chat: ChatScreen,
 	fantasies: FantasiesScreen,
 	together: TogetherScreen,
 } as const;
-
+const illustrations = {
+	chat: ChatIllustration,
+	fantasies: FantasyIllustration,
+	together: TogetherIllustration,
+} as const;
+const tabs = {
+	chat: "chat" as const,
+	fantasies: "fantasies" as const,
+	together: "together" as const,
+};
 const accentColors = {
-	primary: "text-primary border-primary/30 bg-primary/10",
-	rose: "text-rose border-rose/30 bg-rose/10",
-	gold: "text-gold border-gold/30 bg-gold/10",
+	chat: "text-primary border-primary/30 bg-primary/10",
+	fantasies: "text-rose border-rose/30 bg-rose/10",
+	together: "text-gold border-gold/30 bg-gold/10",
+} as const;
+const dotColors = {
+	chat: "bg-primary",
+	fantasies: "bg-rose",
+	together: "bg-gold",
 } as const;
 
-export function Pillars() {
+export async function Pillars() {
+	const t = await getTranslations("Home.pillars");
+
 	return (
 		<section
 			id="pillars"
@@ -34,26 +45,27 @@ export function Pillars() {
 		>
 			<div className="container-wide section-padding">
 				<div data-reveal className="text-center max-w-2xl mx-auto mb-16">
-					<p className="eyebrow text-primary mb-3">Three pillars</p>
+					<p className="eyebrow text-primary mb-3">{t("eyebrow")}</p>
 					<h2
 						id="pillars-heading"
 						className="font-display text-3xl sm:text-4xl md:text-5xl font-medium tracking-tight mb-4 text-balance"
 					>
-						Built the way your relationship actually works
+						{t("heading")}
 					</h2>
-					<p className="text-muted text-lg">
-						Talk, share, and make it real — the same journey you&apos;ll
-						follow inside the app.
-					</p>
+					<p className="text-muted text-lg">{t("description")}</p>
 				</div>
 
 				<div className="space-y-8 md:space-y-10">
-					{PILLARS.map((pillar, index) => {
-						const Illustration = illustrations[pillar.id];
-						const Screen = screens[pillar.id];
+					{pillarIds.map((id, index) => {
+						const Illustration = illustrations[id];
+						const Screen = screens[id];
+						const highlights = [0, 1, 2].map((i) =>
+							t(`items.${id}.highlights.${i}`),
+						);
+
 						return (
 							<article
-								key={pillar.id}
+								key={id}
 								data-reveal
 								className={`pillar-card grid lg:grid-cols-[1fr_1.1fr] gap-8 lg:gap-12 items-center p-6 md:p-8 ${
 									index % 2 === 1 ? "lg:[&>*:first-child]:order-2" : ""
@@ -64,30 +76,24 @@ export function Pillars() {
 										<Illustration className="w-36 h-36 sm:w-44 sm:h-44" />
 									</div>
 									<span
-										className={`inline-block px-3 py-1 rounded-full text-xs font-semibold tracking-wide border mb-4 ${accentColors[pillar.accent]}`}
+										className={`inline-block px-3 py-1 rounded-full text-xs font-semibold tracking-wide border mb-4 ${accentColors[id]}`}
 									>
-										{pillar.tagline}
+										{t(`items.${id}.tagline`)}
 									</span>
 									<h3 className="font-display text-2xl sm:text-3xl font-medium tracking-tight mb-3">
-										{pillar.title}
+										{t(`items.${id}.title`)}
 									</h3>
 									<p className="text-muted text-lg leading-relaxed mb-5 max-w-md">
-										{pillar.description}
+										{t(`items.${id}.description`)}
 									</p>
 									<ul className="space-y-2.5 text-left w-full max-w-md">
-										{pillar.highlights.map((highlight) => (
+										{highlights.map((highlight) => (
 											<li
 												key={highlight}
 												className="flex items-start gap-3 text-foreground/90 text-sm sm:text-base"
 											>
 												<span
-													className={`mt-2 w-1.5 h-1.5 rounded-full shrink-0 ${
-														pillar.accent === "primary"
-															? "bg-primary"
-															: pillar.accent === "rose"
-																? "bg-rose"
-																: "bg-gold"
-													}`}
+													className={`mt-2 w-1.5 h-1.5 rounded-full shrink-0 ${dotColors[id]}`}
 													aria-hidden="true"
 												/>
 												{highlight}
@@ -102,7 +108,7 @@ export function Pillars() {
 										<div className="phone-screen relative">
 											<Screen />
 											<div className="absolute bottom-0 inset-x-0 z-10">
-												<AppTabs active={pillar.tab} />
+												<AppTabs active={tabs[id]} />
 											</div>
 										</div>
 									</div>

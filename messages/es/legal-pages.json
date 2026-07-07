@@ -1,0 +1,331 @@
+{
+	"Privacy": {
+		"metaTitle": "Política de privacidad",
+		"metaDescription": "Cómo Parfect recopila, usa y protege tus datos. Diseñado para la intimidad, no la exposición — sin anuncios, sin venta de datos y controles de privacidad que realmente entiendes.",
+		"eyebrow": "Legal",
+		"title": "Política de privacidad",
+		"intro": "Parfect es una app privada para dos. Esta política explica — en lenguaje claro — qué recopilamos, por qué lo hacemos, cuánto tiempo lo conservamos y los derechos que tienes sobre tus datos.",
+		"updated": "6 de julio de 2026",
+		"sections": [
+			{
+				"id": "controller",
+				"heading": "Quiénes somos",
+				"blocks": [
+					{
+						"type": "paragraph",
+						"text": "Parfect opera la app Parfect y la API en api.parfect.app, y es el responsable del tratamiento de los datos personales procesados a través de ellas. Para cualquier tema de privacidad, contáctanos en {email}.",
+						"strong": ["api.parfect.app"]
+					}
+				]
+			},
+			{
+				"id": "what-we-collect",
+				"heading": "Qué recopilamos",
+				"blocks": [
+					{
+						"type": "list",
+						"items": [
+							{ "strong": "Información de la cuenta", "text": "— tu correo electrónico, nombre para mostrar y un hash de contraseña. Nunca almacenamos tu contraseña en texto plano." },
+							{ "strong": "Datos de la pareja", "text": "— información de emparejamiento, configuración del perfil y marcas de tiempo de consentimiento." },
+							{ "strong": "Contenido que sincronizas", "text": "— mensajes, fantasías, eventos del calendario, listas compartidas y metadatos de medios, para que ambos podáis acceder en todos los dispositivos." },
+							{ "strong": "Medios compartidos", "text": "— fotos, vídeos y audio que compartes en el chat, almacenados en nuestros servidores." },
+							{ "strong": "Tokens push", "text": "— solo si activas las notificaciones." },
+							{ "strong": "Registros técnicos", "text": "— el mínimo necesario para operar, asegurar y depurar el servicio." }
+						]
+					}
+				]
+			},
+			{
+				"id": "what-we-dont-do",
+				"heading": "Lo que nunca hacemos",
+				"blocks": [
+					{
+						"type": "callout",
+						"items": [
+							"No vendemos tus datos personales.",
+							"No usamos el contenido de vuestra relación para publicidad.",
+							"No compartimos tus datos con terceros, excepto los proveedores de infraestructura necesarios para operar la app."
+						]
+					}
+				]
+			},
+			{
+				"id": "encryption",
+				"heading": "Cifrado de extremo a extremo",
+				"blocks": [
+					{
+						"type": "paragraph",
+						"text": "El texto de los mensajes del chat puede cifrarse en tu dispositivo antes de enviarse. Cuando el cifrado de extremo a extremo está activado, Parfect no puede leer el contenido de esos mensajes. Los archivos multimedia y otros datos compartidos de la app se almacenan en nuestros servidores para que ambos partners puedan acceder a ellos.",
+						"strong": ["Parfect no puede leer el contenido de esos mensajes"]
+					}
+				]
+			},
+			{
+				"id": "how-we-use",
+				"heading": "Cómo usamos tus datos",
+				"blocks": [
+					{
+						"type": "list",
+						"items": [
+							{ "text": "Para autenticarte y sincronizar datos entre tus dispositivos y tu pareja." },
+							{ "text": "Para enviar actualizaciones en tiempo real y notificaciones push opcionales — que nunca incluyen el contenido de los mensajes." },
+							{ "text": "Para mantener, asegurar y mejorar el servicio." }
+						]
+					}
+				]
+			},
+			{
+				"id": "lawful-basis",
+				"heading": "Base legal (RGPD)",
+				"blocks": [
+					{
+						"type": "list",
+						"items": [
+							{ "strong": "Contrato", "text": "— para proporcionar la app, sincronizar datos entre tú y tu pareja y autenticarte." },
+							{ "strong": "Consentimiento", "text": "— para notificaciones opcionales, consentimiento de seguridad tras el emparejamiento y confirmación de 18+." },
+							{ "strong": "Intereses legítimos", "text": "— para asegurar el servicio, prevenir abusos y mejorar la fiabilidad." }
+						]
+					}
+				]
+			},
+			{
+				"id": "subprocessors",
+				"heading": "Hosting y subprocesadores",
+				"blocks": [
+					{
+						"type": "paragraph",
+						"text": "Usamos proveedores de infraestructura para alojar la API, la base de datos, el almacenamiento de medios y la entrega push (incluyendo hosting en la nube y servicios push de Expo). Tus datos se procesan solo para operar el servicio — nada más."
+					}
+				]
+			},
+			{
+				"id": "cookies",
+				"heading": "Cookies y sesiones",
+				"blocks": [
+					{
+						"type": "paragraph",
+						"text": "La versión web usa una única cookie de sesión HttpOnly para mantenerte conectado. La app móvil almacena un token de sesión en el almacenamiento seguro del dispositivo. No usamos cookies de publicidad ni de seguimiento."
+					}
+				]
+			},
+			{
+				"id": "retention",
+				"heading": "Cuánto tiempo conservamos los datos",
+				"blocks": [
+					{
+						"type": "list",
+						"items": [
+							{ "text": "Los datos de la cuenta y sincronizados se conservan mientras tu cuenta esté activa." },
+							{ "text": "Cuando desvinculas o eliminas tu cuenta, eliminamos los datos compartidos, mensajes y medios de vuestra pareja de nuestros servidores." },
+							{ "text": "Los registros técnicos se conservan durante un período limitado por seguridad y operaciones, y luego se eliminan." }
+						]
+					}
+				]
+			},
+			{
+				"id": "your-rights",
+				"heading": "Tus derechos",
+				"blocks": [
+					{ "type": "paragraph", "text": "Según tu ubicación, puedes tener derecho a:" },
+					{
+						"type": "list",
+						"items": [
+							{ "text": "Acceder, corregir o eliminar tus datos personales." },
+							{ "text": "Exportar tus datos — contacta con {email}." },
+							{ "text": "Oponerte o restringir ciertos tratamientos." },
+							{ "text": "Retirar el consentimiento cuando el tratamiento se base en el consentimiento." },
+							{ "text": "Presentar una reclamación ante tu autoridad local de protección de datos." }
+						]
+					}
+				]
+			},
+			{
+				"id": "delete",
+				"heading": "Eliminar tu cuenta",
+				"blocks": [
+					{
+						"type": "paragraph",
+						"text": "Puedes eliminar tu cuenta en la app en Ajustes → Cuenta → Eliminar cuenta. Esto elimina permanentemente tu cuenta y los datos asociados de la pareja de nuestros servidores. También puedes enviar un correo a {email} y nos encargamos.",
+						"strong": ["Ajustes → Cuenta → Eliminar cuenta"]
+					}
+				]
+			},
+			{
+				"id": "safety",
+				"heading": "Seguridad e informes",
+				"blocks": [
+					{
+						"type": "paragraph",
+						"text": "Si tienes una preocupación de seguridad, usa Ajustes → Reportar una preocupación en la app o envía un correo a {email}. Puedes desvincularte de tu pareja en cualquier momento desde Ajustes.",
+						"strong": ["Ajustes → Reportar una preocupación"]
+					}
+				]
+			},
+			{
+				"id": "contact",
+				"heading": "¿Preguntas?",
+				"blocks": [
+					{
+						"type": "paragraph",
+						"text": "Estamos encantados de explicar cualquier cosa en esta política. Contáctanos en {email}."
+					}
+				]
+			}
+		]
+	},
+	"Terms": {
+		"metaTitle": "Términos de servicio",
+		"metaDescription": "Los términos que rigen tu uso de Parfect — elegibilidad, tu cuenta, uso aceptable, contenido privado de pareja y disponibilidad del servicio.",
+		"eyebrow": "Legal",
+		"title": "Términos de servicio",
+		"intro": "Estos términos mantienen Parfect como un espacio seguro y respetuoso para cada pareja. Al crear una cuenta o usar la app, aceptas estos términos.",
+		"updated": "6 de julio de 2026",
+		"sections": [
+			{
+				"id": "eligibility",
+				"heading": "Elegibilidad",
+				"blocks": [
+					{
+						"type": "paragraph",
+						"text": "Parfect es para adultos de 18 años o más. Al usar la app, confirmas que cumples este requisito.",
+						"strong": ["18 años o más"]
+					}
+				]
+			},
+			{
+				"id": "account",
+				"heading": "Tu cuenta",
+				"blocks": [
+					{
+						"type": "paragraph",
+						"text": "Eres responsable de mantener seguras tus credenciales de acceso y de la actividad que ocurra en tu cuenta. Puedes eliminar tu cuenta en cualquier momento desde Ajustes → Cuenta → Eliminar cuenta.",
+						"strong": ["Ajustes → Cuenta → Eliminar cuenta"]
+					}
+				]
+			},
+			{
+				"id": "acceptable-use",
+				"heading": "Uso aceptable y contenido",
+				"blocks": [
+					{ "type": "paragraph", "text": "Aceptas no:" },
+					{
+						"type": "list",
+						"items": [
+							{ "text": "Hacer un uso indebido del servicio o intentar comprometer la plataforma." },
+							{ "text": "Acosar, amenazar o dañar a otros." },
+							{ "text": "Subir o compartir contenido ilegal." }
+						]
+					},
+					{
+						"type": "paragraph",
+						"text": "Eres responsable del contenido que compartes con tu pareja emparejada. Nunca compartas medios íntimos o mensajes sin consentimiento mutuo. Podemos suspender cuentas que violen estos términos o la ley aplicable.",
+						"strong": ["Nunca compartas medios íntimos o mensajes sin consentimiento mutuo."]
+					},
+					{
+						"type": "callout",
+						"text": "Si algo no te parece bien, repórtalo. Usa Ajustes → Reportar una preocupación en la app o envía un correo a {email}. Nos tomamos los informes de seguridad en serio.",
+						"strong": ["Ajustes → Reportar una preocupación"]
+					}
+				]
+			},
+			{
+				"id": "couple-content",
+				"heading": "Contenido privado de pareja",
+				"blocks": [
+					{
+						"type": "paragraph",
+						"text": "Tú y tu pareja emparejada controláis el contenido que compartís en la app. Emparejarse es una decisión de confianza: solo empareja con alguien en quien confíes la información que compartes. Puedes desvincularte de tu pareja en cualquier momento desde Ajustes."
+					}
+				]
+			},
+			{
+				"id": "availability",
+				"heading": "Disponibilidad del servicio",
+				"blocks": [
+					{
+						"type": "paragraph",
+						"text": "Trabajamos duro para mantener Parfect disponible y seguro, pero el servicio se proporciona tal cual, sin tiempo de actividad garantizado."
+					}
+				]
+			},
+			{
+				"id": "termination",
+				"heading": "Terminación",
+				"blocks": [
+					{
+						"type": "paragraph",
+						"text": "Puedes dejar de usar Parfect en cualquier momento. Podemos suspender o terminar cuentas que violen estos términos."
+					}
+				]
+			},
+			{
+				"id": "privacy",
+				"heading": "Privacidad",
+				"blocks": [
+					{
+						"type": "paragraph",
+						"text": "Cómo manejamos tus datos está cubierto en nuestra Política de privacidad — incluyendo qué recopilamos, el cifrado de extremo a extremo y cómo eliminar tus datos.",
+						"linkText": "Política de privacidad"
+					}
+				]
+			},
+			{
+				"id": "contact",
+				"heading": "¿Preguntas?",
+				"blocks": [
+					{
+						"type": "paragraph",
+						"text": "Contáctanos en cualquier momento en {email}."
+					}
+				]
+			}
+		]
+	},
+	"Support": {
+		"metaTitle": "Soporte",
+		"metaDescription": "Obtén ayuda con Parfect — emparejarte con tu pareja, problemas de inicio de sesión, notificaciones y gestionar o eliminar tu cuenta.",
+		"eyebrow": "Ayuda",
+		"title": "Soporte",
+		"intro": "¿Atascado con el emparejamiento, el inicio de sesión, las notificaciones o tu cuenta? La mayoría de respuestas están abajo — y si la tuya no está, estamos a un correo de distancia.",
+		"contactLabel": "Contáctanos:",
+		"contactText": "Leemos cada mensaje y normalmente respondemos en un par de días.",
+		"faqs": [
+			{
+				"id": "pairing",
+				"question": "¿Cómo me emparejo con mi pareja?",
+				"answer": "Crea tu cuenta y luego envía a tu pareja el código de invitación privado desde la pantalla de emparejamiento. Lo introduce después de registrarse y ya estáis conectados. Los códigos son de un solo uso — si uno caduca o se pierde, simplemente genera uno nuevo."
+			},
+			{
+				"id": "login",
+				"question": "No puedo iniciar sesión",
+				"answer": "Comprueba tu dirección de correo y usa el enlace de restablecimiento de contraseña en la pantalla de inicio de sesión si es necesario. Si aún no puedes entrar — por ejemplo después de cambiar de dispositivo — envíanos un correo y te ayudaremos a recuperar tu cuenta."
+			},
+			{
+				"id": "notifications",
+				"question": "Las notificaciones no llegan",
+				"answer": "Asegúrate de que las notificaciones estén activadas para Parfect en los ajustes del sistema de tu teléfono y que estén activadas dentro de la app en Ajustes → Notificaciones. Ten en cuenta que nuestras notificaciones no incluyen contenido por diseño: nunca muestran lo que escribió tu pareja."
+			},
+			{
+				"id": "unlink",
+				"question": "¿Cómo me desvinculo de mi pareja?",
+				"answer": "Puedes desvincularte en cualquier momento desde Ajustes. Desvincularse elimina los datos compartidos de vuestra pareja de nuestros servidores. Si os volvéis a emparejar más tarde, empezáis de cero."
+			},
+			{
+				"id": "delete",
+				"question": "¿Cómo elimino mi cuenta?",
+				"answer": "Ve a Ajustes → Cuenta → Eliminar cuenta. Esto elimina permanentemente tu cuenta y los datos compartidos, mensajes y medios de vuestra pareja de nuestros servidores. También puedes enviarnos un correo y lo eliminamos por ti."
+			},
+			{
+				"id": "safety",
+				"question": "Tengo una preocupación de seguridad",
+				"answer": "Usa Ajustes → Reportar una preocupación en la app, o envíanos un correo directamente. Puedes desvincularte de tu pareja en cualquier momento, y nos tomamos cada informe en serio."
+			}
+		],
+		"moreHeading": "Privacidad y términos",
+		"moreText": "¿Curioso sobre cómo se manejan tus datos? Lee nuestra",
+		"moreTextBetween": " y ",
+		"moreTextEnd": ".",
+		"privacyLink": "Política de privacidad",
+		"termsLink": "Términos de servicio"
+	}
+}

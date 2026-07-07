@@ -2,13 +2,11 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 import { APP_STORE_URL, PLAY_STORE_URL } from "@/lib/constants";
 
-/**
- * Mobile-only download bar that slides in once the visitor scrolls past the
- * hero, keeping the conversion action one thumb-tap away at all times.
- */
 export function StickyCta() {
+	const t = useTranslations("Common");
 	const [visible, setVisible] = useState(false);
 
 	useEffect(() => {
@@ -43,9 +41,9 @@ export function StickyCta() {
 					aria-hidden="true"
 				/>
 				<div className="min-w-0 flex-1">
-					<p className="text-sm font-semibold leading-tight">Parfect</p>
+					<p className="text-sm font-semibold leading-tight">{t("brand")}</p>
 					<p className="text-xs text-muted leading-tight truncate">
-						Free · Just the two of you
+						{t("stickyCta.tagline")}
 					</p>
 				</div>
 				<div className="flex items-center gap-2 shrink-0">
@@ -53,7 +51,7 @@ export function StickyCta() {
 						href={APP_STORE_URL}
 						target="_blank"
 						rel="noopener noreferrer"
-						aria-label="Download Parfect on the App Store"
+						aria-label={t("storeBadges.appStore")}
 						className="sticky-cta-store"
 						tabIndex={visible ? 0 : -1}
 					>
@@ -65,7 +63,7 @@ export function StickyCta() {
 						href={PLAY_STORE_URL}
 						target="_blank"
 						rel="noopener noreferrer"
-						aria-label="Get Parfect on Google Play"
+						aria-label={t("storeBadges.playStore")}
 						className="sticky-cta-store"
 						tabIndex={visible ? 0 : -1}
 					>

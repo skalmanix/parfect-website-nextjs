@@ -1,0 +1,25 @@
+{
+	"Legal": {
+		"support": {
+			"title": "Support",
+			"description": "Get help with Parfect — account issues, pairing, privacy questions, and more.",
+			"eyebrow": "Help",
+			"heading": "How can we help?",
+			"intro": "We're a small team building Parfect for couples like you. Reach out and we'll get back to you as soon as we can.",
+			"emailLabel": "Email us",
+			"faqHeading": "Common questions"
+		},
+		"privacy": {
+			"title": "Privacy Policy",
+			"description": "How Parfect collects, uses, and protects your data — written in plain language.",
+			"eyebrow": "Legal",
+			"heading": "Privacy Policy"
+		},
+		"terms": {
+			"title": "Terms of Service",
+			"description": "The terms that govern your use of Parfect.",
+			"eyebrow": "Legal",
+			"heading": "Terms of Service"
+		}
+	}
+}

@@ -1,3 +1,5 @@
+import { getTranslations } from "next-intl/server";
+import type { Locale } from "@/i18n/routing";
 import {
 	APP_STORE_URL,
 	PLAY_STORE_URL,
@@ -7,15 +9,16 @@ import {
 	TERMS_URL,
 } from "./constants";
 
-export function getOrganizationSchema() {
+export async function getOrganizationSchema(locale: Locale) {
+	const t = await getTranslations({ locale, namespace: "Home.schema" });
+
 	return {
 		"@context": "https://schema.org",
 		"@type": "Organization",
 		name: "Parfect",
 		url: SITE_URL,
 		logo: `${SITE_URL}/images/icon.png`,
-		description:
-			"A private couples app for intimate chat, shared fantasies, and turning dreams into real date nights.",
+		description: t("organizationDescription"),
 		sameAs: [
 			"https://github.com/skalmanix/Parfect",
 			...(APP_STORE_URL.startsWith("http") ? [APP_STORE_URL] : []),
@@ -24,15 +27,16 @@ export function getOrganizationSchema() {
 	};
 }
 
-export function getSoftwareApplicationSchema() {
+export async function getSoftwareApplicationSchema(locale: Locale) {
+	const t = await getTranslations({ locale, namespace: "Home.schema" });
+
 	return {
 		"@context": "https://schema.org",
 		"@type": "SoftwareApplication",
 		name: "Parfect",
 		operatingSystem: "iOS, Android",
 		applicationCategory: "LifestyleApplication",
-		description:
-			"Just the two of you. A private couples companion for intimate chat, fantasies, date planning, and relationship growth.",
+		description: t("appDescription"),
 		offers: {
 			"@type": "Offer",
 			price: "0",
@@ -52,14 +56,15 @@ export function getSoftwareApplicationSchema() {
 	};
 }
 
-export function getWebSiteSchema() {
+export async function getWebSiteSchema(locale: Locale) {
+	const t = await getTranslations({ locale, namespace: "Home.schema" });
+
 	return {
 		"@context": "https://schema.org",
 		"@type": "WebSite",
 		name: "Parfect",
 		url: SITE_URL,
-		description:
-			"Download Parfect — the private app for couples who want to talk intimately, share dreams, and make them real.",
+		description: t("websiteDescription"),
 		publisher: {
 			"@type": "Organization",
 			name: "Parfect",
@@ -67,36 +72,20 @@ export function getWebSiteSchema() {
 	};
 }
 
-export function getFaqSchema() {
+export async function getFaqSchema(locale: Locale) {
+	const t = await getTranslations({ locale, namespace: "Home.faq" });
+
 	return {
 		"@context": "https://schema.org",
 		"@type": "FAQPage",
-		mainEntity: [
-			{
-				"@type": "Question",
-				name: "What is Parfect?",
-				acceptedAnswer: {
-					"@type": "Answer",
-					text: "Parfect is a private couples app that combines intimate chat, fantasy prompts, date planning, and relationship milestones in one warm, secure space made for two.",
-				},
+		mainEntity: [0, 1, 2].map((i) => ({
+			"@type": "Question",
+			name: t(`${i}.question`),
+			acceptedAnswer: {
+				"@type": "Answer",
+				text: t(`${i}.answer`),
 			},
-			{
-				"@type": "Question",
-				name: "Is Parfect private?",
-				acceptedAnswer: {
-					"@type": "Answer",
-					text: "Yes. Parfect is built for couples only — pair with an invite code, use optional end-to-end encryption, app lock with biometrics, and content-free push notifications. See our privacy policy for details.",
-				},
-			},
-			{
-				"@type": "Question",
-				name: "Who is Parfect for?",
-				acceptedAnswer: {
-					"@type": "Answer",
-					text: "Parfect is designed for committed couples aged 18+ who want to strengthen their relationship through meaningful communication, shared experiences, and intentional intimacy.",
-				},
-			},
-		],
+		})),
 	};
 }
 

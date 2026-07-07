@@ -1,0 +1,230 @@
+{
+	"Home": {
+		"hero": {
+			"eyebrow": "Nur ihr zwei",
+			"titleBefore": "Den",
+			"titleHighlight": "nächsten Schritt",
+			"titleAfter": "gemeinsam gehen",
+			"description": "Ein privater Raum zum Reden, Träumen und Erleben der Momente, die ihr euch nur vorstellt. Keine Feeds. Keine Follower. Niemand sonst.",
+			"encrypted": "End-to-End-verschlüsselt",
+			"noAds": "Keine Werbung, niemals",
+			"freePremium": "Kostenlos + Premium",
+			"scrollExplore": "Entdecken",
+			"scrollAria": "Scrollen, um die App zu entdecken"
+		},
+		"moments": {
+			"eyebrow": "Das ist für uns",
+			"heading": "Das Gespräch, das ihr schon lange führen wolltet",
+			"description": "Jede Beziehung hat unausgesprochene Träume und ungeplante Date Nights. Parfect macht daraus Nachrichten, Pläne und Erinnerungen.",
+			"feelings": {
+				"miss": {
+					"title": "Für das Paar, das sich vermisst",
+					"text": "Auch im selben Haus. Parfect gibt euch einen Ort, an dem es immer nur ihr zwei seid."
+				},
+				"parents": {
+					"title": "Für Eltern, die Date Night vergessen haben",
+					"text": "Bucket List, Babysitter, Kalender — die Logistik erledigt, damit die Romantik nicht verloren geht."
+				},
+				"curious": {
+					"title": "Für die, die noch neugierig sind",
+					"text": "Sanfte Impulse helfen euch, das auszusprechen, was ihr schon lange sagen wolltet. In eurem Tempo."
+				}
+			},
+			"chatDemo": {
+				"aria": "Beispielgespräch in Parfect",
+				"online": "Deine Person ist da",
+				"encrypted": "Verschlüsselt",
+				"placeholder": "Sag das Erste…",
+				"messages": {
+					"0": "Erinnerst du dich an die kleine Strandstadt, in die wir abhauen wollten? 🏝",
+					"1": "Steht noch auf meiner Liste. Direkt neben \"langsam in der Küche tanzen\".",
+					"2": "Beides auf unsere Bucket List gesetzt. Babysitter für Samstag gebucht…",
+					"3": "Das ist ein Date. ❤️"
+				}
+			}
+		},
+		"appPreview": {
+			"eyebrow": "In Aktion sehen",
+			"heading": "Eure Beziehung, in einer App",
+			"description": "Wischt durch die Tabs, die Paare täglich nutzen — Chat, Fantasien und die Pläne, die ihr gemeinsam macht.",
+			"cta": "Selbst ausprobieren — kostenlos",
+			"tabLabel": "{tab}-Tab"
+		},
+		"pillars": {
+			"eyebrow": "Drei Säulen",
+			"heading": "So gebaut, wie eure Beziehung wirklich funktioniert",
+			"description": "Reden, teilen und wahr werden lassen — dieselbe Reise, die ihr in der App erlebt.",
+			"items": {
+				"chat": {
+					"tagline": "Chat",
+					"title": "Redet, als wärt ihr allein",
+					"description": "Ein privater Thread, der nur euch gehört. Nachrichten verschwinden lassen, frei sprechen und nah bleiben — auch wenn ihr getrennt seid.",
+					"highlights": {
+						"0": "Echtzeit-Nachrichten für zwei",
+						"1": "Verschwindende Nachrichten & Lesebestätigungen",
+						"2": "Optionale End-to-End-Verschlüsselung"
+					}
+				},
+				"fantasies": {
+					"tagline": "Fantasien",
+					"title": "Teilt, was ihr euch vorstellt",
+					"description": "Schickt eine Fantasie oder fragt danach. Sanfte Impulse helfen euch, euch zu öffnen — und \"jetzt nicht\" ist immer okay.",
+					"highlights": {
+						"0": "Tägliche Impulse, die Neugier wecken",
+						"1": "Fragen oder teilen in eurem Tempo",
+						"2": "Gemeinsame Träume auf die Bucket List setzen"
+					}
+				},
+				"together": {
+					"tagline": "Zusammen",
+					"title": "Momente wirklich werden lassen",
+					"description": "Aus Funken wird eine gemeinsame Bucket List, plant Date Nights, koordiniert sogar den Babysitter — zusammen.",
+					"highlights": {
+						"0": "Gemeinsame Bucket List & Date-Planung",
+						"1": "Babysitter-Koordination eingebaut",
+						"2": "Jubiläen & wichtige Termine"
+					}
+				}
+			}
+		},
+		"features": {
+			"eyebrow": "Für eure Beziehung gemacht",
+			"heading": "Mehr als Nachrichten",
+			"description": "Durchdachte Tools, die euch helfen, euch auszutauschen, vorauszuplanen und das zu schützen, was zählt — ohne den Lärm der sozialen Medien.",
+			"items": {
+				"checkin": {
+					"title": "Wöchentliche Check-ins",
+					"description": "Gemeinsam reflektieren mit durchdachten Fragen — nebeneinander enthüllt, wenn ihr beide bereit seid."
+				},
+				"calendar": {
+					"title": "Gemeinsamer Kalender",
+					"description": "Verpasst kein Jubiläum. Plant Date Nights und behaltet die Momente im Blick, die zählen."
+				},
+				"lock": {
+					"title": "App-Sperre & Biometrie",
+					"description": "PIN-Sperre und biometrischer Schutz halten eure Beziehung privat auf eurem Gerät."
+				},
+				"constellation": {
+					"title": "Verbindung wächst",
+					"description": "Seht eure Konstellation wachsen, während ihr Momente teilt und eure Geschichte gemeinsam aufbaut."
+				},
+				"shield": {
+					"title": "Datenschutz zuerst",
+					"description": "Inhaltsfreie Benachrichtigungen, Pause-Funktionen und klare Datenschutzrichtlinien."
+				},
+				"rings": {
+					"title": "Für zwei gemacht",
+					"description": "Einmal mit Einladungscode verbinden. Keine Feeds, keine Follower, niemand sonst."
+				}
+			}
+		},
+		"howItWorks": {
+			"eyebrow": "So funktioniert's",
+			"heading": "Von der ersten Nachricht zur Date Night",
+			"description": "Der Einstieg dauert weniger als zwei Minuten. Verbindet euch mit eurem Partner und baut die Beziehung auf, die ihr beide wollt.",
+			"steps": {
+				"0": {
+					"title": "Download & verbinden",
+					"description": "App holen, Konto erstellen und Partner mit privatem Code einladen. Unter zwei Minuten."
+				},
+				"1": {
+					"title": "Reden, teilen, träumen",
+					"description": "Privat chatten, Fantasien mit sanften Impulsen erkunden und gemeinsam eine Bucket List aufbauen."
+				},
+				"2": {
+					"title": "Eure Beziehung stärken",
+					"description": "Ideen in Date Nights verwandeln, Details koordinieren und feiern, was euch näher bringt."
+				}
+			},
+			"images": {
+				"sofa": {
+					"alt": "Paar kuschelt auf dem Sofa und lächelt gemeinsam auf ein Handy",
+					"caption": "Jeden Abend ein Stück näher"
+				},
+				"together": {
+					"alt": "Zwei Hände greifen nach einander, umgeben von Rosenblättern",
+					"caption": "Der nächste Schritt gehört euch"
+				}
+			}
+		},
+		"testimonials": {
+			"eyebrow": "Echte Paare",
+			"heading": "Es funktioniert schon für Paare wie euch",
+			"featured": {
+				"quote": "Wir sind seit sechs Jahren zusammen und reden jeden Tag — aber Parfect ist der erste Ort, an dem wir wirklich Dinge aussprechen. Es ist, als hätten wir ein Zimmer in unserem Haus gefunden, von dem wir nicht wussten, dass es existiert.",
+				"names": "Hanna & Viktor",
+				"context": "Seit 6 Jahren zusammen · Stockholm",
+				"alt": "Hanna & Viktor, ein glückliches Paar, das zusammen lacht"
+			},
+			"items": {
+				"0": {
+					"quote": "Die Impulse haben Gespräche angestoßen, die wir jahrelang vermieden haben. Zu wissen, dass \"jetzt nicht\" immer okay ist, hat für uns den Unterschied gemacht.",
+					"names": "Elin & Jonas",
+					"context": "Seit 8 Jahren zusammen"
+				},
+				"1": {
+					"quote": "Zwei Kinder, null Spontanität — Date Night war ein schlechtes Gewissen. Jetzt ist es zweimal im Monat, und der Babysitter-Schritt sorgt dafür, dass es wirklich klappt.",
+					"names": "Sara & Marcus",
+					"context": "Eltern von zwei Kindern"
+				},
+				"2": {
+					"quote": "Verschiedene Zeitzonen, dasselbe Ritual. Die tägliche Frage hält uns im Alltag des anderen, und die Bucket List ist unser Countdown bis zur Wiedervereinigung.",
+					"names": "Amira & Daniel",
+					"context": "Fernbeziehung · Oslo–Lissabon"
+				},
+				"3": {
+					"quote": "Nach 31 Jahren Ehe dachten wir, wir wüssten alles übereinander. Stimmt nicht. Es fühlt sich wieder verspielt an — das hat uns beide überrascht.",
+					"names": "Kerstin & Lars",
+					"context": "Seit 31 Jahren verheiratet"
+				}
+			}
+		},
+		"privacy": {
+			"eyebrow": "Datenschutz & Vertrauen",
+			"heading": "Eure Beziehung verdient einen sicheren Raum",
+			"description": "Parfect ist für Intimität gebaut, nicht für Exposure. Keine Social Feeds, keine Fremden — und Datenschutzeinstellungen, die ihr wirklich versteht.",
+			"points": {
+				"0": {
+					"title": "End-to-End-Verschlüsselung",
+					"description": "Optionale E2EE für Chat-Text. Eure intimen Gespräche bleiben unter euch."
+				},
+				"1": {
+					"title": "Inhaltsfreie Benachrichtigungen",
+					"description": "Push-Mitteilungen verraten nie, was euer Partner gesagt hat — nur, dass er geschrieben hat."
+				},
+				"2": {
+					"title": "Ihr habt immer die Kontrolle",
+					"description": "Kontakt pausieren, Verbindung trennen oder Konto jederzeit löschen. Klare Richtlinien, keine Überraschungen."
+				},
+				"3": {
+					"title": "App-Sperre & Biometrie",
+					"description": "PIN und biometrischer Schutz halten eure Beziehung privat auf eurem Gerät."
+				}
+			}
+		},
+		"cta": {
+			"heading": "Euer nächster Schritt beginnt hier",
+			"description": "Das ist für uns. Ladet Parfect herunter und beginnt das Gespräch, das euch näher bringt — eine Nachricht, ein Traum, eine Date Night nach der anderen.",
+			"availability": "Verfügbar für iOS und Android · Kostenloser Download"
+		},
+		"faq": {
+			"0": {
+				"question": "Was ist Parfect?",
+				"answer": "Parfect ist eine private Paar-App, die intime Chats, Fantasie-Impulse, Date-Planung und Beziehungsmeilensteine in einem warmen, sicheren Raum für zwei vereint."
+			},
+			"1": {
+				"question": "Ist Parfect privat?",
+				"answer": "Ja. Parfect ist nur für Paare — Verbindung per Einladungscode, optionale End-to-End-Verschlüsselung, App-Sperre mit Biometrie und inhaltsfreie Push-Benachrichtigungen. Details in unserer Datenschutzerklärung."
+			},
+			"2": {
+				"question": "Für wen ist Parfect?",
+				"answer": "Parfect ist für feste Paare ab 18 gedacht, die ihre Beziehung durch bedeutungsvolle Kommunikation, gemeinsame Erlebnisse und bewusste Intimität stärken wollen."
+			}
+		},
+		"schema": {
+			"organizationDescription": "Eine private Paar-App für intime Chats, geteilte Fantasien und Träume, die zu echten Date Nights werden.",
+			"appDescription": "Nur ihr zwei. Eine private App für Paare — für intime Chats, Fantasien, Date-Planung und Beziehungswachstum.",
+			"websiteDescription": "Parfect herunterladen — die private App für Paare, die intime Gespräche führen, Träume teilen und sie wahr werden lassen wollen."
+		}
+	}
+}

@@ -2,9 +2,16 @@
 
 import { useEffect, useRef, useState, type ReactNode } from "react";
 import Image from "next/image";
-import Link from "next/link";
-import { AUDIENCE_LINKS, FEATURE_LINKS } from "@/lib/nav";
-import { CLUSTERS, GUIDES } from "@/lib/guides";
+import { useLocale, useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
+import {
+	AUDIENCE_LINKS,
+	DOWNLOAD_PATH,
+	FEATURE_LINKS,
+	IDEAS_PATH,
+} from "@/lib/nav";
+import { getGuides } from "@/lib/guides";
+import type { Locale } from "@/i18n/routing";
 
 function MegaMenuShell({
 	label,
@@ -114,12 +121,14 @@ function MenuCta({
 }
 
 export function MegaMenu() {
+	const t = useTranslations("Common");
+
 	return (
-		<MegaMenuShell label="Features">
+		<MegaMenuShell label={t("nav.features")}>
 			{(open, close) => (
 				<div className="grid grid-cols-[1.5fr_1fr] gap-8">
 					<div>
-						<p className="eyebrow text-xs mb-4">Features</p>
+						<p className="eyebrow text-xs mb-4">{t("nav.features")}</p>
 						<ul className="grid grid-cols-2 gap-2">
 							{FEATURE_LINKS.map((item) => (
 								<li key={item.href}>
@@ -140,10 +149,10 @@ export function MegaMenu() {
 											/>
 										</span>
 										<span className="block font-medium text-sm text-foreground group-hover:text-primary-strong transition-colors">
-											{item.label}
+											{t(`links.${item.key}`)}
 										</span>
 										<span className="block text-xs text-muted leading-relaxed mt-0.5">
-											{item.description}
+											{t(`linkDescriptions.${item.key}`)}
 										</span>
 									</Link>
 								</li>
@@ -152,7 +161,7 @@ export function MegaMenu() {
 					</div>
 
 					<div className="border-l border-border/50 pl-8">
-						<p className="eyebrow text-xs mb-4">Made for</p>
+						<p className="eyebrow text-xs mb-4">{t("nav.madeFor")}</p>
 						<ul className="flex flex-col gap-1">
 							{AUDIENCE_LINKS.map((item) => (
 								<li key={item.href}>
@@ -163,17 +172,22 @@ export function MegaMenu() {
 										className="mega-menu-row group"
 									>
 										<span className="block font-medium text-sm text-foreground group-hover:text-primary-strong transition-colors">
-											{item.label}
+											{t(`links.${item.key}`)}
 										</span>
 										<span className="block text-xs text-muted leading-relaxed mt-0.5">
-											{item.description}
+											{t(`linkDescriptions.${item.key}`)}
 										</span>
 									</Link>
 								</li>
 							))}
 						</ul>
 
-						<MenuCta href="/download" label="Get the app" open={open} close={close} />
+						<MenuCta
+							href={DOWNLOAD_PATH}
+							label={t("nav.getApp")}
+							open={open}
+							close={close}
+						/>
 					</div>
 				</div>
 			)}
@@ -181,7 +195,6 @@ export function MegaMenu() {
 	);
 }
 
-/* Featured guides get image cards; the rest are listed as text rows. */
 const FEATURED_GUIDE_SLUGS = [
 	"date-night-ideas-at-home",
 	"questions-for-couples",
@@ -190,19 +203,23 @@ const FEATURED_GUIDE_SLUGS = [
 ];
 
 export function IdeasMegaMenu() {
+	const t = useTranslations("Common");
+	const tGuides = useTranslations("GuidesUI");
+	const locale = useLocale() as Locale;
+	const guides = getGuides(locale);
 	const featured = FEATURED_GUIDE_SLUGS.map(
-		(slug) => GUIDES.find((guide) => guide.slug === slug)!,
+		(slug) => guides.find((guide) => guide.slug === slug)!,
 	);
-	const more = GUIDES.filter(
+	const more = guides.filter(
 		(guide) => !FEATURED_GUIDE_SLUGS.includes(guide.slug),
 	);
 
 	return (
-		<MegaMenuShell label="Ideas">
+		<MegaMenuShell label={t("nav.ideas")}>
 			{(open, close) => (
 				<div className="grid grid-cols-[1.5fr_1fr] gap-8">
 					<div>
-						<p className="eyebrow text-xs mb-4">Popular guides</p>
+						<p className="eyebrow text-xs mb-4">{t("nav.popularGuides")}</p>
 						<ul className="grid grid-cols-2 gap-2">
 							{featured.map((guide) => (
 								<li key={guide.slug}>
@@ -226,8 +243,8 @@ export function IdeasMegaMenu() {
 											{guide.cardTitle}
 										</span>
 										<span className="block text-xs text-muted leading-relaxed mt-0.5">
-											{CLUSTERS[guide.cluster].label}
-											{guide.seasonal ? " · Seasonal" : ""}
+											{tGuides(`clusters.${guide.cluster}.label`)}
+											{guide.seasonal ? ` · ${t("nav.seasonal")}` : ""}
 										</span>
 									</Link>
 								</li>
@@ -236,7 +253,7 @@ export function IdeasMegaMenu() {
 					</div>
 
 					<div className="border-l border-border/50 pl-8">
-						<p className="eyebrow text-xs mb-4">More guides</p>
+						<p className="eyebrow text-xs mb-4">{t("nav.moreGuides")}</p>
 						<ul className="flex flex-col gap-1">
 							{more.map((guide) => (
 								<li key={guide.slug}>
@@ -250,15 +267,20 @@ export function IdeasMegaMenu() {
 											{guide.cardTitle}
 										</span>
 										<span className="block text-xs text-muted leading-relaxed mt-0.5">
-											{CLUSTERS[guide.cluster].label}
-											{guide.seasonal ? " · Seasonal" : ""}
+											{tGuides(`clusters.${guide.cluster}.label`)}
+											{guide.seasonal ? ` · ${t("nav.seasonal")}` : ""}
 										</span>
 									</Link>
 								</li>
 							))}
 						</ul>
 
-						<MenuCta href="/ideas" label="All guides" open={open} close={close} />
+						<MenuCta
+							href={IDEAS_PATH}
+							label={t("nav.allGuides")}
+							open={open}
+							close={close}
+						/>
 					</div>
 				</div>
 			)}

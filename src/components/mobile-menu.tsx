@@ -2,15 +2,17 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
+import { useLocale, useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import {
 	AUDIENCE_LINKS,
-	DOWNLOAD_LINK,
+	DOWNLOAD_PATH,
 	FEATURE_LINKS,
-	IDEAS_LINK,
+	IDEAS_PATH,
 	NAV_ANCHORS,
 } from "@/lib/nav";
-import { GUIDES } from "@/lib/guides";
+import { getGuides } from "@/lib/guides";
+import type { Locale } from "@/i18n/routing";
 
 const MOBILE_GUIDE_SLUGS = [
 	"date-night-ideas-at-home",
@@ -20,6 +22,9 @@ const MOBILE_GUIDE_SLUGS = [
 ];
 
 export function MobileMenu() {
+	const t = useTranslations("Common");
+	const locale = useLocale() as Locale;
+	const guides = getGuides(locale);
 	const [open, setOpen] = useState(false);
 	const close = () => setOpen(false);
 
@@ -46,7 +51,7 @@ export function MobileMenu() {
 				onClick={() => setOpen((v) => !v)}
 				aria-expanded={open}
 				aria-controls="mobile-menu"
-				aria-label={open ? "Close menu" : "Open menu"}
+				aria-label={open ? t("nav.closeMenu") : t("nav.openMenu")}
 				className="flex items-center justify-center w-11 h-11 -mr-2 text-foreground"
 			>
 				<svg
@@ -70,8 +75,8 @@ export function MobileMenu() {
 				className={`mobile-menu-panel ${open ? "mobile-menu-open" : ""}`}
 				aria-hidden={!open}
 			>
-				<nav aria-label="Mobile navigation">
-					<p className="eyebrow text-xs mt-2 mb-3">Features</p>
+				<nav aria-label={t("nav.mainNav")}>
+					<p className="eyebrow text-xs mt-2 mb-3">{t("nav.features")}</p>
 					<ul className="grid grid-cols-2 gap-3 mb-2">
 						{FEATURE_LINKS.map((item) => (
 							<li key={item.href}>
@@ -92,7 +97,7 @@ export function MobileMenu() {
 										/>
 									</span>
 									<span className="block font-medium text-sm text-foreground">
-										{item.label}
+										{t(`links.${item.key}`)}
 									</span>
 								</Link>
 							</li>
@@ -108,16 +113,16 @@ export function MobileMenu() {
 									tabIndex={tabIndex}
 									className="mobile-menu-link text-base!"
 								>
-									{item.label}
+									{t(`links.${item.key}`)}
 								</Link>
 							</li>
 						))}
 					</ul>
 
-					<p className="eyebrow text-xs mt-5 mb-1">Ideas for couples</p>
+					<p className="eyebrow text-xs mt-5 mb-1">{t("footer.ideasForCouples")}</p>
 					<ul className="mb-2">
 						{MOBILE_GUIDE_SLUGS.map((slug) => {
-							const guide = GUIDES.find((g) => g.slug === slug);
+							const guide = guides.find((g) => g.slug === slug);
 							if (!guide) return null;
 							return (
 								<li key={slug}>
@@ -134,17 +139,17 @@ export function MobileMenu() {
 						})}
 						<li>
 							<Link
-								href={IDEAS_LINK.href}
+								href={IDEAS_PATH}
 								onClick={close}
 								tabIndex={tabIndex}
 								className="mobile-menu-link text-base! text-primary!"
 							>
-								All guides →
+								{t("nav.allGuides")} →
 							</Link>
 						</li>
 					</ul>
 
-					<p className="eyebrow text-xs mt-5 mb-1">Explore</p>
+					<p className="eyebrow text-xs mt-5 mb-1">{t("footer.explore")}</p>
 					<ul>
 						{NAV_ANCHORS.map((link) => (
 							<li key={link.href}>
@@ -154,19 +159,19 @@ export function MobileMenu() {
 									tabIndex={tabIndex}
 									className="mobile-menu-link"
 								>
-									{link.label}
+									{t(`nav.${link.key}`)}
 								</a>
 							</li>
 						))}
 					</ul>
 				</nav>
 				<Link
-					href={DOWNLOAD_LINK.href}
+					href={DOWNLOAD_PATH}
 					onClick={close}
 					tabIndex={tabIndex}
 					className="btn-primary flex items-center justify-center px-5 py-3.5 rounded-full text-sm mt-5"
 				>
-					{DOWNLOAD_LINK.label}
+					{t("nav.getApp")}
 				</Link>
 			</div>
 

@@ -1,0 +1,93 @@
+{
+	"Common": {
+		"brand": "Parfect",
+		"logoHome": "Inicio de Parfect",
+		"nav": {
+			"experience": "Experiencia",
+			"howItWorks": "Cómo funciona",
+			"testimonials": "Testimonios",
+			"privacy": "Privacidad",
+			"features": "Funciones",
+			"ideas": "Ideas",
+			"getApp": "Descargar la app",
+			"madeFor": "Hecho para",
+			"popularGuides": "Guías populares",
+			"moreGuides": "Más guías",
+			"allGuides": "Todas las guías",
+			"seasonal": "De temporada",
+			"openMenu": "Abrir menú",
+			"closeMenu": "Cerrar menú",
+			"mainNav": "Navegación principal"
+		},
+		"footer": {
+			"tagline": "Una app privada para parejas — para charlas íntimas, sueños compartidos y planes que se hacen realidad.",
+			"features": "Funciones",
+			"ideasForCouples": "Ideas para parejas",
+			"explore": "Explorar",
+			"legal": "Legal",
+			"allGuides": "Todas las guías",
+			"download": "Descargar",
+			"privacyPolicy": "Política de privacidad",
+			"termsOfService": "Términos de servicio",
+			"support": "Soporte",
+			"copyright": "© {year} Parfect. Todos los derechos reservados."
+		},
+		"languageSwitcher": {
+			"label": "Idioma",
+			"current": "Idioma actual: {language}"
+		},
+		"storeBadges": {
+			"appStore": "Descargar en App Store",
+			"playStore": "Disponible en Google Play"
+		},
+		"stickyCta": {
+			"tagline": "Gratis · Solo vosotros dos"
+		},
+		"rating": {
+			"stars": "Valoración 4,9 de 5",
+			"line": "4,9 / 5 de parejas en acceso anticipado"
+		},
+		"featurePage": {
+			"trustLine": "Descarga gratis · Hecho para dos · Mayores de 18",
+			"commonQuestions": "Preguntas frecuentes",
+			"keepExploring": "Seguir explorando",
+			"whatCouplesSay": "Lo que dicen las parejas",
+			"breadcrumbHome": "Parfect"
+		},
+		"guidePage": {
+			"breadcrumbHome": "Inicio",
+			"breadcrumbIdeas": "Ideas",
+			"updated": "Actualizado",
+			"worthRemembering": "Para recordar",
+			"commonQuestions": "Preguntas frecuentes",
+			"moreIdeas": "Más ideas para vosotros dos",
+			"ctaHeading": "Convertid ideas en momentos reales",
+			"ctaText": "Parfect os ayuda a hablar, soñar y planear — juntos. Gratis en iOS y Android.",
+			"ctaButton": "Probar Parfect",
+			"tryParfect": "Probar Parfect"
+		},
+		"subpage": {
+			"backToHome": "Volver a Parfect",
+			"lastUpdated": "Última actualización:",
+			"notFoundMessage": "Página no encontrada"
+		},
+		"links": {
+			"privateChat": "Chat privado",
+			"fantasies": "Fantasías",
+			"datePlanner": "Planificador de citas",
+			"bucketList": "Bucket list",
+			"forParents": "Para padres",
+			"forLongDistance": "Para larga distancia",
+			"forMarriedCouples": "Para parejas casadas"
+		},
+		"linkDescriptions": {
+			"privateChat": "Mensajes cifrados — solo para vosotros dos.",
+			"fantasies": "Compartid lo que nunca habéis dicho en voz alta.",
+			"datePlanner": "Del \"deberíamos\" al sábado reservado.",
+			"bucketList": "Sueños compartidos que de verdad se cumplen.",
+			"forParents": "Pareja — no solo copadres.",
+			"forLongDistance": "Cerca, estéis donde estéis.",
+			"forMarriedCouples": "Seguid eligiéndoos."
+		}
+	}
+}

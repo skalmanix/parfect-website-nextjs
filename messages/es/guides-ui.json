@@ -1,0 +1,26 @@
+{
+	"GuidesUI": {
+		"pageTitle": "Ideas para parejas",
+		"pageDescription": "Citas, conversaciones y sueños compartidos — guías prácticas para acercaros más.",
+		"heroEyebrow": "Ideas para parejas",
+		"heroTitle": "Guías para acercaros más",
+		"heroDescription": "Ideas prácticas para citas, conversaciones más profundas y los sueños que queréis compartir — escritas para parejas de verdad con agendas de verdad.",
+		"ctaHeading": "Convertid ideas en momentos reales",
+		"ctaText": "Parfect os ayuda a hablar, soñar y planear — juntos.",
+		"clusters": {
+			"date-nights": {
+				"label": "Citas",
+				"description": "Ideas para noches en casa, salidas y hacer especiales las tardes normales."
+			},
+			"conversations": {
+				"label": "Conversaciones",
+				"description": "Preguntas e impulsos para hablar de lo que importa."
+			},
+			"dreams-and-plans": {
+				"label": "Sueños y planes",
+				"description": "Bucket lists, hitos y convertir sueños compartidos en planes."
+			}
+		},
+		"breadcrumbIdeas": "Ideas para parejas"
+	}
+}

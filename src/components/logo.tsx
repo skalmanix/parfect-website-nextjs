@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/image";
-import Link from "next/link";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 
 type LogoProps = {
 	size?: number;
@@ -34,6 +37,7 @@ export function Logo({
 	className = "",
 	href,
 }: LogoProps) {
+	const t = useTranslations("Common");
 	const content = (
 		<>
 			<LogoMark size={size} />
@@ -42,7 +46,7 @@ export function Logo({
 					className="font-display font-medium tracking-tight text-foreground"
 					style={{ fontSize: size * 0.72, lineHeight: 1 }}
 				>
-					Parfect
+					{t("brand")}
 				</span>
 			) : null}
 		</>
@@ -52,7 +56,7 @@ export function Logo({
 
 	if (href) {
 		return (
-			<Link href={href} className={`${classes} group`} aria-label="Parfect home">
+			<Link href={href} className={`${classes} group`} aria-label={t("logoHome")}>
 				{content}
 			</Link>
 		);

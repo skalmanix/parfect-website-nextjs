@@ -1,0 +1,93 @@
+{
+	"Common": {
+		"brand": "Parfect",
+		"logoHome": "Parfect home",
+		"nav": {
+			"experience": "Experience",
+			"howItWorks": "How it works",
+			"testimonials": "Testimonials",
+			"privacy": "Privacy",
+			"features": "Features",
+			"ideas": "Ideas",
+			"getApp": "Get the app",
+			"madeFor": "Made for",
+			"popularGuides": "Popular guides",
+			"moreGuides": "More guides",
+			"allGuides": "All guides",
+			"seasonal": "Seasonal",
+			"openMenu": "Open menu",
+			"closeMenu": "Close menu",
+			"mainNav": "Main navigation"
+		},
+		"footer": {
+			"tagline": "A private couples companion for intimate chat, shared dreams, and turning them into real plans.",
+			"features": "Features",
+			"ideasForCouples": "Ideas for couples",
+			"explore": "Explore",
+			"legal": "Legal",
+			"allGuides": "All guides",
+			"download": "Download",
+			"privacyPolicy": "Privacy Policy",
+			"termsOfService": "Terms of Service",
+			"support": "Support",
+			"copyright": "© {year} Parfect. All rights reserved."
+		},
+		"languageSwitcher": {
+			"label": "Language",
+			"current": "Current language: {language}"
+		},
+		"storeBadges": {
+			"appStore": "Download on the App Store",
+			"playStore": "Get it on Google Play"
+		},
+		"stickyCta": {
+			"tagline": "Free · Just the two of you"
+		},
+		"rating": {
+			"stars": "Rated 4.9 out of 5",
+			"line": "4.9 / 5 from couples in early access"
+		},
+		"featurePage": {
+			"trustLine": "Free download · Made for two · Ages 18+",
+			"commonQuestions": "Common questions",
+			"keepExploring": "Keep exploring",
+			"whatCouplesSay": "What couples say",
+			"breadcrumbHome": "Parfect"
+		},
+		"guidePage": {
+			"breadcrumbHome": "Home",
+			"breadcrumbIdeas": "Ideas",
+			"updated": "Updated",
+			"worthRemembering": "Worth remembering",
+			"commonQuestions": "Common questions",
+			"moreIdeas": "More ideas for you two",
+			"ctaHeading": "Turn ideas into real moments",
+			"ctaText": "Parfect helps you talk, dream, and plan — together. Free on iOS and Android.",
+			"ctaButton": "Try Parfect",
+			"tryParfect": "Try Parfect"
+		},
+		"subpage": {
+			"backToHome": "Back to Parfect",
+			"lastUpdated": "Last updated:",
+			"notFoundMessage": "Page not found"
+		},
+		"links": {
+			"privateChat": "Private chat",
+			"fantasies": "Fantasies",
+			"datePlanner": "Date planner",
+			"bucketList": "Bucket list",
+			"forParents": "For parents",
+			"forLongDistance": "For long-distance",
+			"forMarriedCouples": "For married couples"
+		},
+		"linkDescriptions": {
+			"privateChat": "Encrypted messaging made only for two.",
+			"fantasies": "Share what you've never said out loud.",
+			"datePlanner": "From \"we should\" to a booked Saturday.",
+			"bucketList": "Shared dreams that actually happen.",
+			"forParents": "Partners, not just co-parents.",
+			"forLongDistance": "Close, from anywhere.",
+			"forMarriedCouples": "Keep choosing each other."
+		}
+	}
+}

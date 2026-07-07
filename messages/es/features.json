@@ -1,0 +1,921 @@
+{
+	"FeaturePages": {
+		"privateChat": {
+			"slug": "/features/private-chat",
+			"metaTitle": "Chat privado para parejas — mensajería cifrada para dos",
+			"metaDescription": "Un chat privado y cifrado creado solo para vosotros y vuestra pareja. Mensajes que desaparecen, notificaciones sin contenido y nadie más en la sala. Gratis en iOS y Android.",
+			"ogTitle": "Chat privado para parejas | Parfect",
+			"ogDescription": "Un chat cifrado solo para dos — mensajes que desaparecen, bloqueo de app y conversaciones que son vuestras.",
+			"eyebrow": "Chat privado",
+			"titlePlain": "Chat privado para parejas",
+			"titleBefore": "Un chat que pertenece a",
+			"titleHighlight": "vosotros dos",
+			"titleAfter": "— y a nadie más",
+			"intro": "La mayoría de apps de mensajes llevan toda vuestra vida: chats de trabajo, grupos, logística familiar. Parfect da a vuestra relación su propio espacio — cifrado, íntimo y sin distracciones.",
+			"screen": "chat",
+			"tab": "chat",
+			"story": {
+				"heading": "Por qué las parejas necesitan un espacio aparte para hablar",
+				"paragraphs": [
+					"Pensad dónde viven ahora vuestras conversaciones más íntimas. Apretadas entre una notificación de un pedido y un mensaje del trabajo, en una app donde un nombre mal escrito podría mandar un pensamiento privado al grupo equivocado. Ese contexto cambia lo que estáis dispuestos a decir — la mayoría de parejas simplemente dejan de decir ciertas cosas.",
+					"Parfect es diferente por diseño. Cuando lo abrís, hay exactamente una conversación, con exactamente una persona. Sin feeds que desplazar, sin listas de contactos, sin juegos de estados. Solo el hilo que compartís con vuestra pareja — lo que hace más fácil ser honestos, juguetones y vulnerables de formas que un mensajero de uso general nunca invita.",
+					"Y como algunas palabras están pensadas para un momento y no para un registro permanente, podéis configurar los mensajes para que desaparezcan. Decid la cosa atrevida. No tiene que vivir en un archivo buscable para siempre."
+				]
+			},
+			"image": {
+				"src": "/images/hero-onboarding.webp",
+				"alt": "Una pareja sentada muy cerca bajo luces de guirnalda al atardecer",
+				"caption": "Algunas conversaciones merecen su propio espacio."
+			},
+			"benefits": {
+				"heading": "Diseñado para la intimidad, no para todo el mundo",
+				"intro": "Cada decisión de diseño en el chat de Parfect responde a una pregunta: ¿hace esto más fácil que dos personas se sientan cercanas?",
+				"items": [
+					{
+						"title": "Cifrado de extremo a extremo",
+						"description": "El E2EE opcional significa que el texto de vuestros mensajes se cifra en vuestro dispositivo antes de enviarse. Ni siquiera Parfect puede leerlo.",
+						"icon": "lock"
+					},
+					{
+						"title": "Mensajes que desaparecen",
+						"description": "Configurad los mensajes para que desaparezcan después de ser vistos. Perfecto para lo que queréis decir una vez — no archivar para siempre.",
+						"icon": "clock"
+					},
+					{
+						"title": "Notificaciones sin contenido",
+						"description": "Las alertas push nunca muestran lo que se escribió — solo que vuestra pareja se ha puesto en contacto. Nada íntimo en la pantalla de bloqueo.",
+						"icon": "bell"
+					},
+					{
+						"title": "Bloqueo de app y biometría",
+						"description": "Proteged la app con un PIN o Face ID. Pasad el móvil a un amigo o a vuestro hijo sin pensarlo dos veces.",
+						"icon": "shield"
+					},
+					{
+						"title": "Confirmaciones de lectura que importan",
+						"description": "Con solo una persona en la sala, una confirmación de lectura no es ansiedad — es conexión. Siempre sabéis que os han escuchado.",
+						"icon": "chat"
+					},
+					{
+						"title": "De las palabras a los planes",
+						"description": "Cuando un mensaje despierta una idea — un viaje, una cita, una promesa — enviadla a vuestra bucket list compartida sin salir de la conversación.",
+						"icon": "star"
+					}
+				]
+			},
+			"steps": {
+				"heading": "Cómo funciona el chat privado en Parfect",
+				"intro": "Desde la descarga hasta vuestro primer mensaje en menos de dos minutos.",
+				"items": [
+					{
+						"title": "Emparejad con vuestra pareja",
+						"description": "Cread vuestra cuenta y enviad a vuestra pareja un código de invitación privado. Cuando lo introduzca, la sala es vuestra — para siempre, y solo vuestra."
+					},
+					{
+						"title": "Hacedlo vuestro",
+						"description": "Activad el cifrado de extremo a extremo, elegid cuánto tiempo viven los mensajes que desaparecen y configurad el bloqueo de app — cada cosa con un toque desde Ajustes."
+					},
+					{
+						"title": "Decid lo primero",
+						"description": "Empezad con algo pequeño o algo valiente. Los impulsos diarios están ahí cuando queréis una chispa, y está bien ir despacio."
+					}
+				]
+			},
+			"testimonial": {
+				"quote": "Nos escribimos todo el día en apps normales — compras, recogidas, logística. Parfect es donde seguimos siendo pareja. Abrirlo se siente como cerrar una puerta detrás de nosotros.",
+				"names": "Mia & Oscar",
+				"context": "Juntos 9 años",
+				"image": "/images/people/couple-sofa.webp"
+			},
+			"faqs": [
+				{
+					"question": "¿El chat de Parfect es realmente privado?",
+					"answer": "Sí. Parfect está diseñado para exactamente dos personas. No hay chats de grupo, perfiles públicos ni funciones de descubrimiento. El texto de los mensajes puede cifrarse de extremo a extremo para que nadie — incluido Parfect — pueda leerlo, y las notificaciones push nunca revelan el contenido del mensaje."
+				},
+				{
+					"question": "¿Cómo funcionan los mensajes que desaparecen?",
+					"answer": "Podéis configurar los mensajes para que se eliminen automáticamente después de ser vistos. Es ideal para mensajes íntimos que preferís no guardar en un archivo permanente. Ambas parejas pueden ver cuándo el modo de desaparición está activo, así que nunca hay sorpresas."
+				},
+				{
+					"question": "¿Puede unirse alguien más a nuestro chat?",
+					"answer": "No. El emparejamiento requiere un código de invitación privado de un solo uso, y cada cuenta solo puede emparejarse con una pareja. Si alguna vez desvinculáis, los datos compartidos de vuestra pareja se eliminan de los servidores de Parfect."
+				},
+				{
+					"question": "¿Qué pasa si alguien coge mi móvil?",
+					"answer": "Podéis proteger Parfect con un código PIN o biometría (Face ID / huella dactilar), para que la app permanezca bloqueada aunque el móvil esté desbloqueado. Las notificaciones son sin contenido por defecto, así que nada íntimo aparece en la pantalla de bloqueo."
+				},
+				{
+					"question": "¿El chat es gratis?",
+					"answer": "Sí — Parfect es gratis para descargar en iOS y Android, y el chat privado es una parte central de la experiencia gratuita."
+				}
+			],
+			"related": [
+				{
+					"href": "/features/fantasies",
+					"label": "Fantasías",
+					"description": "Impulsos suaves que os ayudan a compartir lo que nunca habéis dicho en voz alta."
+				},
+				{
+					"href": "/features/date-planner",
+					"label": "Planificador de citas",
+					"description": "Convertid buenas conversaciones en planes reales — citas nocturnas, canguro y todo."
+				},
+				{
+					"href": "/for/long-distance",
+					"label": "Para parejas a distancia",
+					"description": "Cómo las parejas usan Parfect para mantenerse cercanas a través de husos horarios."
+				}
+			],
+			"cta": {
+				"heading": "Dad a vuestra relación su propio espacio",
+				"text": "Descargad Parfect gratis, emparejad con vuestra pareja en menos de dos minutos y empezad la conversación que es solo para vosotros dos."
+			}
+		},
+		"fantasies": {
+			"slug": "/features/fantasies",
+			"metaTitle": "Fantasías — compartid lo que imagináis, a vuestro ritmo",
+			"metaDescription": "Los impulsos de fantasías de Parfect ayudan a las parejas a abrirse sobre sus deseos con seguridad — compartid cuando estéis listos, y \"ahora no\" siempre está bien. Privado, cifrado, gratis.",
+			"ogTitle": "Compartid vuestras fantasías con seguridad | Parfect",
+			"ogDescription": "Impulsos suaves que ayudan a las parejas a decir lo que llevaban tiempo queriendo decir — a su ritmo, en privado.",
+			"eyebrow": "Fantasías",
+			"titlePlain": "Fantasías",
+			"titleBefore": "Decid las cosas que",
+			"titleHighlight": "nunca habéis dicho",
+			"titleAfter": "en voz alta",
+			"intro": "Toda pareja tiene sueños y deseos que quedan sin decir — no porque no importen, sino porque empezar la conversación parece imposible. Parfect os da una forma suave y privada de comenzar.",
+			"screen": "fantasies",
+			"tab": "fantasies",
+			"story": {
+				"heading": "La conversación que la mayoría de parejas nunca tienen",
+				"paragraphs": [
+					"La investigación sobre relaciones a largo plazo sigue apuntando a lo mismo: las parejas que hablan abiertamente sobre sus deseos reportan mayor satisfacción y conexión más profunda. Y sin embargo, es la conversación que la mayoría evitamos — el miedo a ser malinterpretados, a la incomodidad, a alterar algo bueno, mantiene las fantasías encerradas durante años.",
+					"Parfect reduce las apuestas. En lugar de una confesión cara a cara de alta presión, tenéis un espacio privado con impulsos reflexivos — de dulces a atrevidos — que hacen que compartir se sienta como un juego que jugáis juntos en lugar de un examen que podéis suspender. Elegís qué compartir y cuándo. Vuestra pareja responde cuando está lista.",
+					"Crucialmente, \"ahora no\" es una respuesta de primera clase. Rechazar una invitación siempre está bien y nunca se castiga — porque la verdadera apertura solo crece donde hay verdadera seguridad. Con el tiempo, las pequeñas comparticiones se vuelven mayores, y lo que ambos imaginabais en silencio se convierte en planes que hacéis juntos."
+				]
+			},
+			"image": {
+				"src": "/images/hero-together.webp",
+				"alt": "Dos manos que se alcanzan rodeadas de pétalos de rosa",
+				"caption": "La apertura crece donde se siente segura."
+			},
+			"benefits": {
+				"heading": "Diseñado para que abrirse se sienta fácil",
+				"intro": "Las fantasías en Parfect se construyen en torno al consentimiento, el ritmo y el juego — nunca la presión.",
+				"items": [
+					{
+						"title": "Impulsos diarios",
+						"description": "Una pregunta nueva cada día — de juguetona a profunda — para que nunca tengáis que inventar la conversación desde cero.",
+						"icon": "sparkles"
+					},
+					{
+						"title": "Compartir o preguntar",
+						"description": "Enviad una fantasía propia, o invitad a vuestra pareja a compartir una. De cualquier forma, empieza con curiosidad, no con confrontación.",
+						"icon": "chat"
+					},
+					{
+						"title": "\"Ahora no\" está bien",
+						"description": "Cada invitación puede rechazarse con suavidad. Sin culpa, sin marcador — solo respeto por el ritmo del otro.",
+						"icon": "heart"
+					},
+					{
+						"title": "Completamente privado",
+						"description": "Las fantasías viven dentro de vuestro espacio de pareja cifrado. Sin comunidad, sin desconocidos, sin algoritmo leyendo.",
+						"icon": "lock"
+					},
+					{
+						"title": "Del sueño a la bucket list",
+						"description": "Cuando una fantasía compartida está lista para hacerse real, promocionadla a vuestra bucket list y empezad a planificarla juntos.",
+						"icon": "star"
+					},
+					{
+						"title": "Crece con vosotros",
+						"description": "Empezad dulce e id más profundo con el tiempo. Los impulsos se adaptan a lo que ambos toleráis — vosotros marcáis la temperatura.",
+						"icon": "map"
+					}
+				]
+			},
+			"steps": {
+				"heading": "Cómo funciona compartir una fantasía",
+				"intro": "Tres pequeños pasos entre \"nunca lo dije\" y \"lo estamos planeando\".",
+				"items": [
+					{
+						"title": "Conseguid una chispa",
+						"description": "Abrid el impulso de esta noche, o empezad por algo que os ronda la cabeza. Escribidlo en privado primero — nadie lo ve hasta que decidáis."
+					},
+					{
+						"title": "Compartid cuando estéis listos",
+						"description": "Enviadlo a vuestra pareja como invitación. Puede responder, hacer preguntas, compartir la suya — o decir \"ahora no\" con un toque."
+					},
+					{
+						"title": "Hacedlo real (si queréis)",
+						"description": "Algunas fantasías son preciosas como palabras. Otras merecen una fecha en el calendario. Promocionad las que ambos elijáis a vuestra bucket list compartida."
+					}
+				]
+			},
+			"testimonial": {
+				"quote": "Los impulsos empezaron conversaciones que llevábamos años evitando. Saber que \"ahora no\" siempre está bien marcó toda la diferencia — por fin nos sentimos seguros para ser honestos.",
+				"names": "Elin & Jonas",
+				"context": "Juntos 8 años",
+				"image": "/images/people/couple-elin-jonas.webp"
+			},
+			"faqs": [
+				{
+					"question": "¿Y si mi pareja no está lista para compartir?",
+					"answer": "Eso está integrado en el diseño. Cada invitación puede rechazarse con un suave \"ahora no\", y nada se fuerza ni se puntúa. Muchas parejas empiezan con los impulsos dulces y de bajo riesgo y crecen hacia comparticiones más profundas en semanas o meses — al ritmo que os parezca bien."
+				},
+				{
+					"question": "¿Puede ver lo que compartimos alguien más?",
+					"answer": "No. Las fantasías existen solo dentro de vuestro espacio privado de pareja. Parfect no tiene feeds, funciones de comunidad ni desconocidos. El texto del chat admite cifrado de extremo a extremo, las notificaciones nunca revelan contenido, y podéis bloquear la app con Face ID o un PIN."
+				},
+				{
+					"question": "¿Los impulsos son explícitos?",
+					"answer": "Van de dulces y románticos a atrevidos — y vosotros controláis la profundidad. Parfect está hecho para adultos (18+), pero se construye en torno a la intimidad emocional primero: muchos impulsos tratan de sueños, recuerdos y conexión más que de algo explícito."
+				},
+				{
+					"question": "¿Qué pasa con una fantasía después de compartirla?",
+					"answer": "Lo que elijáis. Puede quedarse como conversación, revisarse más tarde, o promocionarse a vuestra bucket list compartida — donde se convierte en algo que planificáis activamente juntos, como una cita nocturna o un viaje."
+				},
+				{
+					"question": "¿Esta función es gratis?",
+					"answer": "Sí. Parfect es gratis en iOS y Android, y los impulsos de fantasías forman parte de la experiencia principal."
+				}
+			],
+			"related": [
+				{
+					"href": "/features/private-chat",
+					"label": "Chat privado",
+					"description": "El chat cifrado de dos personas donde vive cada conversación."
+				},
+				{
+					"href": "/features/bucket-list",
+					"label": "Bucket list",
+					"description": "Donde los sueños compartidos se convierten en planes que realmente lleváis a cabo."
+				},
+				{
+					"href": "/for/married-couples",
+					"label": "Para parejas casadas",
+					"description": "Mantener la curiosidad viva después de años juntos."
+				}
+			],
+			"cta": {
+				"heading": "Empezad la conversación esta noche",
+				"text": "Descargad Parfect gratis y dejad que un solo impulso suave haga lo que años de \"algún día deberíamos hablar de esto\" no pudieron."
+			}
+		},
+		"datePlanner": {
+			"slug": "/features/date-planner",
+			"metaTitle": "Planificador de citas nocturnas para parejas — planeadlo juntos",
+			"metaDescription": "Planificad citas nocturnas juntos en un solo lugar: calendario compartido, coordinación del canguro e ideas directamente de vuestra bucket list. Gratis en iOS y Android.",
+			"ogTitle": "Planificador de citas nocturnas | Parfect",
+			"ogDescription": "De \"deberíamos salir más\" a un sábado reservado — planificación compartida, coordinación del canguro y recordatorios de aniversarios.",
+			"eyebrow": "Planificador de citas",
+			"titlePlain": "Planificador de citas nocturnas",
+			"titleBefore": "De",
+			"titleHighlight": "\"deberíamos salir más\"",
+			"titleAfter": "a un sábado reservado",
+			"intro": "Toda pareja lo dice. Pocos calendarios lo muestran. Parfect convierte la cita nocturna de una intención vaga en un plan con hora, lugar — y un canguro que ya está confirmado.",
+			"screen": "date",
+			"tab": "together",
+			"story": {
+				"heading": "Por qué las citas nocturnas siguen sin pasar",
+				"paragraphs": [
+					"Casi nunca se trata del amor, y casi siempre de la logística. Alguien tiene que elegir un día, encontrar algo que hacer, comprobar el calendario del otro, organizar a los niños — y como ese trabajo invisible suele recaer en una pareja, convierte en silencio el romance en gestión de proyectos. Al final, es más fácil ver algo.",
+					"Parfect reparte la carga. La planificación de citas vive en vuestro espacio compartido, donde ambos podéis sugerir ideas, elegir fechas y verlo todo en un calendario. Las ideas tampoco tienen que salir de una página en blanco — vuestra bucket list y fantasías compartidas alimentan directamente el planificador, así que la pregunta cambia de \"¿qué deberíamos hacer?\" a \"¿cuál hacemos primero?\"",
+					"Para los padres, la app gestiona el paso que mata la mayoría de planes: el canguro. Coordinad la cuidadora directamente dentro del plan, para que \"sábado, 19:30, canguro confirmado\" sea una sola mirada — no un intercambio de mensajes de tres días."
+				]
+			},
+			"image": {
+				"src": "/images/hero-date.webp",
+				"alt": "Una mesa de cena a la luz de las velas para dos en una azotea con vistas a las luces de la ciudad",
+				"caption": "Las mejores citas empiezan tres días antes — con un plan."
+			},
+			"benefits": {
+				"heading": "Todo lo que una cita necesita, en un solo lugar",
+				"intro": "Menos carga de coordinación, más romance de verdad. Esto es lo que el planificador os quita de encima.",
+				"items": [
+					{
+						"title": "Planificación compartida",
+						"description": "Ambas parejas ven, sugieren y editan planes. Se acabó que una persona cargue con toda la carga mental del romance.",
+						"icon": "calendar"
+					},
+					{
+						"title": "Coordinación del canguro",
+						"description": "Organizad al canguro como parte del plan mismo. Cuando dice confirmado, la noche realmente va a pasar.",
+						"icon": "shield"
+					},
+					{
+						"title": "Ideas a mano",
+						"description": "Sacad ideas de vuestra bucket list compartida y fantasías en lugar de mirar una página en blanco cada vez.",
+						"icon": "sparkles"
+					},
+					{
+						"title": "Aniversarios y hitos",
+						"description": "Cumpleaños, aniversarios, el día que os conocisteis — registrados en vuestro calendario compartido para que no os pillen desprevenidos otra vez.",
+						"icon": "heart"
+					},
+					{
+						"title": "Recordatorios suaves",
+						"description": "Las notificaciones sin contenido os empujan antes de la gran noche — sin estropear sorpresas en la pantalla de bloqueo.",
+						"icon": "bell"
+					},
+					{
+						"title": "Recuerdos que se acumulan",
+						"description": "Las citas completadas se convierten en parte de vuestra historia compartida en la app — prueba de que estáis construyendo la relación que queréis.",
+						"icon": "star"
+					}
+				]
+			},
+			"steps": {
+				"heading": "Cómo funciona planificar una cita",
+				"intro": "De la idea a planes confirmados en tres pasos.",
+				"items": [
+					{
+						"title": "Elegid la chispa",
+						"description": "Elegid una idea de vuestra bucket list, una fantasía compartida, o empezad de cero. \"Cena en la azotea\" es un buen punto de partida."
+					},
+					{
+						"title": "Definid los detalles juntos",
+						"description": "Ponedos de acuerdo en el día y la hora en vuestro calendario compartido, añadid el lugar y — si lo necesitáis — coordinad al canguro directamente en el plan."
+					},
+					{
+						"title": "Presentaos y disfrutad",
+						"description": "Ambos recibís un recordatorio suave antes de la noche. Solo queda la parte divertida: estar ahí, juntos."
+					}
+				]
+			},
+			"testimonial": {
+				"quote": "Dijimos \"deberíamos salir más\" durante dos años. Parfect hizo que fuera vergonzoso seguir diciéndolo — las ideas estaban ahí, así que empezamos a reservarlas.",
+				"names": "Hanna & Viktor",
+				"context": "Juntos 6 años · Estocolmo",
+				"image": "/images/people/couple-laughing.webp"
+			},
+			"faqs": [
+				{
+					"question": "¿En qué es mejor que un Google Calendar compartido?",
+					"answer": "Un calendario general guarda eventos; Parfect planifica citas. Las ideas fluyen desde vuestra bucket list y fantasías compartidas, la coordinación del canguro está integrada en el plan, los aniversarios se registran automáticamente, y todo vive en el mismo espacio privado que el chat de vuestra pareja — no entre citas del dentista y reuniones de trabajo."
+				},
+				{
+					"question": "¿Funciona para parejas sin hijos?",
+					"answer": "Por supuesto. La coordinación del canguro es opcional — la mayor parte del planificador trata de ideas, programación compartida y asegurar que las intenciones se conviertan en noches reales fuera (o en casa)."
+				},
+				{
+					"question": "¿Podemos planificar citas nocturnas en casa también?",
+					"answer": "Claro. Una cita es cualquier cosa que hagáis a propósito juntos — una noche de cocina, un maratón de películas, un baile lento en la cocina. Al planificador le importa que pase, no dónde."
+				},
+				{
+					"question": "¿Y los aniversarios y fechas importantes?",
+					"answer": "Añadidlos una vez y Parfect los lleva al día — vuestro aniversario, cumpleaños y los hitos que importan a vosotros dos. Recibiréis un aviso a tiempo para planificar algo, no una situación de flores de disculpa al día siguiente."
+				},
+				{
+					"question": "¿El planificador de citas es gratis?",
+					"answer": "Sí. Parfect es gratis para descargar en iOS y Android, y la planificación de citas forma parte de la experiencia principal."
+				}
+			],
+			"related": [
+				{
+					"href": "/features/bucket-list",
+					"label": "Bucket list",
+					"description": "La lista compartida de todo lo que vosotros dos queréis hacer — el mejor aliado del planificador."
+				},
+				{
+					"href": "/for/parents",
+					"label": "Para padres",
+					"description": "Cómo las parejas con hijos recuperan la cita nocturna en el calendario."
+				},
+				{
+					"href": "/features/private-chat",
+					"label": "Chat privado",
+					"description": "Donde empiezan las conversaciones de \"¿y si…?\"."
+				}
+			],
+			"cta": {
+				"heading": "Poned la próxima cita en el calendario",
+				"text": "Descargad Parfect gratis y convertid el \"de verdad deberíamos\" de esta semana en una reserva real."
+			}
+		},
+		"bucketList": {
+			"slug": "/features/bucket-list",
+			"metaTitle": "App de bucket list para parejas — soñadlo, planeadlo, hacedlo",
+			"metaDescription": "Cread una bucket list compartida con vuestra pareja: recoged sueños, convertidlos en citas planificadas y tachadlos juntos. Gratis en iOS y Android.",
+			"ogTitle": "Bucket list compartida para parejas | Parfect",
+			"ogDescription": "Una lista para todo lo que vosotros dos queréis hacer — desde bailes lentos en la cocina hasta el viaje del que siempre habláis.",
+			"eyebrow": "Bucket list",
+			"titlePlain": "Bucket list para parejas",
+			"titleBefore": "Una lista para todo lo que",
+			"titleHighlight": "vosotros dos",
+			"titleAfter": "seguís hablando",
+			"intro": "El pueblo de playa al que escaparíais. El restaurante que siempre pasáis. El baile lento en la cocina. Parfect guarda cada \"algún día\" en un lugar compartido — y os ayuda a llegar realmente.",
+			"screen": "together",
+			"tab": "together",
+			"story": {
+				"heading": "Algún día no es un plan",
+				"paragraphs": [
+					"Las parejas generan ideas maravillosas todo el tiempo — en paseos, con vino, en mitad de la noche. Y luego las ideas se evaporan, porque viven en el almacenamiento menos fiable jamás inventado: \"de verdad deberíamos hacer eso algún día\". Un año después decís la misma frase sobre el mismo viaje.",
+					"Una bucket list compartida cambia la física de esto. En el momento en que una idea se escribe donde ambos podéis verla, deja de ser un comentario pasajero y se convierte en una pequeña promesa mutua. Parfect mantiene esa lista en el mismo espacio privado que vuestro chat y vuestras fantasías, así que capturar una idea lleva dos toques — en mitad de una conversación, un paseo, lo que sea.",
+					"Y la lista no es un cementerio de buenas intenciones. Cualquier elemento puede promocionarse a una cita planificada con día, hora y canguro si lo necesitáis. Tachar cosas juntos — y ver crecer la lista de tachados — se convierte en su propia prueba silenciosa de que estáis construyendo la vida de la que habláis."
+				]
+			},
+			"image": {
+				"src": "/images/hero-home.webp",
+				"alt": "Una pareja caminando de la mano por un sendero iluminado con farolillos al atardecer",
+				"caption": "La lista de algún día, por fin acortándose."
+			},
+			"benefits": {
+				"heading": "Una lista de algún día que realmente avanza",
+				"intro": "Tres cosas hacen diferente la bucket list de Parfect de una nota en el móvil.",
+				"items": [
+					{
+						"title": "Verdaderamente compartida",
+						"description": "Ambos añadís, editáis y tacháis. No es la lista de deseos de una pareja — es un acuerdo en curso sobre la vida que queréis.",
+						"icon": "heart"
+					},
+					{
+						"title": "Alimentada por vuestras fantasías",
+						"description": "Los sueños compartidos del espacio de Fantasías pueden pasar directamente a la lista — marcados para que recordéis de dónde vinieron.",
+						"icon": "sparkles"
+					},
+					{
+						"title": "A un toque de planificado",
+						"description": "Cualquier elemento se convierte en una cita nocturna con día y hora. \"Escapada al pueblo de playa\" deja de ser una frase y empieza a ser un itinerario.",
+						"icon": "calendar"
+					},
+					{
+						"title": "Grandes y pequeñas",
+						"description": "Rutas al amanecer junto a viajes alrededor del mundo. Las mejores listas mezclan victorias de cinco minutos con sueños de cinco años.",
+						"icon": "list"
+					},
+					{
+						"title": "Privada por defecto",
+						"description": "Vuestra lista vive en vuestro espacio de pareja cifrado. Sin feed social, sin metas de viaje performativas — solo lo que vosotros dos realmente queréis.",
+						"icon": "lock"
+					},
+					{
+						"title": "Una historia compartida",
+						"description": "Cada elemento tachado es un recuerdo que creasteis a propósito. Desplazaos hacia atrás cuando queráis y ved lo lejos que habéis llegado juntos.",
+						"icon": "star"
+					}
+				]
+			},
+			"steps": {
+				"heading": "Cómo funciona la bucket list",
+				"intro": "Capturad, elegid, haced — y repetid el resto de vuestras vidas.",
+				"items": [
+					{
+						"title": "Capturad cada idea",
+						"description": "Añadid elementos en el momento en que surjan — desde el chat, desde una fantasía, o directamente a la lista. Nada se pierde en \"algún día\" otra vez."
+					},
+					{
+						"title": "Elegid qué sigue",
+						"description": "Explorad la lista juntos y elegid la que encaje este mes — o este martes. Promocionadla a una cita planificada con un toque."
+					},
+					{
+						"title": "Tachadlo juntos",
+						"description": "Haced la cosa, marcáis la casilla, y disfrutad del placer infravalorado de un sueño compartido marcado como hecho. Luego elegid el siguiente."
+					}
+				]
+			},
+			"testimonial": {
+				"quote": "Nuestra lista empezó con \"aprender a hacer pasta\" y ahora tiene un viaje por carretera. Tachar cosas juntos es extrañamente adictivo — de la mejor manera.",
+				"names": "Amira & Daniel",
+				"context": "Juntos 3 años",
+				"image": "/images/people/couple-amira-daniel.webp"
+			},
+			"faqs": [
+				{
+					"question": "¿En qué es diferente de una app de notas compartida?",
+					"answer": "Una nota guarda texto; la bucket list de Parfect está conectada al resto de vuestra relación. Los elementos fluyen desde fantasías compartidas, salen hacia citas nocturnas planificadas con recordatorios y coordinación del canguro, y viven en el mismo espacio privado y cifrado que el chat de vuestra pareja."
+				},
+				{
+					"question": "¿Qué deberíamos poner en una bucket list de pareja?",
+					"answer": "Mezclad tamaños: pequeñas victorias entre semana (baile lento en la cocina, café al amanecer), aventuras locales (ese restaurante, una excursión de un día), y grandes sueños (el pueblo de playa, aprender algo juntos). Los elementos pequeños mantienen la lista en movimiento; los grandes le dan horizonte."
+				},
+				{
+					"question": "¿Pueden los elementos de la bucket list venir de nuestras fantasías?",
+					"answer": "Sí — ese es uno de los momentos favoritos de Parfect. Cuando una fantasía compartida es algo que ambos queréis hacer real, promocionadla a la bucket list. Mantiene un pequeño marcador mostrando que empezó como un sueño."
+				},
+				{
+					"question": "¿Ambas parejas ven la misma lista?",
+					"answer": "Sí. La lista es completamente compartida: ambos podéis añadir, editar, completar y planificar elementos. Se actualiza en tiempo real, así que una idea añadida en la pausa del almuerzo os espera en casa."
+				},
+				{
+					"question": "¿La bucket list es gratis?",
+					"answer": "Sí. Parfect es gratis en iOS y Android, y la bucket list compartida forma parte de la experiencia principal."
+				}
+			],
+			"related": [
+				{
+					"href": "/features/date-planner",
+					"label": "Planificador de citas",
+					"description": "Donde los elementos de la bucket list se convierten en sábados reservados."
+				},
+				{
+					"href": "/features/fantasies",
+					"label": "Fantasías",
+					"description": "La forma suave en que los sueños compartidos se dicen por primera vez."
+				},
+				{
+					"href": "/for/married-couples",
+					"label": "Para parejas casadas",
+					"description": "Por qué una lista compartida importa aún más después de años juntos."
+				}
+			],
+			"cta": {
+				"heading": "Empezad vuestra lista esta noche",
+				"text": "Descargad Parfect gratis, añadid las tres primeras cosas de las que siempre habláis, y ved cómo \"algún día\" consigue una fecha."
+			}
+		},
+		"forParents": {
+			"slug": "/for/parents",
+			"metaTitle": "La app de parejas para padres — seguid siendo pareja, no solo copadres",
+			"metaDescription": "Entre recogidas del cole y horas de dormir, la relación queda al final. Parfect ayuda a los padres a reconectar: citas nocturnas con coordinación del canguro, chat privado y pequeños rituales diarios.",
+			"ogTitle": "Parfect para padres",
+			"ogDescription": "Cita nocturna con el canguro resuelto, un chat que es solo vuestro, y pequeños rituales que os mantienen cercanos entre horas de dormir.",
+			"eyebrow": "Para padres",
+			"titlePlain": "Parfect para padres",
+			"titleBefore": "Seguid siendo",
+			"titleHighlight": "pareja",
+			"titleAfter": "— no solo copadres",
+			"intro": "Amáis a vuestros hijos. También os echáis de menos. Parfect ayuda a los padres ocupados a proteger la relación que empezó toda la familia — en los huecos de diez minutos que realmente tiene el día de un padre.",
+			"screen": "home",
+			"tab": "together",
+			"story": {
+				"heading": "La pareja suele quedar al final. Arreglemos eso.",
+				"paragraphs": [
+					"Después de los hijos, las conversaciones de la mayoría de parejas se convierten en silencio en logística: recogidas, cenas, de quién es el turno. No es que el amor se vaya a ningún sitio — es que la relación deja de tener tiempo o espacio dedicado. Pasan semanas en perfecto trabajo en equipo y cero romance, y ambos lo sentís.",
+					"El consejo estándar es \"priorizad la cita nocturna\", y es buen consejo — pero cualquiera con hijos sabe que la verdadera batalla es la logística. Elegir un día, ponerse de acuerdo en un plan, y sobre todo, organizar al canguro. Esa es exactamente la parte que Parfect gestiona: los planes de citas viven en un espacio compartido, las ideas vienen de vuestra propia bucket list, y la coordinación del canguro está integrada en el plan mismo.",
+					"Entre citas nocturnas, Parfect mantiene un hilo de solo-nosotros corriendo por los días normales. Un chat privado que no es el grupo familiar. Un impulso diario que podéis responder desde el sofá después de la hora de dormir. Un mensaje que desaparece después de leerlo. Cosas pequeñas — pero las cosas pequeñas, repetidas, son de lo que está hecha la cercanía."
+				]
+			},
+			"image": {
+				"src": "/images/hero-date.webp",
+				"alt": "Una mesa de cena a la luz de las velas preparada para dos con luces de la ciudad de fondo",
+				"caption": "El canguro está reservado. La noche es vuestra."
+			},
+			"benefits": {
+				"heading": "Diseñado en torno a la realidad de un padre",
+				"intro": "No hacen falta grandes gestos — solo herramientas que encajen en el día que realmente tenéis.",
+				"items": [
+					{
+						"title": "Citas nocturnas a prueba de canguro",
+						"description": "Coordinad al canguro dentro del plan mismo. Cuando Parfect dice confirmado, la cita nocturna realmente va a pasar.",
+						"icon": "shield"
+					},
+					{
+						"title": "Un chat que no es logística",
+						"description": "Guardad el coqueteo donde el horario escolar no llega. Vuestro hilo de Parfect es para vosotros dos — no para \"nos hemos quedado sin leche\".",
+						"icon": "chat"
+					},
+					{
+						"title": "Rituales de diez minutos",
+						"description": "Impulsos diarios y check-ins que encajan entre la hora de dormir y colapsar en el sofá. Cercanía en los huecos.",
+						"icon": "clock"
+					},
+					{
+						"title": "Una lista compartida de algún día",
+						"description": "El viaje para vuestro aniversario, el restaurante sin menú infantil — guardados a salvo en vuestra bucket list hasta que les toque.",
+						"icon": "list"
+					},
+					{
+						"title": "Nada en la pantalla de bloqueo",
+						"description": "Las notificaciones sin contenido y el bloqueo de app significan que un niño curioso con vuestro móvil no ve nada que no deba.",
+						"icon": "lock"
+					},
+					{
+						"title": "Aniversarios, recordados",
+						"description": "Vuestro calendario compartido registra las fechas que importan, para que no se pierdan otra vez entre eventos escolares.",
+						"icon": "calendar"
+					}
+				]
+			},
+			"steps": {
+				"heading": "Empezar (en una siesta)",
+				"intro": "Parfect lleva menos tiempo configurarlo que un permiso escolar.",
+				"items": [
+					{
+						"title": "Emparejad",
+						"description": "Descargad la app, cread vuestra cuenta y enviad a vuestra pareja el código de invitación. Dos minutos, de principio a fin."
+					},
+					{
+						"title": "Poned una cita en el calendario",
+						"description": "Elegid algo pequeño — cena fuera, o incluso una cita en casa de verdad después de la hora de dormir. Organizad al canguro en el plan si lo necesitáis."
+					},
+					{
+						"title": "Dejad que los pequeños rituales funcionen",
+						"description": "Responded al impulso diario cuando podáis. Enviad el mensaje ocasional que no tiene nada que ver con los niños. Mirad lo que hace a la semana."
+					}
+				]
+			},
+			"testimonial": {
+				"quote": "Dos hijos, cero espontaneidad — la cita nocturna era un deseo culpable. Ahora es dos veces al mes, y el paso del canguro significa que realmente pasa en lugar de desmoronarse el viernes.",
+				"names": "Sara & Marcus",
+				"context": "Padres de dos",
+				"image": "/images/people/couple-sara-marcus.webp"
+			},
+			"faqs": [
+				{
+					"question": "Apenas tenemos diez minutos al día. ¿Es realista?",
+					"answer": "Parfect está diseñado exactamente para eso. Un impulso diario lleva un minuto responder, un mensaje lleva segundos, y la planificación de citas ocurre de forma asíncrona — tú sugieres, tu pareja confirma cuando puede. Está hecho para los huecos del día de un padre, no para gente con tardes libres infinitas."
+				},
+				{
+					"question": "¿Cómo funciona la coordinación del canguro?",
+					"answer": "Cuando planificáis una cita, organizar al canguro se convierte en parte del plan mismo en lugar de un hilo de mensajes aparte. Ambas parejas pueden ver el estado de un vistazo — así que \"sábado 19:30, canguro confirmado\" significa que la noche es real."
+				},
+				{
+					"question": "¿Y si mi hijo coge mi móvil?",
+					"answer": "Parfect puede bloquearse con un PIN o Face ID, y las notificaciones push nunca muestran el contenido del mensaje — solo que vuestra pareja se ha puesto en contacto. Vuestro espacio privado sigue siendo privado, incluso en un móvil familiar compartido."
+				},
+				{
+					"question": "¿Esto es solo sobre citas nocturnas?",
+					"answer": "No — las citas nocturnas son solo la parte más visible. La mayor parte del valor de Parfect para padres está en el día a día: un chat privado que no es logística del hogar, impulsos diarios suaves, una bucket list compartida, y aniversarios que no se olvidan."
+				},
+				{
+					"question": "¿Cuánto cuesta?",
+					"answer": "Parfect es gratis para descargar en iOS y Android, y todo lo descrito aquí forma parte de la experiencia principal."
+				}
+			],
+			"related": [
+				{
+					"href": "/features/date-planner",
+					"label": "Planificador de citas",
+					"description": "Planes compartidos, coordinación del canguro y recordatorios — el recorrido completo."
+				},
+				{
+					"href": "/features/private-chat",
+					"label": "Chat privado",
+					"description": "Un hilo cifrado para vosotros dos — sin logística permitida."
+				},
+				{
+					"href": "/features/bucket-list",
+					"label": "Bucket list",
+					"description": "Guardad cada sueño de \"cuando los niños sean mayores\" en un lugar seguro."
+				}
+			],
+			"cta": {
+				"heading": "La cita nocturna lleva retraso",
+				"text": "Descargad Parfect gratis, emparejad durante la siesta, y poned una noche para vosotros dos de vuelta en el calendario esta semana."
+			}
+		},
+		"forLongDistance": {
+			"slug": "/for/long-distance",
+			"metaTitle": "La app para parejas a distancia — cercanos, desde cualquier lugar",
+			"metaDescription": "Un espacio privado para relaciones a distancia: chat cifrado, rituales diarios a través de husos horarios, y una bucket list compartida para vuestra próxima reunión. Gratis en iOS y Android.",
+			"ogTitle": "Parfect para parejas a distancia",
+			"ogDescription": "Rituales diarios, un chat cifrado que es solo vuestro, y una cuenta atrás de planes para cuando estéis juntos otra vez.",
+			"eyebrow": "Para parejas a distancia",
+			"titlePlain": "Parfect para parejas a distancia",
+			"titleBefore": "La distancia es real. También lo es",
+			"titleHighlight": "la cercanía",
+			"titleAfter": ".",
+			"intro": "A kilómetros de distancia, no podéis compartir un sofá — pero podéis compartir un ritual, un secreto y una lista de todo lo que haréis la próxima vez. Parfect da a las parejas a distancia un lugar privado para mantenerse genuinamente cercanas.",
+			"screen": "chat",
+			"tab": "chat",
+			"story": {
+				"heading": "La distancia falla por la deriva, no por los kilómetros",
+				"paragraphs": [
+					"Preguntad a parejas que han sobrevivido a la distancia y raramente dirán que lo difícil fueron los kilómetros. Fue la deriva: conversaciones que se aplanan en \"¿qué tal tu día — bien, ¿y el tuyo?\", intimidad aplazada hasta la próxima visita, la relación convirtiéndose lentamente en algo que mantenéis en lugar de algo que vivís.",
+					"Lo que funciona, consistentemente, es el ritual y la profundidad. Una cosa compartida que hacéis cada día, por pequeña que sea, mantiene el hilo vivo a través de husos horarios. Y conversaciones que van más allá de la logística — sueños, recuerdos, deseos — hacen más por la cercanía que horas de videollamadas de obligación. Parfect está diseñado para proporcionar exactamente esas dos cosas: un impulso diario que llega a ambos, y un espacio de fantasías que hace fácil empezar conversaciones profundas, incluso desde lejos.",
+					"Luego está el futuro — lo que las parejas a distancia viven. Vuestra bucket list compartida se convierte en el plan de reunión: cada restaurante, cada mañana perezosa, cada viaje se captura en el momento en que uno de vosotros lo piensa. Para cuando estéis juntos otra vez, la pregunta nunca es \"¿qué deberíamos hacer?\" Es \"¿cuál primero?\""
+				]
+			},
+			"image": {
+				"src": "/images/hero-together.webp",
+				"alt": "Dos manos que se alcanzan con pétalos de rosa en el aire",
+				"caption": "Cada mensaje un puente. Cada plan una cuenta atrás."
+			},
+			"benefits": {
+				"heading": "Hecho para el espacio entre visitas",
+				"intro": "Todo en Parfect funciona de forma asíncrona y privada — perfecto cuando vuestras tardes no coinciden.",
+				"items": [
+					{
+						"title": "Una sala a través de husos horarios",
+						"description": "Un chat privado y cifrado que siempre está donde lo dejasteis. Despertad con algo cálido desde un huso horario lejano.",
+						"icon": "chat"
+					},
+					{
+						"title": "Rituales diarios compartidos",
+						"description": "El mismo impulso llega a ambos cada día. Responded en vuestra mañana, leed la suya en vuestra tarde — el hilo nunca se rompe.",
+						"icon": "clock"
+					},
+					{
+						"title": "Profundidad bajo demanda",
+						"description": "Las fantasías y los impulsos llevan las conversaciones más allá de la charla superficial — la intimidad que las videollamadas solas raramente alcanzan.",
+						"icon": "sparkles"
+					},
+					{
+						"title": "La lista de reunión",
+						"description": "Cada idea de \"cuando te vea\" va a la bucket list compartida. Vuestra próxima visita se planifica sola sobre la marcha.",
+						"icon": "list"
+					},
+					{
+						"title": "Cuenta atrás para las fechas que importan",
+						"description": "Visitas, aniversarios, el día que os conocisteis — registrados en vuestro calendario compartido, contados juntos.",
+						"icon": "calendar"
+					},
+					{
+						"title": "Privado, incluso lejos",
+						"description": "Cifrado de extremo a extremo, mensajes que desaparecen y notificaciones sin contenido. Lo íntimo sigue siendo íntimo — en cualquier red, en cualquier país.",
+						"icon": "lock"
+					}
+				]
+			},
+			"steps": {
+				"heading": "Cómo usan Parfect las parejas a distancia",
+				"intro": "Un ritmo que sobrevive husos horarios, temporadas de exámenes y despliegues.",
+				"items": [
+					{
+						"title": "Emparejad una vez, desde cualquier lugar",
+						"description": "Uno de vosotros descarga la app y envía un código de invitación; el otro se une desde donde esté. Vuestro espacio privado funciona a cualquier distancia."
+					},
+					{
+						"title": "Anclad el día",
+						"description": "Dejad que el impulso diario sea vuestro punto fijo. Incluso en los días más ocupados, dos respuestas que se cruzan en la noche os mantienen en el mundo interior del otro."
+					},
+					{
+						"title": "Construid la próxima visita",
+						"description": "Añadid cada idea a la bucket list cuando surja. Cuando llegue la fecha de reunión, promocionad las mejores a planes reales."
+					}
+				]
+			},
+			"testimonial": {
+				"quote": "Diferentes husos horarios, mismo ritual. La pregunta diaria nos mantiene dentro del día del otro, y la bucket list se ha convertido en nuestra cuenta atrás para la próxima reunión.",
+				"names": "Amira & Daniel",
+				"context": "A distancia · Oslo–Lisboa",
+				"image": "/images/people/couple-amira-daniel.webp"
+			},
+			"faqs": [
+				{
+					"question": "¿Parfect funciona a través de países y husos horarios?",
+					"answer": "Sí. Todo en Parfect es asíncrono por diseño — mensajes, impulsos y planes siempre están ahí cuando vuestra pareja despierta. El emparejamiento funciona entre cualquier dos países, y no hay llamadas que programar."
+				},
+				{
+					"question": "¿En qué es mejor que escribir por WhatsApp?",
+					"answer": "Un mensajero general os da un hilo; Parfect os da un espacio de relación. Los impulsos diarios compartidos crean un ritual, la función de fantasías profundiza conversaciones que el texting aplana, y la bucket list compartida convierte \"te echo de menos\" en planes concretos para la próxima visita — todo en un lugar privado y cifrado."
+				},
+				{
+					"question": "¿Puede ayudar cuando se nos acaban las cosas que decir?",
+					"answer": "Esa es una de las razones principales por las que las parejas a distancia lo usan. Los impulsos diarios os dan una pregunta nueva y significativa cada día, y el espacio de fantasías abre conversaciones que la mayoría de parejas nunca logran empezar — sin presión de página en blanco."
+				},
+				{
+					"question": "¿Es lo bastante seguro para conversaciones íntimas?",
+					"answer": "Sí. El texto de los mensajes admite cifrado de extremo a extremo, los mensajes pueden configurarse para desaparecer después de ser vistos, las notificaciones nunca muestran contenido, y la app puede bloquearse con un PIN o biometría — sensato cuando estáis en Wi-Fi compartido o viviendo con compañeros de piso."
+				},
+				{
+					"question": "¿Cuánto cuesta?",
+					"answer": "Parfect es gratis en iOS y Android. Chat, impulsos, fantasías y la bucket list forman parte de la experiencia principal."
+				}
+			],
+			"related": [
+				{
+					"href": "/features/private-chat",
+					"label": "Chat privado",
+					"description": "Cifrado, mensajes que desaparecen y una sala que es solo vuestra."
+				},
+				{
+					"href": "/features/fantasies",
+					"label": "Fantasías",
+					"description": "Conversaciones profundas, empezadas con suavidad — incluso desde lejos."
+				},
+				{
+					"href": "/features/bucket-list",
+					"label": "Bucket list",
+					"description": "Donde cada \"cuando te vea\" se convierte en un plan."
+				}
+			],
+			"cta": {
+				"heading": "Reducid la distancia esta noche",
+				"text": "Descargad Parfect gratis, enviad a vuestra pareja el código de invitación, y empezad el ritual que hace que lejos se sienta cerca."
+			}
+		},
+		"forMarriedCouples": {
+			"slug": "/for/married-couples",
+			"metaTitle": "La app para parejas casadas — seguid eligiéndoos",
+			"metaDescription": "Cómodo está bien. Curioso es mejor. Parfect ayuda a las parejas casadas a redescubrirse con impulsos diarios, conversaciones honestas y citas que realmente pasan.",
+			"ogTitle": "Parfect para parejas casadas",
+			"ogDescription": "Impulsos diarios, honestidad suave y una lista compartida de algún día — para parejas que pretenden seguir eligiéndose.",
+			"eyebrow": "Para parejas casadas",
+			"titlePlain": "Parfect para parejas casadas",
+			"titleBefore": "Cómodo está bien.",
+			"titleHighlight": "Curioso",
+			"titleAfter": "es mejor.",
+			"intro": "Años después, conocéis el café del otro, los estados de ánimo y las pestañas del navegador. Parfect es para lo que viene después: seguir sintiendo curiosidad por la persona que duerme a vuestro lado — a propósito.",
+			"screen": "home",
+			"tab": "fantasies",
+			"story": {
+				"heading": "El riesgo silencioso de un buen matrimonio",
+				"paragraphs": [
+					"Nadie os advierte de que la mayor amenaza para un matrimonio largo no es el conflicto — es el piloto automático. Funcionáis maravillosamente juntos: facturas pagadas, casa en marcha, fines de semana llenos. Y en algún punto de toda esa competencia, las preguntas se detienen. Asumís que os conocéis completamente, así que dejáis de comprobarlo. Así es como dos personas que se aman acaban sintiéndose como compañeros de piso bien coordinados.",
+					"El antídoto no es dramático. Los investigadores de relaciones siguen encontrando lo mismo: las parejas se mantienen cercanas a través de pequeñas y frecuentes ofertas de conexión — una pregunta real, una risa compartida, un plan hecho juntos. Parfect convierte esas ofertas en un hábito diario: un impulso al día que os lleva más allá de \"¿qué tal el trabajo?\", un espacio privado para decir cosas que no encajan en la mesa del comedor, y una función de fantasías para las conversaciones que veinte años de matrimonio de alguna manera nunca llegaron a tener.",
+					"Y como los matrimonios largos están llenos de \"de verdad deberíamos\" — el viaje, la clase de baile, el restaurante de vuestra luna de miel — la bucket list compartida y el planificador de citas aseguran que esas intenciones dejen de posponerse año tras año. No es un proyecto. Solo un sistema suave para mantener la promesa que ya hicisteis: seguir eligiéndoos."
+				]
+			},
+			"image": {
+				"src": "/images/hero-onboarding.webp",
+				"alt": "Una pareja riendo juntos bajo luces cálidas de guirnalda por la tarde",
+				"caption": "Veinte años después, aún descubriendo cosas nuevas."
+			},
+			"benefits": {
+				"heading": "Pequeños hábitos, matrimonio notable",
+				"intro": "Nada aquí exige un retiro de fin de semana. Solo unos minutos al día, bien dirigidos.",
+				"items": [
+					{
+						"title": "Una pregunta real al día",
+						"description": "Impulsos diarios que van más allá de la logística — recuerdos, sueños, opiniones que nunca habéis comparado. El piloto automático no sobrevive a ellos.",
+						"icon": "sparkles"
+					},
+					{
+						"title": "Las conversaciones atrasadas",
+						"description": "El espacio de fantasías abre con suavidad lo que ha quedado sin decir durante años — a vuestro ritmo, con \"ahora no\" siempre permitido.",
+						"icon": "heart"
+					},
+					{
+						"title": "Un canal de coqueteo",
+						"description": "Un chat privado y cifrado que no es el hilo familiar. Un lugar para ser pareja, no gestores del hogar.",
+						"icon": "chat"
+					},
+					{
+						"title": "\"De verdad deberíamos\" — resuelto",
+						"description": "La bucket list compartida recoge cada intención, y el planificador de citas las convierte en sábados reales.",
+						"icon": "list"
+					},
+					{
+						"title": "Aniversarios que llegan",
+						"description": "Vuestras fechas, registradas y con cuenta atrás — con tiempo para planificar algo digno de ellas, no un salvamento de última hora.",
+						"icon": "calendar"
+					},
+					{
+						"title": "Privado en casa también",
+						"description": "El bloqueo de app y las notificaciones sin contenido mantienen vuestro espacio vuestro — incluso con adolescentes que piden prestado el móvil.",
+						"icon": "lock"
+					}
+				]
+			},
+			"steps": {
+				"heading": "Cómo las parejas casadas se instalan en Parfect",
+				"intro": "Empezad más pequeño de lo que parece necesario. Ese es el truco.",
+				"items": [
+					{
+						"title": "Emparejad con un café",
+						"description": "Descargad la app juntos una mañana tranquila y vinculad con un código de invitación. Dos minutos, y el espacio es vuestro."
+					},
+					{
+						"title": "Responded un impulso al día",
+						"description": "Solo la pregunta diaria, durante una semana. La mayoría de parejas se sorprenden en días con una respuesta que no vieron venir."
+					},
+					{
+						"title": "Dejad que profundice",
+						"description": "Cuando se sienta natural, explorad fantasías, cargad la bucket list y poned una cita en el calendario. Sin horario — vuestro matrimonio, vuestro ritmo."
+					}
+				]
+			},
+			"testimonial": {
+				"quote": "Después de 31 años de matrimonio asumimos que lo sabíamos todo el uno del otro. No era cierto. Se siente juguetón otra vez — eso nos sorprendió a ambos.",
+				"names": "Kerstin & Lars",
+				"context": "Casados 31 años",
+				"image": "/images/people/couple-kerstin-lars.webp"
+			},
+			"faqs": [
+				{
+					"question": "Llevamos 15 años casados. ¿Esto no es para parejas nuevas?",
+					"answer": "Se podría decir que está hecho para vosotros. Las parejas nuevas generan novedad gratis; los matrimonios largos tienen que crearla a propósito. Los impulsos, fantasías y listas compartidas de Parfect están diseñados precisamente para parejas que se conocen profundamente y quieren seguir descubriéndose — que es un proyecto diferente y más rico que conocerse."
+				},
+				{
+					"question": "Mi pareja no es persona de apps. ¿Funcionará?",
+					"answer": "Parfect pide muy poco: una pregunta al día lleva menos de un minuto, y no hay feed, presión de rachas ni culpa de gamificación. Muchas parejas tienen una pareja que empieza y otra que se calienta — el impulso diario tiende a convencer."
+				},
+				{
+					"question": "¿Esto es terapia de pareja?",
+					"answer": "No. Parfect no es terapia y no la sustituye. Es un espacio privado para la conexión — conversación, juego y planes. Muchas parejas lo usan junto con terapia, y muchas lo usan simplemente para mantener un buen matrimonio curioso."
+				},
+				{
+					"question": "¿Y las conversaciones que hemos evitado durante años?",
+					"answer": "Para eso está la función de fantasías. Sustituye el imposible abridor cara a cara con una invitación suave y privada que vuestra pareja puede responder cuando esté lista — y rechazar siempre está bien. Ritmo, consentimiento y seguridad son todo el diseño."
+				},
+				{
+					"question": "¿Cuánto cuesta?",
+					"answer": "Parfect es gratis para descargar en iOS y Android. Impulsos diarios, chat privado, fantasías, la bucket list y la planificación de citas forman parte de la experiencia principal."
+				}
+			],
+			"related": [
+				{
+					"href": "/features/fantasies",
+					"label": "Fantasías",
+					"description": "La forma suave de entrar en conversaciones pospuestas veinte años."
+				},
+				{
+					"href": "/features/date-planner",
+					"label": "Planificador de citas",
+					"description": "Aniversarios recordados, sábados recuperados."
+				},
+				{
+					"href": "/for/parents",
+					"label": "Para padres",
+					"description": "Cuando el matrimonio también viene con recogida del cole."
+				}
+			],
+			"cta": {
+				"heading": "Seguid sintiendo curiosidad el uno por el otro",
+				"text": "Descargad Parfect gratis y responded una pregunta real juntos esta noche. Ved adónde os lleva una semana de ellas."
+			}
+		}
+	}
+}

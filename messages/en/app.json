@@ -1,0 +1,79 @@
+{
+	"AppPreview": {
+		"eyebrow": "Feels like the app",
+		"heading": "See what you're stepping into",
+		"description": "Explore the screens exactly as they appear in Parfect — before you even download.",
+		"cta": "Try it yourselves — free",
+		"tabLabel": "{tab} tab",
+		"screenLabels": {
+			"chat": "Private chat",
+			"fantasies": "Fantasies",
+			"together": "Together",
+			"date": "Date night"
+		},
+		"tablistAria": "App screens"
+	},
+	"AppTabs": {
+		"chat": "Chat",
+		"fantasies": "Fantasies",
+		"together": "Together",
+		"ariaLabel": "App navigation preview"
+	},
+	"HomeScreen": {
+		"ariaLabel": "Parfect home screen with tonight's prompt and quick actions",
+		"goodEvening": "Good evening",
+		"coupleNames": "Emma & Liam",
+		"streakDays": "12-day streak",
+		"tonightsPrompt": "Tonight's prompt",
+		"promptQuestion": "What's one small thing your partner did lately that made you feel loved?",
+		"dateNightPlanned": "Date night planned",
+		"dateTime": "Saturday · 19:30"
+	},
+	"ChatScreen": {
+		"ariaLabel": "Parfect private chat screen with an intimate conversation",
+		"partnerName": "Emma",
+		"onlineNow": "online now",
+		"todayTime": "Today 21:12",
+		"message1": "Tonight, after the kids are asleep… I have a surprise for you",
+		"message2": "Now I can't stop thinking about it 😏",
+		"message3": "Good. Wear that smile I love.",
+		"disappearingMessages": "Disappearing messages on",
+		"messagePlaceholder": "Message…"
+	},
+	"FantasiesScreen": {
+		"ariaLabel": "Parfect fantasies screen with tonight's prompt and an invite",
+		"title": "Fantasies",
+		"tonightsPrompt": "Tonight's prompt",
+		"promptQuestion": "What's a fantasy you've never said out loud?",
+		"shareYours": "Share yours",
+		"inviteSent": "Emma sent you an invite",
+		"invitePreview": "\"Something I've been imagining for our anniversary…\"",
+		"respond": "Respond",
+		"notRightNow": "Not right now",
+		"bothSaidYes": "You both said yes",
+		"bucketListAdded": "A weekend away, no plans — it's now on your bucket list."
+	},
+	"TogetherScreen": {
+		"ariaLabel": "Parfect together screen with an upcoming date and bucket list",
+		"title": "Together",
+		"planned": "PLANNED",
+		"rooftopDinner": "Rooftop dinner",
+		"dateDetails": "Saturday · 19:30 · Sitter confirmed",
+		"bucketList": "Bucket list",
+		"itemCompleted": "Slow dance in the kitchen",
+		"itemFromFantasy": "Beach town getaway",
+		"fromAFantasy": "FROM A FANTASY",
+		"itemPending": "Sunrise hike, just us",
+		"addSomethingNew": "Add something new"
+	},
+	"DateScreen": {
+		"ariaLabel": "Parfect date night detail screen",
+		"title": "Date night",
+		"planned": "PLANNED",
+		"rooftopDinner": "Rooftop dinner",
+		"dateTime": "Saturday, Jul 12 · 19:30",
+		"location": "Terrazza, downtown",
+		"babysitterConfirmed": "Babysitter confirmed",
+		"itsADate": "It's a date"
+	}
+}

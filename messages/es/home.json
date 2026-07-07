@@ -1,0 +1,230 @@
+{
+	"Home": {
+		"hero": {
+			"eyebrow": "Solo vosotros dos",
+			"titleBefore": "Dad el",
+			"titleHighlight": "siguiente paso",
+			"titleAfter": "juntos",
+			"description": "Un espacio privado para hablar, soñar y vivir los momentos que solo imagináis. Sin feeds. Sin seguidores. Sin nadie más.",
+			"encrypted": "Cifrado de extremo a extremo",
+			"noAds": "Sin anuncios, nunca",
+			"freePremium": "Gratis + Premium",
+			"scrollExplore": "Explorar",
+			"scrollAria": "Desplázate para explorar la app"
+		},
+		"moments": {
+			"eyebrow": "Esto es para nosotros",
+			"heading": "La conversación que lleváis tiempo queriendo tener",
+			"description": "Toda relación tiene sueños que quedan sin decir y citas que nunca se planean. Parfect los convierte en mensajes, planes y recuerdos.",
+			"feelings": {
+				"miss": {
+					"title": "Para la pareja que se echa de menos",
+					"text": "Aunque estéis en la misma casa. Parfect os da un lugar donde siempre sois solo vosotros dos."
+				},
+				"parents": {
+					"title": "Para los padres que olvidaron la cita",
+					"text": "Bucket list, canguro, calendario — la logística resuelta, para que el romance no se pierda."
+				},
+				"curious": {
+					"title": "Para los que aún sienten curiosidad",
+					"text": "Impulsos suaves os ayudan a decir lo que lleváis tiempo queriendo decir. A vuestro ritmo."
+				}
+			},
+			"chatDemo": {
+				"aria": "Ejemplo de conversación en Parfect",
+				"online": "Tu persona está aquí",
+				"encrypted": "Cifrado",
+				"placeholder": "Di lo primero…",
+				"messages": {
+					"0": "¿Te acuerdas del pueblecito de playa al que dijimos que nos escaparíamos? 🏝",
+					"1": "Sigue en mi lista. Justo al lado de \"bailar lento en la cocina\".",
+					"2": "He añadido los dos a nuestra bucket list. Canguro reservado para el sábado…",
+					"3": "Tenemos cita. ❤️"
+				}
+			}
+		},
+		"appPreview": {
+			"eyebrow": "Verla en acción",
+			"heading": "Vuestra relación, en una app",
+			"description": "Deslizad por las pestañas que las parejas usan cada día — chat, fantasías y los planes que hacéis juntos.",
+			"cta": "Probadla vosotros — gratis",
+			"tabLabel": "Pestaña {tab}"
+		},
+		"pillars": {
+			"eyebrow": "Tres pilares",
+			"heading": "Diseñada como funciona de verdad vuestra relación",
+			"description": "Hablar, compartir y hacerlo real — el mismo camino que seguiréis dentro de la app.",
+			"items": {
+				"chat": {
+					"tagline": "Chat",
+					"title": "Hablad como si fuerais solo vosotros",
+					"description": "Un hilo privado que es solo vuestro. Mensajes que desaparecen, hablad con libertad y manteneos cerca aunque estéis lejos.",
+					"highlights": {
+						"0": "Mensajes en tiempo real para dos",
+						"1": "Mensajes que desaparecen y confirmaciones de lectura",
+						"2": "Cifrado de extremo a extremo opcional"
+					}
+				},
+				"fantasies": {
+					"tagline": "Fantasías",
+					"title": "Compartid lo que imagináis",
+					"description": "Enviad una fantasía o pedid una. Impulsos suaves os ayudan a abriros, y \"ahora no\" siempre está bien.",
+					"highlights": {
+						"0": "Impulsos diarios que despiertan curiosidad",
+						"1": "Preguntad o compartid a vuestro ritmo",
+						"2": "Pasad sueños compartidos a vuestra bucket list"
+					}
+				},
+				"together": {
+					"tagline": "Juntos",
+					"title": "Haced los momentos reales",
+					"description": "Convertid chispas en una bucket list compartida, planead citas, incluso coordinad un canguro — juntos.",
+					"highlights": {
+						"0": "Bucket list compartida y planificación de citas",
+						"1": "Coordinación de canguro integrada",
+						"2": "Aniversarios y fechas importantes"
+					}
+				}
+			}
+		},
+		"features": {
+			"eyebrow": "Hecha para vuestra relación",
+			"heading": "Más que mensajes",
+			"description": "Herramientas pensadas para conectar, planificar y proteger lo que importa — sin el ruido de las redes sociales.",
+			"items": {
+				"checkin": {
+					"title": "Check-ins semanales",
+					"description": "Reflexionad juntos con preguntas cuidadas — reveladas lado a lado cuando los dos estéis listos."
+				},
+				"calendar": {
+					"title": "Calendario compartido",
+					"description": "No os perdáis un aniversario. Planead citas y seguid los momentos que importan."
+				},
+				"lock": {
+					"title": "Bloqueo de app y biometría",
+					"description": "PIN y protección biométrica mantienen vuestra relación privada en vuestro dispositivo."
+				},
+				"constellation": {
+					"title": "Conexión que crece",
+					"description": "Ved crecer vuestra constelación mientras compartís momentos y construís vuestra historia juntos."
+				},
+				"shield": {
+					"title": "Privacidad primero",
+					"description": "Notificaciones sin contenido, controles de pausa y políticas de datos claras."
+				},
+				"rings": {
+					"title": "Hecha para dos",
+					"description": "Emparejad una vez con un código de invitación. Sin feeds, sin seguidores, sin nadie más."
+				}
+			}
+		},
+		"howItWorks": {
+			"eyebrow": "Cómo funciona",
+			"heading": "Del primer mensaje a la cita",
+			"description": "Empezar lleva menos de dos minutos. Emparejad con vuestra pareja y empezad a construir la relación que los dos queréis.",
+			"steps": {
+				"0": {
+					"title": "Descargar y emparejar",
+					"description": "Descargad la app, cread vuestra cuenta e invitad a vuestra pareja con un código privado. Menos de dos minutos."
+				},
+				"1": {
+					"title": "Hablar, compartir, soñar",
+					"description": "Chatead en privado, explorad fantasías con impulsos suaves y construid una bucket list juntos."
+				},
+				"2": {
+					"title": "Fortaleced vuestra relación",
+					"description": "Convertid ideas en citas, coordinad los detalles y celebrad lo que os acerca."
+				}
+			},
+			"images": {
+				"sofa": {
+					"alt": "Pareja abrazada en el sofá sonriendo juntos a un móvil",
+					"caption": "Más cerca cada noche"
+				},
+				"together": {
+					"alt": "Dos manos buscándose rodeadas de pétalos de rosa",
+					"caption": "El siguiente paso es vuestro"
+				}
+			}
+		},
+		"testimonials": {
+			"eyebrow": "Parejas reales",
+			"heading": "Ya funciona para parejas como vosotros",
+			"featured": {
+				"quote": "Llevamos seis años juntos y hablamos cada día — pero Parfect es el primer lugar donde de verdad decimos las cosas. Es como si hubiéramos encontrado una habitación en casa que no sabíamos que existía.",
+				"names": "Hanna & Viktor",
+				"context": "Juntos 6 años · Estocolmo",
+				"alt": "Hanna y Viktor, una pareja feliz riendo juntos"
+			},
+			"items": {
+				"0": {
+					"quote": "Los impulsos empezaron conversaciones que llevábamos años evitando. Saber que \"ahora no\" siempre está bien marcó la diferencia para nosotros.",
+					"names": "Elin & Jonas",
+					"context": "Juntos 8 años"
+				},
+				"1": {
+					"quote": "Dos hijos, cero espontaneidad — la cita era un deseo con culpa. Ahora es dos veces al mes, y el paso del canguro hace que de verdad pase.",
+					"names": "Sara & Marcus",
+					"context": "Padres de dos"
+				},
+				"2": {
+					"quote": "Distintas zonas horarias, el mismo ritual. La pregunta diaria nos mantiene en el día del otro, y la bucket list es nuestra cuenta atrás hasta reunirnos.",
+					"names": "Amira & Daniel",
+					"context": "Larga distancia · Oslo–Lisboa"
+				},
+				"3": {
+					"quote": "Tras 31 años de matrimonio creíamos saberlo todo el uno del otro. No era cierto. Se siente juguetón otra vez — nos sorprendió a los dos.",
+					"names": "Kerstin & Lars",
+					"context": "Casados 31 años"
+				}
+			}
+		},
+		"privacy": {
+			"eyebrow": "Privacidad y confianza",
+			"heading": "Vuestra relación merece un espacio seguro",
+			"description": "Parfect está hecha para la intimidad, no la exposición. Sin feeds sociales, sin extraños — y controles de privacidad que de verdad entendéis.",
+			"points": {
+				"0": {
+					"title": "Cifrado de extremo a extremo",
+					"description": "E2EE opcional para el texto del chat. Vuestras conversaciones íntimas se quedan entre vosotros."
+				},
+				"1": {
+					"title": "Notificaciones sin contenido",
+					"description": "Las alertas push nunca revelan lo que dijo vuestra pareja — solo que os escribió."
+				},
+				"2": {
+					"title": "Siempre tenéis el control",
+					"description": "Pausad el contacto, desvinculad o borrad vuestra cuenta cuando queráis. Políticas claras, sin sorpresas."
+				},
+				"3": {
+					"title": "Bloqueo de app y biometría",
+					"description": "PIN y protección biométrica mantienen vuestra relación privada en vuestro dispositivo."
+				}
+			}
+		},
+		"cta": {
+			"heading": "Vuestro siguiente paso empieza aquí",
+			"description": "Esto es para nosotros. Descargad Parfect y empezad la conversación que os acerca — un mensaje, un sueño, una cita a la vez.",
+			"availability": "Disponible en iOS y Android · Descarga gratis"
+		},
+		"faq": {
+			"0": {
+				"question": "¿Qué es Parfect?",
+				"answer": "Parfect es una app privada para parejas que combina chat íntimo, impulsos de fantasía, planificación de citas e hitos de relación en un espacio cálido y seguro hecho para dos."
+			},
+			"1": {
+				"question": "¿Es Parfect privada?",
+				"answer": "Sí. Parfect está hecha solo para parejas — emparejad con un código de invitación, usad cifrado de extremo a extremo opcional, bloqueo de app con biometría y notificaciones push sin contenido. Consultad nuestra política de privacidad para más detalles."
+			},
+			"2": {
+				"question": "¿Para quién es Parfect?",
+				"answer": "Parfect está diseñada para parejas comprometidas mayores de 18 que quieren fortalecer su relación con comunicación significativa, experiencias compartidas e intimidad con intención."
+			}
+		},
+		"schema": {
+			"organizationDescription": "Una app privada para parejas — chat íntimo, fantasías compartidas y sueños que se convierten en citas de verdad.",
+			"appDescription": "Solo vosotros dos. Una app privada para parejas — chat íntimo, fantasías, planificación de citas y crecimiento en pareja.",
+			"websiteDescription": "Descargad Parfect — la app privada para parejas que quieren hablar con intimidad, compartir sueños y hacerlos realidad."
+		}
+	}
+}

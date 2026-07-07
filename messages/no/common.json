@@ -1,0 +1,93 @@
+{
+	"Common": {
+		"brand": "Parfect",
+		"logoHome": "Parfect hjem",
+		"nav": {
+			"experience": "Opplevelse",
+			"howItWorks": "Slik fungerer det",
+			"testimonials": "Anmeldelser",
+			"privacy": "Personvern",
+			"features": "Funksjoner",
+			"ideas": "Ideer",
+			"getApp": "Last ned appen",
+			"madeFor": "Laget for",
+			"popularGuides": "Populære guider",
+			"moreGuides": "Flere guider",
+			"allGuides": "Alle guider",
+			"seasonal": "Sesong",
+			"openMenu": "Åpne meny",
+			"closeMenu": "Lukk meny",
+			"mainNav": "Hovednavigasjon"
+		},
+		"footer": {
+			"tagline": "En privat app for par — til intime samtaler, felles drømmer og planer som blir til virkelighet.",
+			"features": "Funksjoner",
+			"ideasForCouples": "Ideer for par",
+			"explore": "Utforsk",
+			"legal": "Juridisk",
+			"allGuides": "Alle guider",
+			"download": "Last ned",
+			"privacyPolicy": "Personvernerklæring",
+			"termsOfService": "Vilkår for bruk",
+			"support": "Support",
+			"copyright": "© {year} Parfect. Alle rettigheter reservert."
+		},
+		"languageSwitcher": {
+			"label": "Språk",
+			"current": "Gjeldende språk: {language}"
+		},
+		"storeBadges": {
+			"appStore": "Last ned i App Store",
+			"playStore": "Hent den på Google Play"
+		},
+		"stickyCta": {
+			"tagline": "Gratis · Bare dere to"
+		},
+		"rating": {
+			"stars": "Vurdert 4,9 av 5",
+			"line": "4,9 / 5 fra par i early access"
+		},
+		"featurePage": {
+			"trustLine": "Gratis nedlasting · Laget for to · 18+",
+			"commonQuestions": "Vanlige spørsmål",
+			"keepExploring": "Fortsett å utforske",
+			"whatCouplesSay": "Det par sier",
+			"breadcrumbHome": "Parfect"
+		},
+		"guidePage": {
+			"breadcrumbHome": "Hjem",
+			"breadcrumbIdeas": "Ideer",
+			"updated": "Oppdatert",
+			"worthRemembering": "Verdt å huske",
+			"commonQuestions": "Vanlige spørsmål",
+			"moreIdeas": "Flere ideer for dere to",
+			"ctaHeading": "Gjør ideer om til ekte øyeblikk",
+			"ctaText": "Parfect hjelper dere med å snakke, drømme og planlegge — sammen. Gratis på iOS og Android.",
+			"ctaButton": "Prøv Parfect",
+			"tryParfect": "Prøv Parfect"
+		},
+		"subpage": {
+			"backToHome": "Tilbake til Parfect",
+			"lastUpdated": "Sist oppdatert:",
+			"notFoundMessage": "Siden ble ikke funnet"
+		},
+		"links": {
+			"privateChat": "Privat chat",
+			"fantasies": "Fantasier",
+			"datePlanner": "Dateplanlegger",
+			"bucketList": "Bucket list",
+			"forParents": "For foreldre",
+			"forLongDistance": "For langdistanse",
+			"forMarriedCouples": "For gifte par"
+		},
+		"linkDescriptions": {
+			"privateChat": "Kryptert meldinger laget bare for to.",
+			"fantasies": "Del det dere aldri har sagt høyt.",
+			"datePlanner": "Fra «vi burde» til en booket lørdag.",
+			"bucketList": "Felles drømmer som faktisk skjer.",
+			"forParents": "Partnere, ikke bare medforeldre.",
+			"forLongDistance": "Nær hverandre, uansett avstand.",
+			"forMarriedCouples": "Fortsett å velge hverandre."
+		}
+	}
+}

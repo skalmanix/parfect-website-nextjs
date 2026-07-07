@@ -1,0 +1,26 @@
+{
+	"GuidesUI": {
+		"pageTitle": "Idéer för par",
+		"pageDescription": "Dejter, samtal och gemensamma drömmar — praktiska guider som hjälper er att komma närmare varandra.",
+		"heroEyebrow": "Idéer för par",
+		"heroTitle": "Guider som hjälper er att komma närmare",
+		"heroDescription": "Praktiska idéer för dejter, djupare samtal och drömmar ni vill dela — skrivna för riktiga par med riktiga scheman.",
+		"ctaHeading": "Gör idéer till riktiga stunder",
+		"ctaText": "Parfect hjälper er att prata, drömma och planera — tillsammans.",
+		"clusters": {
+			"date-nights": {
+				"label": "Dejter",
+				"description": "Idéer för kvällar hemma, kvällar ute och att göra vanliga kvällar speciella."
+			},
+			"conversations": {
+				"label": "Samtal",
+				"description": "Frågor och prompts som hjälper er att prata om det som betyder något."
+			},
+			"dreams-and-plans": {
+				"label": "Drömmar & planer",
+				"description": "Bucket lists, milstolpar och att förvandla gemensamma drömmar till planer."
+			}
+		},
+		"breadcrumbIdeas": "Idéer för par"
+	}
+}

@@ -1,44 +1,12 @@
 import Image from "next/image";
+import { getTranslations } from "next-intl/server";
 
-const conversation = [
-	{
-		from: "partner" as const,
-		text: "Remember that little beach town we said we'd run away to? 🏝",
-		time: "21:42",
-	},
-	{
-		from: "me" as const,
-		text: "Still on my list. Right next to \"slow dance in the kitchen\".",
-		time: "21:43",
-	},
-	{
-		from: "partner" as const,
-		text: "Added both to our bucket list. Sitter's booked for Saturday…",
-		time: "21:45",
-	},
-	{
-		from: "me" as const,
-		text: "It's a date. ❤️",
-		time: "21:45",
-	},
-];
+const feelingKeys = ["miss", "parents", "curious"] as const;
+const messageKeys = ["0", "1", "2", "3"] as const;
 
-const feelings = [
-	{
-		title: "For the couple who miss each other",
-		text: "Even in the same house. Parfect gives you a place where it's only ever the two of you.",
-	},
-	{
-		title: "For the parents who forgot date night",
-		text: "Bucket list, babysitter, calendar — the logistics handled, so the romance isn't.",
-	},
-	{
-		title: "For the ones still curious",
-		text: "Gentle prompts help you say the things you've been meaning to say. At your pace.",
-	},
-];
+export async function Moments() {
+	const t = await getTranslations("Home.moments");
 
-export function Moments() {
 	return (
 		<section
 			className="py-20 md:py-28 relative overflow-hidden"
@@ -59,68 +27,86 @@ export function Moments() {
 			<div className="container-wide section-padding relative">
 				<div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
 					<div data-reveal>
-						<p className="eyebrow text-rose mb-3">This is for us</p>
+						<p className="eyebrow text-rose mb-3">{t("eyebrow")}</p>
 						<h2
 							id="moments-heading"
 							className="font-display text-3xl sm:text-4xl md:text-5xl font-medium tracking-tight mb-5 text-balance"
 						>
-							The conversation you&apos;ve been meaning to have
+							{t("heading")}
 						</h2>
 						<p className="text-muted text-lg leading-relaxed mb-10 max-w-lg">
-							Every relationship has dreams that stay unsaid and date nights
-							that stay unplanned. Parfect turns them into messages, plans,
-							and memories.
+							{t("description")}
 						</p>
 
 						<ul className="space-y-6">
-							{feelings.map((feeling, i) => (
+							{feelingKeys.map((key, i) => (
 								<li
-									key={feeling.title}
+									key={key}
 									data-reveal
 									style={{ transitionDelay: `${i * 90}ms` }}
 									className="border-l-2 border-primary/40 pl-5"
 								>
 									<h3 className="font-display text-lg sm:text-xl font-medium mb-1">
-										{feeling.title}
+										{t(`feelings.${key}.title`)}
 									</h3>
-									<p className="text-muted leading-relaxed">{feeling.text}</p>
+									<p className="text-muted leading-relaxed">
+										{t(`feelings.${key}.text`)}
+									</p>
 								</li>
 							))}
 						</ul>
 					</div>
 
 					<div data-reveal className="flex justify-center">
-						<div className="chat-demo w-full max-w-md" aria-label="Example conversation in Parfect">
+						<div
+							className="chat-demo w-full max-w-md"
+							aria-label={t("chatDemo.aria")}
+						>
 							<div className="flex items-center gap-2.5 pb-4 mb-4 border-b border-border/50">
 								<span className="relative flex h-2.5 w-2.5">
 									<span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-sage opacity-60" />
 									<span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-sage" />
 								</span>
-								<p className="text-sm text-muted">Your person is here</p>
+								<p className="text-sm text-muted">{t("chatDemo.online")}</p>
 								<span className="ml-auto text-xs text-muted-deep flex items-center gap-1">
-									<svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} aria-hidden="true">
-										<path strokeLinecap="round" strokeLinejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+									<svg
+										className="w-3.5 h-3.5"
+										fill="none"
+										viewBox="0 0 24 24"
+										stroke="currentColor"
+										strokeWidth={2}
+										aria-hidden="true"
+									>
+										<path
+											strokeLinecap="round"
+											strokeLinejoin="round"
+											d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z"
+										/>
 									</svg>
-									Encrypted
+									{t("chatDemo.encrypted")}
 								</span>
 							</div>
 
 							<div className="space-y-3">
-								{conversation.map((msg, i) => (
+								{messageKeys.map((key, i) => (
 									<div
-										key={i}
+										key={key}
 										data-reveal
 										style={{ transitionDelay: `${150 + i * 130}ms` }}
-										className={`flex ${msg.from === "me" ? "justify-end" : "justify-start"}`}
+										className={`flex ${i % 2 === 1 ? "justify-end" : "justify-start"}`}
 									>
 										<div
 											className={
-												msg.from === "me" ? "chat-bubble-me" : "chat-bubble-partner"
+												i % 2 === 1
+													? "chat-bubble-me"
+													: "chat-bubble-partner"
 											}
 										>
-											<p className="text-[0.9375rem] leading-snug">{msg.text}</p>
+											<p className="text-[0.9375rem] leading-snug">
+												{t(`chatDemo.messages.${key}`)}
+											</p>
 											<p className="text-[0.65rem] opacity-60 mt-1 text-right">
-												{msg.time}
+												{21 + Math.floor(i / 2)}:{42 + i}
 											</p>
 										</div>
 									</div>
@@ -133,11 +119,22 @@ export function Moments() {
 								className="mt-5 flex items-center gap-2 rounded-full border border-border/60 bg-background/60 px-4 py-2.5"
 							>
 								<p className="text-sm text-muted-deep flex-1">
-									Say the first thing…
+									{t("chatDemo.placeholder")}
 								</p>
 								<span className="w-8 h-8 rounded-full btn-primary flex items-center justify-center shrink-0">
-									<svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} aria-hidden="true">
-										<path strokeLinecap="round" strokeLinejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" />
+									<svg
+										className="w-4 h-4"
+										fill="none"
+										viewBox="0 0 24 24"
+										stroke="currentColor"
+										strokeWidth={2}
+										aria-hidden="true"
+									>
+										<path
+											strokeLinecap="round"
+											strokeLinejoin="round"
+											d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5"
+										/>
 									</svg>
 								</span>
 							</div>

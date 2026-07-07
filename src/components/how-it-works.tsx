@@ -1,7 +1,11 @@
 import Image from "next/image";
-import { STEPS } from "@/lib/constants";
+import { getTranslations } from "next-intl/server";
 
-export function HowItWorks() {
+const stepKeys = ["0", "1", "2"] as const;
+
+export async function HowItWorks() {
+	const t = await getTranslations("Home.howItWorks");
+
 	return (
 		<section
 			id="how-it-works"
@@ -11,37 +15,32 @@ export function HowItWorks() {
 			<div className="container-wide section-padding">
 				<div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
 					<div data-reveal>
-						<p className="eyebrow text-gold mb-3">
-							How it works
-						</p>
+						<p className="eyebrow text-gold mb-3">{t("eyebrow")}</p>
 						<h2
 							id="how-heading"
 							className="font-display text-3xl sm:text-4xl font-medium tracking-tight mb-4 text-balance"
 						>
-							From first message to date night
+							{t("heading")}
 						</h2>
-						<p className="text-muted text-lg mb-10">
-							Getting started takes less than two minutes. Pair with your
-							partner and start building the relationship you both want.
-						</p>
+						<p className="text-muted text-lg mb-10">{t("description")}</p>
 
 						<ol className="space-y-8">
-							{STEPS.map((step, index) => (
+							{stepKeys.map((key, index) => (
 								<li
-									key={step.step}
+									key={key}
 									data-reveal
 									style={{ transitionDelay: `${index * 100}ms` }}
 									className="flex gap-5"
 								>
 									<span className="font-display text-3xl text-primary/60 font-medium shrink-0 w-12">
-										{step.step}
+										{String(index + 1).padStart(2, "0")}
 									</span>
 									<div>
 										<h3 className="font-display text-xl font-medium mb-1">
-											{step.title}
+											{t(`steps.${key}.title`)}
 										</h3>
 										<p className="text-muted leading-relaxed">
-											{step.description}
+											{t(`steps.${key}.description`)}
 										</p>
 									</div>
 								</li>
@@ -49,30 +48,38 @@ export function HowItWorks() {
 						</ol>
 					</div>
 
-					<div data-reveal className="relative" style={{ transitionDelay: "150ms" }}>
+					<div
+						data-reveal
+						className="relative"
+						style={{ transitionDelay: "150ms" }}
+					>
 						<div className="grid grid-cols-2 gap-4">
 							<figure className="relative aspect-[3/4] rounded-2xl overflow-hidden border border-border/60 card-glow mt-10">
 								<Image
 									src="/images/people/couple-sofa.webp"
-									alt="Couple cuddled on the sofa smiling at a phone together"
+									alt={t("images.sofa.alt")}
 									fill
 									className="object-cover"
 									sizes="(max-width: 768px) 45vw, 250px"
 								/>
 								<figcaption className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-chrome/90 to-transparent px-4 pt-8 pb-3">
-									<p className="font-display text-sm">Closer every evening</p>
+									<p className="font-display text-sm">
+										{t("images.sofa.caption")}
+									</p>
 								</figcaption>
 							</figure>
 							<figure className="relative aspect-[3/4] rounded-2xl overflow-hidden border border-border/60 card-glow">
 								<Image
 									src="/images/hero-together.webp"
-									alt="Two hands reaching for each other surrounded by rose petals"
+									alt={t("images.together.alt")}
 									fill
 									className="object-cover"
 									sizes="(max-width: 768px) 45vw, 250px"
 								/>
 								<figcaption className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-chrome/90 to-transparent px-4 pt-8 pb-3">
-									<p className="font-display text-sm">The next step is yours</p>
+									<p className="font-display text-sm">
+										{t("images.together.caption")}
+									</p>
 								</figcaption>
 							</figure>
 						</div>

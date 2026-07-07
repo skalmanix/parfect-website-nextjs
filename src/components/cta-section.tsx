@@ -1,10 +1,13 @@
+import { getTranslations } from "next-intl/server";
 import Image from "next/image";
 import { Logo } from "./logo";
 import { StoreBadges } from "./store-badges";
 import { AvatarCluster, RatingStars } from "./testimonials";
-import { RATING_LINE } from "@/lib/testimonials";
 
-export function CtaSection() {
+export async function CtaSection() {
+	const t = await getTranslations("Home.cta");
+	const tRating = await getTranslations("Common.rating");
+
 	return (
 		<section
 			className="py-24 md:py-36 relative overflow-hidden"
@@ -38,24 +41,22 @@ export function CtaSection() {
 						id="cta-heading"
 						className="font-display text-3xl sm:text-4xl md:text-5xl font-medium tracking-tight mb-4 text-balance"
 					>
-						Your next step starts here
+						{t("heading")}
 					</h2>
 					<p className="text-muted text-lg mb-8 max-w-lg mx-auto">
-						This is for us. Download Parfect and begin the conversation
-						that brings you closer — one message, one dream, one date night
-						at a time.
+						{t("description")}
 					</p>
 					<StoreBadges size="lg" className="justify-center mb-5" />
 					<div className="flex items-center justify-center gap-3 mb-2">
 						<AvatarCluster />
 						<span className="text-left">
-							<RatingStars size="w-3.5 h-3.5" />
-							<span className="block text-xs text-muted-deep">{RATING_LINE}</span>
+							<RatingStars size="w-3.5 h-3.5" ariaLabel={tRating("stars")} />
+							<span className="block text-xs text-muted-deep">
+								{tRating("line")}
+							</span>
 						</span>
 					</div>
-					<p className="text-muted-deep text-sm">
-						Available on iOS and Android · Free download
-					</p>
+					<p className="text-muted-deep text-sm">{t("availability")}</p>
 				</div>
 			</div>
 		</section>

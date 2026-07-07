@@ -1,0 +1,331 @@
+{
+	"Privacy": {
+		"metaTitle": "Integritetspolicy",
+		"metaDescription": "Hur Parfect samlar in, använder och skyddar dina uppgifter. Byggt för intimitet, inte exponering — inga annonser, ingen försäljning av data och integritetskontroller du faktiskt förstår.",
+		"eyebrow": "Juridiskt",
+		"title": "Integritetspolicy",
+		"intro": "Parfect är en privat app för två. Den här policyn förklarar — på klarspråk — vad vi samlar in, varför vi gör det, hur länge vi sparar det och vilka rättigheter du har över dina uppgifter.",
+		"updated": "6 juli 2026",
+		"sections": [
+			{
+				"id": "controller",
+				"heading": "Vilka vi är",
+				"blocks": [
+					{
+						"type": "paragraph",
+						"text": "Parfect driver Parfect-appen och API:et på api.parfect.app och är personuppgiftsansvarig för personuppgifter som behandlas via dem. För allt som rör integritet, kontakta oss på {email}.",
+						"strong": ["api.parfect.app"]
+					}
+				]
+			},
+			{
+				"id": "what-we-collect",
+				"heading": "Vad vi samlar in",
+				"blocks": [
+					{
+						"type": "list",
+						"items": [
+							{ "strong": "Kontoinformation", "text": "— din e-postadress, visningsnamn och ett lösenordshash. Vi lagrar aldrig ditt lösenord i klartext." },
+							{ "strong": "Paruppgifter", "text": "— kopplingsinformation, profilinställningar och tidsstämplar för samtycke." },
+							{ "strong": "Innehåll du synkar", "text": "— meddelanden, fantasier, kalenderhändelser, delade listor och metadata för media, så att ni båda kan komma åt dem på alla enheter." },
+							{ "strong": "Delat media", "text": "— foton, videor och ljud du delar i chatten, lagrade på våra servrar." },
+							{ "strong": "Push-token", "text": "— endast om du aktiverar notiser." },
+							{ "strong": "Tekniska loggar", "text": "— det minsta som behövs för att driva, säkra och felsöka tjänsten." }
+						]
+					}
+				]
+			},
+			{
+				"id": "what-we-dont-do",
+				"heading": "Vad vi aldrig gör",
+				"blocks": [
+					{
+						"type": "callout",
+						"items": [
+							"Vi säljer inte dina personuppgifter.",
+							"Vi använder inte ert relationsinnehåll för reklam.",
+							"Vi delar inte dina uppgifter med tredje part, förutom de infrastrukturleverantörer som behövs för att driva appen."
+						]
+					}
+				]
+			},
+			{
+				"id": "encryption",
+				"heading": "End-to-end-kryptering",
+				"blocks": [
+					{
+						"type": "paragraph",
+						"text": "Chattmeddelanden kan krypteras på din enhet innan de skickas. När end-to-end-kryptering är aktiverad kan Parfect inte läsa innehållet i dessa meddelanden. Mediafiler och annan delad appdata lagras på våra servrar så att båda partners kan komma åt dem.",
+						"strong": ["Parfect kan inte läsa innehållet i dessa meddelanden"]
+					}
+				]
+			},
+			{
+				"id": "how-we-use",
+				"heading": "Hur vi använder dina uppgifter",
+				"blocks": [
+					{
+						"type": "list",
+						"items": [
+							{ "text": "För att autentisera dig och synka data mellan dina enheter och din partner." },
+							{ "text": "För att leverera realtidsuppdateringar och valfria pushnotiser — som aldrig innehåller meddelandeinnehåll." },
+							{ "text": "För att underhålla, säkra och förbättra tjänsten." }
+						]
+					}
+				]
+			},
+			{
+				"id": "lawful-basis",
+				"heading": "Rättslig grund (GDPR)",
+				"blocks": [
+					{
+						"type": "list",
+						"items": [
+							{ "strong": "Avtal", "text": "— för att tillhandahålla appen, synka data mellan dig och din partner och autentisera dig." },
+							{ "strong": "Samtycke", "text": "— för valfria notiser, säkerhetssamtycke efter koppling och 18+-bekräftelse." },
+							{ "strong": "Berättigat intresse", "text": "— för att säkra tjänsten, förebygga missbruk och förbättra tillförlitligheten." }
+						]
+					}
+				]
+			},
+			{
+				"id": "subprocessors",
+				"heading": "Hosting och underleverantörer",
+				"blocks": [
+					{
+						"type": "paragraph",
+						"text": "Vi använder infrastrukturleverantörer för att hosta API:et, databasen, medialagring och push-leverans (inklusive molnhosting och Expo push-tjänster). Dina uppgifter behandlas endast för att driva tjänsten — inget annat."
+					}
+				]
+			},
+			{
+				"id": "cookies",
+				"heading": "Cookies och sessioner",
+				"blocks": [
+					{
+						"type": "paragraph",
+						"text": "Webbversionen använder en enda HttpOnly-sessioncookie för att hålla dig inloggad. Mobilappen lagrar en sessionstoken i säker enhetslagring. Vi använder inga reklam- eller spårningscookies."
+					}
+				]
+			},
+			{
+				"id": "retention",
+				"heading": "Hur länge vi sparar data",
+				"blocks": [
+					{
+						"type": "list",
+						"items": [
+							{ "text": "Konto- och synkad data sparas så länge ditt konto är aktivt." },
+							{ "text": "När du kopplar bort eller raderar ditt konto tar vi bort ert pars delade data, meddelanden och media från våra servrar." },
+							{ "text": "Tekniska loggar sparas under en begränsad period för säkerhet och drift, och raderas sedan." }
+						]
+					}
+				]
+			},
+			{
+				"id": "your-rights",
+				"heading": "Dina rättigheter",
+				"blocks": [
+					{ "type": "paragraph", "text": "Beroende på var du befinner dig kan du ha rätt att:" },
+					{
+						"type": "list",
+						"items": [
+							{ "text": "Få tillgång till, rätta eller radera dina personuppgifter." },
+							{ "text": "Exportera dina uppgifter — kontakta {email}." },
+							{ "text": "Invända mot eller begränsa viss behandling." },
+							{ "text": "Återkalla samtycke där behandlingen bygger på samtycke." },
+							{ "text": "Lämna in ett klagomål till din lokala dataskyddsmyndighet." }
+						]
+					}
+				]
+			},
+			{
+				"id": "delete",
+				"heading": "Radera ditt konto",
+				"blocks": [
+					{
+						"type": "paragraph",
+						"text": "Du kan radera ditt konto i appen under Inställningar → Konto → Radera konto. Detta tar permanent bort ditt konto och tillhörande paruppgifter från våra servrar. Du kan också mejla {email} så ordnar vi det.",
+						"strong": ["Inställningar → Konto → Radera konto"]
+					}
+				]
+			},
+			{
+				"id": "safety",
+				"heading": "Säkerhet och rapportering",
+				"blocks": [
+					{
+						"type": "paragraph",
+						"text": "Om du har en säkerhetsfråga, använd Inställningar → Rapportera ett problem i appen eller mejla {email}. Du kan koppla bort från din partner när som helst via Inställningar.",
+						"strong": ["Inställningar → Rapportera ett problem"]
+					}
+				]
+			},
+			{
+				"id": "contact",
+				"heading": "Frågor?",
+				"blocks": [
+					{
+						"type": "paragraph",
+						"text": "Vi förklarar gärna allt i den här policyn. Kontakta oss på {email}."
+					}
+				]
+			}
+		]
+	},
+	"Terms": {
+		"metaTitle": "Användarvillkor",
+		"metaDescription": "Villkoren som styr din användning av Parfect — behörighet, ditt konto, acceptabel användning, privat parinnehåll och tjänstens tillgänglighet.",
+		"eyebrow": "Juridiskt",
+		"title": "Användarvillkor",
+		"intro": "Dessa villkor håller Parfect som en trygg och respektfull plats för varje par. Genom att skapa ett konto eller använda appen godkänner du dem.",
+		"updated": "6 juli 2026",
+		"sections": [
+			{
+				"id": "eligibility",
+				"heading": "Behörighet",
+				"blocks": [
+					{
+						"type": "paragraph",
+						"text": "Parfect är för vuxna som är 18 år eller äldre. Genom att använda appen bekräftar du att du uppfyller detta krav.",
+						"strong": ["18 år eller äldre"]
+					}
+				]
+			},
+			{
+				"id": "account",
+				"heading": "Ditt konto",
+				"blocks": [
+					{
+						"type": "paragraph",
+						"text": "Du ansvarar för att hålla dina inloggningsuppgifter säkra och för aktivitet som sker på ditt konto. Du kan radera ditt konto när som helst via Inställningar → Konto → Radera konto.",
+						"strong": ["Inställningar → Konto → Radera konto"]
+					}
+				]
+			},
+			{
+				"id": "acceptable-use",
+				"heading": "Acceptabel användning och innehåll",
+				"blocks": [
+					{ "type": "paragraph", "text": "Du godkänner att inte:" },
+					{
+						"type": "list",
+						"items": [
+							{ "text": "Missbruka tjänsten eller försöka kompromettera plattformen." },
+							{ "text": "Trakassera, hota eller skada andra." },
+							{ "text": "Ladda upp eller dela olagligt innehåll." }
+						]
+					},
+					{
+						"type": "paragraph",
+						"text": "Du ansvarar för innehållet du delar med din kopplade partner. Dela aldrig intimt media eller meddelanden utan ömsesidigt samtycke. Vi kan stänga av konton som bryter mot dessa villkor eller tillämplig lag.",
+						"strong": ["Dela aldrig intimt media eller meddelanden utan ömsesidigt samtycke."]
+					},
+					{
+						"type": "callout",
+						"text": "Om något känns fel, rapportera det. Använd Inställningar → Rapportera ett problem i appen eller mejla {email}. Vi tar säkerhetsrapporter på allvar.",
+						"strong": ["Inställningar → Rapportera ett problem"]
+					}
+				]
+			},
+			{
+				"id": "couple-content",
+				"heading": "Privat parinnehåll",
+				"blocks": [
+					{
+						"type": "paragraph",
+						"text": "Du och din kopplade partner styr innehållet ni delar i appen. Att koppla ihop är ett förtroendebeslut: koppla bara ihop med någon du litar på med informationen du delar. Du kan koppla bort från din partner när som helst via Inställningar."
+					}
+				]
+			},
+			{
+				"id": "availability",
+				"heading": "Tjänstens tillgänglighet",
+				"blocks": [
+					{
+						"type": "paragraph",
+						"text": "Vi jobbar hårt för att hålla Parfect tillgängligt och säkert, men tjänsten tillhandahålls i befintligt skick, utan garanterad drifttid."
+					}
+				]
+			},
+			{
+				"id": "termination",
+				"heading": "Uppsägning",
+				"blocks": [
+					{
+						"type": "paragraph",
+						"text": "Du kan sluta använda Parfect när som helst. Vi kan stänga av eller avsluta konton som bryter mot dessa villkor."
+					}
+				]
+			},
+			{
+				"id": "privacy",
+				"heading": "Integritet",
+				"blocks": [
+					{
+						"type": "paragraph",
+						"text": "Hur vi hanterar dina uppgifter beskrivs i vår Integritetspolicy — inklusive vad vi samlar in, end-to-end-kryptering och hur du raderar dina uppgifter.",
+						"linkText": "Integritetspolicy"
+					}
+				]
+			},
+			{
+				"id": "contact",
+				"heading": "Frågor?",
+				"blocks": [
+					{
+						"type": "paragraph",
+						"text": "Kontakta oss när som helst på {email}."
+					}
+				]
+			}
+		]
+	},
+	"Support": {
+		"metaTitle": "Support",
+		"metaDescription": "Få hjälp med Parfect — koppla ihop med din partner, inloggningsproblem, notiser och hantera eller radera ditt konto.",
+		"eyebrow": "Hjälp",
+		"title": "Support",
+		"intro": "Fastnat med koppling, inloggning, notiser eller ditt konto? De flesta svaren finns nedan — och om ditt inte gör det är vi bara ett mejl bort.",
+		"contactLabel": "Kontakta oss:",
+		"contactText": "Vi läser varje meddelande och svarar vanligtvis inom ett par dagar.",
+		"faqs": [
+			{
+				"id": "pairing",
+				"question": "Hur kopplar jag ihop med min partner?",
+				"answer": "Skapa ditt konto och skicka sedan din partners privata inbjudningskod från kopplingsskärmen. De anger den efter registrering och ni är kopplade. Koder är engångs — om en går ut eller försvinner, generera bara en ny."
+			},
+			{
+				"id": "login",
+				"question": "Jag kan inte logga in",
+				"answer": "Dubbelkolla din e-postadress och använd länken för återställning av lösenord på inloggningsskärmen om det behövs. Om du fortfarande inte kommer in — till exempel efter att ha bytt enhet — mejla oss så hjälper vi dig återställa kontot."
+			},
+			{
+				"id": "notifications",
+				"question": "Notiser kommer inte fram",
+				"answer": "Se till att notiser är aktiverade för Parfect i telefonens systeminställningar och att de är påslagna i appen under Inställningar → Notiser. Observera att våra notiser är innehållsfria av design: de visar aldrig vad din partner skrev."
+			},
+			{
+				"id": "unlink",
+				"question": "Hur kopplar jag bort från min partner?",
+				"answer": "Du kan koppla bort när som helst via Inställningar. Att koppla bort tar bort ert pars delade data från våra servrar. Om ni kopplar ihop igen senare börjar ni om från början."
+			},
+			{
+				"id": "delete",
+				"question": "Hur raderar jag mitt konto?",
+				"answer": "Gå till Inställningar → Konto → Radera konto. Detta tar permanent bort ditt konto och ert pars delade data, meddelanden och media från våra servrar. Du kan också mejla oss så raderar vi det åt dig."
+			},
+			{
+				"id": "safety",
+				"question": "Jag har en säkerhetsfråga",
+				"answer": "Använd Inställningar → Rapportera ett problem i appen, eller mejla oss direkt. Du kan koppla bort från din partner när som helst, och vi tar varje rapport på allvar."
+			}
+		],
+		"moreHeading": "Integritet och villkor",
+		"moreText": "Nyfiken på hur dina uppgifter hanteras? Läs vår",
+		"moreTextBetween": " och ",
+		"moreTextEnd": ".",
+		"privacyLink": "Integritetspolicy",
+		"termsLink": "Användarvillkor"
+	}
+}

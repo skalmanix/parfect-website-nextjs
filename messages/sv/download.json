@@ -1,0 +1,34 @@
+{
+	"Download": {
+		"metaTitle": "Ladda ner Parfect — Den privata appen för par",
+		"metaDescription": "Skaffa Parfect gratis på iPhone och Android. Privat chatt, kvällsfrågor, en delad bucket list och en dejtplanerare — skapad endast för två.",
+		"headerTagline": "Gratis · iPhone och Android",
+		"titleBefore": "Skaffa Parfect — ",
+		"titleHighlight": "gratis, för er två",
+		"titleAfter": "",
+		"description": "Privat chatt, en kvällsfråga och gemensamma planer som faktiskt blir av. Ladda ner på båda telefonerna och koppla ihop på under en minut.",
+		"qrAlt": "QR-kod — skanna med telefonen för att ladda ner Parfect",
+		"qrHint": "På en dator? Skanna med telefonen för att få appen.",
+		"points": [
+			{
+				"title": "Privat från grunden",
+				"description": "Ett utrymme för två. Inga flöden, inga följare, ingen publik."
+			},
+			{
+				"title": "En kvällsfråga",
+				"description": "Frågor som startar samtalen ni hela tiden skjuter upp."
+			},
+			{
+				"title": "Planer, inte bara prat",
+				"description": "En delad bucket list och dejtplanerare som gör det verkligt."
+			}
+		],
+		"testimonialQuote": "Det är som att vi hittade ett rum i huset vi inte visste fanns.",
+		"testimonialNames": "Hanna & Viktor",
+		"testimonialContext": "Tillsammans i 6 år · Stockholm",
+		"footerCopyright": "© {year} Parfect. Alla rättigheter förbehållna.",
+		"privacyLink": "Integritet",
+		"termsLink": "Villkor",
+		"supportLink": "Support"
+	}
+}
