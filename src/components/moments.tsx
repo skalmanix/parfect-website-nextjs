@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const conversation = [
 	{
 		from: "partner" as const,
@@ -42,7 +44,17 @@ export function Moments() {
 			className="py-20 md:py-28 relative overflow-hidden"
 			aria-labelledby="moments-heading"
 		>
-			<div className="absolute inset-0 app-gradient-bg opacity-50" aria-hidden="true" />
+			<div className="absolute inset-0" aria-hidden="true">
+				<Image
+					src="/images/people/couple-dance-kitchen.webp"
+					alt=""
+					fill
+					className="object-cover"
+					sizes="100vw"
+					quality={60}
+				/>
+				<div className="absolute inset-0 bg-gradient-to-b from-background via-background/15 to-background" />
+			</div>
 
 			<div className="container-wide section-padding relative">
 				<div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">

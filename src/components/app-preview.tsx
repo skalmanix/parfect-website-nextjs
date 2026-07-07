@@ -46,24 +46,28 @@ export function AppPreview() {
 
 				<div
 					data-reveal
-					className="flex lg:hidden gap-2 overflow-x-auto pb-4 -mx-5 px-5 snap-x snap-mandatory"
-					role="tablist"
-					aria-label="App screens"
+					className="lg:hidden overflow-x-auto pb-4 -mx-5 px-5 snap-x snap-mandatory"
 				>
-					{APP_SCREENS.map((screen, index) => (
-						<button
-							key={screen.id}
-							type="button"
-							role="tab"
-							aria-selected={active === index}
-							onClick={() => setActive(index)}
-							className={`preview-chip snap-start ${
-								active === index ? "preview-chip-active" : ""
-							}`}
-						>
-							{screen.label}
-						</button>
-					))}
+					<div
+						role="tablist"
+						aria-label="App screens"
+						className="flex gap-2 w-max mx-auto"
+					>
+						{APP_SCREENS.map((screen, index) => (
+							<button
+								key={screen.id}
+								type="button"
+								role="tab"
+								aria-selected={active === index}
+								onClick={() => setActive(index)}
+								className={`preview-chip snap-start ${
+									active === index ? "preview-chip-active" : ""
+								}`}
+							>
+								{screen.label}
+							</button>
+						))}
+					</div>
 				</div>
 
 				<div className="grid lg:grid-cols-[1fr_auto] gap-8 lg:gap-16 items-center max-w-5xl mx-auto">

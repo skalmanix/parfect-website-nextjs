@@ -183,6 +183,23 @@ export function FeaturePage({ content }: { content: FeaturePageContent }) {
 				{/* Hero */}
 				<section className="relative overflow-hidden">
 					<div className="absolute inset-0 app-gradient-bg" aria-hidden="true" />
+					<div className="absolute inset-0 opacity-50" aria-hidden="true">
+						<Image
+							src={
+								content.slug.startsWith("/for/")
+									? "/images/people/couple-night-walk.webp"
+									: "/images/people/couple-dance-kitchen.webp"
+							}
+							alt=""
+							fill
+							loading="eager"
+							fetchPriority="low"
+							className="object-cover"
+							sizes="100vw"
+							quality={60}
+						/>
+						<div className="absolute inset-0 bg-gradient-to-b from-background/40 via-transparent to-background" />
+					</div>
 					<div className="absolute inset-0 grain-overlay" aria-hidden="true" />
 
 					<div className="relative container-wide section-padding pt-28 md:pt-36 pb-16 md:pb-24">

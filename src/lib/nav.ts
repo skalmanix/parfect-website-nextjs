@@ -1,6 +1,7 @@
 export const NAV_ANCHORS = [
 	{ href: "/#experience", label: "Experience" },
 	{ href: "/#how-it-works", label: "How it works" },
+	{ href: "/#couples", label: "Testimonials" },
 	{ href: "/#privacy", label: "Privacy" },
 ] as const;
 

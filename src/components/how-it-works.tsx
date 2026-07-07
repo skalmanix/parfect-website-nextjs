@@ -53,8 +53,8 @@ export function HowItWorks() {
 						<div className="grid grid-cols-2 gap-4">
 							<figure className="relative aspect-[3/4] rounded-2xl overflow-hidden border border-border/60 card-glow mt-10">
 								<Image
-									src="/images/hero-onboarding.webp"
-									alt="Couple sitting close together watching a twilight sky"
+									src="/images/people/couple-sofa.webp"
+									alt="Couple cuddled on the sofa smiling at a phone together"
 									fill
 									className="object-cover"
 									sizes="(max-width: 768px) 45vw, 250px"

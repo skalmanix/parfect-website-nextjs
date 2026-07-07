@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Logo } from "./logo";
 import { StoreBadges } from "./store-badges";
 import { AvatarCluster, RatingStars } from "./testimonials";
@@ -6,13 +7,30 @@ import { RATING_LINE } from "@/lib/testimonials";
 export function CtaSection() {
 	return (
 		<section
-			className="py-20 md:py-28 relative overflow-hidden"
+			className="py-24 md:py-36 relative overflow-hidden"
 			aria-labelledby="cta-heading"
 		>
-			<div className="absolute inset-0 app-gradient-bg opacity-80" aria-hidden="true" />
+			<div className="absolute inset-0" aria-hidden="true">
+				<Image
+					src="/images/people/couple-night-walk.webp"
+					alt=""
+					fill
+					className="object-cover"
+					sizes="100vw"
+					quality={65}
+				/>
+				<div className="absolute inset-0 bg-gradient-to-b from-background via-transparent to-background" />
+				<div
+					className="absolute inset-0"
+					style={{
+						background:
+							"radial-gradient(ellipse 55% 65% at 50% 55%, color-mix(in srgb, var(--background) 55%, transparent) 0%, transparent 100%)",
+					}}
+				/>
+			</div>
 
 			<div className="container-wide section-padding relative">
-				<div data-reveal className="rounded-[2rem] border border-border/60 hero-card p-8 md:p-12 lg:p-16 text-center max-w-3xl mx-auto">
+				<div data-reveal className="text-center max-w-3xl mx-auto">
 					<div className="flex justify-center mb-6">
 						<Logo size={64} showWordmark={false} />
 					</div>

@@ -53,7 +53,7 @@ export function Testimonials() {
 	return (
 		<section
 			id="couples"
-			className="py-20 md:py-28 bg-background-elevated/50 border-y border-border/40"
+			className="py-20 md:py-28 bg-background-elevated/50 border-y border-border/40 scroll-mt-20"
 			aria-labelledby="testimonials-heading"
 		>
 			<div className="container-wide section-padding">
