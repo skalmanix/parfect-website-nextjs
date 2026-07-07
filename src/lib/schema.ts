@@ -42,7 +42,6 @@ export async function getSoftwareApplicationSchema(locale: Locale) {
 			price: "0",
 			priceCurrency: "USD",
 		},
-		aggregateRating: undefined,
 		downloadUrl: [
 			...(APP_STORE_URL.startsWith("http") ? [APP_STORE_URL] : []),
 			...(PLAY_STORE_URL.startsWith("http") ? [PLAY_STORE_URL] : []),

@@ -83,11 +83,25 @@ public/
 
 ## Deployment
 
-The site deploys to Cloudflare Workers via OpenNext:
+The site deploys to Cloudflare Workers via OpenNext (not as a static Pages export):
 
 ```bash
 npm run deploy
 ```
+
+### Cloudflare Workers Builds settings
+
+If deploying from the Cloudflare dashboard (Git-connected), use:
+
+| Field | Value |
+|---|---|
+| Build command | `npx opennextjs-cloudflare build` |
+| Deploy command | `npx opennextjs-cloudflare deploy` |
+| Non-production deploy | `npx opennextjs-cloudflare upload` |
+
+Do **not** set an output directory like `.next` or `out`.
+
+`wrangler.jsonc` must include the `IMAGES` and `WORKER_SELF_REFERENCE` bindings — without `IMAGES`, every `/_next/image` request throws Worker errors.
 
 Configure your domain in the Cloudflare dashboard to point to the Worker.
 
