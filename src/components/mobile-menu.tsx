@@ -3,7 +3,21 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { AUDIENCE_LINKS, FEATURE_LINKS, NAV_ANCHORS } from "@/lib/nav";
+import {
+	AUDIENCE_LINKS,
+	DOWNLOAD_LINK,
+	FEATURE_LINKS,
+	IDEAS_LINK,
+	NAV_ANCHORS,
+} from "@/lib/nav";
+import { GUIDES } from "@/lib/guides";
+
+const MOBILE_GUIDE_SLUGS = [
+	"date-night-ideas-at-home",
+	"questions-for-couples",
+	"couples-bucket-list-ideas",
+	"how-to-reconnect-with-your-partner",
+];
 
 export function MobileMenu() {
 	const [open, setOpen] = useState(false);
@@ -100,6 +114,36 @@ export function MobileMenu() {
 						))}
 					</ul>
 
+					<p className="eyebrow text-xs mt-5 mb-1">Ideas for couples</p>
+					<ul className="mb-2">
+						{MOBILE_GUIDE_SLUGS.map((slug) => {
+							const guide = GUIDES.find((g) => g.slug === slug);
+							if (!guide) return null;
+							return (
+								<li key={slug}>
+									<Link
+										href={`/ideas/${slug}`}
+										onClick={close}
+										tabIndex={tabIndex}
+										className="mobile-menu-link text-base!"
+									>
+										{guide.cardTitle}
+									</Link>
+								</li>
+							);
+						})}
+						<li>
+							<Link
+								href={IDEAS_LINK.href}
+								onClick={close}
+								tabIndex={tabIndex}
+								className="mobile-menu-link text-base! text-primary!"
+							>
+								All guides →
+							</Link>
+						</li>
+					</ul>
+
 					<p className="eyebrow text-xs mt-5 mb-1">Explore</p>
 					<ul>
 						{NAV_ANCHORS.map((link) => (
@@ -116,14 +160,14 @@ export function MobileMenu() {
 						))}
 					</ul>
 				</nav>
-				<a
-					href="/#download"
+				<Link
+					href={DOWNLOAD_LINK.href}
 					onClick={close}
 					tabIndex={tabIndex}
 					className="btn-primary flex items-center justify-center px-5 py-3.5 rounded-full text-sm mt-5"
 				>
-					Get the app
-				</a>
+					{DOWNLOAD_LINK.label}
+				</Link>
 			</div>
 
 			{open && (

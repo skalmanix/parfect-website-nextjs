@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Logo } from "./logo";
 import { LEGAL_LINKS } from "@/lib/schema";
+import { GUIDES } from "@/lib/guides";
 
 export function Footer() {
 	const year = new Date().getFullYear();
@@ -8,7 +9,7 @@ export function Footer() {
 	return (
 		<footer className="border-t border-border/40 bg-chrome pt-12 md:pt-16 pb-28 lg:pb-16">
 			<div className="container-wide section-padding">
-				<div className="grid sm:grid-cols-2 md:grid-cols-4 gap-10 mb-10">
+				<div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10 mb-10">
 					<div>
 						<Logo size={32} href="/" className="mb-4" />
 						<p className="text-muted text-sm leading-relaxed max-w-xs">
@@ -59,6 +60,26 @@ export function Footer() {
 					</div>
 
 					<div>
+						<h3 className="text-sm font-medium mb-4">Ideas for couples</h3>
+						<ul className="space-y-2 text-sm text-muted">
+							{GUIDES.filter((guide) => !guide.seasonal)
+								.slice(0, 6)
+								.map((guide) => (
+									<li key={guide.slug}>
+										<Link href={`/ideas/${guide.slug}`} className="footer-link">
+											{guide.cardTitle}
+										</Link>
+									</li>
+								))}
+							<li>
+								<Link href="/ideas" className="footer-link">
+									All guides
+								</Link>
+							</li>
+						</ul>
+					</div>
+
+					<div>
 						<h3 className="text-sm font-medium mb-4">Explore</h3>
 						<ul className="space-y-2 text-sm text-muted">
 							<li>
@@ -82,9 +103,9 @@ export function Footer() {
 								</a>
 							</li>
 							<li>
-								<a href="/#download" className="footer-link">
+								<Link href="/download" className="footer-link">
 									Download
-								</a>
+								</Link>
 							</li>
 						</ul>
 					</div>

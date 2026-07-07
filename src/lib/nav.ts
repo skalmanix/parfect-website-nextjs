@@ -5,6 +5,10 @@ export const NAV_ANCHORS = [
 	{ href: "/#privacy", label: "Privacy" },
 ] as const;
 
+export const IDEAS_LINK = { href: "/ideas", label: "Ideas" } as const;
+
+export const DOWNLOAD_LINK = { href: "/download", label: "Get the app" } as const;
+
 export const FEATURE_LINKS = [
 	{
 		href: "/features/private-chat",

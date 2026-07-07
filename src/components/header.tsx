@@ -1,7 +1,8 @@
+import Link from "next/link";
 import { Logo } from "./logo";
 import { MobileMenu } from "./mobile-menu";
-import { MegaMenu } from "./mega-menu";
-import { NAV_ANCHORS } from "@/lib/nav";
+import { MegaMenu, IdeasMegaMenu } from "./mega-menu";
+import { DOWNLOAD_LINK, NAV_ANCHORS } from "@/lib/nav";
 
 export function Header() {
 	return (
@@ -17,6 +18,7 @@ export function Header() {
 						{NAV_ANCHORS[0].label}
 					</a>
 					<MegaMenu />
+					<IdeasMegaMenu />
 					{NAV_ANCHORS.slice(1).map((link) => (
 						<a key={link.href} href={link.href} className="nav-link">
 							{link.label}
@@ -25,12 +27,12 @@ export function Header() {
 				</nav>
 
 				<div className="flex items-center gap-2">
-					<a
-						href="/#download"
+					<Link
+						href={DOWNLOAD_LINK.href}
 						className="btn-primary hidden sm:inline-flex items-center px-5 py-2.5 rounded-full text-sm"
 					>
-						Get the app
-					</a>
+						{DOWNLOAD_LINK.label}
+					</Link>
 
 					<MobileMenu />
 				</div>

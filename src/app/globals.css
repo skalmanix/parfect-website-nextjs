@@ -111,6 +111,10 @@ button {
 	animation: fade-up 0.8s ease-out 0.3s both;
 }
 
+.animate-fade-up-delay-3 {
+	animation: fade-up 0.8s ease-out 0.45s both;
+}
+
 .animate-glow {
 	animation: glow-pulse 4s ease-in-out infinite;
 }
@@ -347,7 +351,8 @@ button {
 	border-radius: 2rem;
 	overflow: hidden;
 	background: var(--background);
-	min-height: 520px;
+	/* Match a real handset (iPhone logical resolution is 9:19.5) */
+	aspect-ratio: 9 / 19.5;
 	position: relative;
 }
 
@@ -787,7 +792,7 @@ button {
 }
 
 @media (max-width: 640px) {
-	.phone-screen {
-		min-height: 440px;
+	.phone-frame {
+		max-width: 270px;
 	}
 }

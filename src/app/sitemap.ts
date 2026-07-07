@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { SITE_URL } from "@/lib/constants";
+import { GUIDES } from "@/lib/guides";
 
 const FEATURE_PAGES = [
 	"/features/private-chat",
@@ -25,6 +26,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
 			lastModified,
 			changeFrequency: "monthly" as const,
 			priority: 0.8,
+		})),
+		{
+			url: `${SITE_URL}/download`,
+			lastModified,
+			changeFrequency: "monthly",
+			priority: 0.9,
+		},
+		{
+			url: `${SITE_URL}/ideas`,
+			lastModified,
+			changeFrequency: "weekly",
+			priority: 0.8,
+		},
+		...GUIDES.map((guide) => ({
+			url: `${SITE_URL}/ideas/${guide.slug}`,
+			lastModified: new Date(guide.dateModified),
+			changeFrequency: "monthly" as const,
+			priority: 0.7,
 		})),
 		{
 			url: `${SITE_URL}/support`,
