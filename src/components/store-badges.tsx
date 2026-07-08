@@ -12,12 +12,19 @@ const heights = {
 	lg: 54,
 } as const;
 
+const playBadgeWidths = {
+	sm: 134,
+	md: 161,
+	lg: 181,
+} as const;
+
 export async function StoreBadges({
 	size = "md",
 	className = "",
 }: StoreBadgesProps) {
 	const t = await getTranslations("Common.storeBadges");
 	const height = heights[size];
+	const playBadgeWidth = playBadgeWidths[size];
 
 	return (
 		<div className={`flex flex-wrap items-center gap-3 ${className}`}>
@@ -31,8 +38,11 @@ export async function StoreBadges({
 			</StoreLink>
 			<StoreLink href={PLAY_STORE_URL} label={t("playStore")}>
 				<img
-					src="/images/badges/google-play-badge.png"
+					src="/images/badges/google-play-badge.webp"
+					srcSet="/images/badges/google-play-badge-sm.webp 268w, /images/badges/google-play-badge.webp 362w"
+					sizes={`${playBadgeWidth}px`}
 					alt={t("playStore")}
+					width={playBadgeWidth}
 					height={height}
 					style={{ height: `${height}px`, width: "auto" }}
 				/>

@@ -31,7 +31,9 @@ export function HomeScreen() {
 			aria-label={t("ariaLabel")}
 		>
 			<img
-				src="/images/hero-home.webp"
+				src="/images/hero-home-640.webp"
+				srcSet="/images/hero-home-640.webp 640w"
+				sizes="(max-width: 640px) 270px, 300px"
 				alt=""
 				width={300}
 				height={650}

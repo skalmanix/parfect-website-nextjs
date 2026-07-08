@@ -32,7 +32,9 @@ export function StickyCta() {
 		>
 			<div className="flex items-center gap-3">
 				<img
-					src="/images/icon.png"
+					src="/images/icon-80.webp"
+					srcSet="/images/icon-72.webp 72w, /images/icon-80.webp 80w"
+					sizes="40px"
 					alt=""
 					width={40}
 					height={40}

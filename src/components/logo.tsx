@@ -19,7 +19,9 @@ export function LogoMark({
 }) {
 	return (
 		<img
-			src="/images/icon.png"
+			src={size <= 40 ? "/images/icon-72.webp" : "/images/icon-144.webp"}
+			srcSet="/images/icon-72.webp 72w, /images/icon-144.webp 144w"
+			sizes={`${size}px`}
 			alt=""
 			width={size}
 			height={size}
