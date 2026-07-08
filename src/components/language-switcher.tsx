@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useId, useRef, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { usePathname, useRouter } from "@/i18n/navigation";
 import { localeNames, locales, type Locale } from "@/i18n/routing";
@@ -9,14 +10,46 @@ export function LanguageSwitcher() {
 	const locale = useLocale() as Locale;
 	const pathname = usePathname();
 	const router = useRouter();
+	const listboxId = useId();
+	const rootRef = useRef<HTMLDivElement>(null);
+	const [open, setOpen] = useState(false);
+
+	useEffect(() => {
+		if (!open) return;
+
+		const onPointerDown = (event: PointerEvent) => {
+			if (!rootRef.current?.contains(event.target as Node)) {
+				setOpen(false);
+			}
+		};
+
+		const onKeyDown = (event: KeyboardEvent) => {
+			if (event.key === "Escape") setOpen(false);
+		};
+
+		document.addEventListener("pointerdown", onPointerDown);
+		document.addEventListener("keydown", onKeyDown);
+		return () => {
+			document.removeEventListener("pointerdown", onPointerDown);
+			document.removeEventListener("keydown", onKeyDown);
+		};
+	}, [open]);
+
+	const switchLocale = (code: Locale) => {
+		setOpen(false);
+		router.replace(pathname, { locale: code });
+	};
 
 	return (
-		<div className="relative group">
+		<div ref={rootRef} className="relative">
 			<button
 				type="button"
+				onClick={() => setOpen((value) => !value)}
+				aria-expanded={open}
+				aria-controls={listboxId}
+				aria-haspopup="listbox"
 				className="flex items-center gap-1.5 text-sm text-muted hover:text-foreground transition-colors px-2 py-1.5 rounded-lg hover:bg-surface/60"
 				aria-label={t("current", { language: localeNames[locale] })}
-				aria-haspopup="listbox"
 			>
 				<svg
 					className="w-4 h-4"
@@ -34,7 +67,7 @@ export function LanguageSwitcher() {
 				</svg>
 				<span className="uppercase font-medium tracking-wide">{locale}</span>
 				<svg
-					className="w-3 h-3 opacity-60"
+					className={`w-3 h-3 opacity-60 transition-transform ${open ? "rotate-180" : ""}`}
 					fill="none"
 					viewBox="0 0 24 24"
 					stroke="currentColor"
@@ -50,16 +83,21 @@ export function LanguageSwitcher() {
 			</button>
 
 			<ul
+				id={listboxId}
 				role="listbox"
 				aria-label={t("label")}
-				className="absolute right-0 top-full mt-1 min-w-[10rem] rounded-xl border border-border/60 bg-chrome/95 backdrop-blur-xl shadow-xl py-1 opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus-within:opacity-100 group-focus-within:visible transition-all z-50"
+				className={`absolute right-0 top-full mt-1 min-w-[10rem] rounded-xl border border-border/60 bg-chrome/95 backdrop-blur-xl shadow-xl py-1 z-[60] transition-all ${
+					open
+						? "opacity-100 visible"
+						: "opacity-0 invisible pointer-events-none"
+				}`}
 			>
 				{locales.map((code) => (
 					<li key={code} role="option" aria-selected={code === locale}>
 						<button
 							type="button"
-							onClick={() => router.replace(pathname, { locale: code })}
-							className={`w-full text-left px-3 py-2 text-sm transition-colors hover:bg-surface/60 ${
+							onClick={() => switchLocale(code)}
+							className={`w-full text-left px-3 py-2.5 text-sm transition-colors hover:bg-surface/60 ${
 								code === locale
 									? "text-primary-strong font-medium"
 									: "text-muted hover:text-foreground"
