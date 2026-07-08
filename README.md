@@ -109,6 +109,16 @@ The site is fully static (SSG). `open-next.config.ts` uses the **Workers Static 
 
 If you still see intermittent `Worker exceeded resource limits` errors, upgrade to **Workers Paid** for higher CPU limits (10 ms free → 30 s paid).
 
+### Performance architecture
+
+- **Static-first:** all 144 pages pre-rendered at build time (`force-static` on locale layout)
+- **Edge cache:** prerendered HTML served via Workers Static Assets + cache interception
+- **Lean client bundle:** only nav/UI i18n namespaces hydrate; legal/FAQ/about copy stays server-only
+- **Lightweight guide nav:** menus use `guides-nav.json` (~3 KB), not full article bodies (~80 KB/locale)
+- **No Worker image pipeline** for fixed-size mockups — pre-optimized WebP served directly from `/images/`
+- **Code-split islands:** `AppPreview` and `StickyCta` lazy-loaded on homepage
+- **Per-locale server imports:** messages and guide content loaded for one locale at a time
+
 Configure your domain in the Cloudflare dashboard to point to the Worker.
 
 ## Related

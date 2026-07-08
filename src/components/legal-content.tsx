@@ -1,7 +1,5 @@
-"use client";
-
 import type { ReactNode } from "react";
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { SUPPORT_EMAIL } from "@/lib/constants";
 
@@ -134,12 +132,12 @@ function BlockRenderer({ block }: { block: Block }) {
 	);
 }
 
-export function LegalDocument({
+export async function LegalDocument({
 	namespace,
 }: {
 	namespace: "Privacy" | "Terms";
 }) {
-	const t = useTranslations(namespace);
+	const t = await getTranslations(namespace);
 	const sections = (t.raw("sections") as Section[] | undefined) ?? [];
 
 	return (
@@ -156,8 +154,8 @@ export function LegalDocument({
 	);
 }
 
-export function SupportContent() {
-	const t = useTranslations("Support");
+export async function SupportContent() {
+	const t = await getTranslations("Support");
 	const faqs = t.raw("faqs") as {
 		id: string;
 		question: string;

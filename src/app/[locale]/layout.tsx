@@ -10,13 +10,16 @@ import {
 	getWebSiteSchema,
 } from "@/lib/schema";
 import { buildAlternates, buildOpenGraphLocale, localizedUrl } from "@/lib/i18n/metadata";
-import { GoogleTagManager, GoogleTagManagerNoScript } from "@/components/gtm";
+import { pickClientMessages } from "@/lib/i18n/client-messages";
+import { GoogleTagManager } from "@/components/gtm";
+import { GoogleTagManagerNoScript } from "@/components/gtm-noscript";
 import { routing, type Locale } from "@/i18n/routing";
 import "../globals.css";
 
 const hanken = Hanken_Grotesk({
 	variable: "--font-hanken",
 	subsets: ["latin"],
+	weight: ["400", "500", "600", "700"],
 	display: "swap",
 	adjustFontFallback: true,
 });
@@ -24,9 +27,12 @@ const hanken = Hanken_Grotesk({
 const newsreader = Newsreader({
 	variable: "--font-newsreader",
 	subsets: ["latin"],
+	weight: ["400", "500", "600"],
 	display: "swap",
 	adjustFontFallback: true,
 });
+
+export const dynamic = "force-static";
 
 export const viewport: Viewport = {
 	themeColor: "#160910",
@@ -118,6 +124,7 @@ export default async function LocaleLayout({ children, params }: Props) {
 
 	setRequestLocale(locale);
 	const messages = await getMessages();
+	const clientMessages = pickClientMessages(messages);
 
 	const jsonLd = await Promise.all([
 		getOrganizationSchema(locale as Locale),
@@ -137,7 +144,7 @@ export default async function LocaleLayout({ children, params }: Props) {
 					}}
 				/>
 				<GoogleTagManagerNoScript />
-				<NextIntlClientProvider messages={messages}>
+				<NextIntlClientProvider messages={clientMessages}>
 					{children}
 				</NextIntlClientProvider>
 				<GoogleTagManager />

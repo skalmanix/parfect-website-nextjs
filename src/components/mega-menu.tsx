@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useRef, useState, type ReactNode } from "react";
-import Image from "next/image";
 import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import {
@@ -11,7 +10,7 @@ import {
 	IDEAS_PATH,
 	WHY_PARFECT_LINKS,
 } from "@/lib/nav";
-import { getGuides } from "@/lib/guides";
+import { getGuideNavItems } from "@/lib/guides";
 import type { Locale } from "@/i18n/routing";
 
 function MegaMenuShell({
@@ -158,13 +157,14 @@ export function MegaMenu() {
 										className="mega-menu-card group"
 									>
 										<span className="relative w-full aspect-[16/9] rounded-lg overflow-hidden border border-border/50 mb-2.5 block">
-											<Image
+											<img
 												src={item.image}
 												alt=""
-												fill
-												sizes="180px"
-												quality={50}
-												className="object-cover transition-transform duration-300 group-hover:scale-105"
+												width={180}
+												height={101}
+												loading="lazy"
+												decoding="async"
+												className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
 											/>
 										</span>
 										<span className="block font-medium text-sm text-foreground group-hover:text-primary-strong transition-colors">
@@ -255,7 +255,7 @@ export function IdeasMegaMenu() {
 	const t = useTranslations("Common");
 	const tGuides = useTranslations("GuidesUI");
 	const locale = useLocale() as Locale;
-	const guides = getGuides(locale);
+	const guides = getGuideNavItems(locale);
 	const featured = FEATURED_GUIDE_SLUGS.map(
 		(slug) => guides.find((guide) => guide.slug === slug)!,
 	);
@@ -279,13 +279,14 @@ export function IdeasMegaMenu() {
 										className="mega-menu-card group"
 									>
 										<span className="relative w-full aspect-[16/9] rounded-lg overflow-hidden border border-border/50 mb-2.5 block">
-											<Image
+											<img
 												src={guide.image.src}
 												alt=""
-												fill
-												sizes="180px"
-												quality={50}
-												className="object-cover transition-transform duration-300 group-hover:scale-105"
+												width={180}
+												height={101}
+												loading="lazy"
+												decoding="async"
+												className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
 											/>
 										</span>
 										<span className="block font-medium text-sm text-foreground group-hover:text-primary-strong transition-colors">

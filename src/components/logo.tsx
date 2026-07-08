@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 
@@ -19,14 +18,14 @@ export function LogoMark({
 	className?: string;
 }) {
 	return (
-		<Image
+		<img
 			src="/images/icon.png"
 			alt=""
 			width={size}
 			height={size}
 			className={`rounded-[22%] ${className}`}
 			aria-hidden="true"
-			priority
+			decoding="async"
 		/>
 	);
 }

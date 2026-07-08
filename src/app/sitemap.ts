@@ -1,5 +1,4 @@
 import type { MetadataRoute } from "next";
-import { SITE_URL } from "@/lib/constants";
 import { getGuides } from "@/lib/guides";
 import { getLanguageAlternates, localizedUrl } from "@/lib/i18n/metadata";
 import { routing, type Locale } from "@/i18n/routing";
@@ -44,7 +43,7 @@ function buildSitemapEntry(
 	}));
 }
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 	const lastModified = new Date();
 	const entries: MetadataRoute.Sitemap = [];
 
@@ -64,7 +63,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
 	}
 
 	for (const locale of routing.locales) {
-		for (const guide of getGuides(locale)) {
+		const guides = await getGuides(locale as Locale);
+		for (const guide of guides) {
 			const path = `/ideas/${guide.slug}`;
 			entries.push({
 				url: localizedUrl(path, locale),

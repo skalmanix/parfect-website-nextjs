@@ -1,6 +1,4 @@
-"use client";
-
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import { APP_STORE_URL, PLAY_STORE_URL } from "@/lib/constants";
 
 type StoreBadgesProps = {
@@ -14,8 +12,11 @@ const heights = {
 	lg: 54,
 } as const;
 
-export function StoreBadges({ size = "md", className = "" }: StoreBadgesProps) {
-	const t = useTranslations("Common.storeBadges");
+export async function StoreBadges({
+	size = "md",
+	className = "",
+}: StoreBadgesProps) {
+	const t = await getTranslations("Common.storeBadges");
 	const height = heights[size];
 
 	return (

@@ -1,11 +1,5 @@
 import type { Locale } from "@/i18n/routing";
 import type { Guide } from "./types";
-import enGuides from "../../../messages/en/guides-content.json";
-import svGuides from "../../../messages/sv/guides-content.json";
-import noGuides from "../../../messages/no/guides-content.json";
-import daGuides from "../../../messages/da/guides-content.json";
-import deGuides from "../../../messages/de/guides-content.json";
-import esGuides from "../../../messages/es/guides-content.json";
 
 const GUIDE_SLUGS = [
 	"date-night-ideas-at-home",
@@ -22,36 +16,49 @@ type GuideContentFile = {
 	guides: Record<string, Omit<Guide, "slug">>;
 };
 
-const guidesByLocale: Record<Locale, GuideContentFile> = {
-	en: enGuides as GuideContentFile,
-	sv: svGuides as GuideContentFile,
-	no: noGuides as GuideContentFile,
-	da: daGuides as GuideContentFile,
-	de: deGuides as GuideContentFile,
-	es: esGuides as GuideContentFile,
-};
+const guidesCache = new Map<Locale, Guide[]>();
 
-function buildGuides(locale: Locale): Guide[] {
-	const content = guidesByLocale[locale] ?? guidesByLocale.en;
+async function loadGuidesContent(locale: Locale): Promise<GuideContentFile> {
+	const mod = await import(`../../../messages/${locale}/guides-content.json`);
+	return mod.default as GuideContentFile;
+}
+
+function buildGuides(
+	content: GuideContentFile,
+	fallback: GuideContentFile,
+): Guide[] {
 	return GUIDE_SLUGS.map((slug) => ({
 		slug,
-		...content.guides[slug],
+		...(content.guides[slug] ?? fallback.guides[slug]),
 	}));
 }
 
-export function getGuides(locale: Locale): Guide[] {
-	return buildGuides(locale);
+export async function getGuides(locale: Locale): Promise<Guide[]> {
+	const cached = guidesCache.get(locale);
+	if (cached) return cached;
+
+	const [content, fallback] = await Promise.all([
+		loadGuidesContent(locale),
+		locale === "en" ? Promise.resolve(null) : loadGuidesContent("en"),
+	]);
+
+	const guides = buildGuides(content, fallback ?? content);
+	guidesCache.set(locale, guides);
+	return guides;
 }
 
-export function getGuide(slug: string, locale: Locale): Guide | undefined {
-	return getGuides(locale).find((guide) => guide.slug === slug);
+export async function getGuide(
+	slug: string,
+	locale: Locale,
+): Promise<Guide | undefined> {
+	const guides = await getGuides(locale);
+	return guides.find((guide) => guide.slug === slug);
 }
 
-export function getGuidesByCluster(
+export async function getGuidesByCluster(
 	cluster: Guide["cluster"],
 	locale: Locale,
-): Guide[] {
-	return getGuides(locale).filter((guide) => guide.cluster === cluster);
+): Promise<Guide[]> {
+	const guides = await getGuides(locale);
+	return guides.filter((guide) => guide.cluster === cluster);
 }
-
-export const GUIDES = getGuides("en");

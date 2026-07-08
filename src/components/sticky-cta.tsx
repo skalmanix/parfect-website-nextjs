@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { APP_STORE_URL, PLAY_STORE_URL } from "@/lib/constants";
 
@@ -32,13 +31,14 @@ export function StickyCta() {
 			aria-hidden={!visible}
 		>
 			<div className="flex items-center gap-3">
-				<Image
+				<img
 					src="/images/icon.png"
 					alt=""
 					width={40}
 					height={40}
 					className="rounded-[22%] shrink-0"
 					aria-hidden="true"
+					decoding="async"
 				/>
 				<div className="min-w-0 flex-1">
 					<p className="text-sm font-semibold leading-tight">{t("brand")}</p>

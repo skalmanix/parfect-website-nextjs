@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { Header } from "@/components/header";
@@ -45,6 +44,12 @@ export default async function IdeasPage({ params }: Props) {
 	setRequestLocale(locale);
 	const t = await getTranslations("GuidesUI");
 	const tCommon = await getTranslations("Common");
+	const clusterSections = await Promise.all(
+		CLUSTER_ORDER.map(async (cluster) => ({
+			cluster,
+			guides: await getGuidesByCluster(cluster, locale as Locale),
+		})),
+	);
 
 	const jsonLd = [
 		{
@@ -81,15 +86,15 @@ export default async function IdeasPage({ params }: Props) {
 				<section className="relative overflow-hidden border-b border-border/40">
 					<div className="absolute inset-0 app-gradient-bg" aria-hidden="true" />
 					<div className="absolute inset-0 opacity-40" aria-hidden="true">
-						<Image
+						<img
 							src="/images/people/couple-laughing.webp"
 							alt=""
-							fill
+							width={1920}
+							height={1080}
 							loading="eager"
+							decoding="async"
 							fetchPriority="low"
-							className="object-cover"
-							sizes="100vw"
-							quality={60}
+							className="absolute inset-0 w-full h-full object-cover"
 						/>
 						<div className="absolute inset-0 bg-gradient-to-b from-background/50 via-background/30 to-background" />
 					</div>
@@ -106,8 +111,7 @@ export default async function IdeasPage({ params }: Props) {
 					</div>
 				</section>
 
-				{CLUSTER_ORDER.map((cluster) => {
-					const guides = getGuidesByCluster(cluster, locale as Locale);
+				{clusterSections.map(({ cluster, guides }) => {
 					if (guides.length === 0) return null;
 
 					return (
@@ -139,12 +143,14 @@ export default async function IdeasPage({ params }: Props) {
 											className="group rounded-2xl border border-border/60 bg-surface/40 overflow-hidden transition-[border-color,background-color,transform,box-shadow] duration-200 hover:border-primary/40 hover:bg-surface hover:-translate-y-1 hover:shadow-[0_16px_40px_-20px_rgba(232,132,155,0.35)]"
 										>
 											<div className="relative aspect-[16/9]">
-												<Image
+												<img
 													src={guide.image.src}
 													alt=""
-													fill
-													className="object-cover transition-transform duration-300 group-hover:scale-[1.03]"
-													sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 400px"
+													width={400}
+													height={225}
+													loading="lazy"
+													decoding="async"
+													className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.03]"
 												/>
 												{guide.seasonal && (
 													<span className="absolute top-3 right-3 rounded-full bg-chrome/85 backdrop-blur border border-gold/40 text-gold text-[0.65rem] font-semibold px-2.5 py-1">

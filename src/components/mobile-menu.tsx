@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import Image from "next/image";
 import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import {
@@ -12,7 +11,7 @@ import {
 	IDEAS_PATH,
 	WHY_PARFECT_LINKS,
 } from "@/lib/nav";
-import { getGuides } from "@/lib/guides";
+import { getGuideNavItems } from "@/lib/guides";
 import type { Locale } from "@/i18n/routing";
 
 const MOBILE_GUIDE_SLUGS = [
@@ -25,7 +24,7 @@ const MOBILE_GUIDE_SLUGS = [
 export function MobileMenu() {
 	const t = useTranslations("Common");
 	const locale = useLocale() as Locale;
-	const guides = getGuides(locale);
+	const guides = getGuideNavItems(locale);
 	const [open, setOpen] = useState(false);
 	const buttonRef = useRef<HTMLButtonElement>(null);
 	const menuRef = useRef<HTMLDivElement>(null);
@@ -99,13 +98,14 @@ export function MobileMenu() {
 									className="mobile-feature-card"
 								>
 									<span className="relative w-full aspect-[16/9] rounded-lg overflow-hidden border border-border/50 mb-2 block">
-										<Image
+										<img
 											src={item.image}
 											alt=""
-											fill
-											sizes="(max-width: 1024px) 45vw, 180px"
-											quality={50}
-											className="object-cover"
+											width={180}
+											height={101}
+											loading="lazy"
+											decoding="async"
+											className="absolute inset-0 w-full h-full object-cover"
 										/>
 									</span>
 									<span className="block font-medium text-sm text-foreground">

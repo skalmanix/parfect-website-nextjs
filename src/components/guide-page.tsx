@@ -151,9 +151,9 @@ export async function GuidePage({
 	const t = await getTranslations("Common.guidePage");
 	const tGuides = await getTranslations("GuidesUI");
 	const jsonLd = getGuideJsonLd(guide, locale, tGuides("breadcrumbIdeas"));
-	const related = guide.related
-		.map((slug) => getGuide(slug, locale))
-		.filter((g): g is Guide => Boolean(g));
+	const related = (
+		await Promise.all(guide.related.map((slug) => getGuide(slug, locale)))
+	).filter((g): g is Guide => Boolean(g));
 
 	const dateLocale =
 		locale === "sv"

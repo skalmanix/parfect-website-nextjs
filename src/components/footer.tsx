@@ -1,17 +1,15 @@
-"use client";
-
-import { useLocale, useTranslations } from "next-intl";
+import { getTranslations, getLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { Logo } from "./logo";
 import { LEGAL_LINKS } from "@/lib/schema";
-import { getGuides } from "@/lib/guides";
+import { getGuideNavItems } from "@/lib/guides";
 import type { Locale } from "@/i18n/routing";
 import { FEATURE_LINKS, AUDIENCE_LINKS } from "@/lib/nav";
 
-export function Footer() {
-	const t = useTranslations("Common");
-	const locale = useLocale() as Locale;
-	const guides = getGuides(locale);
+export async function Footer() {
+	const locale = (await getLocale()) as Locale;
+	const t = await getTranslations({ locale, namespace: "Common" });
+	const guides = getGuideNavItems(locale);
 	const year = new Date().getFullYear();
 
 	return (

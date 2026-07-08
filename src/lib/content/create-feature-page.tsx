@@ -7,11 +7,15 @@ import {
 	getFeaturePageMetadata,
 	type FeaturePageKey,
 } from "@/lib/content/feature-pages";
-import type { Locale } from "@/i18n/routing";
+import { routing, type Locale } from "@/i18n/routing";
 
 type Props = { params: Promise<{ locale: string }> };
 
 export function createFeaturePage(key: FeaturePageKey) {
+	async function generateStaticParams() {
+		return routing.locales.map((locale) => ({ locale }));
+	}
+
 	async function generateMetadata({ params }: Props): Promise<Metadata> {
 		const { locale } = await params;
 		const meta = await getFeaturePageMetadata(key, locale as Locale);
@@ -38,5 +42,5 @@ export function createFeaturePage(key: FeaturePageKey) {
 		return <FeaturePage content={content} />;
 	}
 
-	return { generateMetadata, Page };
+	return { generateMetadata, Page, generateStaticParams };
 }

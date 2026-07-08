@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useTranslations } from "next-intl";
 
 function StatusBar() {
@@ -31,13 +30,14 @@ export function HomeScreen() {
 			role="img"
 			aria-label={t("ariaLabel")}
 		>
-			<Image
+			<img
 				src="/images/hero-home.webp"
 				alt=""
-				fill
-				className="object-cover"
-				sizes="300px"
+				width={300}
+				height={650}
+				className="absolute inset-0 w-full h-full object-cover"
 				loading="eager"
+				decoding="async"
 				fetchPriority="low"
 				aria-hidden="true"
 			/>
@@ -103,12 +103,14 @@ export function ChatScreen() {
 			role="img"
 			aria-label={t("ariaLabel")}
 		>
-			<Image
+			<img
 				src="/images/pattern-chat.webp"
 				alt=""
-				fill
-				className="object-cover opacity-70"
-				sizes="300px"
+				width={300}
+				height={650}
+				className="absolute inset-0 w-full h-full object-cover opacity-70"
+				loading="lazy"
+				decoding="async"
 				aria-hidden="true"
 			/>
 			<div className="relative flex flex-col h-full">
@@ -190,12 +192,14 @@ export function FantasiesScreen() {
 			role="img"
 			aria-label={t("ariaLabel")}
 		>
-			<Image
+			<img
 				src="/images/hero-lock.webp"
 				alt=""
-				fill
-				className="object-cover opacity-40"
-				sizes="300px"
+				width={300}
+				height={650}
+				className="absolute inset-0 w-full h-full object-cover opacity-40"
+				loading="lazy"
+				decoding="async"
 				aria-hidden="true"
 			/>
 			<div
@@ -288,12 +292,14 @@ export function TogetherScreen() {
 				<div className="flex-1 px-3.5 space-y-3 overflow-hidden">
 					<div className="rounded-2xl overflow-hidden border border-border/60 bg-surface/85">
 						<div className="relative h-20">
-							<Image
+							<img
 								src="/images/hero-date.webp"
 								alt=""
-								fill
-								className="object-cover"
-								sizes="280px"
+								width={280}
+								height={80}
+								className="absolute inset-0 w-full h-full object-cover"
+								loading="lazy"
+								decoding="async"
 								aria-hidden="true"
 							/>
 							<span className="absolute top-2 right-2 rounded-full bg-sage/90 text-background text-[0.55rem] font-bold px-2 py-0.5">
@@ -362,12 +368,14 @@ export function DateScreen() {
 			role="img"
 			aria-label={t("ariaLabel")}
 		>
-			<Image
+			<img
 				src="/images/hero-date.webp"
 				alt=""
-				fill
-				className="object-cover opacity-50"
-				sizes="300px"
+				width={300}
+				height={650}
+				className="absolute inset-0 w-full h-full object-cover opacity-50"
+				loading="lazy"
+				decoding="async"
 				aria-hidden="true"
 			/>
 			<div

@@ -8,15 +8,20 @@ import { routing, type Locale } from "@/i18n/routing";
 
 type Props = { params: Promise<{ locale: string; slug: string }> };
 
-export function generateStaticParams() {
-	return routing.locales.flatMap((locale) =>
-		getGuides(locale).map((guide) => ({ locale, slug: guide.slug })),
+export async function generateStaticParams() {
+	const params = await Promise.all(
+		routing.locales.map(async (locale) => {
+			const guides = await getGuides(locale);
+			return guides.map((guide) => ({ locale, slug: guide.slug }));
+		}),
 	);
+
+	return params.flat();
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
 	const { locale, slug } = await params;
-	const guide = getGuide(slug, locale as Locale);
+	const guide = await getGuide(slug, locale as Locale);
 	if (!guide) return {};
 
 	const path = `/ideas/${guide.slug}`;
@@ -44,7 +49,7 @@ export default async function Page({ params }: Props) {
 	const { locale, slug } = await params;
 	setRequestLocale(locale);
 
-	const guide = getGuide(slug, locale as Locale);
+	const guide = await getGuide(slug, locale as Locale);
 	if (!guide) notFound();
 
 	return <GuidePage guide={guide} locale={locale as Locale} />;
