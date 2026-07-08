@@ -8,6 +8,7 @@ import { ScrollReveal } from "./scroll-reveal";
 import { SITE_URL } from "@/lib/constants";
 import { getGuide, type Guide } from "@/lib/guides";
 import { localizedUrl } from "@/lib/i18n/metadata";
+import { buildSchemaGraph } from "@/lib/schema-helpers";
 import type { Locale } from "@/i18n/routing";
 import { openGraphLocales } from "@/i18n/routing";
 
@@ -40,20 +41,22 @@ function stripInline(text: string) {
 function getGuideJsonLd(guide: Guide, locale: Locale, breadcrumbIdeas: string) {
 	const pageUrl = localizedUrl(`/ideas/${guide.slug}`, locale);
 
-	return [
+	return buildSchemaGraph([
 		{
 			"@context": "https://schema.org",
 			"@type": "Article",
 			headline: guide.title,
 			description: guide.metaDescription,
+			url: pageUrl,
 			image: `${SITE_URL}${guide.image.src}`,
 			datePublished: guide.datePublished,
 			dateModified: guide.dateModified,
 			inLanguage: openGraphLocales[locale].replace("_", "-"),
+			articleSection: guide.cluster,
 			author: {
 				"@type": "Organization",
 				name: "Parfect",
-				url: `${SITE_URL}/about`,
+				url: localizedUrl("/about", locale),
 			},
 			publisher: {
 				"@type": "Organization",
@@ -63,7 +66,10 @@ function getGuideJsonLd(guide: Guide, locale: Locale, breadcrumbIdeas: string) {
 					url: `${SITE_URL}/images/icon.png`,
 				},
 			},
-			mainEntityOfPage: pageUrl,
+			mainEntityOfPage: {
+				"@type": "WebPage",
+				"@id": pageUrl,
+			},
 		},
 		{
 			"@context": "https://schema.org",
@@ -93,7 +99,7 @@ function getGuideJsonLd(guide: Guide, locale: Locale, breadcrumbIdeas: string) {
 				},
 			],
 		},
-	];
+	]);
 }
 
 function IdeaList({
@@ -379,7 +385,7 @@ export async function GuidePage({
 										<div className="relative aspect-[16/9]">
 											<Image
 												src={item.image.src}
-												alt=""
+												alt={item.image.alt}
 												fill
 												className="object-cover transition-transform duration-300 group-hover:scale-[1.03]"
 												sizes="(max-width: 640px) 100vw, 340px"

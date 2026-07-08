@@ -9,11 +9,11 @@ import {
 	getSoftwareApplicationSchema,
 	getWebSiteSchema,
 } from "@/lib/schema";
-import { buildAlternates, buildOpenGraphLocale, localizedUrl } from "@/lib/i18n/metadata";
 import { pickClientMessages } from "@/lib/i18n/client-messages";
+import { buildSchemaGraph } from "@/lib/schema-helpers";
 import { GoogleTagManager } from "@/components/gtm";
 import { GoogleTagManagerNoScript } from "@/components/gtm-noscript";
-import { routing, type Locale } from "@/i18n/routing";
+import { routing, htmlLangCodes, type Locale } from "@/i18n/routing";
 import "../globals.css";
 
 const hanken = Hanken_Grotesk({
@@ -68,16 +68,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 			template: t("titleTemplate"),
 		},
 		description: t("description"),
-		keywords: t.raw("keywords") as string[],
 		authors: [{ name: "Parfect" }],
 		creator: "Parfect",
 		openGraph: {
 			type: "website",
-			locale: buildOpenGraphLocale(locale),
-			url: localizedUrl("/", locale as Locale),
 			siteName: "Parfect",
-			title: t("ogTitle"),
-			description: t("ogDescription"),
 			images: [
 				{
 					url: "/images/hero-home.webp",
@@ -89,8 +84,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 		},
 		twitter: {
 			card: "summary_large_image",
-			title: t("twitterTitle"),
-			description: t("twitterDescription"),
 			images: ["/images/hero-home.webp"],
 		},
 		robots: {
@@ -104,7 +97,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 				"max-snippet": -1,
 			},
 		},
-		alternates: buildAlternates({ path: "/", locale: locale as Locale }),
 		category: "lifestyle",
 		icons: {
 			icon: [{ url: "/favicon.png", sizes: "96x96", type: "image/png" }],
@@ -126,14 +118,16 @@ export default async function LocaleLayout({ children, params }: Props) {
 	const messages = await getMessages();
 	const clientMessages = pickClientMessages(messages);
 
-	const jsonLd = await Promise.all([
-		getOrganizationSchema(locale as Locale),
-		getSoftwareApplicationSchema(locale as Locale),
-		getWebSiteSchema(locale as Locale),
-	]);
+	const jsonLd = buildSchemaGraph(
+		await Promise.all([
+			getOrganizationSchema(locale as Locale),
+			getSoftwareApplicationSchema(locale as Locale),
+			getWebSiteSchema(locale as Locale),
+		]),
+	);
 
 	return (
-		<html lang={locale} className="dark" data-scroll-behavior="smooth">
+		<html lang={htmlLangCodes[locale as Locale]} className="dark" data-scroll-behavior="smooth">
 			<body
 				className={`${hanken.variable} ${newsreader.variable} antialiased`}
 			>

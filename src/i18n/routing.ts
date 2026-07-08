@@ -9,7 +9,17 @@ export const defaultLocale: Locale = "en";
 export const hreflangCodes: Record<Locale, string> = {
 	en: "en",
 	sv: "sv",
-	no: "no",
+	no: "nb",
+	da: "da",
+	de: "de",
+	es: "es",
+};
+
+/** BCP 47 language codes for the html lang attribute. */
+export const htmlLangCodes: Record<Locale, string> = {
+	en: "en",
+	sv: "sv",
+	no: "nb",
 	da: "da",
 	de: "de",
 	es: "es",

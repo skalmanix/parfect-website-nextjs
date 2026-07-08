@@ -1,9 +1,17 @@
+import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { Logo } from "@/components/logo";
 import { StoreBadges } from "@/components/store-badges";
+
+export const metadata: Metadata = {
+	robots: {
+		index: false,
+		follow: true,
+	},
+};
 
 export default async function NotFound() {
 	const t = await getTranslations("Common");

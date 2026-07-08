@@ -9,6 +9,7 @@ export const HOW_IT_WORKS_LINK = {
 export const WHY_PARFECT_LINKS = [
 	{ href: "/#couples", key: "testimonials" },
 	{ href: "/about", key: "aboutUs" },
+	{ href: "/faq", key: "faq" },
 	{ href: "/#privacy", key: "privacySecurity" },
 ] as const;
 

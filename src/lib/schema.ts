@@ -71,23 +71,6 @@ export async function getWebSiteSchema(locale: Locale) {
 	};
 }
 
-export async function getFaqSchema(locale: Locale) {
-	const t = await getTranslations({ locale, namespace: "Home.faq" });
-
-	return {
-		"@context": "https://schema.org",
-		"@type": "FAQPage",
-		mainEntity: [0, 1, 2].map((i) => ({
-			"@type": "Question",
-			name: t(`${i}.question`),
-			acceptedAnswer: {
-				"@type": "Answer",
-				text: t(`${i}.answer`),
-			},
-		})),
-	};
-}
-
 export const LEGAL_LINKS = {
 	privacy: PRIVACY_URL,
 	terms: TERMS_URL,

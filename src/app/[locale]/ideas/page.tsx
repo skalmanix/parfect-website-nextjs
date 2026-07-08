@@ -6,7 +6,8 @@ import { Footer } from "@/components/footer";
 import { ScrollReveal } from "@/components/scroll-reveal";
 import { StoreBadges } from "@/components/store-badges";
 import { getGuidesByCluster, type GuideCluster } from "@/lib/guides";
-import { buildAlternates, localizedUrl } from "@/lib/i18n/metadata";
+import { createPageMetadata } from "@/lib/i18n/page-metadata";
+import { localizedUrl } from "@/lib/i18n/metadata";
 import { routing, type Locale } from "@/i18n/routing";
 import { SITE_URL } from "@/lib/constants";
 
@@ -20,17 +21,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 	const { locale } = await params;
 	const t = await getTranslations({ locale, namespace: "GuidesUI" });
 
-	return {
+	return createPageMetadata({
+		path: "/ideas",
+		locale: locale as Locale,
 		title: t("pageTitle"),
 		description: t("pageDescription"),
-		alternates: buildAlternates({ path: "/ideas", locale: locale as Locale }),
-		openGraph: {
-			title: t("pageTitle"),
-			description: t("pageDescription"),
-			url: localizedUrl("/ideas", locale as Locale),
-			type: "website",
-		},
-	};
+		ogImage: "/images/people/couple-laughing.webp",
+	});
 }
 
 const CLUSTER_ORDER: GuideCluster[] = [
@@ -145,7 +142,7 @@ export default async function IdeasPage({ params }: Props) {
 											<div className="relative aspect-[16/9]">
 												<img
 													src={guide.image.src}
-													alt=""
+													alt={guide.image.alt}
 													width={400}
 													height={225}
 													loading="lazy"

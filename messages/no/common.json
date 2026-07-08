@@ -84,7 +84,8 @@
 			"forMarriedCouples": "For gifte par",
 			"testimonials": "Parenes historier",
 			"aboutUs": "Om Parfect",
-			"privacySecurity": "Personvern & sikkerhet"
+			"privacySecurity": "Personvern & sikkerhet",
+			"faq": "Ofte stilte spørsmål"
 		},
 		"linkDescriptions": {
 			"privateChat": "Kryptert meldinger laget bare for to.",
@@ -96,7 +97,8 @@
 			"forMarriedCouples": "Fortsett å velge hverandre.",
 			"testimonials": "Hva par sier etter å ha prøvd Parfect sammen.",
 			"aboutUs": "Hvem som står bak appen og hvorfor den finnes.",
-			"privacySecurity": "Kryptert, kun via invitasjon og bygget for to."
+			"privacySecurity": "Kryptert, kun via invitasjon og bygget for to.",
+			"faq": "Svar om personvern, kontoer og hvordan Parfect fungerer."
 		},
 		"notFound": {
 			"title": "Denne siden har gått seg vill",

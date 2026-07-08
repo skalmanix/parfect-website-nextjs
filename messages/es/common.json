@@ -84,7 +84,8 @@
 			"forMarriedCouples": "Para parejas casadas",
 			"testimonials": "Historias de parejas",
 			"aboutUs": "Sobre Parfect",
-			"privacySecurity": "Privacidad y seguridad"
+			"privacySecurity": "Privacidad y seguridad",
+			"faq": "Preguntas frecuentes"
 		},
 		"linkDescriptions": {
 			"privateChat": "Mensajes cifrados — solo para vosotros dos.",
@@ -96,7 +97,8 @@
 			"forMarriedCouples": "Seguid eligiéndoos.",
 			"testimonials": "Lo que dicen las parejas tras probar Parfect juntas.",
 			"aboutUs": "Quién está detrás de la app y por qué existe.",
-			"privacySecurity": "Cifrada, solo por invitación y hecha para dos."
+			"privacySecurity": "Cifrada, solo por invitación y hecha para dos.",
+			"faq": "Respuestas sobre privacidad, cuentas y cómo funciona Parfect."
 		},
 		"notFound": {
 			"title": "Esta página se ha perdido",

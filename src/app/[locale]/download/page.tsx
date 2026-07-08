@@ -7,7 +7,7 @@ import { StoreBadges } from "@/components/store-badges";
 import { HomeScreen } from "@/components/app-screens";
 import { AppTabs } from "@/components/app-tabs";
 import { AvatarCluster, RatingStars } from "@/components/testimonials";
-import { buildAlternates } from "@/lib/i18n/metadata";
+import { createPageMetadata } from "@/lib/i18n/page-metadata";
 import { PRIVACY_URL, TERMS_URL, SUPPORT_URL } from "@/lib/constants";
 import type { Locale } from "@/i18n/routing";
 
@@ -17,11 +17,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 	const { locale } = await params;
 	const t = await getTranslations({ locale, namespace: "Download" });
 
-	return {
+	return createPageMetadata({
+		path: "/download",
+		locale: locale as Locale,
 		title: t("metaTitle"),
 		description: t("metaDescription"),
-		alternates: buildAlternates({ path: "/download", locale: locale as Locale }),
-	};
+		ogImage: "/images/people/couple-night-walk.webp",
+	});
 }
 
 export default async function DownloadPage({ params }: Props) {

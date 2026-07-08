@@ -7,7 +7,9 @@ import { Footer } from "@/components/footer";
 import { ScrollReveal } from "@/components/scroll-reveal";
 import { StoreBadges } from "@/components/store-badges";
 import { RatingStars, AvatarCluster } from "@/components/testimonials";
-import { buildAlternates, localizedUrl } from "@/lib/i18n/metadata";
+import { createPageMetadata } from "@/lib/i18n/page-metadata";
+import { buildSchemaGraph, buildBreadcrumbSchema } from "@/lib/schema-helpers";
+import { localizedUrl } from "@/lib/i18n/metadata";
 import { SITE_URL, SUPPORT_EMAIL } from "@/lib/constants";
 import type { Locale } from "@/i18n/routing";
 
@@ -19,17 +21,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 	const { locale } = await params;
 	const t = await getTranslations({ locale, namespace: "About" });
 
-	return {
+	return createPageMetadata({
+		path: "/about",
+		locale: locale as Locale,
 		title: t("metaTitle"),
 		description: t("metaDescription"),
-		alternates: buildAlternates({ path: "/about", locale: locale as Locale }),
-		openGraph: {
-			title: t("metaTitle"),
-			description: t("metaDescription"),
-			url: localizedUrl("/about", locale as Locale),
-			type: "website",
-		},
-	};
+		ogImage: "/images/people/couple-sofa.webp",
+	});
 }
 
 export default async function AboutPage({ params }: Props) {
@@ -40,7 +38,7 @@ export default async function AboutPage({ params }: Props) {
 	const story = t.raw("story") as string[];
 	const values = t.raw("values") as Value[];
 
-	const jsonLd = [
+	const jsonLd = buildSchemaGraph([
 		{
 			"@context": "https://schema.org",
 			"@type": "AboutPage",
@@ -59,20 +57,11 @@ export default async function AboutPage({ params }: Props) {
 				},
 			},
 		},
-		{
-			"@context": "https://schema.org",
-			"@type": "BreadcrumbList",
-			itemListElement: [
-				{ "@type": "ListItem", position: 1, name: "Parfect", item: SITE_URL },
-				{
-					"@type": "ListItem",
-					position: 2,
-					name: t("eyebrow"),
-					item: localizedUrl("/about", locale as Locale),
-				},
-			],
-		},
-	];
+		buildBreadcrumbSchema([
+			{ name: "Parfect", item: SITE_URL },
+			{ name: t("metaTitle"), item: localizedUrl("/about", locale as Locale) },
+		]),
+	]);
 
 	return (
 		<>
@@ -130,7 +119,7 @@ export default async function AboutPage({ params }: Props) {
 								<div className="relative rounded-3xl overflow-hidden aspect-[3/4] border border-border/60">
 									<Image
 										src="/images/people/couple-sofa.webp"
-										alt=""
+										alt={t("title")}
 										fill
 										sizes="(min-width: 1024px) 420px, 90vw"
 										loading="eager"

@@ -5,7 +5,9 @@ import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { ScrollReveal } from "@/components/scroll-reveal";
 import { StoreBadges } from "@/components/store-badges";
-import { buildAlternates, localizedUrl } from "@/lib/i18n/metadata";
+import { createPageMetadata } from "@/lib/i18n/page-metadata";
+import { buildSchemaGraph, buildBreadcrumbSchema } from "@/lib/schema-helpers";
+import { localizedUrl } from "@/lib/i18n/metadata";
 import { SITE_URL, SUPPORT_EMAIL } from "@/lib/constants";
 import type { Locale } from "@/i18n/routing";
 
@@ -21,17 +23,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 	const { locale } = await params;
 	const t = await getTranslations({ locale, namespace: "Faq" });
 
-	return {
+	return createPageMetadata({
+		path: "/faq",
+		locale: locale as Locale,
 		title: t("metaTitle"),
 		description: t("metaDescription"),
-		alternates: buildAlternates({ path: "/faq", locale: locale as Locale }),
-		openGraph: {
-			title: t("metaTitle"),
-			description: t("metaDescription"),
-			url: localizedUrl("/faq", locale as Locale),
-			type: "website",
-		},
-	};
+	});
 }
 
 export default async function FaqPage({ params }: Props) {
@@ -41,7 +38,7 @@ export default async function FaqPage({ params }: Props) {
 	const tCommon = await getTranslations("Common");
 	const categories = t.raw("categories") as FaqCategory[];
 
-	const jsonLd = [
+	const jsonLd = buildSchemaGraph([
 		{
 			"@context": "https://schema.org",
 			"@type": "FAQPage",
@@ -53,20 +50,11 @@ export default async function FaqPage({ params }: Props) {
 				})),
 			),
 		},
-		{
-			"@context": "https://schema.org",
-			"@type": "BreadcrumbList",
-			itemListElement: [
-				{ "@type": "ListItem", position: 1, name: "Parfect", item: SITE_URL },
-				{
-					"@type": "ListItem",
-					position: 2,
-					name: t("title"),
-					item: localizedUrl("/faq", locale as Locale),
-				},
-			],
-		},
-	];
+		buildBreadcrumbSchema([
+			{ name: "Parfect", item: SITE_URL },
+			{ name: t("title"), item: localizedUrl("/faq", locale as Locale) },
+		]),
+	]);
 
 	return (
 		<>

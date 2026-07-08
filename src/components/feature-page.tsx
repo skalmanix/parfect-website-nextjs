@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 import Image from "next/image";
-import { getTranslations } from "next-intl/server";
+import { getTranslations, getLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { Header } from "./header";
 import { Footer } from "./footer";
@@ -8,6 +8,9 @@ import { StoreBadges } from "./store-badges";
 import { ScrollReveal } from "./scroll-reveal";
 import { AppTabs } from "./app-tabs";
 import { SITE_URL } from "@/lib/constants";
+import { localizedUrl } from "@/lib/i18n/metadata";
+import { buildSchemaGraph } from "@/lib/schema-helpers";
+import type { Locale } from "@/i18n/routing";
 import { RatingStars } from "./testimonials";
 import {
 	ChatScreen,
@@ -136,8 +139,13 @@ function Icon({ name }: { name: IconName }) {
 	);
 }
 
-export function getFeaturePageJsonLd(content: FeaturePageContent) {
-	return [
+export function getFeaturePageJsonLd(
+	content: FeaturePageContent,
+	locale: Locale,
+) {
+	const pageUrl = localizedUrl(content.slug, locale);
+
+	return buildSchemaGraph([
 		{
 			"@context": "https://schema.org",
 			"@type": "FAQPage",
@@ -161,17 +169,18 @@ export function getFeaturePageJsonLd(content: FeaturePageContent) {
 					"@type": "ListItem",
 					position: 2,
 					name: content.titlePlain,
-					item: `${SITE_URL}${content.slug}`,
+					item: pageUrl,
 				},
 			],
 		},
-	];
+	]);
 }
 
 export async function FeaturePage({ content }: { content: FeaturePageContent }) {
 	const t = await getTranslations("Common.featurePage");
+	const locale = (await getLocale()) as Locale;
 	const Screen = screens[content.screen];
-	const jsonLd = getFeaturePageJsonLd(content);
+	const jsonLd = getFeaturePageJsonLd(content, locale);
 	const heroImage = content.slug.startsWith("/features/")
 		? `/images/features/${content.slug.split("/").pop()}.webp`
 		: "/images/people/couple-night-walk.webp";
