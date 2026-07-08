@@ -1,9 +1,10 @@
 import { defineCloudflareConfig } from "@opennextjs/cloudflare";
+import staticAssetsIncrementalCache from "@opennextjs/cloudflare/overrides/incremental-cache/static-assets-incremental-cache";
 
 export default defineCloudflareConfig({
-	// Uncomment to enable R2 cache,
-	// It should be imported as:
-	// `import r2IncrementalCache from "@opennextjs/cloudflare/overrides/incremental-cache/r2-incremental-cache";`
-	// See https://opennext.js.org/cloudflare/caching for more details
-	// incrementalCache: r2IncrementalCache,
+	// Serve prerendered pages from Workers Static Assets instead of
+	// re-running the Next.js server on every request (fixes Error 1102).
+	incrementalCache: staticAssetsIncrementalCache,
+	// Skip NextServer entirely on cache hits — major CPU savings on Workers.
+	enableCacheInterception: true,
 });

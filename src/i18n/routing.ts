@@ -38,5 +38,7 @@ export const routing = defineRouting({
 	locales,
 	defaultLocale,
 	localePrefix: "as-needed",
-	localeDetection: true,
+	// Disabled: Accept-Language detection runs middleware on every request
+	// and adds CPU overhead on Cloudflare Workers (Error 1102).
+	localeDetection: false,
 });

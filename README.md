@@ -95,13 +95,19 @@ If deploying from the Cloudflare dashboard (Git-connected), use:
 
 | Field | Value |
 |---|---|
-| Build command | `npx opennextjs-cloudflare build` |
+| Build command | `npm run bundle-messages && npx opennextjs-cloudflare build` |
 | Deploy command | `npx opennextjs-cloudflare deploy` |
 | Non-production deploy | `npx opennextjs-cloudflare upload` |
 
 Do **not** set an output directory like `.next` or `out`.
 
 `wrangler.jsonc` must include the `IMAGES` and `WORKER_SELF_REFERENCE` bindings — without `IMAGES`, every `/_next/image` request throws Worker errors.
+
+### Caching (Error 1102)
+
+The site is fully static (SSG). `open-next.config.ts` uses the **Workers Static Assets incremental cache** with **cache interception** so prerendered HTML is served from the edge without booting the Next.js server on every request. The deploy step automatically copies build-time cache entries into static assets.
+
+If you still see intermittent `Worker exceeded resource limits` errors, upgrade to **Workers Paid** for higher CPU limits (10 ms free → 30 s paid).
 
 Configure your domain in the Cloudflare dashboard to point to the Worker.
 

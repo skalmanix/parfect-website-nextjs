@@ -204,3 +204,6 @@ next-env.d.ts
 
 # Python
 __pycache__/
+
+# Generated i18n bundles (run `npm run bundle-messages`)
+messages/bundled/
