@@ -1,6 +1,7 @@
 import type { NextConfig } from "next";
 import createNextIntlPlugin from "next-intl/plugin";
 import { initOpenNextCloudflareForDev } from "@opennextjs/cloudflare";
+import { SECURITY_HEADERS } from "./src/lib/security-headers";
 
 const withNextIntl = createNextIntlPlugin("./src/i18n/request.ts");
 
@@ -11,6 +12,10 @@ const nextConfig: NextConfig = {
 	},
 	async headers() {
 		return [
+			{
+				source: "/:path*",
+				headers: [...SECURITY_HEADERS],
+			},
 			{
 				// Static brand assets are content-stable; cache aggressively.
 				source: "/images/:path*",

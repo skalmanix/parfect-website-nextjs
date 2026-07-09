@@ -14,6 +14,16 @@ import { openGraphLocales } from "@/i18n/routing";
 
 /* Long-form article layout for /ideas guides. */
 
+/** Only allow same-site relative paths in markdown links. */
+function isSafeInternalHref(href: string) {
+	return (
+		href.startsWith("/") &&
+		!href.startsWith("//") &&
+		!href.includes(":") &&
+		!href.includes("\\")
+	);
+}
+
 /** Render "[label](href)" spans in content strings as internal links. */
 function renderInline(text: string) {
 	const parts = text.split(/(\[[^\]]+\]\([^)]+\))/g);
@@ -21,10 +31,12 @@ function renderInline(text: string) {
 	return parts.map((part, i) => {
 		const match = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
 		if (!match) return part;
+		const href = match[2];
+		if (!isSafeInternalHref(href)) return match[1];
 		return (
 			<Link
 				key={i}
-				href={match[2]}
+				href={href}
 				className="text-primary hover:text-primary-strong underline decoration-primary/40 underline-offset-2 transition-colors"
 			>
 				{match[1]}
