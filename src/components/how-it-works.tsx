@@ -69,10 +69,9 @@ export async function HowItWorks() {
 							</figure>
 							<figure className="relative aspect-[3/4] rounded-2xl overflow-hidden border border-border/60 card-glow">
 								<ResponsiveImage
-									src="/images/hero-together.webp"
+									src="/images/people/couple-night-walk.webp"
 									alt={t("images.together.alt")}
-									preset="mockup"
-									sizes="(max-width: 768px) 45vw, 250px"
+									preset="portraitCard"
 									fill
 								/>
 								<figcaption className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-chrome/90 to-transparent px-4 pt-8 pb-3">
