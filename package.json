@@ -40,8 +40,9 @@
 	"scripts": {
 		"bundle-messages": "node scripts/bundle-messages.mjs",
 		"optimize-images": "node scripts/optimize-images.mjs",
-		"predev": "npm run bundle-messages",
-		"build": "npm run bundle-messages && next build",
+		"build-image-manifest": "node scripts/build-image-manifest.mjs",
+		"predev": "npm run bundle-messages && npm run build-image-manifest",
+		"build": "npm run bundle-messages && npm run build-image-manifest && next build",
 		"cf-typegen": "wrangler types --env-interface CloudflareEnv env.d.ts",
 		"check": "npm run build && tsc && node scripts/validate-images.mjs",
 		"deploy": "npm run bundle-messages && opennextjs-cloudflare build && opennextjs-cloudflare deploy",

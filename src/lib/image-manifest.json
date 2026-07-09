@@ -1,0 +1,130 @@
+{
+	"/images/features/bucket-list.webp": [
+		360,
+		768,
+		1280
+	],
+	"/images/features/date-planner.webp": [
+		360,
+		768,
+		1280
+	],
+	"/images/features/fantasies.webp": [
+		360,
+		768,
+		1280
+	],
+	"/images/features/private-chat.webp": [
+		360,
+		768,
+		1280
+	],
+	"/images/guides/anniversary.webp": [
+		360,
+		768,
+		1280
+	],
+	"/images/guides/at-home-date.webp": [
+		360,
+		768,
+		1280
+	],
+	"/images/guides/bucket-list.webp": [
+		360,
+		768,
+		1280
+	],
+	"/images/guides/long-distance-date.webp": [
+		360,
+		768,
+		1280
+	],
+	"/images/guides/parents-date.webp": [
+		360,
+		768,
+		1280
+	],
+	"/images/guides/questions.webp": [
+		360,
+		768,
+		1280
+	],
+	"/images/guides/reconnect.webp": [
+		360,
+		768,
+		1280
+	],
+	"/images/guides/valentines.webp": [
+		360,
+		768,
+		1280
+	],
+	"/images/hero-date.webp": [
+		640,
+		768
+	],
+	"/images/hero-home.webp": [
+		640,
+		768
+	],
+	"/images/hero-lock.webp": [
+		640,
+		768
+	],
+	"/images/hero-onboarding.webp": [
+		640,
+		768
+	],
+	"/images/hero-together.webp": [
+		640,
+		768
+	],
+	"/images/pattern-chat.webp": [
+		640,
+		768,
+		1080
+	],
+	"/images/people/couple-amira-daniel.webp": [
+		128,
+		400
+	],
+	"/images/people/couple-dance-kitchen.webp": [
+		128,
+		400,
+		768,
+		1280
+	],
+	"/images/people/couple-elin-jonas.webp": [
+		128,
+		400
+	],
+	"/images/people/couple-kerstin-lars.webp": [
+		128,
+		400
+	],
+	"/images/people/couple-laughing.webp": [
+		128,
+		400,
+		768,
+		1280
+	],
+	"/images/people/couple-night-walk.webp": [
+		128,
+		400,
+		768,
+		1280
+	],
+	"/images/people/couple-sara-marcus.webp": [
+		128,
+		400
+	],
+	"/images/people/couple-sofa.webp": [
+		128,
+		400,
+		768,
+		1280
+	],
+	"/images/qr-download.png": [
+		192
+	]
+}

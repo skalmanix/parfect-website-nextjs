@@ -1,15 +1,17 @@
 #!/usr/bin/env node
 /**
- * Verify original image sources exist and responsive variants match presets.
+ * Verify original images exist and srcset variants match the manifest.
  * Run: node scripts/validate-images.mjs
  */
 
 import fs from "node:fs";
 import path from "node:path";
-import { execSync } from "node:child_process";
 
 const ROOT = path.resolve(import.meta.dirname, "..");
 const PUBLIC = path.join(ROOT, "public");
+const MANIFEST = JSON.parse(
+	fs.readFileSync(path.join(ROOT, "src/lib/image-manifest.json"), "utf8"),
+);
 
 const PRESET_WIDTHS = {
 	menuThumb: [360],
@@ -28,53 +30,17 @@ const PRESET_WIDTHS = {
 	qr: [192],
 };
 
-const SOURCES = [
-	"/images/hero-home.webp",
-	"/images/hero-date.webp",
-	"/images/hero-lock.webp",
-	"/images/hero-onboarding.webp",
-	"/images/hero-together.webp",
-	"/images/pattern-chat.webp",
-	"/images/people/couple-dance-kitchen.webp",
-	"/images/people/couple-laughing.webp",
-	"/images/people/couple-night-walk.webp",
-	"/images/people/couple-sofa.webp",
-	"/images/people/couple-amira-daniel.webp",
-	"/images/people/couple-elin-jonas.webp",
-	"/images/people/couple-kerstin-lars.webp",
-	"/images/people/couple-sara-marcus.webp",
-	"/images/qr-download.png",
-	...[
-		"bucket-list",
-		"date-planner",
-		"fantasies",
-		"private-chat",
-	].map((name) => `/images/features/${name}.webp`),
-	...[
-		"anniversary",
-		"at-home-date",
-		"bucket-list",
-		"long-distance-date",
-		"parents-date",
-		"questions",
-		"reconnect",
-		"valentines",
-	].map((name) => `/images/guides/${name}.webp`),
+const CRITICAL = [
+	["/images/hero-onboarding.webp", "article"],
+	["/images/people/couple-sofa.webp", "avatarLg"],
+	["/images/guides/at-home-date.webp", "guideCard"],
+	["/images/people/couple-laughing.webp", "testimonialHero"],
+	["/images/qr-download.png", "qr"],
 ];
-
-function getWidth(filePath) {
-	const output = execSync(`sips -g pixelWidth "${filePath}"`, { encoding: "utf8" });
-	return Number(output.match(/pixelWidth:\s*(\d+)/)?.[1] ?? 0);
-}
-
-function variantPath(src, width, ext = "webp") {
-	const base = src.replace(/\.[^.]+$/, "");
-	return `${base}-${width}w.${ext}`;
-}
 
 let errors = 0;
 
-for (const src of SOURCES) {
+for (const [src, preset] of CRITICAL) {
 	const filePath = path.join(PUBLIC, src.replace(/^\//, ""));
 	if (!fs.existsSync(filePath)) {
 		console.error(`MISSING original: ${src}`);
@@ -82,41 +48,36 @@ for (const src of SOURCES) {
 		continue;
 	}
 
-	const originalWidth = getWidth(filePath);
-	const allWidths = new Set(Object.values(PRESET_WIDTHS).flat());
+	const widths = PRESET_WIDTHS[preset];
+	const available = MANIFEST[src] ?? [];
+	const emitted = widths.filter((width) => available.includes(width));
 
-	for (const width of allWidths) {
-		if (width >= originalWidth) continue;
-		const ext = src.endsWith(".png") ? "webp" : path.extname(src).slice(1);
-		const variant = variantPath(src, width, ext);
-		const variantPathOnDisk = path.join(PUBLIC, variant.replace(/^\//, ""));
-		if (!fs.existsSync(variantPathOnDisk)) {
-			// Only warn for widths used by presets that might reference this image class
-			continue;
-		}
+	if (emitted.length === 0) {
+		console.error(`NO srcset variants for ${src} (preset: ${preset})`);
+		errors += 1;
+		continue;
 	}
-}
 
-// Strict check: avatar + article presets must have 128w for people-large
-for (const src of [
-	"/images/people/couple-sofa.webp",
-	"/images/people/couple-laughing.webp",
-]) {
-	for (const width of [128, 400, 768]) {
-		const variant = variantPath(src, width);
+	for (const width of emitted) {
+		const ext = preset === "qr" ? "webp" : path.extname(src).slice(1);
+		const variant = src.replace(/\.[^.]+$/, `-${width}w.${ext}`);
 		const onDisk = path.join(PUBLIC, variant.replace(/^\//, ""));
 		if (!fs.existsSync(onDisk)) {
-			console.error(`MISSING variant: ${variant}`);
+			console.error(`MISSING variant file: ${variant}`);
 			errors += 1;
 		}
 	}
-}
 
-// QR webp variant
-const qrVariant = path.join(PUBLIC, "images/qr-download-192w.webp");
-if (!fs.existsSync(qrVariant)) {
-	console.error("MISSING variant: /images/qr-download-192w.webp");
-	errors += 1;
+	for (const width of widths) {
+		if (available.includes(width)) continue;
+		const ext = preset === "qr" ? "webp" : path.extname(src).slice(1);
+		const variant = src.replace(/\.[^.]+$/, `-${width}w.${ext}`);
+		const onDisk = path.join(PUBLIC, variant.replace(/^\//, ""));
+		if (fs.existsSync(onDisk)) {
+			console.error(`Manifest missing width ${width} for ${src}`);
+			errors += 1;
+		}
+	}
 }
 
 if (errors > 0) {

@@ -141,3 +141,5 @@ for (const group of GROUPS) {
 }
 
 console.log(`\nDone. Created ${created} variants, skipped ${skipped}.`);
+
+execSync("node scripts/build-image-manifest.mjs", { cwd: ROOT, stdio: "inherit" });
