@@ -1,5 +1,5 @@
 import { getTranslations } from "next-intl/server";
-import Image from "next/image";
+import { ResponsiveImage } from "@/components/responsive-image";
 import { Logo } from "./logo";
 import { StoreBadges } from "./store-badges";
 import { AppTabs } from "./app-tabs";
@@ -14,15 +14,13 @@ export async function Hero() {
 		<section className="relative min-h-[100svh] overflow-hidden">
 			<div className="absolute inset-0 app-gradient-bg" aria-hidden="true" />
 			<div className="absolute inset-0 opacity-30" aria-hidden="true">
-				<Image
+				<ResponsiveImage
 					src="/images/hero-onboarding.webp"
 					alt=""
+					preset="heroBg"
 					fill
-					loading="eager"
+					priority
 					fetchPriority="low"
-					className="object-cover"
-					sizes="100vw"
-					quality={60}
 				/>
 			</div>
 			<div className="absolute inset-0 welcome-scrim" aria-hidden="true" />

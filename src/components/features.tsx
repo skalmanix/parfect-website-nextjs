@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { ResponsiveImage } from "@/components/responsive-image";
 import { getTranslations } from "next-intl/server";
 
 const featureKeys = [
@@ -82,12 +82,13 @@ export async function Features() {
 						>
 							{iconsWithImages.has(key) && (
 								<div className="absolute inset-0 opacity-20 group-hover:opacity-30 transition-opacity">
-									<Image
+									<ResponsiveImage
 										src={iconImages[key]}
 										alt=""
-										fill
-										className="object-cover"
+										preset="mockup"
 										sizes="400px"
+										fill
+										aria-hidden
 									/>
 									<div className="absolute inset-0 bg-gradient-to-t from-surface via-surface/90 to-surface/70" />
 								</div>

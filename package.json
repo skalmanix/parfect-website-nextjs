@@ -39,6 +39,7 @@
 	],
 	"scripts": {
 		"bundle-messages": "node scripts/bundle-messages.mjs",
+		"optimize-images": "node scripts/optimize-images.mjs",
 		"predev": "npm run bundle-messages",
 		"build": "npm run bundle-messages && next build",
 		"cf-typegen": "wrangler types --env-interface CloudflareEnv env.d.ts",

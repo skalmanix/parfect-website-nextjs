@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { ResponsiveImage } from "@/components/responsive-image";
 import { getTranslations } from "next-intl/server";
 
 const stepKeys = ["0", "1", "2"] as const;
@@ -55,12 +55,11 @@ export async function HowItWorks() {
 					>
 						<div className="grid grid-cols-2 gap-4">
 							<figure className="relative aspect-[3/4] rounded-2xl overflow-hidden border border-border/60 card-glow mt-10">
-								<Image
+								<ResponsiveImage
 									src="/images/people/couple-sofa.webp"
 									alt={t("images.sofa.alt")}
+									preset="portraitCard"
 									fill
-									className="object-cover"
-									sizes="(max-width: 768px) 45vw, 250px"
 								/>
 								<figcaption className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-chrome/90 to-transparent px-4 pt-8 pb-3">
 									<p className="font-display text-sm">
@@ -69,12 +68,12 @@ export async function HowItWorks() {
 								</figcaption>
 							</figure>
 							<figure className="relative aspect-[3/4] rounded-2xl overflow-hidden border border-border/60 card-glow">
-								<Image
+								<ResponsiveImage
 									src="/images/hero-together.webp"
 									alt={t("images.together.alt")}
-									fill
-									className="object-cover"
+									preset="mockup"
 									sizes="(max-width: 768px) 45vw, 250px"
+									fill
 								/>
 								<figcaption className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-chrome/90 to-transparent px-4 pt-8 pb-3">
 									<p className="font-display text-sm">

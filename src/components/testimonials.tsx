@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { ResponsiveImage } from "@/components/responsive-image";
 import { getTranslations } from "next-intl/server";
 
 const testimonialKeys = ["0", "1", "2", "3"] as const;
@@ -33,12 +33,11 @@ export async function Testimonials() {
 						data-reveal
 						className="relative rounded-2xl overflow-hidden border border-border/60 card-glow min-h-[380px] flex"
 					>
-						<Image
+						<ResponsiveImage
 							src="/images/people/couple-laughing.webp"
 							alt={t("featured.alt")}
+							preset="testimonialHero"
 							fill
-							sizes="(max-width: 1024px) 100vw, 640px"
-							className="object-cover"
 						/>
 						<div
 							className="absolute inset-0 bg-gradient-to-t from-chrome/95 via-chrome/40 to-transparent"
@@ -137,7 +136,7 @@ export function AvatarCluster({ className = "" }: { className?: string }) {
 					className="relative w-8 h-8 rounded-full overflow-hidden border-2 border-chrome"
 					style={{ marginLeft: i === 0 ? 0 : "-0.55rem", zIndex: 3 - i }}
 				>
-					<Image src={src} alt="" fill sizes="32px" className="object-cover" />
+					<ResponsiveImage src={src} alt="" preset="avatarXs" fill aria-hidden />
 				</span>
 			))}
 		</span>
@@ -171,13 +170,7 @@ function TestimonialCard({
 			</blockquote>
 			<figcaption className="flex items-center gap-3">
 				<span className="relative w-11 h-11 rounded-full overflow-hidden shrink-0">
-					<Image
-						src={image}
-						alt={names}
-						fill
-						sizes="44px"
-						className="object-cover"
-					/>
+					<ResponsiveImage src={image} alt={names} preset="avatarSm" fill />
 				</span>
 				<span>
 					<span className="block text-sm font-medium">{names}</span>

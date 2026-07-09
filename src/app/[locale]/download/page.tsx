@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Image from "next/image";
+import { ResponsiveImage } from "@/components/responsive-image";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { Logo } from "@/components/logo";
@@ -49,15 +49,13 @@ export default async function DownloadPage({ params }: Props) {
 				<section className="relative overflow-hidden min-h-svh flex items-center">
 					<div className="absolute inset-0 app-gradient-bg" aria-hidden="true" />
 					<div className="absolute inset-0 opacity-40" aria-hidden="true">
-						<Image
+						<ResponsiveImage
 							src="/images/people/couple-night-walk.webp"
 							alt=""
+							preset="heroBg"
 							fill
-							loading="eager"
+							priority
 							fetchPriority="low"
-							className="object-cover"
-							sizes="100vw"
-							quality={60}
 						/>
 						<div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/40 to-background" />
 					</div>
@@ -79,9 +77,10 @@ export default async function DownloadPage({ params }: Props) {
 									<StoreBadges size="lg" className="justify-center lg:justify-start" />
 
 									<div className="hidden lg:flex items-center gap-4 rounded-2xl border border-border/60 bg-surface/60 p-4">
-										<Image
+										<ResponsiveImage
 											src="/images/qr-download.png"
 											alt={t("qrAlt")}
+											preset="qr"
 											width={96}
 											height={96}
 											className="rounded-lg"
@@ -136,12 +135,11 @@ export default async function DownloadPage({ params }: Props) {
 
 						<figure className="animate-fade-up-delay-3 max-w-2xl mx-auto lg:mx-0 mt-14 flex items-center gap-4 rounded-2xl border border-border/50 bg-surface/40 p-5">
 							<span className="relative w-14 h-14 rounded-full overflow-hidden shrink-0 border border-primary/30">
-								<Image
+								<ResponsiveImage
 									src="/images/people/couple-laughing.webp"
 									alt={t("testimonialNames")}
+									preset="avatarMd"
 									fill
-									sizes="56px"
-									className="object-cover"
 								/>
 							</span>
 							<div>

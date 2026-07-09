@@ -12,6 +12,7 @@ import {
 	WHY_PARFECT_LINKS,
 } from "@/lib/nav";
 import { getGuideNavItems } from "@/lib/guides";
+import { ResponsiveImage } from "@/components/responsive-image";
 import type { Locale } from "@/i18n/routing";
 
 const MOBILE_GUIDE_SLUGS = [
@@ -98,14 +99,13 @@ export function MobileMenu() {
 									className="mobile-feature-card"
 								>
 									<span className="relative w-full aspect-[16/9] rounded-lg overflow-hidden border border-border/50 mb-2 block">
-										<img
+										<ResponsiveImage
 											src={item.image}
 											alt=""
+											preset="menuThumb"
+											fill
 											width={180}
 											height={101}
-											loading="lazy"
-											decoding="async"
-											className="absolute inset-0 w-full h-full object-cover"
 										/>
 									</span>
 									<span className="block font-medium text-sm text-foreground">

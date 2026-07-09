@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { ResponsiveImage } from "@/components/responsive-image";
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { Header } from "./header";
@@ -239,13 +239,12 @@ export async function GuidePage({
 						</div>
 
 						<figure className="relative aspect-[16/9] rounded-2xl overflow-hidden border border-border/60 card-glow my-10 md:my-12">
-							<Image
+							<ResponsiveImage
 								src={guide.image.src}
 								alt={guide.image.alt}
+								preset="article"
 								fill
 								priority
-								className="object-cover"
-								sizes="(max-width: 768px) 100vw, 768px"
 							/>
 						</figure>
 
@@ -383,12 +382,12 @@ export async function GuidePage({
 										className="group rounded-2xl border border-border/60 bg-surface/40 overflow-hidden transition-[border-color,background-color] duration-200 hover:border-primary/40 hover:bg-surface"
 									>
 										<div className="relative aspect-[16/9]">
-											<Image
+											<ResponsiveImage
 												src={item.image.src}
 												alt={item.image.alt}
+												preset="guideCard"
 												fill
-												className="object-cover transition-transform duration-300 group-hover:scale-[1.03]"
-												sizes="(max-width: 640px) 100vw, 340px"
+												className="transition-transform duration-300 group-hover:scale-[1.03]"
 											/>
 										</div>
 										<div className="p-5">

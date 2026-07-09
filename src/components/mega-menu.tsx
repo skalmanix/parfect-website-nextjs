@@ -11,6 +11,7 @@ import {
 	WHY_PARFECT_LINKS,
 } from "@/lib/nav";
 import { getGuideNavItems } from "@/lib/guides";
+import { ResponsiveImage } from "@/components/responsive-image";
 import type { Locale } from "@/i18n/routing";
 
 function MegaMenuShell({
@@ -157,14 +158,14 @@ export function MegaMenu() {
 										className="mega-menu-card group"
 									>
 										<span className="relative w-full aspect-[16/9] rounded-lg overflow-hidden border border-border/50 mb-2.5 block">
-											<img
+											<ResponsiveImage
 												src={item.image}
 												alt=""
+												preset="menuThumb"
+												fill
 												width={180}
 												height={101}
-												loading="lazy"
-												decoding="async"
-												className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+												className="transition-transform duration-300 group-hover:scale-105"
 											/>
 										</span>
 										<span className="block font-medium text-sm text-foreground group-hover:text-primary-strong transition-colors">
@@ -279,14 +280,14 @@ export function IdeasMegaMenu() {
 										className="mega-menu-card group"
 									>
 										<span className="relative w-full aspect-[16/9] rounded-lg overflow-hidden border border-border/50 mb-2.5 block">
-											<img
+											<ResponsiveImage
 												src={guide.image.src}
 												alt=""
+												preset="menuThumb"
+												fill
 												width={180}
 												height={101}
-												loading="lazy"
-												decoding="async"
-												className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+												className="transition-transform duration-300 group-hover:scale-105"
 											/>
 										</span>
 										<span className="block font-medium text-sm text-foreground group-hover:text-primary-strong transition-colors">

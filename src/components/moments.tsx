@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { ResponsiveImage } from "@/components/responsive-image";
 import { getTranslations } from "next-intl/server";
 
 const feelingKeys = ["miss", "parents", "curious"] as const;
@@ -13,13 +13,11 @@ export async function Moments() {
 			aria-labelledby="moments-heading"
 		>
 			<div className="absolute inset-0" aria-hidden="true">
-				<Image
+				<ResponsiveImage
 					src="/images/people/couple-dance-kitchen.webp"
 					alt=""
+					preset="heroBg"
 					fill
-					className="object-cover"
-					sizes="100vw"
-					quality={60}
 				/>
 				<div className="absolute inset-0 bg-gradient-to-b from-background via-background/15 to-background" />
 			</div>

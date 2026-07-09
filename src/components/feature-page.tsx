@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import Image from "next/image";
+import { ResponsiveImage } from "@/components/responsive-image";
 import { getTranslations, getLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { Header } from "./header";
@@ -198,15 +198,13 @@ export async function FeaturePage({ content }: { content: FeaturePageContent }) 
 				<section className="relative overflow-hidden">
 					<div className="absolute inset-0 app-gradient-bg" aria-hidden="true" />
 					<div className="absolute inset-0 opacity-50" aria-hidden="true">
-						<Image
+						<ResponsiveImage
 							src={heroImage}
 							alt=""
+							preset="heroBg"
 							fill
-							loading="eager"
+							priority
 							fetchPriority="low"
-							className="object-cover"
-							sizes="100vw"
-							quality={60}
 						/>
 						<div className="absolute inset-0 bg-gradient-to-b from-background/40 via-transparent to-background" />
 					</div>
@@ -268,12 +266,11 @@ export async function FeaturePage({ content }: { content: FeaturePageContent }) 
 							data-reveal
 							className="relative aspect-[16/9] rounded-2xl overflow-hidden border border-border/60 card-glow mt-12"
 						>
-							<Image
+							<ResponsiveImage
 								src={content.image.src}
 								alt={content.image.alt}
+								preset="article"
 								fill
-								className="object-cover"
-								sizes="(max-width: 768px) 100vw, 768px"
 							/>
 							<figcaption className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-chrome/90 to-transparent px-6 pt-10 pb-4">
 								<p className="font-display text-base">{content.image.caption}</p>
@@ -368,12 +365,11 @@ export async function FeaturePage({ content }: { content: FeaturePageContent }) 
 								className="rounded-2xl border border-border/60 bg-surface/50 card-glow p-8 md:p-10 flex flex-col sm:flex-row items-center gap-6 md:gap-8"
 							>
 								<span className="relative w-24 h-24 md:w-28 md:h-28 rounded-full overflow-hidden shrink-0 border-2 border-primary/30">
-									<Image
+									<ResponsiveImage
 										src={content.testimonial.image}
 										alt={content.testimonial.names}
+										preset="avatarLg"
 										fill
-										sizes="112px"
-										className="object-cover"
 									/>
 								</span>
 								<div className="text-center sm:text-left">

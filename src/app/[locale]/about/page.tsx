@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Image from "next/image";
+import { ResponsiveImage } from "@/components/responsive-image";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { Header } from "@/components/header";
@@ -117,15 +117,13 @@ export default async function AboutPage({ params }: Props) {
 							</div>
 							<div data-reveal className="lg:sticky lg:top-28">
 								<div className="relative rounded-3xl overflow-hidden aspect-[3/4] border border-border/60">
-									<Image
+									<ResponsiveImage
 										src="/images/people/couple-sofa.webp"
 										alt={t("title")}
+										preset="storyPortrait"
 										fill
-										sizes="(min-width: 1024px) 420px, 90vw"
-										loading="eager"
+										priority
 										fetchPriority="low"
-										className="object-cover"
-										quality={70}
 									/>
 									<div
 										className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent"

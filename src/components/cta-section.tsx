@@ -1,5 +1,5 @@
 import { getTranslations } from "next-intl/server";
-import Image from "next/image";
+import { ResponsiveImage } from "@/components/responsive-image";
 import { Logo } from "./logo";
 import { StoreBadges } from "./store-badges";
 import { AvatarCluster, RatingStars } from "./testimonials";
@@ -14,13 +14,11 @@ export async function CtaSection() {
 			aria-labelledby="cta-heading"
 		>
 			<div className="absolute inset-0" aria-hidden="true">
-				<Image
+				<ResponsiveImage
 					src="/images/people/couple-night-walk.webp"
 					alt=""
+					preset="heroBg"
 					fill
-					className="object-cover"
-					sizes="100vw"
-					quality={65}
 				/>
 				<div className="absolute inset-0 bg-gradient-to-b from-background via-transparent to-background" />
 				<div

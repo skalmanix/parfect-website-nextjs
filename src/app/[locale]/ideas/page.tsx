@@ -4,6 +4,7 @@ import { Link } from "@/i18n/navigation";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { ScrollReveal } from "@/components/scroll-reveal";
+import { ResponsiveImage } from "@/components/responsive-image";
 import { StoreBadges } from "@/components/store-badges";
 import { getGuidesByCluster, type GuideCluster } from "@/lib/guides";
 import { createPageMetadata } from "@/lib/i18n/page-metadata";
@@ -83,15 +84,13 @@ export default async function IdeasPage({ params }: Props) {
 				<section className="relative overflow-hidden border-b border-border/40">
 					<div className="absolute inset-0 app-gradient-bg" aria-hidden="true" />
 					<div className="absolute inset-0 opacity-40" aria-hidden="true">
-						<img
+						<ResponsiveImage
 							src="/images/people/couple-laughing.webp"
 							alt=""
-							width={1920}
-							height={1080}
-							loading="eager"
-							decoding="async"
+							preset="heroBg"
+							fill
+							priority
 							fetchPriority="low"
-							className="absolute inset-0 w-full h-full object-cover"
 						/>
 						<div className="absolute inset-0 bg-gradient-to-b from-background/50 via-background/30 to-background" />
 					</div>
@@ -140,14 +139,14 @@ export default async function IdeasPage({ params }: Props) {
 											className="group rounded-2xl border border-border/60 bg-surface/40 overflow-hidden transition-[border-color,background-color,transform,box-shadow] duration-200 hover:border-primary/40 hover:bg-surface hover:-translate-y-1 hover:shadow-[0_16px_40px_-20px_rgba(232,132,155,0.35)]"
 										>
 											<div className="relative aspect-[16/9]">
-												<img
+												<ResponsiveImage
 													src={guide.image.src}
 													alt={guide.image.alt}
+													preset="guideCard"
+													fill
 													width={400}
 													height={225}
-													loading="lazy"
-													decoding="async"
-													className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.03]"
+													className="transition-transform duration-300 group-hover:scale-[1.03]"
 												/>
 												{guide.seasonal && (
 													<span className="absolute top-3 right-3 rounded-full bg-chrome/85 backdrop-blur border border-gold/40 text-gold text-[0.65rem] font-semibold px-2.5 py-1">

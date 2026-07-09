@@ -1,6 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import { ResponsiveImage } from "@/components/responsive-image";
 
 function StatusBar() {
 	return (
@@ -30,18 +31,17 @@ export function HomeScreen() {
 			role="img"
 			aria-label={t("ariaLabel")}
 		>
-			<img
-				src="/images/hero-home-640.webp"
-				srcSet="/images/hero-home-640.webp 640w"
-				sizes="(max-width: 640px) 270px, 300px"
+			<ResponsiveImage
+				src="/images/hero-home.webp"
 				alt=""
+				preset="mockup"
+				fill
 				width={300}
 				height={650}
-				className="absolute inset-0 w-full h-full object-cover"
-				loading="eager"
-				decoding="async"
+				priority
 				fetchPriority="low"
 				aria-hidden="true"
+				className=""
 			/>
 			<div
 				className="absolute inset-0 bg-gradient-to-b from-background/30 via-background/55 to-background"
@@ -105,14 +105,14 @@ export function ChatScreen() {
 			role="img"
 			aria-label={t("ariaLabel")}
 		>
-			<img
+			<ResponsiveImage
 				src="/images/pattern-chat.webp"
 				alt=""
+				preset="mockup"
+				fill
 				width={300}
 				height={650}
-				className="absolute inset-0 w-full h-full object-cover opacity-70"
-				loading="lazy"
-				decoding="async"
+				className="opacity-70"
 				aria-hidden="true"
 			/>
 			<div className="relative flex flex-col h-full">
@@ -194,14 +194,14 @@ export function FantasiesScreen() {
 			role="img"
 			aria-label={t("ariaLabel")}
 		>
-			<img
+			<ResponsiveImage
 				src="/images/hero-lock.webp"
 				alt=""
+				preset="mockup"
+				fill
 				width={300}
 				height={650}
-				className="absolute inset-0 w-full h-full object-cover opacity-40"
-				loading="lazy"
-				decoding="async"
+				className="opacity-40"
 				aria-hidden="true"
 			/>
 			<div
@@ -294,16 +294,15 @@ export function TogetherScreen() {
 				<div className="flex-1 px-3.5 space-y-3 overflow-hidden">
 					<div className="rounded-2xl overflow-hidden border border-border/60 bg-surface/85">
 						<div className="relative h-20">
-							<img
-								src="/images/hero-date.webp"
-								alt=""
-								width={280}
-								height={80}
-								className="absolute inset-0 w-full h-full object-cover"
-								loading="lazy"
-								decoding="async"
-								aria-hidden="true"
-							/>
+								<ResponsiveImage
+									src="/images/hero-date.webp"
+									alt=""
+									preset="mockup"
+									fill
+									width={280}
+									height={80}
+									aria-hidden="true"
+								/>
 							<span className="absolute top-2 right-2 rounded-full bg-sage/90 text-background text-[0.55rem] font-bold px-2 py-0.5">
 								{t("planned")}
 							</span>
@@ -370,14 +369,14 @@ export function DateScreen() {
 			role="img"
 			aria-label={t("ariaLabel")}
 		>
-			<img
+			<ResponsiveImage
 				src="/images/hero-date.webp"
 				alt=""
+				preset="mockup"
+				fill
 				width={300}
 				height={650}
-				className="absolute inset-0 w-full h-full object-cover opacity-50"
-				loading="lazy"
-				decoding="async"
+				className="opacity-50"
 				aria-hidden="true"
 			/>
 			<div
