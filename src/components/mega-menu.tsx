@@ -1,6 +1,12 @@
 "use client";
 
-import { useEffect, useRef, useState, type ReactNode } from "react";
+import {
+	useEffect,
+	useRef,
+	useState,
+	type PointerEvent as ReactPointerEvent,
+	type ReactNode,
+} from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import {
@@ -46,6 +52,17 @@ function MegaMenuShell({
 		closeTimer.current = window.setTimeout(closeMenu, 120);
 	};
 
+	const openOnHover = (event: ReactPointerEvent<HTMLDivElement>) => {
+		if (event.pointerType !== "mouse") return;
+		cancelClose();
+		setOpen(true);
+	};
+
+	const closeOnHover = (event: ReactPointerEvent<HTMLDivElement>) => {
+		if (event.pointerType !== "mouse") return;
+		scheduleClose();
+	};
+
 	useEffect(() => {
 		if (!open) return;
 
@@ -67,11 +84,8 @@ function MegaMenuShell({
 		<div
 			ref={rootRef}
 			className="relative"
-			onMouseEnter={() => {
-				cancelClose();
-				setOpen(true);
-			}}
-			onMouseLeave={scheduleClose}
+			onPointerEnter={openOnHover}
+			onPointerLeave={closeOnHover}
 		>
 			<button
 				ref={buttonRef}
@@ -79,7 +93,7 @@ function MegaMenuShell({
 				className="nav-link gap-1.5"
 				aria-expanded={open}
 				aria-haspopup="true"
-				onClick={() => setOpen((v) => !v)}
+				onClick={() => setOpen((value) => !value)}
 			>
 				{label}
 				<svg
