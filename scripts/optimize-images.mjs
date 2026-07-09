@@ -56,7 +56,7 @@ const GROUPS = [
 			"images/people/couple-night-walk.webp",
 			"images/people/couple-sofa.webp",
 		],
-		widths: [400, 768, 1280],
+		widths: [128, 400, 768, 1280],
 		quality: 80,
 	},
 	{

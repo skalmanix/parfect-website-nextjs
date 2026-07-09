@@ -1,9 +1,4 @@
-import {
-	buildSrcSet,
-	defaultSrc,
-	IMAGE_PRESETS,
-	type ImagePreset,
-} from "@/lib/images";
+import { buildSrcSet, IMAGE_PRESETS, type ImagePreset } from "@/lib/images";
 
 type ResponsiveImageProps = {
 	src: string;
@@ -11,7 +6,6 @@ type ResponsiveImageProps = {
 	preset?: ImagePreset;
 	widths?: readonly number[];
 	sizes?: string;
-	defaultWidth?: number;
 	fill?: boolean;
 	width?: number;
 	height?: number;
@@ -28,7 +22,6 @@ export function ResponsiveImage({
 	preset,
 	widths,
 	sizes,
-	defaultWidth,
 	fill = false,
 	width,
 	height,
@@ -41,16 +34,15 @@ export function ResponsiveImage({
 	const presetConfig = preset ? IMAGE_PRESETS[preset] : null;
 	const resolvedWidths = widths ?? presetConfig?.widths ?? [768];
 	const resolvedSizes = sizes ?? presetConfig?.sizes ?? "100vw";
-	const resolvedDefault =
-		defaultWidth ?? presetConfig?.default ?? resolvedWidths[resolvedWidths.length - 1];
 	const variantExt =
 		presetConfig && "variantExt" in presetConfig ? presetConfig.variantExt : undefined;
+	const srcSet = buildSrcSet(src, resolvedWidths, variantExt);
 
 	return (
 		<img
-			src={defaultSrc(src, resolvedWidths, resolvedDefault, variantExt)}
-			srcSet={buildSrcSet(src, resolvedWidths, variantExt)}
-			sizes={resolvedSizes}
+			src={src}
+			srcSet={srcSet}
+			sizes={srcSet ? resolvedSizes : undefined}
 			alt={alt}
 			width={width}
 			height={height}
