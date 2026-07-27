@@ -41,8 +41,8 @@ export const FEATURE_LINKS = [
 
 export const AUDIENCE_LINKS = [
 	{ href: "/for/parents", key: "forParents" },
-	{ href: "/for/long-distance", key: "forLongDistance" },
 	{ href: "/for/married-couples", key: "forMarriedCouples" },
+	{ href: "/for/long-distance", key: "forLongDistance" },
 ] as const;
 
 /** @deprecated Use DOWNLOAD_PATH with translations */
