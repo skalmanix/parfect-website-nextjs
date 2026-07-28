@@ -3,10 +3,9 @@ import { ResponsiveImage } from "@/components/responsive-image";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { Logo } from "@/components/logo";
-import { StoreBadges } from "@/components/store-badges";
 import { HomeScreen } from "@/components/app-screens";
 import { AppTabs } from "@/components/app-tabs";
-import { AvatarCluster, RatingStars } from "@/components/testimonials";
+import { WaitlistForm } from "@/components/waitlist-form";
 import { createPageMetadata } from "@/lib/i18n/page-metadata";
 import { PRIVACY_URL, TERMS_URL, SUPPORT_URL } from "@/lib/constants";
 import type { Locale } from "@/i18n/routing";
@@ -30,7 +29,6 @@ export default async function DownloadPage({ params }: Props) {
 	const { locale } = await params;
 	setRequestLocale(locale);
 	const t = await getTranslations("Download");
-	const tRating = await getTranslations("Common.rating");
 	const year = new Date().getFullYear();
 	const points = t.raw("points") as { title: string; description: string }[];
 
@@ -64,6 +62,7 @@ export default async function DownloadPage({ params }: Props) {
 					<div className="relative container-wide section-padding pt-28 pb-16 md:pt-32 md:pb-20 w-full">
 						<div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-12 lg:gap-10 items-center">
 							<div className="max-w-xl mx-auto lg:mx-0 text-center lg:text-left">
+								<p className="animate-fade-up eyebrow mb-4">{t("eyebrow")}</p>
 								<h1 className="animate-fade-up font-display text-4xl sm:text-5xl lg:text-[3.5rem] font-medium leading-[1.08] tracking-tight mb-5 text-balance">
 									{t("titleBefore")}
 									<span className="text-primary">{t("titleHighlight")}</span>
@@ -73,32 +72,8 @@ export default async function DownloadPage({ params }: Props) {
 									{t("description")}
 								</p>
 
-								<div className="animate-fade-up-delay-2 flex flex-col items-center lg:items-start gap-6">
-									<StoreBadges size="lg" className="justify-center lg:justify-start" />
-
-									<div className="hidden lg:flex items-center gap-4 rounded-2xl border border-border/60 bg-surface/60 p-4">
-										<ResponsiveImage
-											src="/images/qr-download.png"
-											alt={t("qrAlt")}
-											preset="qr"
-											width={96}
-											height={96}
-											className="rounded-lg"
-										/>
-										<p className="text-sm text-muted max-w-[180px] leading-relaxed">
-											{t("qrHint")}
-										</p>
-									</div>
-
-									<div className="flex items-center gap-3">
-										<AvatarCluster />
-										<div>
-											<RatingStars ariaLabel={tRating("stars")} />
-											<p className="text-xs text-muted-deep mt-1">
-												{tRating("line")}
-											</p>
-										</div>
-									</div>
+								<div className="flex justify-center lg:justify-start">
+									<WaitlistForm locale={locale} />
 								</div>
 
 								<ul className="animate-fade-up-delay-3 grid sm:grid-cols-3 gap-4 mt-10 text-left">

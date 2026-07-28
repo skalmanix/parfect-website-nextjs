@@ -1,14 +1,25 @@
 {
 	"Download": {
-		"metaTitle": "Download Parfect — The Private App for Couples",
-		"metaDescription": "Get Parfect free on iPhone and Android. Private chat, nightly questions, a shared bucket list, and a date planner — made only for two.",
-		"headerTagline": "Free · iPhone & Android",
-		"titleBefore": "Get Parfect — ",
-		"titleHighlight": "free, for the two of you",
+		"metaTitle": "Parfect — Coming Soon",
+		"metaDescription": "Parfect is coming soon. Join the waitlist for early access to the private app for couples on iPhone and Android.",
+		"headerTagline": "Coming soon · iPhone & Android",
+		"eyebrow": "Coming soon",
+		"titleBefore": "Parfect is ",
+		"titleHighlight": "almost here",
 		"titleAfter": "",
-		"description": "Private chat, a nightly question, and shared plans that actually happen. Download on both phones and pair in under a minute.",
-		"qrAlt": "QR code — scan with your phone to download Parfect",
-		"qrHint": "On a computer? Scan with your phone to get the app.",
+		"description": "Private chat, nightly questions, and shared plans — built for two. Join the waitlist and we'll email you the moment it's ready.",
+		"waitlist": {
+			"emailLabel": "Email address",
+			"emailPlaceholder": "you@example.com",
+			"submit": "Join the waitlist",
+			"submitting": "Joining…",
+			"privacyNote": "No spam. Just one email when we launch.",
+			"successTitle": "You're on the list",
+			"successMessage": "We'll let you know as soon as Parfect is ready for you and your partner.",
+			"errorInvalid": "Please enter a valid email address.",
+			"errorGeneric": "Something went wrong. Please try again.",
+			"errorDuplicate": "You're already on the waitlist."
+		},
 		"points": [
 			{
 				"title": "Private by design",

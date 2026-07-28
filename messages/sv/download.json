@@ -1,14 +1,25 @@
 {
 	"Download": {
-		"metaTitle": "Ladda ner Parfect — Den privata appen för par",
-		"metaDescription": "Skaffa Parfect gratis på iPhone och Android. Privat chatt, kvällsfrågor, en delad bucket list och en dejtplanerare — skapad endast för två.",
-		"headerTagline": "Gratis · iPhone och Android",
-		"titleBefore": "Skaffa Parfect — ",
-		"titleHighlight": "gratis, för er två",
+		"metaTitle": "Parfect — Kommer snart",
+		"metaDescription": "Parfect kommer snart. Gå med i väntelistan för tidig tillgång till den privata appen för par på iPhone och Android.",
+		"headerTagline": "Kommer snart · iPhone och Android",
+		"eyebrow": "Kommer snart",
+		"titleBefore": "Parfect är ",
+		"titleHighlight": "nästan här",
 		"titleAfter": "",
-		"description": "Privat chatt, en kvällsfråga och gemensamma planer som faktiskt blir av. Ladda ner på båda telefonerna och koppla ihop på under en minut.",
-		"qrAlt": "QR-kod — skanna med telefonen för att ladda ner Parfect",
-		"qrHint": "På en dator? Skanna med telefonen för att få appen.",
+		"description": "Privat chatt, kvällsfrågor och gemensamma planer — skapad för två. Gå med i väntelistan så mejlar vi dig så fort den är redo.",
+		"waitlist": {
+			"emailLabel": "E-postadress",
+			"emailPlaceholder": "du@exempel.se",
+			"submit": "Gå med i väntelistan",
+			"submitting": "Registrerar…",
+			"privacyNote": "Ingen spam. Bara ett mejl när vi lanserar.",
+			"successTitle": "Du står på listan",
+			"successMessage": "Vi hör av oss så fort Parfect är redo för er två.",
+			"errorInvalid": "Ange en giltig e-postadress.",
+			"errorGeneric": "Något gick fel. Försök igen.",
+			"errorDuplicate": "Du står redan på väntelistan."
+		},
 		"points": [
 			{
 				"title": "Privat från grunden",

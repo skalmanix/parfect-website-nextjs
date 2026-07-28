@@ -1,18 +1,29 @@
 {
 	"Download": {
-		"metaTitle": "Last ned Parfect — Den private appen for par",
-		"metaDescription": "Få Parfect gratis på iPhone og Android. Privat chat, kveldsspørsmål, en delt bucket list og en dateplanlegger — laget kun for to.",
-		"headerTagline": "Gratis · iPhone og Android",
-		"titleBefore": "Få Parfect — ",
-		"titleHighlight": "gratis, for dere to",
+		"metaTitle": "Parfect — Kommer snart",
+		"metaDescription": "Parfect kommer snart. Meld deg på ventelisten for tidlig tilgang til den private appen for par på iPhone og Android.",
+		"headerTagline": "Kommer snart · iPhone og Android",
+		"eyebrow": "Kommer snart",
+		"titleBefore": "Parfect er ",
+		"titleHighlight": "nesten her",
 		"titleAfter": "",
-		"description": "Privat chat, et kveldsspørsmål og felles planer som faktisk skjer. Last ned på begge telefonene og koble sammen på under ett minutt.",
-		"qrAlt": "QR-kode — skann med telefonen for å laste ned Parfect",
-		"qrHint": "På en datamaskin? Skann med telefonen for å få appen.",
+		"description": "Privat chat, kveldsspørsmål og felles planer — laget for to. Meld deg på ventelisten, så sender vi en e-post når appen er klar.",
+		"waitlist": {
+			"emailLabel": "E-postadresse",
+			"emailPlaceholder": "du@eksempel.no",
+			"submit": "Meld deg på ventelisten",
+			"submitting": "Registrerer…",
+			"privacyNote": "Ingen spam. Bare én e-post når vi lanserer.",
+			"successTitle": "Du er på listen",
+			"successMessage": "Vi sier fra så snart Parfect er klar for dere to.",
+			"errorInvalid": "Skriv inn en gyldig e-postadresse.",
+			"errorGeneric": "Noe gikk galt. Prøv igjen.",
+			"errorDuplicate": "Du står allerede på ventelisten."
+		},
 		"points": [
 			{
-				"title": "Privat fra grunnen av",
-				"description": "Ett rom for to. Ingen feeds, ingen følgere, intet publikum."
+				"title": "Privat av design",
+				"description": "Ett rom for to. Ingen feeds, ingen følgere, ingen publikum."
 			},
 			{
 				"title": "Et kveldsspørsmål",
@@ -20,7 +31,7 @@
 			},
 			{
 				"title": "Planer, ikke bare prat",
-				"description": "En delt bucket list og dateplanlegger som gjør det virkelig."
+				"description": "En delt bucket list og dateplanlegger som gjør det ekte."
 			}
 		],
 		"testimonialQuote": "Det er som om vi fant et rom i huset vi ikke visste fantes.",

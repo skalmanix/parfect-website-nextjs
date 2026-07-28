@@ -1,31 +1,42 @@
 {
 	"Download": {
-		"metaTitle": "Parfect herunterladen — Die private App für Paare",
-		"metaDescription": "Hol dir Parfect kostenlos für iPhone und Android. Privater Chat, abendliche Fragen, eine gemeinsame Bucket List und ein Date-Planer — nur für zwei gemacht.",
-		"headerTagline": "Kostenlos · iPhone & Android",
-		"titleBefore": "Hol dir Parfect — ",
-		"titleHighlight": "kostenlos, für euch zwei",
+		"metaTitle": "Parfect — Demnächst verfügbar",
+		"metaDescription": "Parfect kommt bald. Tragt euch in die Warteliste ein, um frühzeitig Zugang zur privaten App für Paare auf iPhone und Android zu erhalten.",
+		"headerTagline": "Demnächst · iPhone & Android",
+		"eyebrow": "Demnächst",
+		"titleBefore": "Parfect ist ",
+		"titleHighlight": "fast da",
 		"titleAfter": "",
-		"description": "Privater Chat, eine abendliche Frage und gemeinsame Pläne, die wirklich stattfinden. Ladet auf beiden Handys herunter und verbindet euch in unter einer Minute.",
-		"qrAlt": "QR-Code — mit dem Handy scannen, um Parfect herunterzuladen",
-		"qrHint": "Am Computer? Mit dem Handy scannen, um die App zu bekommen.",
+		"description": "Privater Chat, abendliche Fragen und gemeinsame Pläne — nur für zwei. Tragt euch in die Warteliste ein und wir mailen euch, sobald es soweit ist.",
+		"waitlist": {
+			"emailLabel": "E-Mail-Adresse",
+			"emailPlaceholder": "du@beispiel.de",
+			"submit": "Auf die Warteliste",
+			"submitting": "Wird eingetragen…",
+			"privacyNote": "Kein Spam. Nur eine E-Mail zum Launch.",
+			"successTitle": "Ihr seid auf der Liste",
+			"successMessage": "Wir melden uns, sobald Parfect für euch beide bereit ist.",
+			"errorInvalid": "Bitte gebt eine gültige E-Mail-Adresse ein.",
+			"errorGeneric": "Etwas ist schiefgelaufen. Bitte versucht es erneut.",
+			"errorDuplicate": "Ihr steht bereits auf der Warteliste."
+		},
 		"points": [
 			{
-				"title": "Privat von Grund auf",
+				"title": "Privat by design",
 				"description": "Ein Raum für zwei. Keine Feeds, keine Follower, kein Publikum."
 			},
 			{
-				"title": "Eine abendliche Frage",
-				"description": "Fragen, die die Gespräche starten, die ihr immer wieder aufschiebt."
+				"title": "Eine Abendfrage",
+				"description": "Impulse, die Gespräche starten, die ihr immer wieder verschiebt."
 			},
 			{
 				"title": "Pläne, nicht nur Worte",
-				"description": "Eine gemeinsame Bucket List und ein Date-Planer, die es real machen."
+				"description": "Eine gemeinsame Bucket List und Date-Planer, die es real machen."
 			}
 		],
-		"testimonialQuote": "Es ist, als hätten wir ein Zimmer in unserem Haus gefunden, von dem wir nicht wussten, dass es existiert.",
+		"testimonialQuote": "Es ist, als hätten wir einen Raum in unserem Haus gefunden, von dem wir nichts wussten.",
 		"testimonialNames": "Hanna & Viktor",
-		"testimonialContext": "Zusammen seit 6 Jahren · Stockholm",
+		"testimonialContext": "Seit 6 Jahren zusammen · Stockholm",
 		"footerCopyright": "© {year} Parfect. Alle Rechte vorbehalten.",
 		"privacyLink": "Datenschutz",
 		"termsLink": "AGB",

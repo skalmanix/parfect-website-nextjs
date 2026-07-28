@@ -207,3 +207,6 @@ __pycache__/
 
 # Generated i18n bundles (run `npm run bundle-messages`)
 messages/bundled/
+
+# Local waitlist signups (development)
+.data/

@@ -1,18 +1,29 @@
 {
 	"Download": {
-		"metaTitle": "Download Parfect — Den private app til par",
-		"metaDescription": "Få Parfect gratis på iPhone og Android. Privat chat, aftensspørgsmål, en delt bucket list og en dateplanlægger — lavet kun til to.",
-		"headerTagline": "Gratis · iPhone og Android",
-		"titleBefore": "Få Parfect — ",
-		"titleHighlight": "gratis, til jer to",
+		"metaTitle": "Parfect — Kommer snart",
+		"metaDescription": "Parfect kommer snart. Tilmeld dig ventelisten for tidlig adgang til den private app til par på iPhone og Android.",
+		"headerTagline": "Kommer snart · iPhone og Android",
+		"eyebrow": "Kommer snart",
+		"titleBefore": "Parfect er ",
+		"titleHighlight": "næsten klar",
 		"titleAfter": "",
-		"description": "Privat chat, et aftensspørgsmål og fælles planer, der faktisk sker. Download på begge telefoner og par inden for et minut.",
-		"qrAlt": "QR-kode — scan med din telefon for at downloade Parfect",
-		"qrHint": "På en computer? Scan med din telefon for at få appen.",
+		"description": "Privat chat, aftensspørgsmål og fælles planer — skabt til to. Tilmeld dig ventelisten, så sender vi en mail, når appen er klar.",
+		"waitlist": {
+			"emailLabel": "E-mailadresse",
+			"emailPlaceholder": "dig@eksempel.dk",
+			"submit": "Tilmeld ventelisten",
+			"submitting": "Tilmelder…",
+			"privacyNote": "Ingen spam. Kun én mail, når vi lancerer.",
+			"successTitle": "Du er på listen",
+			"successMessage": "Vi giver besked, så snart Parfect er klar til jer to.",
+			"errorInvalid": "Indtast en gyldig e-mailadresse.",
+			"errorGeneric": "Noget gik galt. Prøv igen.",
+			"errorDuplicate": "Du står allerede på ventelisten."
+		},
 		"points": [
 			{
-				"title": "Privat fra grunden af",
-				"description": "Ét rum til to. Ingen feeds, ingen følgere, intet publikum."
+				"title": "Privat fra starten",
+				"description": "Et rum for to. Ingen feeds, ingen følgere, intet publikum."
 			},
 			{
 				"title": "Et aftensspørgsmål",
@@ -23,7 +34,7 @@
 				"description": "En delt bucket list og dateplanlægger, der gør det virkeligt."
 			}
 		],
-		"testimonialQuote": "Det er som om vi fandt et rum i huset, vi ikke vidste fandtes.",
+		"testimonialQuote": "Det er som om, vi fandt et rum i huset, vi ikke vidste fandtes.",
 		"testimonialNames": "Hanna & Viktor",
 		"testimonialContext": "Sammen i 6 år · Stockholm",
 		"footerCopyright": "© {year} Parfect. Alle rettigheder forbeholdes.",

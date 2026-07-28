@@ -1,14 +1,25 @@
 {
 	"Download": {
-		"metaTitle": "Descargar Parfect — La app privada para parejas",
-		"metaDescription": "Consigue Parfect gratis en iPhone y Android. Chat privado, preguntas nocturnas, una bucket list compartida y un planificador de citas — hecho solo para dos.",
-		"headerTagline": "Gratis · iPhone y Android",
-		"titleBefore": "Consigue Parfect — ",
-		"titleHighlight": "gratis, para vosotros dos",
+		"metaTitle": "Parfect — Próximamente",
+		"metaDescription": "Parfect llegará pronto. Apúntate a la lista de espera para acceder antes a la app privada para parejas en iPhone y Android.",
+		"headerTagline": "Próximamente · iPhone y Android",
+		"eyebrow": "Próximamente",
+		"titleBefore": "Parfect está ",
+		"titleHighlight": "casi aquí",
 		"titleAfter": "",
-		"description": "Chat privado, una pregunta nocturna y planes compartidos que de verdad se hacen. Descarga en ambos móviles y emparejaos en menos de un minuto.",
-		"qrAlt": "Código QR — escanea con tu móvil para descargar Parfect",
-		"qrHint": "¿En un ordenador? Escanea con tu móvil para conseguir la app.",
+		"description": "Chat privado, preguntas nocturnas y planes compartidos — hecho para dos. Apúntate a la lista de espera y te avisaremos en cuanto esté listo.",
+		"waitlist": {
+			"emailLabel": "Correo electrónico",
+			"emailPlaceholder": "tu@ejemplo.com",
+			"submit": "Unirme a la lista",
+			"submitting": "Apuntando…",
+			"privacyNote": "Sin spam. Solo un correo cuando lancemos.",
+			"successTitle": "Ya estás en la lista",
+			"successMessage": "Te avisaremos en cuanto Parfect esté listo para vosotros dos.",
+			"errorInvalid": "Introduce un correo electrónico válido.",
+			"errorGeneric": "Algo salió mal. Inténtalo de nuevo.",
+			"errorDuplicate": "Ya estás en la lista de espera."
+		},
 		"points": [
 			{
 				"title": "Privado por diseño",
@@ -20,10 +31,10 @@
 			},
 			{
 				"title": "Planes, no solo palabras",
-				"description": "Una bucket list compartida y un planificador de citas que lo hacen real."
+				"description": "Una bucket list compartida y planificador de citas que lo hace real."
 			}
 		],
-		"testimonialQuote": "Es como si hubiéramos encontrado una habitación en nuestra casa que no sabíamos que existía.",
+		"testimonialQuote": "Es como si hubiéramos encontrado una habitación en casa que no sabíamos que existía.",
 		"testimonialNames": "Hanna & Viktor",
 		"testimonialContext": "Juntos 6 años · Estocolmo",
 		"footerCopyright": "© {year} Parfect. Todos los derechos reservados.",
