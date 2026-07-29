@@ -57,32 +57,23 @@ NEXT_PUBLIC_PLAY_STORE_URL=https://play.google.com/store/apps/details?id=com.app
 | `NEXT_PUBLIC_SITE_URL` | Canonical site URL for SEO and sitemap |
 | `NEXT_PUBLIC_APP_STORE_URL` | Apple App Store listing URL |
 | `NEXT_PUBLIC_PLAY_STORE_URL` | Google Play listing URL |
-| `WAITLIST_WEBHOOK_URL` | Optional webhook for `/download` waitlist signups (JSON POST) |
-| `CLOUDFLARE_ACCOUNT_ID` | Optional — use with `WAITLIST_KV_NAMESPACE_ID` + `CLOUDFLARE_API_TOKEN` instead of a KV binding |
+| `WAITLIST_SERVER_URL` | Production waitlist backend (appends to JSON on that server). Defaults in `wrangler.jsonc` to `https://api.parfect.app/waitlist`. |
+| `WAITLIST_FILE` | Local JSON file path when not using `WAITLIST_SERVER_URL` (default: `.data/waitlist.json`) |
 
 ### Waitlist storage (`/download`)
 
-The waitlist API needs persistent storage in production. Choose one:
+Signups are appended to a JSON file.
 
-**Option A — Cloudflare KV (recommended)**
+- **Local dev:** writes to `.data/waitlist.json` automatically.
+- **Production:** the Cloudflare Worker forwards signups to `WAITLIST_SERVER_URL` (see `wrangler.jsonc`).
 
-With the Cloudflare plugin authenticated (or `npx wrangler login` / API token env vars set):
+Run the file-backed API on your server (e.g. Linode behind `api.parfect.app`):
 
 ```bash
-chmod +x scripts/setup-waitlist-kv.sh
-./scripts/setup-waitlist-kv.sh
-npm run deploy
+WAITLIST_FILE=/var/lib/parfect/waitlist.json node scripts/waitlist-server.mjs
 ```
 
-`scripts/ensure-waitlist-kv.mjs` creates the `WAITLIST` namespace if needed and writes the binding into `wrangler.jsonc`. `npm run deploy` runs this automatically when credentials are available.
-
-**Cloud Agents:** authenticate **Cloudflare-bindings** under [Cursor Dashboard → Integrations & MCP](https://cursor.com/dashboard?tab=integrations) so cloud agents can create the namespace and deploy. Alternatively add GitHub Actions secrets `CLOUDFLARE_ACCOUNT_ID`, `CLOUDFLARE_API_TOKEN`, and optionally `WAITLIST_KV_NAMESPACE_ID`.
-
-**Option B — Webhook**
-
-Set a Worker secret `WAITLIST_WEBHOOK_URL` in the Cloudflare dashboard. The API POSTs `{ email, locale, createdAt }` as JSON on each signup (works with Formspree, Zapier, etc.).
-
-Without either option configured, the waitlist form returns an error in production.
+Proxy `POST /waitlist` on `api.parfect.app` to port `3847`, or set `WAITLIST_SERVER_URL` to wherever the script runs.
 
 ## Scripts
 

@@ -45,11 +45,12 @@
 		"build": "npm run bundle-messages && npm run build-image-manifest && next build",
 		"cf-typegen": "wrangler types --env-interface CloudflareEnv env.d.ts",
 		"check": "npm run build && tsc && node scripts/validate-images.mjs",
-		"deploy": "npm run bundle-messages && node scripts/ensure-waitlist-kv.mjs && opennextjs-cloudflare build && opennextjs-cloudflare deploy",
+		"deploy": "npm run bundle-messages && opennextjs-cloudflare build && opennextjs-cloudflare deploy",
 		"upload": "npm run bundle-messages && opennextjs-cloudflare build && opennextjs-cloudflare upload",
 		"dev": "next dev",
 		"lint": "next lint",
 		"preview": "npm run bundle-messages && opennextjs-cloudflare build && opennextjs-cloudflare preview",
+		"waitlist-server": "node scripts/waitlist-server.mjs",
 		"start": "next start"
 	}
 }

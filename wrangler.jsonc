@@ -21,8 +21,9 @@
 	"images": {
 		"binding": "IMAGES"
 	},
-	// Waitlist signups — create with: npx wrangler kv namespace create WAITLIST
-	// "kv_namespaces": [{ "binding": "WAITLIST_KV", "id": "<your-namespace-id>" }],
+	"vars": {
+		"WAITLIST_SERVER_URL": "https://api.parfect.app/waitlist"
+	},
 	"observability": {
 		"enabled": true
 	},
