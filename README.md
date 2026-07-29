@@ -57,27 +57,23 @@ NEXT_PUBLIC_PLAY_STORE_URL=https://play.google.com/store/apps/details?id=com.app
 | `NEXT_PUBLIC_SITE_URL` | Canonical site URL for SEO and sitemap |
 | `NEXT_PUBLIC_APP_STORE_URL` | Apple App Store listing URL |
 | `NEXT_PUBLIC_PLAY_STORE_URL` | Google Play listing URL |
-| `WAITLIST_WEBHOOK_URL` | Optional webhook for `/download` waitlist signups (JSON POST) |
-| `CLOUDFLARE_ACCOUNT_ID` | Optional — use with `WAITLIST_KV_NAMESPACE_ID` + `CLOUDFLARE_API_TOKEN` instead of a KV binding |
+| `SUPABASE_URL` | Supabase project URL (default: `https://qzkiwomktytohggmwwjf.supabase.co`) |
+| `SUPABASE_SECRET_KEY` | Supabase secret key (`sb_secret_...`) for server-side waitlist writes |
 
 ### Waitlist storage (`/download`)
 
-The waitlist API needs persistent storage in production. Choose one:
+Signups go to Supabase project **`qzkiwomktytohggmwwjf`**.
 
-**Option A — Cloudflare KV (recommended)**
+- Preferred: Postgres table `public.waitlist_signups` (apply `supabase/migrations/20260729120000_waitlist_signups.sql`)
+- Fallback: Storage bucket `waitlist` → `signups.json` (used automatically until the table exists)
+- Local dev without keys: `.data/waitlist.json`
+
+Production secret:
 
 ```bash
-chmod +x scripts/setup-waitlist-kv.sh
-./scripts/setup-waitlist-kv.sh
-# Add the printed kv_namespaces block to wrangler.jsonc, then:
+npx wrangler secret put SUPABASE_SECRET_KEY
 npm run deploy
 ```
-
-**Option B — Webhook**
-
-Set a Worker secret `WAITLIST_WEBHOOK_URL` in the Cloudflare dashboard. The API POSTs `{ email, locale, createdAt }` as JSON on each signup (works with Formspree, Zapier, etc.).
-
-Without either option configured, the waitlist form returns an error in production.
 
 ## Scripts
 
