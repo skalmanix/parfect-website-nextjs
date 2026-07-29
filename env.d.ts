@@ -9,6 +9,7 @@ declare namespace Cloudflare {
 		IMAGES: ImagesBinding;
 		ASSETS: Fetcher;
 		WORKER_SELF_REFERENCE: Service<typeof import("./.open-next/worker").default>;
+		WAITLIST_KV?: KVNamespace;
 	}
 }
 interface CloudflareEnv extends Cloudflare.Env {}

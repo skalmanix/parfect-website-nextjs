@@ -57,6 +57,27 @@ NEXT_PUBLIC_PLAY_STORE_URL=https://play.google.com/store/apps/details?id=com.app
 | `NEXT_PUBLIC_SITE_URL` | Canonical site URL for SEO and sitemap |
 | `NEXT_PUBLIC_APP_STORE_URL` | Apple App Store listing URL |
 | `NEXT_PUBLIC_PLAY_STORE_URL` | Google Play listing URL |
+| `WAITLIST_WEBHOOK_URL` | Optional webhook for `/download` waitlist signups (JSON POST) |
+| `CLOUDFLARE_ACCOUNT_ID` | Optional — use with `WAITLIST_KV_NAMESPACE_ID` + `CLOUDFLARE_API_TOKEN` instead of a KV binding |
+
+### Waitlist storage (`/download`)
+
+The waitlist API needs persistent storage in production. Choose one:
+
+**Option A — Cloudflare KV (recommended)**
+
+```bash
+chmod +x scripts/setup-waitlist-kv.sh
+./scripts/setup-waitlist-kv.sh
+# Add the printed kv_namespaces block to wrangler.jsonc, then:
+npm run deploy
+```
+
+**Option B — Webhook**
+
+Set a Worker secret `WAITLIST_WEBHOOK_URL` in the Cloudflare dashboard. The API POSTs `{ email, locale, createdAt }` as JSON on each signup (works with Formspree, Zapier, etc.).
+
+Without either option configured, the waitlist form returns an error in production.
 
 ## Scripts
 
