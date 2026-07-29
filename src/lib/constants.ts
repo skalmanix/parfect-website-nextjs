@@ -3,6 +3,10 @@ export const SITE_URL =
 
 export const ANDROID_PACKAGE = "com.app.parfect";
 
+/** When true, download buttons link to /download (waitlist) instead of app stores. */
+export const USE_WAITLIST_DOWNLOAD =
+	process.env.NEXT_PUBLIC_USE_WAITLIST_DOWNLOAD !== "false";
+
 export const APP_STORE_URL =
 	process.env.NEXT_PUBLIC_APP_STORE_URL ??
 	"https://apps.apple.com/app/parfect-couples-app";

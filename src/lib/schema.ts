@@ -3,14 +3,23 @@ import type { Locale } from "@/i18n/routing";
 import {
 	APP_STORE_URL,
 	PLAY_STORE_URL,
-	PRIVACY_URL,
 	SITE_URL,
+	USE_WAITLIST_DOWNLOAD,
+	PRIVACY_URL,
 	SUPPORT_URL,
 	TERMS_URL,
 } from "./constants";
+import { DOWNLOAD_PATH } from "./nav";
 
 export async function getOrganizationSchema(locale: Locale) {
 	const t = await getTranslations({ locale, namespace: "Home.schema" });
+
+	const downloadUrls = USE_WAITLIST_DOWNLOAD
+		? [`${SITE_URL}${DOWNLOAD_PATH}`]
+		: [
+				...(APP_STORE_URL.startsWith("http") ? [APP_STORE_URL] : []),
+				...(PLAY_STORE_URL.startsWith("http") ? [PLAY_STORE_URL] : []),
+			];
 
 	return {
 		"@context": "https://schema.org",
@@ -21,14 +30,20 @@ export async function getOrganizationSchema(locale: Locale) {
 		description: t("organizationDescription"),
 		sameAs: [
 			"https://github.com/skalmanix/Parfect",
-			...(APP_STORE_URL.startsWith("http") ? [APP_STORE_URL] : []),
-			...(PLAY_STORE_URL.startsWith("http") ? [PLAY_STORE_URL] : []),
+			...downloadUrls.filter((url) => url.startsWith("http")),
 		],
 	};
 }
 
 export async function getSoftwareApplicationSchema(locale: Locale) {
 	const t = await getTranslations({ locale, namespace: "Home.schema" });
+
+	const downloadUrls = USE_WAITLIST_DOWNLOAD
+		? [`${SITE_URL}${DOWNLOAD_PATH}`]
+		: [
+				...(APP_STORE_URL.startsWith("http") ? [APP_STORE_URL] : []),
+				...(PLAY_STORE_URL.startsWith("http") ? [PLAY_STORE_URL] : []),
+			];
 
 	return {
 		"@context": "https://schema.org",
@@ -42,10 +57,7 @@ export async function getSoftwareApplicationSchema(locale: Locale) {
 			price: "0",
 			priceCurrency: "USD",
 		},
-		downloadUrl: [
-			...(APP_STORE_URL.startsWith("http") ? [APP_STORE_URL] : []),
-			...(PLAY_STORE_URL.startsWith("http") ? [PLAY_STORE_URL] : []),
-		],
+		downloadUrl: downloadUrls,
 		screenshot: `${SITE_URL}/images/hero-home.webp`,
 		url: SITE_URL,
 		author: {
