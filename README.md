@@ -58,29 +58,22 @@ NEXT_PUBLIC_PLAY_STORE_URL=https://play.google.com/store/apps/details?id=com.app
 | `NEXT_PUBLIC_APP_STORE_URL` | Apple App Store listing URL |
 | `NEXT_PUBLIC_PLAY_STORE_URL` | Google Play listing URL |
 | `SUPABASE_URL` | Supabase project URL (default: `https://qzkiwomktytohggmwwjf.supabase.co`) |
-| `SUPABASE_SERVICE_ROLE_KEY` | Supabase service role key for server-side waitlist inserts (secret — never expose to the client) |
+| `SUPABASE_SECRET_KEY` | Supabase secret key (`sb_secret_...`) for server-side waitlist writes |
 
 ### Waitlist storage (`/download`)
 
-Signups are stored in Supabase project **`qzkiwomktytohggmwwjf`**.
+Signups go to Supabase project **`qzkiwomktytohggmwwjf`**.
 
-1. **Apply the migration** (Supabase MCP `apply_migration`, or paste `supabase/migrations/20260729120000_waitlist_signups.sql` in the SQL editor):
+- Preferred: Postgres table `public.waitlist_signups` (apply `supabase/migrations/20260729120000_waitlist_signups.sql`)
+- Fallback: Storage bucket `waitlist` → `signups.json` (used automatically until the table exists)
+- Local dev without keys: `.data/waitlist.json`
 
-```sql
--- creates public.waitlist_signups (email, locale, created_at)
-```
-
-2. **Set the service role key** locally and in production:
+Production secret:
 
 ```bash
-cp .env.example .env.local
-# Add SUPABASE_SERVICE_ROLE_KEY from Supabase → Project Settings → API
-
-npx wrangler secret put SUPABASE_SERVICE_ROLE_KEY
+npx wrangler secret put SUPABASE_SECRET_KEY
 npm run deploy
 ```
-
-Without `SUPABASE_SERVICE_ROLE_KEY`, local dev falls back to `.data/waitlist.json`.
 
 ## Scripts
 
