@@ -46,7 +46,7 @@
 		"build": "npm run bundle-messages && npm run build-image-manifest && next build",
 		"cf-typegen": "wrangler types --env-interface CloudflareEnv env.d.ts",
 		"check": "npm run build && tsc && node scripts/validate-images.mjs",
-		"deploy": "npm run bundle-messages && opennextjs-cloudflare build && node scripts/set-worker-secrets.mjs && opennextjs-cloudflare deploy",
+		"deploy": "npm run bundle-messages && opennextjs-cloudflare build && opennextjs-cloudflare deploy -- --secrets-file $(node scripts/write-worker-secrets.mjs)",
 		"upload": "npm run bundle-messages && opennextjs-cloudflare build && opennextjs-cloudflare upload",
 		"dev": "next dev",
 		"lint": "next lint",
