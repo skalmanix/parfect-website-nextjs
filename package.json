@@ -48,6 +48,7 @@
 		"check": "npm run build && tsc && node scripts/validate-images.mjs",
 		"deploy": "npm run bundle-messages && opennextjs-cloudflare build && opennextjs-cloudflare deploy -- --secrets-file $(node scripts/write-worker-secrets.mjs)",
 		"upload": "npm run bundle-messages && opennextjs-cloudflare build && opennextjs-cloudflare upload",
+		"waitlist:setup": "node scripts/setup-waitlist-table.mjs",
 		"dev": "next dev",
 		"lint": "next lint",
 		"preview": "npm run bundle-messages && opennextjs-cloudflare build && opennextjs-cloudflare preview",

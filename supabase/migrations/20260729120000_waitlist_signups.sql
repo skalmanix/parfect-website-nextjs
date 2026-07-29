@@ -11,4 +11,6 @@ create index if not exists waitlist_signups_created_at_idx
 
 alter table public.waitlist_signups enable row level security;
 
+grant select, insert, update, delete on public.waitlist_signups to service_role;
+
 comment on table public.waitlist_signups is 'Download page waitlist signups from parfect.app';
