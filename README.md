@@ -75,6 +75,17 @@ npx wrangler secret put SUPABASE_SECRET_KEY
 npm run deploy
 ```
 
+Create the Postgres table (one-time):
+
+```bash
+# From Supabase Dashboard → Project Settings → Database
+export SUPABASE_DB_PASSWORD='your-database-password'
+export SUPABASE_SECRET_KEY='sb_secret_...'
+npm run waitlist:setup
+```
+
+Or run the **Setup waitlist Postgres table** GitHub Action after adding `SUPABASE_DB_PASSWORD` and `SUPABASE_SECRET_KEY` repository secrets.
+
 ## Scripts
 
 | Command | Description |
