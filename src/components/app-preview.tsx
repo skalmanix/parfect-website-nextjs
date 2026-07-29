@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import { AppTabs } from "./app-tabs";
 import {
 	ChatScreen,
@@ -9,6 +10,7 @@ import {
 	FantasiesScreen,
 	TogetherScreen,
 } from "./app-screens";
+import { DOWNLOAD_PATH } from "@/lib/nav";
 
 const screenIds = ["chat", "fantasies", "together", "date"] as const;
 const screens = {
@@ -108,15 +110,15 @@ export function AppPreview() {
 							))}
 						</div>
 
-						<a
-							href="#download"
+						<Link
+							href={DOWNLOAD_PATH}
 							className="btn-primary mt-4 inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full text-sm self-start"
 						>
 							{t("cta")}
 							<svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} aria-hidden="true">
 								<path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
 							</svg>
-						</a>
+						</Link>
 					</div>
 
 					<div data-reveal className="order-1 lg:order-2 flex justify-center">
@@ -150,15 +152,15 @@ export function AppPreview() {
 				</div>
 
 				<div className="lg:hidden flex justify-center mt-8">
-					<a
-						href="#download"
+					<Link
+						href={DOWNLOAD_PATH}
 						className="btn-primary inline-flex items-center gap-2 px-6 py-3.5 rounded-full text-sm"
 					>
 						{t("cta")}
 						<svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} aria-hidden="true">
 							<path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
 						</svg>
-					</a>
+					</Link>
 				</div>
 			</div>
 		</section>
