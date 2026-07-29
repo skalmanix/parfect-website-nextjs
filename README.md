@@ -57,23 +57,30 @@ NEXT_PUBLIC_PLAY_STORE_URL=https://play.google.com/store/apps/details?id=com.app
 | `NEXT_PUBLIC_SITE_URL` | Canonical site URL for SEO and sitemap |
 | `NEXT_PUBLIC_APP_STORE_URL` | Apple App Store listing URL |
 | `NEXT_PUBLIC_PLAY_STORE_URL` | Google Play listing URL |
-| `WAITLIST_SERVER_URL` | Production waitlist backend (appends to JSON on that server). Defaults in `wrangler.jsonc` to `https://api.parfect.app/waitlist`. |
-| `WAITLIST_FILE` | Local JSON file path when not using `WAITLIST_SERVER_URL` (default: `.data/waitlist.json`) |
+| `SUPABASE_URL` | Supabase project URL (default: `https://qzkiwomktytohggmwwjf.supabase.co`) |
+| `SUPABASE_SERVICE_ROLE_KEY` | Supabase service role key for server-side waitlist inserts (secret — never expose to the client) |
 
 ### Waitlist storage (`/download`)
 
-Signups are appended to a JSON file.
+Signups are stored in Supabase project **`qzkiwomktytohggmwwjf`**.
 
-- **Local dev:** writes to `.data/waitlist.json` automatically.
-- **Production:** the Cloudflare Worker forwards signups to `WAITLIST_SERVER_URL` (see `wrangler.jsonc`).
+1. **Apply the migration** (Supabase MCP `apply_migration`, or paste `supabase/migrations/20260729120000_waitlist_signups.sql` in the SQL editor):
 
-Run the file-backed API on your server (e.g. Linode behind `api.parfect.app`):
-
-```bash
-WAITLIST_FILE=/var/lib/parfect/waitlist.json node scripts/waitlist-server.mjs
+```sql
+-- creates public.waitlist_signups (email, locale, created_at)
 ```
 
-Proxy `POST /waitlist` on `api.parfect.app` to port `3847`, or set `WAITLIST_SERVER_URL` to wherever the script runs.
+2. **Set the service role key** locally and in production:
+
+```bash
+cp .env.example .env.local
+# Add SUPABASE_SERVICE_ROLE_KEY from Supabase → Project Settings → API
+
+npx wrangler secret put SUPABASE_SERVICE_ROLE_KEY
+npm run deploy
+```
+
+Without `SUPABASE_SERVICE_ROLE_KEY`, local dev falls back to `.data/waitlist.json`.
 
 ## Scripts
 

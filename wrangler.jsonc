@@ -22,7 +22,7 @@
 		"binding": "IMAGES"
 	},
 	"vars": {
-		"WAITLIST_SERVER_URL": "https://api.parfect.app/waitlist"
+		"SUPABASE_URL": "https://qzkiwomktytohggmwwjf.supabase.co"
 	},
 	"observability": {
 		"enabled": true

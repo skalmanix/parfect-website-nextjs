@@ -1,3 +1,8 @@
+import {
+	getSupabaseAdmin,
+	type WaitlistSignupRow,
+} from "@/lib/waitlist/supabase";
+
 export type WaitlistEntry = {
 	email: string;
 	locale: string;
@@ -44,28 +49,33 @@ async function appendToFile(entry: WaitlistEntry): Promise<SaveWaitlistResult> {
 	return "saved";
 }
 
-async function appendViaServer(
-	serverUrl: string,
+async function saveToSupabase(
 	entry: WaitlistEntry,
-): Promise<SaveWaitlistResult> {
-	const response = await fetch(serverUrl, {
-		method: "POST",
-		headers: { "Content-Type": "application/json" },
-		body: JSON.stringify(entry),
-	});
+): Promise<SaveWaitlistResult | null> {
+	const supabase = getSupabaseAdmin();
+	if (!supabase) return null;
 
-	if (response.status === 409) return "duplicate";
-	if (!response.ok) return "unavailable";
-	return "saved";
+	const row = {
+		email: normalizeEmail(entry.email),
+		locale: entry.locale,
+		created_at: entry.createdAt,
+	} satisfies Omit<WaitlistSignupRow, "id">;
+
+	const { error } = await supabase.from("waitlist_signups").insert(row);
+
+	if (!error) return "saved";
+
+	if (error.code === "23505") return "duplicate";
+
+	console.error("waitlist supabase insert failed:", error.message);
+	return "unavailable";
 }
 
 export async function saveWaitlistEntry(
 	entry: WaitlistEntry,
 ): Promise<SaveWaitlistResult> {
-	const serverUrl = process.env.WAITLIST_SERVER_URL?.trim();
-	if (serverUrl) {
-		return appendViaServer(serverUrl, entry);
-	}
+	const supabaseResult = await saveToSupabase(entry);
+	if (supabaseResult) return supabaseResult;
 
 	try {
 		return await appendToFile(entry);
