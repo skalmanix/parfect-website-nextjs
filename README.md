@@ -66,12 +66,17 @@ The waitlist API needs persistent storage in production. Choose one:
 
 **Option A — Cloudflare KV (recommended)**
 
+With the Cloudflare plugin authenticated (or `npx wrangler login` / API token env vars set):
+
 ```bash
 chmod +x scripts/setup-waitlist-kv.sh
 ./scripts/setup-waitlist-kv.sh
-# Add the printed kv_namespaces block to wrangler.jsonc, then:
 npm run deploy
 ```
+
+`scripts/ensure-waitlist-kv.mjs` creates the `WAITLIST` namespace if needed and writes the binding into `wrangler.jsonc`. `npm run deploy` runs this automatically when credentials are available.
+
+**Cloud Agents:** authenticate **Cloudflare-bindings** under [Cursor Dashboard → Integrations & MCP](https://cursor.com/dashboard?tab=integrations) so cloud agents can create the namespace and deploy. Alternatively add GitHub Actions secrets `CLOUDFLARE_ACCOUNT_ID`, `CLOUDFLARE_API_TOKEN`, and optionally `WAITLIST_KV_NAMESPACE_ID`.
 
 **Option B — Webhook**
 
