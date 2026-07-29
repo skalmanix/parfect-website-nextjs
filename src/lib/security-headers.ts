@@ -37,7 +37,7 @@ export const SECURITY_HEADERS = [
 			"frame-src https://www.googletagmanager.com",
 			"frame-ancestors 'none'",
 			"base-uri 'self'",
-			"form-action 'none'",
+			"form-action 'self'",
 			"object-src 'none'",
 		].join("; "),
 	},

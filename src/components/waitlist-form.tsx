@@ -1,16 +1,28 @@
 "use client";
 
 import { useState } from "react";
-import { useTranslations } from "next-intl";
+
+export type WaitlistLabels = {
+	emailLabel: string;
+	emailPlaceholder: string;
+	submit: string;
+	submitting: string;
+	privacyNote: string;
+	successTitle: string;
+	successMessage: string;
+	errorInvalid: string;
+	errorGeneric: string;
+	errorDuplicate: string;
+};
 
 type WaitlistFormProps = {
 	locale: string;
+	labels: WaitlistLabels;
 };
 
 type FormStatus = "idle" | "submitting" | "success" | "error";
 
-export function WaitlistForm({ locale }: WaitlistFormProps) {
-	const t = useTranslations("Download.waitlist");
+export function WaitlistForm({ locale, labels }: WaitlistFormProps) {
 	const [email, setEmail] = useState("");
 	const [status, setStatus] = useState<FormStatus>("idle");
 	const [errorMessage, setErrorMessage] = useState<string | null>(null);
@@ -36,10 +48,10 @@ export function WaitlistForm({ locale }: WaitlistFormProps) {
 				setStatus("error");
 				setErrorMessage(
 					data.error === "invalid"
-						? t("errorInvalid")
+						? labels.errorInvalid
 						: data.error === "duplicate"
-							? t("errorDuplicate")
-							: t("errorGeneric"),
+							? labels.errorDuplicate
+							: labels.errorGeneric,
 				);
 				return;
 			}
@@ -48,7 +60,7 @@ export function WaitlistForm({ locale }: WaitlistFormProps) {
 			setEmail("");
 		} catch {
 			setStatus("error");
-			setErrorMessage(t("errorGeneric"));
+			setErrorMessage(labels.errorGeneric);
 		}
 	}
 
@@ -59,9 +71,9 @@ export function WaitlistForm({ locale }: WaitlistFormProps) {
 				role="status"
 			>
 				<p className="font-display text-xl font-medium mb-2 text-sage">
-					{t("successTitle")}
+					{labels.successTitle}
 				</p>
-				<p className="text-muted leading-relaxed">{t("successMessage")}</p>
+				<p className="text-muted leading-relaxed">{labels.successMessage}</p>
 			</div>
 		);
 	}
@@ -73,7 +85,7 @@ export function WaitlistForm({ locale }: WaitlistFormProps) {
 			noValidate
 		>
 			<label htmlFor="waitlist-email" className="sr-only">
-				{t("emailLabel")}
+				{labels.emailLabel}
 			</label>
 			<div className="flex flex-col sm:flex-row gap-3">
 				<input
@@ -84,7 +96,7 @@ export function WaitlistForm({ locale }: WaitlistFormProps) {
 					required
 					value={email}
 					onChange={(event) => setEmail(event.target.value)}
-					placeholder={t("emailPlaceholder")}
+					placeholder={labels.emailPlaceholder}
 					disabled={status === "submitting"}
 					className="flex-1 rounded-full border border-border/60 bg-surface/80 px-5 py-3.5 text-sm text-foreground placeholder:text-muted-deep focus:outline-none focus:border-primary/50 disabled:opacity-60"
 				/>
@@ -93,10 +105,10 @@ export function WaitlistForm({ locale }: WaitlistFormProps) {
 					disabled={status === "submitting"}
 					className="btn-primary shrink-0 px-6 py-3.5 rounded-full text-sm font-semibold disabled:opacity-60"
 				>
-					{status === "submitting" ? t("submitting") : t("submit")}
+					{status === "submitting" ? labels.submitting : labels.submit}
 				</button>
 			</div>
-			<p className="mt-3 text-xs text-muted-deep">{t("privacyNote")}</p>
+			<p className="mt-3 text-xs text-muted-deep">{labels.privacyNote}</p>
 			{errorMessage ? (
 				<p className="mt-3 text-sm text-rose" role="alert">
 					{errorMessage}

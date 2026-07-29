@@ -5,7 +5,7 @@ import { Link } from "@/i18n/navigation";
 import { Logo } from "@/components/logo";
 import { HomeScreen } from "@/components/app-screens";
 import { AppTabs } from "@/components/app-tabs";
-import { WaitlistForm } from "@/components/waitlist-form";
+import { WaitlistForm, type WaitlistLabels } from "@/components/waitlist-form";
 import { createPageMetadata } from "@/lib/i18n/page-metadata";
 import { PRIVACY_URL, TERMS_URL, SUPPORT_URL } from "@/lib/constants";
 import type { Locale } from "@/i18n/routing";
@@ -31,6 +31,18 @@ export default async function DownloadPage({ params }: Props) {
 	const t = await getTranslations("Download");
 	const year = new Date().getFullYear();
 	const points = t.raw("points") as { title: string; description: string }[];
+	const waitlistLabels: WaitlistLabels = {
+		emailLabel: t("waitlist.emailLabel"),
+		emailPlaceholder: t("waitlist.emailPlaceholder"),
+		submit: t("waitlist.submit"),
+		submitting: t("waitlist.submitting"),
+		privacyNote: t("waitlist.privacyNote"),
+		successTitle: t("waitlist.successTitle"),
+		successMessage: t("waitlist.successMessage"),
+		errorInvalid: t("waitlist.errorInvalid"),
+		errorGeneric: t("waitlist.errorGeneric"),
+		errorDuplicate: t("waitlist.errorDuplicate"),
+	};
 
 	return (
 		<>
@@ -73,7 +85,7 @@ export default async function DownloadPage({ params }: Props) {
 								</p>
 
 								<div className="flex justify-center lg:justify-start">
-									<WaitlistForm locale={locale} />
+									<WaitlistForm locale={locale} labels={waitlistLabels} />
 								</div>
 
 								<ul className="animate-fade-up-delay-3 grid sm:grid-cols-3 gap-4 mt-10 text-left">
