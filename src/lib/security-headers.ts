@@ -1,5 +1,40 @@
 /** Security headers applied to all HTML responses via next.config.ts */
 
+const isDev = process.env.NODE_ENV === "development";
+
+function buildContentSecurityPolicy() {
+	const scriptSrc = [
+		"'self'",
+		"'unsafe-inline'",
+		...(isDev ? ["'unsafe-eval'"] : []),
+		"https://www.googletagmanager.com",
+		"https://www.google-analytics.com",
+	];
+
+	const connectSrc = [
+		"'self'",
+		"https://www.google-analytics.com",
+		"https://www.googletagmanager.com",
+		"https://*.google-analytics.com",
+		"https://*.analytics.google.com",
+		...(isDev ? ["ws:", "wss:", "http://localhost:*", "https://localhost:*"] : []),
+	];
+
+	return [
+		"default-src 'self'",
+		`script-src ${scriptSrc.join(" ")}`,
+		`connect-src ${connectSrc.join(" ")}`,
+		"img-src 'self' data: blob: https:",
+		"style-src 'self' 'unsafe-inline'",
+		"font-src 'self' data:",
+		"frame-src https://www.googletagmanager.com",
+		"frame-ancestors 'none'",
+		"base-uri 'self'",
+		"form-action 'self'",
+		"object-src 'none'",
+	].join("; ");
+}
+
 export const SECURITY_HEADERS = [
 	{
 		key: "Strict-Transport-Security",
@@ -27,18 +62,6 @@ export const SECURITY_HEADERS = [
 	},
 	{
 		key: "Content-Security-Policy",
-		value: [
-			"default-src 'self'",
-			"script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com",
-			"connect-src 'self' https://www.google-analytics.com https://www.googletagmanager.com https://*.google-analytics.com https://*.analytics.google.com",
-			"img-src 'self' data: blob: https:",
-			"style-src 'self' 'unsafe-inline'",
-			"font-src 'self' data:",
-			"frame-src https://www.googletagmanager.com",
-			"frame-ancestors 'none'",
-			"base-uri 'self'",
-			"form-action 'self'",
-			"object-src 'none'",
-		].join("; "),
+		value: buildContentSecurityPolicy(),
 	},
 ] as const;
