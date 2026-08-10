@@ -12,9 +12,9 @@
 		"publish": true
 	},
 	"dependencies": {
-		"@opennextjs/cloudflare": "^1.20.1",
+		"@opennextjs/cloudflare": "^1.20.2",
 		"@supabase/supabase-js": "^2.95.3",
-		"next": "^16.2.6",
+		"next": "^16.3.0",
 		"next-intl": "^4.13.1",
 		"react": "^19.2.6",
 		"react-dom": "^19.2.6"
@@ -26,7 +26,7 @@
 		"@types/react": "19.2.7",
 		"@types/react-dom": "19.2.3",
 		"eslint": "9.39.2",
-		"eslint-config-next": "^16.2.6",
+		"eslint-config-next": "^16.3.0",
 		"tailwindcss": "4.1.17",
 		"typescript": "5.9.3",
 		"wrangler": "4.88.0"
@@ -50,7 +50,7 @@
 		"upload": "npm run bundle-messages && opennextjs-cloudflare build && opennextjs-cloudflare upload",
 		"waitlist:setup": "node scripts/setup-waitlist-table.mjs",
 		"dev": "next dev",
-		"lint": "next lint",
+		"lint": "eslint src scripts",
 		"preview": "npm run bundle-messages && opennextjs-cloudflare build && opennextjs-cloudflare preview",
 		"start": "next start"
 	}
