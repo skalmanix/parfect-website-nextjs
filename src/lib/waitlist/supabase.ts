@@ -5,9 +5,6 @@ export const SUPABASE_PROJECT_ID = "qzkiwomktytohggmwwjf";
 export const DEFAULT_SUPABASE_URL =
 	`https://${SUPABASE_PROJECT_ID}.supabase.co`;
 
-export const WAITLIST_BUCKET = "waitlist";
-export const WAITLIST_STORAGE_PATH = "signups.json";
-
 export type WaitlistSignupRow = {
 	id: string;
 	email: string;

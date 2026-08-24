@@ -62,13 +62,13 @@ NEXT_PUBLIC_PLAY_STORE_URL=https://play.google.com/store/apps/details?id=com.app
 
 ### Waitlist storage (`/download`)
 
-Signups go to Supabase project **`qzkiwomktytohggmwwjf`**.
+Signups go to Supabase project **`qzkiwomktytohggmwwjf`**, table `public.waitlist_signups`.
 
-- Preferred: Postgres table `public.waitlist_signups` (apply `supabase/migrations/20260729120000_waitlist_signups.sql`)
-- Fallback: Storage bucket `waitlist` → `signups.json` (used automatically until the table exists)
+- Production: Postgres only (RLS on, no public Storage file)
 - Local dev without keys: `.data/waitlist.json`
+- `POST /api/waitlist` is rate-limited and accepts only known locales
 
-Production secret:
+Production secret (set once on the Worker, do not commit it):
 
 ```bash
 npx wrangler secret put SUPABASE_SECRET_KEY
