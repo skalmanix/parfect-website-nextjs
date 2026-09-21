@@ -416,44 +416,44 @@
 		"termsLink": "Nutzungsbedingungen"
 	},
 	"Community": {
-		"metaTitle": "Community Guidelines",
-		"metaDescription": "What is allowed on Parfect, how to report a concern, and how we handle abuse. Built for two consenting adults.",
-		"eyebrow": "Legal",
-		"title": "Community Guidelines",
-		"intro": "Parfect is a private space for two consenting adults. These guidelines explain what is allowed, how to report a concern, and what we do when someone breaks the rules.",
-		"updated": "September 21, 2026",
+		"metaTitle": "Community-Richtlinien",
+		"metaDescription": "Was auf Parfect erlaubt ist, wie du ein Problem meldest und wie wir Missbrauch behandeln. Für zwei einwilligende Erwachsene gebaut.",
+		"eyebrow": "Rechtliches",
+		"title": "Community-Richtlinien",
+		"intro": "Parfect ist ein privater Raum für zwei einwilligende Erwachsene. Diese Richtlinien erklären, was erlaubt ist, wie du ein Problem meldest und was wir tun, wenn jemand die Regeln bricht.",
+		"updated": "21. September 2026",
 		"sections": [
 			{
 				"id": "who",
-				"heading": "Who Parfect is for",
+				"heading": "Für wen Parfect ist",
 				"blocks": [
 					{
 						"type": "paragraph",
-						"text": "You must be 18 or older. Pair only with someone you know and trust. Do not create an account for anyone else, and do not pressure someone to pair, stay paired, or share content."
+						"text": "Du musst 18 Jahre oder älter sein. Verbinde dich nur mit jemandem, den du kennst und dem du vertraust. Erstelle kein Konto für jemand anderen und setze niemanden unter Druck, sich zu verbinden, verbunden zu bleiben oder Inhalte zu teilen."
 					}
 				]
 			},
 			{
 				"id": "not-allowed",
-				"heading": "What is not allowed",
+				"heading": "Was nicht erlaubt ist",
 				"blocks": [
 					{
 						"type": "list",
 						"items": [
 							{
-								"text": "Harassment, threats, stalking, or using the app to pressure your partner."
+								"text": "Belästigung, Drohungen, Stalking oder die App zu nutzen, um deinen Partner unter Druck zu setzen."
 							},
 							{
-								"text": "Sharing intimate photos, video, or audio without clear mutual consent."
+								"text": "Intime Fotos, Videos oder Audio ohne klare gegenseitige Einwilligung zu teilen."
 							},
 							{
-								"text": "Illegal content, including any sexual content involving anyone under 18."
+								"text": "Illegale Inhalte, einschließlich aller sexuellen Inhalte, die Minderjährige unter 18 betreffen."
 							},
 							{
-								"text": "Impersonation, fake pairing, or trying to access another person’s account."
+								"text": "Identitätsdiebstahl, gefälschtes Pairing oder der Versuch, auf das Konto einer anderen Person zuzugreifen."
 							},
 							{
-								"text": "Uploading malware, scraping, or attempting to break the service."
+								"text": "Malware hochzuladen, Daten auszulesen oder den Dienst zu knacken."
 							}
 						]
 					}
@@ -461,35 +461,35 @@
 			},
 			{
 				"id": "report",
-				"heading": "How to report",
+				"heading": "So meldest du etwas",
 				"blocks": [
 					{
 						"type": "paragraph",
-						"text": "In the app, go to Settings → Report a concern. Choose a reason, add details if you can, and send the report. You can also unlink your partner from that screen. Reports are stored so we can review them. Your partner is not notified when you report."
+						"text": "In der App gehst du zu Einstellungen → Ein Problem melden. Wähle einen Grund, füge Details hinzu, wenn du kannst, und sende die Meldung. Du kannst deinen Partner auf demselben Bildschirm auch trennen. Meldungen werden gespeichert, damit wir sie prüfen können. Dein Partner wird nicht benachrichtigt, wenn du etwas meldest."
 					},
 					{
 						"type": "paragraph",
-						"text": "You can also email {email}."
+						"text": "Du kannst auch eine E-Mail an {email} senden."
 					}
 				]
 			},
 			{
 				"id": "action",
-				"heading": "What we do",
+				"heading": "Was wir tun",
 				"blocks": [
 					{
 						"type": "paragraph",
-						"text": "We review reports as soon as we can. We may unlink a couple, suspend or delete an account, remove content, or contact you for more information. We may also notify authorities when the law requires it."
+						"text": "Wir prüfen Meldungen so schnell wir können. Wir können ein Paar trennen, ein Konto sperren oder löschen, Inhalte entfernen oder dich um weitere Informationen bitten. Wir können auch Behörden informieren, wenn das Gesetz es verlangt."
 					}
 				]
 			},
 			{
 				"id": "unlink",
-				"heading": "Unlink and deletion",
+				"heading": "Trennen und Löschen",
 				"blocks": [
 					{
 						"type": "paragraph",
-						"text": "You can unlink at any time from Settings. That ends the couple space and removes shared server data. You can delete your account from Settings. Deletion removes your account and associated couple data from our systems."
+						"text": "Du kannst die Verbindung jederzeit in den Einstellungen trennen. Damit endet der Paarraum und gemeinsame Serverdaten werden entfernt. Du kannst dein Konto in den Einstellungen löschen. Die Löschung entfernt dein Konto und zugehörige Paardaten aus unseren Systemen."
 					}
 				]
 			}

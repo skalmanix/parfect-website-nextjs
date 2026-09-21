@@ -416,44 +416,44 @@
 		"termsLink": "Vilkår for bruk"
 	},
 	"Community": {
-		"metaTitle": "Community Guidelines",
-		"metaDescription": "What is allowed on Parfect, how to report a concern, and how we handle abuse. Built for two consenting adults.",
-		"eyebrow": "Legal",
-		"title": "Community Guidelines",
-		"intro": "Parfect is a private space for two consenting adults. These guidelines explain what is allowed, how to report a concern, and what we do when someone breaks the rules.",
-		"updated": "September 21, 2026",
+		"metaTitle": "Fellesskapsretningslinjer",
+		"metaDescription": "Hva som er tillatt på Parfect, hvordan du rapporterer et problem, og hvordan vi håndterer misbruk. Bygget for to samtykkende voksne.",
+		"eyebrow": "Juridisk",
+		"title": "Fellesskapsretningslinjer",
+		"intro": "Parfect er et privat rom for to samtykkende voksne. Disse retningslinjene forklarer hva som er tillatt, hvordan du rapporterer et problem, og hva vi gjør når noen bryter reglene.",
+		"updated": "21. september 2026",
 		"sections": [
 			{
 				"id": "who",
-				"heading": "Who Parfect is for",
+				"heading": "Hvem Parfect er for",
 				"blocks": [
 					{
 						"type": "paragraph",
-						"text": "You must be 18 or older. Pair only with someone you know and trust. Do not create an account for anyone else, and do not pressure someone to pair, stay paired, or share content."
+						"text": "Du må være 18 år eller eldre. Koble bare sammen med noen du kjenner og stoler på. Ikke opprett en konto for noen andre, og ikke press noen til å pare, bli paret eller dele innhold."
 					}
 				]
 			},
 			{
 				"id": "not-allowed",
-				"heading": "What is not allowed",
+				"heading": "Hva som ikke er tillatt",
 				"blocks": [
 					{
 						"type": "list",
 						"items": [
 							{
-								"text": "Harassment, threats, stalking, or using the app to pressure your partner."
+								"text": "Trakassering, trusler, stalking eller å bruke appen til å presse partneren din."
 							},
 							{
-								"text": "Sharing intimate photos, video, or audio without clear mutual consent."
+								"text": "Å dele intime bilder, video eller lyd uten tydelig gjensidig samtykke."
 							},
 							{
-								"text": "Illegal content, including any sexual content involving anyone under 18."
+								"text": "Ulovlig innhold, inkludert alt seksuelt innhold som involverer noen under 18."
 							},
 							{
-								"text": "Impersonation, fake pairing, or trying to access another person’s account."
+								"text": "Etterligning, falsk paring eller forsøk på å få tilgang til en annens konto."
 							},
 							{
-								"text": "Uploading malware, scraping, or attempting to break the service."
+								"text": "Å laste opp skadelig programvare, skrape data eller forsøke å knekke tjenesten."
 							}
 						]
 					}
@@ -461,35 +461,35 @@
 			},
 			{
 				"id": "report",
-				"heading": "How to report",
+				"heading": "Slik rapporterer du",
 				"blocks": [
 					{
 						"type": "paragraph",
-						"text": "In the app, go to Settings → Report a concern. Choose a reason, add details if you can, and send the report. You can also unlink your partner from that screen. Reports are stored so we can review them. Your partner is not notified when you report."
+						"text": "I appen går du til Innstillinger → Rapporter et problem. Velg en årsak, legg til detaljer hvis du kan, og send rapporten. Du kan også koble fra partneren din fra den skjermen. Rapporter lagres slik at vi kan gjennomgå dem. Partneren din varsles ikke når du rapporterer."
 					},
 					{
 						"type": "paragraph",
-						"text": "You can also email {email}."
+						"text": "Du kan også sende e-post til {email}."
 					}
 				]
 			},
 			{
 				"id": "action",
-				"heading": "What we do",
+				"heading": "Hva vi gjør",
 				"blocks": [
 					{
 						"type": "paragraph",
-						"text": "We review reports as soon as we can. We may unlink a couple, suspend or delete an account, remove content, or contact you for more information. We may also notify authorities when the law requires it."
+						"text": "Vi gjennomgår rapporter så snart vi kan. Vi kan koble fra et par, suspendere eller slette en konto, fjerne innhold eller kontakte deg for mer informasjon. Vi kan også varsle myndighetene når loven krever det."
 					}
 				]
 			},
 			{
 				"id": "unlink",
-				"heading": "Unlink and deletion",
+				"heading": "Koble fra og sletting",
 				"blocks": [
 					{
 						"type": "paragraph",
-						"text": "You can unlink at any time from Settings. That ends the couple space and removes shared server data. You can delete your account from Settings. Deletion removes your account and associated couple data from our systems."
+						"text": "Du kan koble fra når som helst fra Innstillinger. Det avslutter parrommet og fjerner delt serverdata. Du kan slette kontoen din fra Innstillinger. Sletting fjerner kontoen din og tilhørende pardata fra systemene våre."
 					}
 				]
 			}

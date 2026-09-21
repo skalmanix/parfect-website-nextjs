@@ -416,44 +416,44 @@
 		"termsLink": "Användarvillkor"
 	},
 	"Community": {
-		"metaTitle": "Community Guidelines",
-		"metaDescription": "What is allowed on Parfect, how to report a concern, and how we handle abuse. Built for two consenting adults.",
-		"eyebrow": "Legal",
-		"title": "Community Guidelines",
-		"intro": "Parfect is a private space for two consenting adults. These guidelines explain what is allowed, how to report a concern, and what we do when someone breaks the rules.",
-		"updated": "September 21, 2026",
+		"metaTitle": "Riktlinjer för communityn",
+		"metaDescription": "Vad som är tillåtet på Parfect, hur du anmäler ett problem och hur vi hanterar missbruk. Byggt för två samtyckande vuxna.",
+		"eyebrow": "Juridiskt",
+		"title": "Riktlinjer för communityn",
+		"intro": "Parfect är ett privat rum för två samtyckande vuxna. De här riktlinjerna förklarar vad som är tillåtet, hur du anmäler ett problem och vad vi gör när någon bryter mot reglerna.",
+		"updated": "21 september 2026",
 		"sections": [
 			{
 				"id": "who",
-				"heading": "Who Parfect is for",
+				"heading": "Vem Parfect är till för",
 				"blocks": [
 					{
 						"type": "paragraph",
-						"text": "You must be 18 or older. Pair only with someone you know and trust. Do not create an account for anyone else, and do not pressure someone to pair, stay paired, or share content."
+						"text": "Du måste vara 18 år eller äldre. Koppla bara ihop dig med någon du känner och litar på. Skapa inte ett konto åt någon annan, och pressa inte någon att para ihop sig, stanna ihopkopplad eller dela innehåll."
 					}
 				]
 			},
 			{
 				"id": "not-allowed",
-				"heading": "What is not allowed",
+				"heading": "Vad som inte är tillåtet",
 				"blocks": [
 					{
 						"type": "list",
 						"items": [
 							{
-								"text": "Harassment, threats, stalking, or using the app to pressure your partner."
+								"text": "Trakasserier, hot, stalkning eller att använda appen för att pressa din partner."
 							},
 							{
-								"text": "Sharing intimate photos, video, or audio without clear mutual consent."
+								"text": "Att dela intima foton, video eller ljud utan tydligt ömsesidigt samtycke."
 							},
 							{
-								"text": "Illegal content, including any sexual content involving anyone under 18."
+								"text": "Olagligt innehåll, inklusive allt sexuellt innehåll som rör någon under 18."
 							},
 							{
-								"text": "Impersonation, fake pairing, or trying to access another person’s account."
+								"text": "Efterlikning, falsk parkoppling eller försök att komma åt någon annans konto."
 							},
 							{
-								"text": "Uploading malware, scraping, or attempting to break the service."
+								"text": "Att ladda upp skadlig kod, skrapa data eller försöka knäcka tjänsten."
 							}
 						]
 					}
@@ -461,35 +461,35 @@
 			},
 			{
 				"id": "report",
-				"heading": "How to report",
+				"heading": "Hur du anmäler",
 				"blocks": [
 					{
 						"type": "paragraph",
-						"text": "In the app, go to Settings → Report a concern. Choose a reason, add details if you can, and send the report. You can also unlink your partner from that screen. Reports are stored so we can review them. Your partner is not notified when you report."
+						"text": "I appen går du till Inställningar → Anmäl ett problem. Välj en anledning, lägg till detaljer om du kan och skicka anmälan. Du kan också koppla bort din partner från den skärmen. Anmälningar sparas så att vi kan granska dem. Din partner meddelas inte när du anmäler."
 					},
 					{
 						"type": "paragraph",
-						"text": "You can also email {email}."
+						"text": "Du kan också mejla {email}."
 					}
 				]
 			},
 			{
 				"id": "action",
-				"heading": "What we do",
+				"heading": "Vad vi gör",
 				"blocks": [
 					{
 						"type": "paragraph",
-						"text": "We review reports as soon as we can. We may unlink a couple, suspend or delete an account, remove content, or contact you for more information. We may also notify authorities when the law requires it."
+						"text": "Vi granskar anmälningar så snart vi kan. Vi kan koppla isär ett par, stänga av eller radera ett konto, ta bort innehåll eller kontakta dig för mer information. Vi kan också underrätta myndigheter när lagen kräver det."
 					}
 				]
 			},
 			{
 				"id": "unlink",
-				"heading": "Unlink and deletion",
+				"heading": "Koppla isär och radering",
 				"blocks": [
 					{
 						"type": "paragraph",
-						"text": "You can unlink at any time from Settings. That ends the couple space and removes shared server data. You can delete your account from Settings. Deletion removes your account and associated couple data from our systems."
+						"text": "Du kan koppla isär när som helst från Inställningar. Det avslutar parrummet och tar bort delad serverdata. Du kan radera ditt konto från Inställningar. Radering tar bort ditt konto och tillhörande pardata från våra system."
 					}
 				]
 			}
