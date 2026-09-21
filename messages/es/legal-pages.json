@@ -48,6 +48,10 @@
 								"text": "— solo si activas las notificaciones."
 							},
 							{
+								"strong": "Contactos y canguros",
+								"text": "— si buscas un contacto al añadir un canguro, y el nombre y teléfono que guardes para que tu pareja pueda verlos."
+							},
+							{
 								"strong": "Registros técnicos",
 								"text": "— el mínimo necesario para operar, asegurar y depurar el servicio."
 							}
@@ -166,7 +170,7 @@
 								"text": "Los datos de la cuenta y sincronizados se conservan mientras tu cuenta esté activa."
 							},
 							{
-								"text": "Cuando desvinculas o eliminas tu cuenta, eliminamos los datos compartidos, mensajes y medios de vuestra pareja de nuestros servidores."
+								"text": "Cuando desvinculas o eliminas tu cuenta, eliminamos los datos compartidos, mensajes, canguros y medios de vuestra pareja de nuestros servidores. Los informes de seguridad se conservan solo de forma anonimizada (motivo y fecha, sin nombre, ids ni texto libre)."
 							},
 							{
 								"text": "Los registros técnicos se conservan durante un período limitado por seguridad y operaciones, y luego se eliminan."

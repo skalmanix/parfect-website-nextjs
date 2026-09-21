@@ -5,7 +5,7 @@
 		"eyebrow": "Legal",
 		"title": "Privacy Policy",
 		"intro": "Parfect is a private app for two. This policy explains — in plain language — what we collect, why we collect it, how long we keep it, and the rights you have over your data.",
-		"updated": "July 6, 2026",
+		"updated": "September 21, 2026",
 		"sections": [
 			{
 				"id": "controller",
@@ -46,6 +46,10 @@
 							{
 								"strong": "Push tokens",
 								"text": "— only if you enable notifications."
+							},
+							{
+								"strong": "Contacts and sitters",
+								"text": "— if you look up a contact when adding a babysitter, and any sitter name and phone number you save so your partner can see them."
 							},
 							{
 								"strong": "Technical logs",
@@ -166,7 +170,7 @@
 								"text": "Account and synced data are kept while your account is active."
 							},
 							{
-								"text": "When you unlink or delete your account, we remove your couple's shared data, messages, and media from our servers."
+								"text": "When you unlink or delete your account, we remove your couple's shared data, messages, sitters, and media from our servers. Safety reports are kept only in anonymized form (reason and time, without your name, ids, or free-text details)."
 							},
 							{
 								"text": "Technical logs are retained for a limited period for security and operations, then deleted."

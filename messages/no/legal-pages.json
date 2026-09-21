@@ -48,6 +48,10 @@
 								"text": "— kun hvis du aktiverer varsler."
 							},
 							{
+								"strong": "Kontakter og barnevakter",
+								"text": "— hvis du slår opp en kontakt når du legger til en barnevakt, og eventuelt navn og telefonnummer du lagrer slik at partneren din kan se dem."
+							},
+							{
 								"strong": "Tekniske logger",
 								"text": "— det minimum som trengs for å drive, sikre og feilsøke tjenesten."
 							}
@@ -166,7 +170,7 @@
 								"text": "Konto- og synkroniserte data beholdes så lenge kontoen din er aktiv."
 							},
 							{
-								"text": "Når du kobler fra eller sletter kontoen din, fjerner vi parets delte data, meldinger og media fra våre servere."
+								"text": "Når du kobler fra eller sletter kontoen din, fjerner vi parets delte data, meldinger, barnevakter og media fra våre servere. Sikkerhetsrapporter beholdes bare i anonymisert form (årsak og tid, uten navn, id eller frittekst)."
 							},
 							{
 								"text": "Tekniske logger beholdes i en begrenset periode for sikkerhet og drift, og slettes deretter."

@@ -48,6 +48,10 @@
 								"text": "— nur wenn du Benachrichtigungen aktivierst."
 							},
 							{
+								"strong": "Kontakte und Babysitter",
+								"text": "— wenn du beim Hinzufügen eines Babysitters einen Kontakt suchst, sowie Name und Telefonnummer, die du speicherst, damit dein Partner sie sehen kann."
+							},
+							{
 								"strong": "Technische Protokolle",
 								"text": "— das Minimum, das zum Betreiben, Absichern und Debuggen des Dienstes nötig ist."
 							}
@@ -166,7 +170,7 @@
 								"text": "Konto- und synchronisierte Daten werden aufbewahrt, solange dein Konto aktiv ist."
 							},
 							{
-								"text": "Wenn du die Verbindung trennst oder dein Konto löschst, entfernen wir die gemeinsamen Daten, Nachrichten und Medien eures Paares von unseren Servern."
+								"text": "Wenn du die Verbindung trennst oder dein Konto löschst, entfernen wir die gemeinsamen Daten, Nachrichten, Babysitter und Medien eures Paares von unseren Servern. Sicherheitsmeldungen bleiben nur anonymisiert erhalten (Grund und Zeitpunkt, ohne Namen, IDs oder Freitext)."
 							},
 							{
 								"text": "Technische Protokolle werden für einen begrenzten Zeitraum aus Sicherheits- und Betriebsgründen aufbewahrt und dann gelöscht."

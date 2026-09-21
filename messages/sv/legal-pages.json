@@ -5,7 +5,7 @@
 		"eyebrow": "Juridiskt",
 		"title": "Integritetspolicy",
 		"intro": "Parfect är en privat app för två. Den här policyn förklarar — på klarspråk — vad vi samlar in, varför vi gör det, hur länge vi sparar det och vilka rättigheter du har över dina uppgifter.",
-		"updated": "6 juli 2026",
+		"updated": "21 september 2026",
 		"sections": [
 			{
 				"id": "controller",
@@ -46,6 +46,10 @@
 							{
 								"strong": "Push-token",
 								"text": "— endast om du aktiverar notiser."
+							},
+							{
+								"strong": "Kontakter och barnvakter",
+								"text": "— om du slår upp en kontakt när du lägger till en barnvakt, och eventuellt namn och telefonnummer du sparar så att din partner kan se dem."
 							},
 							{
 								"strong": "Tekniska loggar",
@@ -166,7 +170,7 @@
 								"text": "Konto- och synkad data sparas så länge ditt konto är aktivt."
 							},
 							{
-								"text": "När du kopplar bort eller raderar ditt konto tar vi bort ert pars delade data, meddelanden och media från våra servrar."
+								"text": "När du kopplar bort eller raderar ditt konto tar vi bort ert pars delade data, meddelanden, barnvakter och media från våra servrar. Säkerhetsrapporter sparas bara i anonymiserad form (orsak och tid, utan namn, id eller fritext)."
 							},
 							{
 								"text": "Tekniska loggar sparas under en begränsad period för säkerhet och drift, och raderas sedan."

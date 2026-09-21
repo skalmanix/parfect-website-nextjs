@@ -48,6 +48,10 @@
 								"text": "— kun hvis du aktiverer notifikationer."
 							},
 							{
+								"strong": "Kontakter og babysittere",
+								"text": "— hvis du slår en kontakt op, når du tilføjer en babysitter, og eventuelt navn og telefonnummer, du gemmer, så din partner kan se dem."
+							},
+							{
 								"strong": "Tekniske logfiler",
 								"text": "— det minimum, der er nødvendigt for at drive, sikre og fejlfinde tjenesten."
 							}
@@ -166,7 +170,7 @@
 								"text": "Konto- og synkroniserede data opbevares, så længe din konto er aktiv."
 							},
 							{
-								"text": "Når du afkobler eller sletter din konto, fjerner vi jeres pars delte data, beskeder og medier fra vores servere."
+								"text": "Når du afkobler eller sletter din konto, fjerner vi jeres pars delte data, beskeder, babysittere og medier fra vores servere. Sikkerhedsrapporter gemmes kun i anonymiseret form (årsag og tid, uden navn, id eller fritekst)."
 							},
 							{
 								"text": "Tekniske logfiler opbevares i en begrænset periode af sikkerheds- og driftshensyn og slettes derefter."
