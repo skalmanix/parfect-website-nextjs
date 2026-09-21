@@ -14,7 +14,9 @@
 					{
 						"type": "paragraph",
 						"text": "Parfect driver Parfect-appen och API:et på api.parfect.app och är personuppgiftsansvarig för personuppgifter som behandlas via dem. För allt som rör integritet, kontakta oss på {email}.",
-						"strong": ["api.parfect.app"]
+						"strong": [
+							"api.parfect.app"
+						]
 					}
 				]
 			},
@@ -25,12 +27,30 @@
 					{
 						"type": "list",
 						"items": [
-							{ "strong": "Kontoinformation", "text": "— din e-postadress, visningsnamn och ett lösenordshash. Vi lagrar aldrig ditt lösenord i klartext." },
-							{ "strong": "Paruppgifter", "text": "— kopplingsinformation, profilinställningar och tidsstämplar för samtycke." },
-							{ "strong": "Innehåll du synkar", "text": "— meddelanden, fantasier, kalenderhändelser, delade listor och metadata för media, så att ni båda kan komma åt dem på alla enheter." },
-							{ "strong": "Delat media", "text": "— foton, videor och ljud du delar i chatten, lagrade på våra servrar." },
-							{ "strong": "Push-token", "text": "— endast om du aktiverar notiser." },
-							{ "strong": "Tekniska loggar", "text": "— det minsta som behövs för att driva, säkra och felsöka tjänsten." }
+							{
+								"strong": "Kontoinformation",
+								"text": "— din e-postadress, visningsnamn och ett lösenordshash. Vi lagrar aldrig ditt lösenord i klartext."
+							},
+							{
+								"strong": "Paruppgifter",
+								"text": "— kopplingsinformation, profilinställningar och tidsstämplar för samtycke."
+							},
+							{
+								"strong": "Innehåll du synkar",
+								"text": "— meddelanden, fantasier, kalenderhändelser, delade listor och metadata för media, så att ni båda kan komma åt dem på alla enheter."
+							},
+							{
+								"strong": "Delat media",
+								"text": "— foton, videor och ljud du delar i chatten, lagrade på våra servrar."
+							},
+							{
+								"strong": "Push-token",
+								"text": "— endast om du aktiverar notiser."
+							},
+							{
+								"strong": "Tekniska loggar",
+								"text": "— det minsta som behövs för att driva, säkra och felsöka tjänsten."
+							}
 						]
 					}
 				]
@@ -56,7 +76,9 @@
 					{
 						"type": "paragraph",
 						"text": "Chattmeddelanden kan krypteras på din enhet innan de skickas. När end-to-end-kryptering är aktiverad kan Parfect inte läsa innehållet i dessa meddelanden. Mediafiler och annan delad appdata lagras på våra servrar så att båda partners kan komma åt dem.",
-						"strong": ["Parfect kan inte läsa innehållet i dessa meddelanden"]
+						"strong": [
+							"Parfect kan inte läsa innehållet i dessa meddelanden"
+						]
 					}
 				]
 			},
@@ -67,9 +89,15 @@
 					{
 						"type": "list",
 						"items": [
-							{ "text": "För att autentisera dig och synka data mellan dina enheter och din partner." },
-							{ "text": "För att leverera realtidsuppdateringar och valfria pushnotiser — som aldrig innehåller meddelandeinnehåll." },
-							{ "text": "För att underhålla, säkra och förbättra tjänsten." }
+							{
+								"text": "För att autentisera dig och synka data mellan dina enheter och din partner."
+							},
+							{
+								"text": "För att leverera realtidsuppdateringar och valfria pushnotiser — som aldrig innehåller meddelandeinnehåll."
+							},
+							{
+								"text": "För att underhålla, säkra och förbättra tjänsten."
+							}
 						]
 					}
 				]
@@ -81,10 +109,29 @@
 					{
 						"type": "list",
 						"items": [
-							{ "strong": "Avtal", "text": "— för att tillhandahålla appen, synka data mellan dig och din partner och autentisera dig." },
-							{ "strong": "Samtycke", "text": "— för valfria notiser, säkerhetssamtycke efter koppling och 18+-bekräftelse." },
-							{ "strong": "Berättigat intresse", "text": "— för att säkra tjänsten, förebygga missbruk och förbättra tillförlitligheten." }
+							{
+								"strong": "Avtal",
+								"text": "— för att tillhandahålla appen, synka data mellan dig och din partner och autentisera dig."
+							},
+							{
+								"strong": "Samtycke",
+								"text": "— för valfria notiser, säkerhetssamtycke efter koppling, 18+-bekräftelse och uttryckligt samtycke att lagra intim data (humör, check-in och fantasier) enligt GDPR artikel 9."
+							},
+							{
+								"strong": "Berättigat intresse",
+								"text": "— för att säkra tjänsten, förebygga missbruk och förbättra tillförlitligheten."
+							}
 						]
+					}
+				]
+			},
+			{
+				"id": "special-category",
+				"heading": "Special category data (GDPR Article 9)",
+				"blocks": [
+					{
+						"type": "paragraph",
+						"text": "Mood, weekly check-ins, and fantasies can reveal intimate details about your relationship. We only store this after you give explicit consent in the app, so you and your partner can use those features. You can withdraw consent by deleting your account."
 					}
 				]
 			},
@@ -115,9 +162,15 @@
 					{
 						"type": "list",
 						"items": [
-							{ "text": "Konto- och synkad data sparas så länge ditt konto är aktivt." },
-							{ "text": "När du kopplar bort eller raderar ditt konto tar vi bort ert pars delade data, meddelanden och media från våra servrar." },
-							{ "text": "Tekniska loggar sparas under en begränsad period för säkerhet och drift, och raderas sedan." }
+							{
+								"text": "Konto- och synkad data sparas så länge ditt konto är aktivt."
+							},
+							{
+								"text": "När du kopplar bort eller raderar ditt konto tar vi bort ert pars delade data, meddelanden och media från våra servrar."
+							},
+							{
+								"text": "Tekniska loggar sparas under en begränsad period för säkerhet och drift, och raderas sedan."
+							}
 						]
 					}
 				]
@@ -126,15 +179,28 @@
 				"id": "your-rights",
 				"heading": "Dina rättigheter",
 				"blocks": [
-					{ "type": "paragraph", "text": "Beroende på var du befinner dig kan du ha rätt att:" },
+					{
+						"type": "paragraph",
+						"text": "Beroende på var du befinner dig kan du ha rätt att:"
+					},
 					{
 						"type": "list",
 						"items": [
-							{ "text": "Få tillgång till, rätta eller radera dina personuppgifter." },
-							{ "text": "Exportera dina uppgifter — kontakta {email}." },
-							{ "text": "Invända mot eller begränsa viss behandling." },
-							{ "text": "Återkalla samtycke där behandlingen bygger på samtycke." },
-							{ "text": "Lämna in ett klagomål till din lokala dataskyddsmyndighet." }
+							{
+								"text": "Få tillgång till, rätta eller radera dina personuppgifter."
+							},
+							{
+								"text": "Exportera dina uppgifter — kontakta {email}."
+							},
+							{
+								"text": "Invända mot eller begränsa viss behandling."
+							},
+							{
+								"text": "Återkalla samtycke där behandlingen bygger på samtycke."
+							},
+							{
+								"text": "Lämna in ett klagomål till din lokala dataskyddsmyndighet."
+							}
 						]
 					}
 				]
@@ -146,7 +212,9 @@
 					{
 						"type": "paragraph",
 						"text": "Du kan radera ditt konto i appen under Inställningar → Konto → Radera konto. Detta tar permanent bort ditt konto och tillhörande paruppgifter från våra servrar. Du kan också mejla {email} så ordnar vi det.",
-						"strong": ["Inställningar → Konto → Radera konto"]
+						"strong": [
+							"Inställningar → Konto → Radera konto"
+						]
 					}
 				]
 			},
@@ -157,7 +225,9 @@
 					{
 						"type": "paragraph",
 						"text": "Om du har en säkerhetsfråga, använd Inställningar → Rapportera ett problem i appen eller mejla {email}. Du kan koppla bort från din partner när som helst via Inställningar.",
-						"strong": ["Inställningar → Rapportera ett problem"]
+						"strong": [
+							"Inställningar → Rapportera ett problem"
+						]
 					}
 				]
 			},
@@ -188,7 +258,9 @@
 					{
 						"type": "paragraph",
 						"text": "Parfect är för vuxna som är 18 år eller äldre. Genom att använda appen bekräftar du att du uppfyller detta krav.",
-						"strong": ["18 år eller äldre"]
+						"strong": [
+							"18 år eller äldre"
+						]
 					}
 				]
 			},
@@ -199,7 +271,9 @@
 					{
 						"type": "paragraph",
 						"text": "Du ansvarar för att hålla dina inloggningsuppgifter säkra och för aktivitet som sker på ditt konto. Du kan radera ditt konto när som helst via Inställningar → Konto → Radera konto.",
-						"strong": ["Inställningar → Konto → Radera konto"]
+						"strong": [
+							"Inställningar → Konto → Radera konto"
+						]
 					}
 				]
 			},
@@ -207,24 +281,37 @@
 				"id": "acceptable-use",
 				"heading": "Acceptabel användning och innehåll",
 				"blocks": [
-					{ "type": "paragraph", "text": "Du godkänner att inte:" },
+					{
+						"type": "paragraph",
+						"text": "Du godkänner att inte:"
+					},
 					{
 						"type": "list",
 						"items": [
-							{ "text": "Missbruka tjänsten eller försöka kompromettera plattformen." },
-							{ "text": "Trakassera, hota eller skada andra." },
-							{ "text": "Ladda upp eller dela olagligt innehåll." }
+							{
+								"text": "Missbruka tjänsten eller försöka kompromettera plattformen."
+							},
+							{
+								"text": "Trakassera, hota eller skada andra."
+							},
+							{
+								"text": "Ladda upp eller dela olagligt innehåll."
+							}
 						]
 					},
 					{
 						"type": "paragraph",
 						"text": "Du ansvarar för innehållet du delar med din kopplade partner. Dela aldrig intimt media eller meddelanden utan ömsesidigt samtycke. Vi kan stänga av konton som bryter mot dessa villkor eller tillämplig lag.",
-						"strong": ["Dela aldrig intimt media eller meddelanden utan ömsesidigt samtycke."]
+						"strong": [
+							"Dela aldrig intimt media eller meddelanden utan ömsesidigt samtycke."
+						]
 					},
 					{
 						"type": "callout",
 						"text": "Om något känns fel, rapportera det. Använd Inställningar → Rapportera ett problem i appen eller mejla {email}. Vi tar säkerhetsrapporter på allvar.",
-						"strong": ["Inställningar → Rapportera ett problem"]
+						"strong": [
+							"Inställningar → Rapportera ett problem"
+						]
 					}
 				]
 			},
@@ -327,5 +414,85 @@
 		"moreTextEnd": ".",
 		"privacyLink": "Integritetspolicy",
 		"termsLink": "Användarvillkor"
+	},
+	"Community": {
+		"metaTitle": "Community Guidelines",
+		"metaDescription": "What is allowed on Parfect, how to report a concern, and how we handle abuse. Built for two consenting adults.",
+		"eyebrow": "Legal",
+		"title": "Community Guidelines",
+		"intro": "Parfect is a private space for two consenting adults. These guidelines explain what is allowed, how to report a concern, and what we do when someone breaks the rules.",
+		"updated": "September 21, 2026",
+		"sections": [
+			{
+				"id": "who",
+				"heading": "Who Parfect is for",
+				"blocks": [
+					{
+						"type": "paragraph",
+						"text": "You must be 18 or older. Pair only with someone you know and trust. Do not create an account for anyone else, and do not pressure someone to pair, stay paired, or share content."
+					}
+				]
+			},
+			{
+				"id": "not-allowed",
+				"heading": "What is not allowed",
+				"blocks": [
+					{
+						"type": "list",
+						"items": [
+							{
+								"text": "Harassment, threats, stalking, or using the app to pressure your partner."
+							},
+							{
+								"text": "Sharing intimate photos, video, or audio without clear mutual consent."
+							},
+							{
+								"text": "Illegal content, including any sexual content involving anyone under 18."
+							},
+							{
+								"text": "Impersonation, fake pairing, or trying to access another person’s account."
+							},
+							{
+								"text": "Uploading malware, scraping, or attempting to break the service."
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": "report",
+				"heading": "How to report",
+				"blocks": [
+					{
+						"type": "paragraph",
+						"text": "In the app, go to Settings → Report a concern. Choose a reason, add details if you can, and send the report. You can also unlink your partner from that screen. Reports are stored so we can review them. Your partner is not notified when you report."
+					},
+					{
+						"type": "paragraph",
+						"text": "You can also email {email}."
+					}
+				]
+			},
+			{
+				"id": "action",
+				"heading": "What we do",
+				"blocks": [
+					{
+						"type": "paragraph",
+						"text": "We review reports as soon as we can. We may unlink a couple, suspend or delete an account, remove content, or contact you for more information. We may also notify authorities when the law requires it."
+					}
+				]
+			},
+			{
+				"id": "unlink",
+				"heading": "Unlink and deletion",
+				"blocks": [
+					{
+						"type": "paragraph",
+						"text": "You can unlink at any time from Settings. That ends the couple space and removes shared server data. You can delete your account from Settings. Deletion removes your account and associated couple data from our systems."
+					}
+				]
+			}
+		]
 	}
 }

@@ -14,7 +14,9 @@
 					{
 						"type": "paragraph",
 						"text": "Parfect betreibt die Parfect-App und die API unter api.parfect.app und ist der Verantwortliche für personenbezogene Daten, die über sie verarbeitet werden. Bei allen Datenschutzfragen erreichst du uns unter {email}.",
-						"strong": ["api.parfect.app"]
+						"strong": [
+							"api.parfect.app"
+						]
 					}
 				]
 			},
@@ -25,12 +27,30 @@
 					{
 						"type": "list",
 						"items": [
-							{ "strong": "Kontoinformationen", "text": "— deine E-Mail-Adresse, Anzeigename und ein Passwort-Hash. Wir speichern dein Passwort niemals im Klartext." },
-							{ "strong": "Paar-Daten", "text": "— Verbindungsinformationen, Profileinstellungen und Einwilligungszeitstempel." },
-							{ "strong": "Inhalte, die du synchronisierst", "text": "— Nachrichten, Fantasien, Kalenderereignisse, gemeinsame Listen und Medien-Metadaten, damit ihr beide auf allen Geräten darauf zugreifen könnt." },
-							{ "strong": "Geteilte Medien", "text": "— Fotos, Videos und Audio, die du im Chat teilst, gespeichert auf unseren Servern." },
-							{ "strong": "Push-Token", "text": "— nur wenn du Benachrichtigungen aktivierst." },
-							{ "strong": "Technische Protokolle", "text": "— das Minimum, das zum Betreiben, Absichern und Debuggen des Dienstes nötig ist." }
+							{
+								"strong": "Kontoinformationen",
+								"text": "— deine E-Mail-Adresse, Anzeigename und ein Passwort-Hash. Wir speichern dein Passwort niemals im Klartext."
+							},
+							{
+								"strong": "Paar-Daten",
+								"text": "— Verbindungsinformationen, Profileinstellungen und Einwilligungszeitstempel."
+							},
+							{
+								"strong": "Inhalte, die du synchronisierst",
+								"text": "— Nachrichten, Fantasien, Kalenderereignisse, gemeinsame Listen und Medien-Metadaten, damit ihr beide auf allen Geräten darauf zugreifen könnt."
+							},
+							{
+								"strong": "Geteilte Medien",
+								"text": "— Fotos, Videos und Audio, die du im Chat teilst, gespeichert auf unseren Servern."
+							},
+							{
+								"strong": "Push-Token",
+								"text": "— nur wenn du Benachrichtigungen aktivierst."
+							},
+							{
+								"strong": "Technische Protokolle",
+								"text": "— das Minimum, das zum Betreiben, Absichern und Debuggen des Dienstes nötig ist."
+							}
 						]
 					}
 				]
@@ -56,7 +76,9 @@
 					{
 						"type": "paragraph",
 						"text": "Chat-Nachrichtentext kann auf deinem Gerät verschlüsselt werden, bevor er gesendet wird. Wenn die Ende-zu-Ende-Verschlüsselung aktiviert ist, kann Parfect den Inhalt dieser Nachrichten nicht lesen. Mediendateien und andere geteilte App-Daten werden auf unseren Servern gespeichert, damit beide Partner darauf zugreifen können.",
-						"strong": ["Parfect kann den Inhalt dieser Nachrichten nicht lesen"]
+						"strong": [
+							"Parfect kann den Inhalt dieser Nachrichten nicht lesen"
+						]
 					}
 				]
 			},
@@ -67,9 +89,15 @@
 					{
 						"type": "list",
 						"items": [
-							{ "text": "Um dich zu authentifizieren und Daten zwischen deinen Geräten und deinem Partner zu synchronisieren." },
-							{ "text": "Um Echtzeit-Updates und optionale Push-Benachrichtigungen zu liefern — die niemals Nachrichteninhalte enthalten." },
-							{ "text": "Um den Dienst zu warten, abzusichern und zu verbessern." }
+							{
+								"text": "Um dich zu authentifizieren und Daten zwischen deinen Geräten und deinem Partner zu synchronisieren."
+							},
+							{
+								"text": "Um Echtzeit-Updates und optionale Push-Benachrichtigungen zu liefern — die niemals Nachrichteninhalte enthalten."
+							},
+							{
+								"text": "Um den Dienst zu warten, abzusichern und zu verbessern."
+							}
 						]
 					}
 				]
@@ -81,10 +109,29 @@
 					{
 						"type": "list",
 						"items": [
-							{ "strong": "Vertrag", "text": "— um die App bereitzustellen, Daten zwischen dir und deinem Partner zu synchronisieren und dich zu authentifizieren." },
-							{ "strong": "Einwilligung", "text": "— für optionale Benachrichtigungen, Sicherheitseinwilligung nach der Verbindung und 18+-Bestätigung." },
-							{ "strong": "Berechtigte Interessen", "text": "— um den Dienst abzusichern, Missbrauch zu verhindern und die Zuverlässigkeit zu verbessern." }
+							{
+								"strong": "Vertrag",
+								"text": "— um die App bereitzustellen, Daten zwischen dir und deinem Partner zu synchronisieren und dich zu authentifizieren."
+							},
+							{
+								"strong": "Einwilligung",
+								"text": "— für optionale Benachrichtigungen, Sicherheitseinwilligung nach der Verbindung und 18+-Bestätigung."
+							},
+							{
+								"strong": "Berechtigte Interessen",
+								"text": "— um den Dienst abzusichern, Missbrauch zu verhindern und die Zuverlässigkeit zu verbessern."
+							}
 						]
+					}
+				]
+			},
+			{
+				"id": "special-category",
+				"heading": "Special category data (GDPR Article 9)",
+				"blocks": [
+					{
+						"type": "paragraph",
+						"text": "Mood, weekly check-ins, and fantasies can reveal intimate details about your relationship. We only store this after you give explicit consent in the app, so you and your partner can use those features. You can withdraw consent by deleting your account."
 					}
 				]
 			},
@@ -115,9 +162,15 @@
 					{
 						"type": "list",
 						"items": [
-							{ "text": "Konto- und synchronisierte Daten werden aufbewahrt, solange dein Konto aktiv ist." },
-							{ "text": "Wenn du die Verbindung trennst oder dein Konto löschst, entfernen wir die gemeinsamen Daten, Nachrichten und Medien eures Paares von unseren Servern." },
-							{ "text": "Technische Protokolle werden für einen begrenzten Zeitraum aus Sicherheits- und Betriebsgründen aufbewahrt und dann gelöscht." }
+							{
+								"text": "Konto- und synchronisierte Daten werden aufbewahrt, solange dein Konto aktiv ist."
+							},
+							{
+								"text": "Wenn du die Verbindung trennst oder dein Konto löschst, entfernen wir die gemeinsamen Daten, Nachrichten und Medien eures Paares von unseren Servern."
+							},
+							{
+								"text": "Technische Protokolle werden für einen begrenzten Zeitraum aus Sicherheits- und Betriebsgründen aufbewahrt und dann gelöscht."
+							}
 						]
 					}
 				]
@@ -126,15 +179,28 @@
 				"id": "your-rights",
 				"heading": "Deine Rechte",
 				"blocks": [
-					{ "type": "paragraph", "text": "Je nach deinem Standort hast du möglicherweise das Recht:" },
+					{
+						"type": "paragraph",
+						"text": "Je nach deinem Standort hast du möglicherweise das Recht:"
+					},
 					{
 						"type": "list",
 						"items": [
-							{ "text": "Auf deine personenbezogenen Daten zuzugreifen, sie zu berichtigen oder zu löschen." },
-							{ "text": "Deine Daten zu exportieren — kontaktiere {email}." },
-							{ "text": "Gegen bestimmte Verarbeitungen Widerspruch einzulegen oder sie einzuschränken." },
-							{ "text": "Eine Einwilligung zu widerrufen, wenn die Verarbeitung auf Einwilligung basiert." },
-							{ "text": "Eine Beschwerde bei deiner lokalen Datenschutzbehörde einzureichen." }
+							{
+								"text": "Auf deine personenbezogenen Daten zuzugreifen, sie zu berichtigen oder zu löschen."
+							},
+							{
+								"text": "Deine Daten zu exportieren — kontaktiere {email}."
+							},
+							{
+								"text": "Gegen bestimmte Verarbeitungen Widerspruch einzulegen oder sie einzuschränken."
+							},
+							{
+								"text": "Eine Einwilligung zu widerrufen, wenn die Verarbeitung auf Einwilligung basiert."
+							},
+							{
+								"text": "Eine Beschwerde bei deiner lokalen Datenschutzbehörde einzureichen."
+							}
 						]
 					}
 				]
@@ -146,7 +212,9 @@
 					{
 						"type": "paragraph",
 						"text": "Du kannst dein Konto in der App unter Einstellungen → Konto → Konto löschen löschen. Dies entfernt dauerhaft dein Konto und die zugehörigen Paar-Daten von unseren Servern. Du kannst auch eine E-Mail an {email} senden, und wir kümmern uns darum.",
-						"strong": ["Einstellungen → Konto → Konto löschen"]
+						"strong": [
+							"Einstellungen → Konto → Konto löschen"
+						]
 					}
 				]
 			},
@@ -157,7 +225,9 @@
 					{
 						"type": "paragraph",
 						"text": "Wenn du ein Sicherheitsanliegen hast, nutze Einstellungen → Anliegen melden in der App oder sende eine E-Mail an {email}. Du kannst die Verbindung zu deinem Partner jederzeit in den Einstellungen trennen.",
-						"strong": ["Einstellungen → Anliegen melden"]
+						"strong": [
+							"Einstellungen → Anliegen melden"
+						]
 					}
 				]
 			},
@@ -188,7 +258,9 @@
 					{
 						"type": "paragraph",
 						"text": "Parfect ist für Erwachsene ab 18 Jahren. Mit der Nutzung der App bestätigst du, dass du diese Voraussetzung erfüllst.",
-						"strong": ["18 Jahren"]
+						"strong": [
+							"18 Jahren"
+						]
 					}
 				]
 			},
@@ -199,7 +271,9 @@
 					{
 						"type": "paragraph",
 						"text": "Du bist dafür verantwortlich, deine Anmeldedaten sicher zu halten und für Aktivitäten auf deinem Konto. Du kannst dein Konto jederzeit unter Einstellungen → Konto → Konto löschen löschen.",
-						"strong": ["Einstellungen → Konto → Konto löschen"]
+						"strong": [
+							"Einstellungen → Konto → Konto löschen"
+						]
 					}
 				]
 			},
@@ -207,24 +281,37 @@
 				"id": "acceptable-use",
 				"heading": "Akzeptable Nutzung & Inhalte",
 				"blocks": [
-					{ "type": "paragraph", "text": "Du stimmst zu, Folgendes zu unterlassen:" },
+					{
+						"type": "paragraph",
+						"text": "Du stimmst zu, Folgendes zu unterlassen:"
+					},
 					{
 						"type": "list",
 						"items": [
-							{ "text": "Den Dienst zu missbrauchen oder zu versuchen, die Plattform zu kompromittieren." },
-							{ "text": "Andere zu belästigen, zu bedrohen oder zu schädigen." },
-							{ "text": "Illegale Inhalte hochzuladen oder zu teilen." }
+							{
+								"text": "Den Dienst zu missbrauchen oder zu versuchen, die Plattform zu kompromittieren."
+							},
+							{
+								"text": "Andere zu belästigen, zu bedrohen oder zu schädigen."
+							},
+							{
+								"text": "Illegale Inhalte hochzuladen oder zu teilen."
+							}
 						]
 					},
 					{
 						"type": "paragraph",
 						"text": "Du bist für die Inhalte verantwortlich, die du mit deinem verbundenen Partner teilst. Teile niemals intime Medien oder Nachrichten ohne gegenseitige Einwilligung. Wir können Konten sperren, die gegen diese Bedingungen oder geltendes Recht verstoßen.",
-						"strong": ["Teile niemals intime Medien oder Nachrichten ohne gegenseitige Einwilligung."]
+						"strong": [
+							"Teile niemals intime Medien oder Nachrichten ohne gegenseitige Einwilligung."
+						]
 					},
 					{
 						"type": "callout",
 						"text": "Wenn sich etwas falsch anfühlt, melde es. Nutze Einstellungen → Anliegen melden in der App oder sende eine E-Mail an {email}. Wir nehmen Sicherheitsmeldungen ernst.",
-						"strong": ["Einstellungen → Anliegen melden"]
+						"strong": [
+							"Einstellungen → Anliegen melden"
+						]
 					}
 				]
 			},
@@ -327,5 +414,85 @@
 		"moreTextEnd": ".",
 		"privacyLink": "Datenschutzerklärung",
 		"termsLink": "Nutzungsbedingungen"
+	},
+	"Community": {
+		"metaTitle": "Community Guidelines",
+		"metaDescription": "What is allowed on Parfect, how to report a concern, and how we handle abuse. Built for two consenting adults.",
+		"eyebrow": "Legal",
+		"title": "Community Guidelines",
+		"intro": "Parfect is a private space for two consenting adults. These guidelines explain what is allowed, how to report a concern, and what we do when someone breaks the rules.",
+		"updated": "September 21, 2026",
+		"sections": [
+			{
+				"id": "who",
+				"heading": "Who Parfect is for",
+				"blocks": [
+					{
+						"type": "paragraph",
+						"text": "You must be 18 or older. Pair only with someone you know and trust. Do not create an account for anyone else, and do not pressure someone to pair, stay paired, or share content."
+					}
+				]
+			},
+			{
+				"id": "not-allowed",
+				"heading": "What is not allowed",
+				"blocks": [
+					{
+						"type": "list",
+						"items": [
+							{
+								"text": "Harassment, threats, stalking, or using the app to pressure your partner."
+							},
+							{
+								"text": "Sharing intimate photos, video, or audio without clear mutual consent."
+							},
+							{
+								"text": "Illegal content, including any sexual content involving anyone under 18."
+							},
+							{
+								"text": "Impersonation, fake pairing, or trying to access another person’s account."
+							},
+							{
+								"text": "Uploading malware, scraping, or attempting to break the service."
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": "report",
+				"heading": "How to report",
+				"blocks": [
+					{
+						"type": "paragraph",
+						"text": "In the app, go to Settings → Report a concern. Choose a reason, add details if you can, and send the report. You can also unlink your partner from that screen. Reports are stored so we can review them. Your partner is not notified when you report."
+					},
+					{
+						"type": "paragraph",
+						"text": "You can also email {email}."
+					}
+				]
+			},
+			{
+				"id": "action",
+				"heading": "What we do",
+				"blocks": [
+					{
+						"type": "paragraph",
+						"text": "We review reports as soon as we can. We may unlink a couple, suspend or delete an account, remove content, or contact you for more information. We may also notify authorities when the law requires it."
+					}
+				]
+			},
+			{
+				"id": "unlink",
+				"heading": "Unlink and deletion",
+				"blocks": [
+					{
+						"type": "paragraph",
+						"text": "You can unlink at any time from Settings. That ends the couple space and removes shared server data. You can delete your account from Settings. Deletion removes your account and associated couple data from our systems."
+					}
+				]
+			}
+		]
 	}
 }

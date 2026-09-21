@@ -20,6 +20,7 @@ export const SUPPORT_EMAIL = "support@parfect.app";
 export const PRIVACY_URL = "/privacy";
 export const TERMS_URL = "/terms";
 export const SUPPORT_URL = "/support";
+export const COMMUNITY_URL = "/community";
 
 export const APP_TABS = [
 	{ id: "chat", label: "Chat", icon: "chat" },

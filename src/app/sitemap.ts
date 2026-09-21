@@ -22,6 +22,7 @@ const STATIC_PAGES = [
 	"/support",
 	"/privacy",
 	"/terms",
+	"/community",
 ];
 
 function buildSitemapEntry(

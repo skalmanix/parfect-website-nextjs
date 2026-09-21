@@ -33,7 +33,8 @@
 			"support": "Support",
 			"copyright": "© {year} Parfect. All rights reserved.",
 			"about": "About Parfect",
-			"faq": "FAQ"
+			"faq": "FAQ",
+			"communityGuidelines": "Community Guidelines"
 		},
 		"languageSwitcher": {
 			"label": "Language",

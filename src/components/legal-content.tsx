@@ -135,7 +135,7 @@ function BlockRenderer({ block }: { block: Block }) {
 export async function LegalDocument({
 	namespace,
 }: {
-	namespace: "Privacy" | "Terms";
+	namespace: "Privacy" | "Terms" | "Community";
 }) {
 	const t = await getTranslations(namespace);
 	const sections = (t.raw("sections") as Section[] | undefined) ?? [];

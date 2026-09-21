@@ -124,6 +124,11 @@ export async function Footer() {
 								</Link>
 							</li>
 							<li>
+								<Link href={LEGAL_LINKS.community} className="footer-link">
+									{t("footer.communityGuidelines")}
+								</Link>
+							</li>
+							<li>
 								<Link href={LEGAL_LINKS.support} className="footer-link">
 									{t("footer.support")}
 								</Link>

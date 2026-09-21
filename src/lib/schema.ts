@@ -5,6 +5,7 @@ import {
 	PLAY_STORE_URL,
 	SITE_URL,
 	USE_WAITLIST_DOWNLOAD,
+	COMMUNITY_URL,
 	PRIVACY_URL,
 	SUPPORT_URL,
 	TERMS_URL,
@@ -87,4 +88,5 @@ export const LEGAL_LINKS = {
 	privacy: PRIVACY_URL,
 	terms: TERMS_URL,
 	support: SUPPORT_URL,
+	community: COMMUNITY_URL,
 } as const;
