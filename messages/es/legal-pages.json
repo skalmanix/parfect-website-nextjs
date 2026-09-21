@@ -13,10 +13,7 @@
 				"blocks": [
 					{
 						"type": "paragraph",
-						"text": "Parfect opera la app Parfect y la API en api.parfect.app, y es el responsable del tratamiento de los datos personales procesados a través de ellas. Para cualquier tema de privacidad, contáctanos en {email}.",
-						"strong": [
-							"api.parfect.app"
-						]
+						"text": "Parfect opera la app Parfect y los servidores que sincronizan los datos de vuestra pareja, y es el responsable del tratamiento de los datos personales procesados a través de ellos. Para cualquier tema de privacidad, contáctanos en {email}."
 					}
 				]
 			},

@@ -13,10 +13,7 @@
 				"blocks": [
 					{
 						"type": "paragraph",
-						"text": "Parfect driver Parfect-appen og API-et på api.parfect.app, og er behandlingsansvarlig for personopplysninger som behandles gjennom dem. For alt som gjelder personvern, kontakt oss på {email}.",
-						"strong": [
-							"api.parfect.app"
-						]
+						"text": "Parfect driver Parfect-appen og serverne som synkroniserer parets data, og er behandlingsansvarlig for personopplysninger som behandles gjennom dem. For alt som gjelder personvern, kontakt oss på {email}."
 					}
 				]
 			},

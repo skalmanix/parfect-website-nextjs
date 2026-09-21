@@ -13,10 +13,7 @@
 				"blocks": [
 					{
 						"type": "paragraph",
-						"text": "Parfect betreibt die Parfect-App und die API unter api.parfect.app und ist der Verantwortliche für personenbezogene Daten, die über sie verarbeitet werden. Bei allen Datenschutzfragen erreichst du uns unter {email}.",
-						"strong": [
-							"api.parfect.app"
-						]
+						"text": "Parfect betreibt die Parfect-App und die Server, die eure Paardaten synchronisieren, und ist der Verantwortliche für personenbezogene Daten, die darüber verarbeitet werden. Bei allen Datenschutzfragen erreichst du uns unter {email}."
 					}
 				]
 			},

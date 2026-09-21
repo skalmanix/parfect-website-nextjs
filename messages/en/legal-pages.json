@@ -13,10 +13,7 @@
 				"blocks": [
 					{
 						"type": "paragraph",
-						"text": "Parfect operates the Parfect app and the API at api.parfect.app, and is the data controller for personal data processed through them. For anything privacy-related, contact us at {email}.",
-						"strong": [
-							"api.parfect.app"
-						]
+						"text": "Parfect operates the Parfect app and the servers that sync your couple data, and is the data controller for personal data processed through them. For anything privacy-related, contact us at {email}."
 					}
 				]
 			},
