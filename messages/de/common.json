@@ -104,6 +104,25 @@
 		"notFound": {
 			"title": "Diese Seite hat sich verlaufen",
 			"text": "Die gesuchte Seite existiert nicht oder wurde verschoben. Vielleicht hilft eine davon:"
+		},
+		"cookies": {
+			"title": "Wir verwenden Cookies",
+			"body": "Wir verwenden Cookies, um deine Auswahl zu speichern und, wenn du zustimmst, zu verstehen, wie diese Website genutzt wird und Werbung zu messen. Lies die <privacy>Datenschutzerklärung</privacy>.",
+			"showDetails": "Details anzeigen",
+			"hideDetails": "Details ausblenden",
+			"deny": "Ablehnen",
+			"allowSelection": "Auswahl erlauben",
+			"allowAll": "Alle erlauben",
+			"necessary": "Notwendig",
+			"necessaryDesc": "Erforderlich, damit die Website funktioniert und diese Auswahl gespeichert wird.",
+			"alwaysOn": "Immer aktiv",
+			"preferences": "Präferenzen",
+			"preferencesDesc": "Speichert optionale Einstellungen auf diesem Gerät.",
+			"statistics": "Statistik",
+			"statisticsDesc": "Hilft uns zu sehen, welche Seiten nützlich sind.",
+			"marketing": "Marketing",
+			"marketingDesc": "Misst Werbung und welche Kampagnen Menschen hierher führen.",
+			"settings": "Cookie-Einstellungen"
 		}
 	}
 }

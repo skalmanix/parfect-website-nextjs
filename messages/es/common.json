@@ -104,6 +104,25 @@
 		"notFound": {
 			"title": "Esta página se ha perdido",
 			"text": "La página que buscas no existe o se ha movido. Quizá una de estas te ayude:"
+		},
+		"cookies": {
+			"title": "Usamos cookies",
+			"body": "Usamos cookies para recordar tu elección y, si lo permites, para entender cómo se usa este sitio y medir la publicidad. Lee la <privacy>Política de privacidad</privacy>.",
+			"showDetails": "Ver detalles",
+			"hideDetails": "Ocultar detalles",
+			"deny": "Rechazar",
+			"allowSelection": "Permitir selección",
+			"allowAll": "Permitir todas",
+			"necessary": "Necesarias",
+			"necessaryDesc": "Hacen falta para que el sitio funcione y para recordar esta elección.",
+			"alwaysOn": "Siempre activas",
+			"preferences": "Preferencias",
+			"preferencesDesc": "Recuerdan ajustes opcionales en este dispositivo.",
+			"statistics": "Estadísticas",
+			"statisticsDesc": "Nos ayudan a ver qué páginas son útiles.",
+			"marketing": "Marketing",
+			"marketingDesc": "Miden la publicidad y qué campañas traen a la gente aquí.",
+			"settings": "Configuración de cookies"
 		}
 	}
 }

@@ -11,8 +11,8 @@ import {
 } from "@/lib/schema";
 import { pickClientMessages } from "@/lib/i18n/client-messages";
 import { buildSchemaGraph } from "@/lib/schema-helpers";
-import { GoogleTagManager } from "@/components/gtm";
-import { GoogleTagManagerNoScript } from "@/components/gtm-noscript";
+import { CookieConsent } from "@/components/cookie-consent";
+import { consentBootstrapScript } from "@/lib/consent";
 import { routing, htmlLangCodes, type Locale } from "@/i18n/routing";
 import "../globals.css";
 
@@ -132,16 +132,23 @@ export default async function LocaleLayout({ children, params }: Props) {
 				className={`${hanken.variable} ${newsreader.variable} antialiased`}
 			>
 				<script
+					id="consent-defaults"
+					dangerouslySetInnerHTML={{
+						__html: consentBootstrapScript(
+							process.env.NEXT_PUBLIC_GTM_ID ?? "GTM-MHTJWPXG",
+						),
+					}}
+				/>
+				<script
 					type="application/ld+json"
 					dangerouslySetInnerHTML={{
 						__html: JSON.stringify(jsonLd),
 					}}
 				/>
-				<GoogleTagManagerNoScript />
 				<NextIntlClientProvider messages={clientMessages}>
 					{children}
+					<CookieConsent />
 				</NextIntlClientProvider>
-				<GoogleTagManager />
 			</body>
 		</html>
 	);

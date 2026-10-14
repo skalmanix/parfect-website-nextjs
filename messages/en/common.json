@@ -104,6 +104,25 @@
 		"notFound": {
 			"title": "This page wandered off",
 			"text": "The page you're looking for doesn't exist or has moved. Maybe one of these helps:"
+		},
+		"cookies": {
+			"title": "We use cookies",
+			"body": "We use cookies to remember your choice and, if you allow it, to understand how this site is used and to measure advertising. Read the <privacy>Privacy Policy</privacy>.",
+			"showDetails": "Show details",
+			"hideDetails": "Hide details",
+			"deny": "Deny",
+			"allowSelection": "Allow selection",
+			"allowAll": "Allow all",
+			"necessary": "Necessary",
+			"necessaryDesc": "Required for the site to work and to remember this choice.",
+			"alwaysOn": "Always on",
+			"preferences": "Preferences",
+			"preferencesDesc": "Remember optional settings on this device.",
+			"statistics": "Statistics",
+			"statisticsDesc": "Help us see which pages are useful.",
+			"marketing": "Marketing",
+			"marketingDesc": "Measure advertising and which campaigns lead people here.",
+			"settings": "Cookie settings"
 		}
 	}
 }

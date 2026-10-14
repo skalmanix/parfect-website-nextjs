@@ -152,7 +152,7 @@
 				"blocks": [
 					{
 						"type": "paragraph",
-						"text": "The web version uses a single HttpOnly session cookie to keep you signed in. The mobile app stores a session token in secure device storage. We do not use advertising or tracking cookies."
+						"text": "The Parfect app on the web uses a single HttpOnly session cookie to keep you signed in. The mobile app stores a session token in secure device storage. This website stores one necessary cookie that remembers your cookie choice. Statistics and advertising cookies, loaded through Google Tag Manager, are set only if you allow them. You can change or withdraw that choice at any time from Cookie settings."
 					}
 				]
 			},

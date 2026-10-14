@@ -104,6 +104,25 @@
 		"notFound": {
 			"title": "Den här sidan har gått vilse",
 			"text": "Sidan du letar efter finns inte eller har flyttats. Kanske hjälper någon av dessa:"
+		},
+		"cookies": {
+			"title": "Vi använder cookies",
+			"body": "Vi använder cookies för att komma ihåg ditt val och, om du tillåter det, för att förstå hur sidan används och för att mäta annonsering. Läs <privacy>integritetspolicyn</privacy>.",
+			"showDetails": "Visa detaljer",
+			"hideDetails": "Dölj detaljer",
+			"deny": "Neka",
+			"allowSelection": "Tillåt valda",
+			"allowAll": "Tillåt alla",
+			"necessary": "Nödvändiga",
+			"necessaryDesc": "Krävs för att sidan ska fungera och för att spara det här valet.",
+			"alwaysOn": "Alltid på",
+			"preferences": "Inställningar",
+			"preferencesDesc": "Kommer ihåg valfria inställningar på den här enheten.",
+			"statistics": "Statistik",
+			"statisticsDesc": "Hjälper oss att se vilka sidor som är användbara.",
+			"marketing": "Marknadsföring",
+			"marketingDesc": "Mäter annonsering och vilka kampanjer som leder hit.",
+			"settings": "Cookie-inställningar"
 		}
 	}
 }

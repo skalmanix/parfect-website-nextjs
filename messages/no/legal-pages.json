@@ -152,7 +152,7 @@
 				"blocks": [
 					{
 						"type": "paragraph",
-						"text": "Nettversjonen bruker én HttpOnly-øktinformasjonskapsel for å holde deg innlogget. Mobilappen lagrer en økttoken i sikker enhetslagring. Vi bruker ingen reklame- eller sporingskapsler."
+						"text": "Parfect-appen på nett bruker én HttpOnly-øktinformasjonskapsel for å holde deg innlogget. Mobilappen lagrer en økttoken i sikker enhetslagring. Dette nettstedet lagrer én nødvendig informasjonskapsel som husker valget ditt. Statistikk- og annonsekapsler, via Google Tag Manager, settes bare hvis du tillater dem. Du kan endre eller trekke tilbake valget når som helst under Innstillinger for informasjonskapsler."
 					}
 				]
 			},

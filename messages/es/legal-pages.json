@@ -152,7 +152,7 @@
 				"blocks": [
 					{
 						"type": "paragraph",
-						"text": "La versión web usa una única cookie de sesión HttpOnly para mantenerte conectado. La app móvil almacena un token de sesión en el almacenamiento seguro del dispositivo. No usamos cookies de publicidad ni de seguimiento."
+						"text": "La app de Parfect en la web usa una única cookie de sesión HttpOnly para mantenerte conectado. La app móvil almacena un token de sesión en el almacenamiento seguro del dispositivo. Este sitio guarda una cookie necesaria que recuerda tu elección de cookies. Las cookies de estadísticas y publicidad, a través de Google Tag Manager, solo se instalan si las permites. Puedes cambiar o retirar esa elección en cualquier momento desde Configuración de cookies."
 					}
 				]
 			},

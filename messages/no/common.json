@@ -104,6 +104,25 @@
 		"notFound": {
 			"title": "Denne siden har gått seg vill",
 			"text": "Siden du leter etter finnes ikke eller er flyttet. Kanskje en av disse hjelper:"
+		},
+		"cookies": {
+			"title": "Vi bruker informasjonskapsler",
+			"body": "Vi bruker informasjonskapsler for å huske valget ditt og, hvis du tillater det, for å forstå hvordan nettstedet brukes og for å måle annonsering. Les <privacy>personvernerklæringen</privacy>.",
+			"showDetails": "Vis detaljer",
+			"hideDetails": "Skjul detaljer",
+			"deny": "Avslå",
+			"allowSelection": "Tillat utvalg",
+			"allowAll": "Tillat alle",
+			"necessary": "Nødvendige",
+			"necessaryDesc": "Kreves for at nettstedet skal fungere og for å huske dette valget.",
+			"alwaysOn": "Alltid på",
+			"preferences": "Innstillinger",
+			"preferencesDesc": "Husker valgfrie innstillinger på denne enheten.",
+			"statistics": "Statistikk",
+			"statisticsDesc": "Hjelper oss å se hvilke sider som er nyttige.",
+			"marketing": "Markedsføring",
+			"marketingDesc": "Måler annonsering og hvilke kampanjer som fører folk hit.",
+			"settings": "Innstillinger for informasjonskapsler"
 		}
 	}
 }

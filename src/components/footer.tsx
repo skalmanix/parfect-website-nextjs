@@ -5,6 +5,7 @@ import { LEGAL_LINKS } from "@/lib/schema";
 import { getGuideNavItems } from "@/lib/guides";
 import type { Locale } from "@/i18n/routing";
 import { FEATURE_LINKS, AUDIENCE_LINKS } from "@/lib/nav";
+import { CookieSettingsButton } from "./cookie-settings-button";
 
 export async function Footer() {
 	const locale = (await getLocale()) as Locale;
@@ -132,6 +133,9 @@ export async function Footer() {
 								<Link href={LEGAL_LINKS.support} className="footer-link">
 									{t("footer.support")}
 								</Link>
+							</li>
+							<li>
+								<CookieSettingsButton />
 							</li>
 						</ul>
 					</div>

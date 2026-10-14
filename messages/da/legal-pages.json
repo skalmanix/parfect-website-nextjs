@@ -152,7 +152,7 @@
 				"blocks": [
 					{
 						"type": "paragraph",
-						"text": "Webversionen bruger en enkelt HttpOnly-sessioncookie til at holde dig logget ind. Mobilappen gemmer et sessionstoken i sikker enhedslagring. Vi bruger ingen reklame- eller sporingscookies."
+						"text": "Parfect-appen på nettet bruger en enkelt HttpOnly-sessioncookie til at holde dig logget ind. Mobilappen gemmer et sessionstoken i sikker enhedslagring. Dette website gemmer én nødvendig cookie, der husker dit cookievalg. Statistik- og annoncecookies, via Google Tag Manager, sættes kun, hvis du tillader dem. Du kan ændre eller trække valget tilbage når som helst under Cookieindstillinger."
 					}
 				]
 			},

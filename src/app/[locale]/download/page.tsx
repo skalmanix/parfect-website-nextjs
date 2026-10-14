@@ -6,6 +6,7 @@ import { Logo } from "@/components/logo";
 import { PhoneScreenshot } from "@/components/phone-screenshot";
 import { WaitlistForm, type WaitlistLabels } from "@/components/waitlist-form";
 import { createPageMetadata } from "@/lib/i18n/page-metadata";
+import { CookieSettingsButton } from "@/components/cookie-settings-button";
 import { PRIVACY_URL, TERMS_URL, SUPPORT_URL } from "@/lib/constants";
 import type { Locale } from "@/i18n/routing";
 
@@ -147,6 +148,7 @@ export default async function DownloadPage({ params }: Props) {
 						<Link href={SUPPORT_URL} className="footer-link">
 							{t("supportLink")}
 						</Link>
+						<CookieSettingsButton />
 					</nav>
 				</div>
 			</footer>

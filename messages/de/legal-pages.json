@@ -152,7 +152,7 @@
 				"blocks": [
 					{
 						"type": "paragraph",
-						"text": "Die Webversion nutzt ein einzelnes HttpOnly-Sitzungs-Cookie, um dich angemeldet zu halten. Die mobile App speichert ein Sitzungstoken im sicheren Gerätespeicher. Wir verwenden keine Werbe- oder Tracking-Cookies."
+						"text": "Die Parfect-App im Web nutzt ein einzelnes HttpOnly-Sitzungs-Cookie, um dich angemeldet zu halten. Die mobile App speichert ein Sitzungstoken im sicheren Gerätespeicher. Diese Website speichert ein notwendiges Cookie, das deine Cookie-Auswahl merkt. Statistik- und Werbe-Cookies, geladen über den Google Tag Manager, werden nur gesetzt, wenn du sie erlaubst. Du kannst diese Auswahl jederzeit unter Cookie-Einstellungen ändern oder widerrufen."
 					}
 				]
 			},

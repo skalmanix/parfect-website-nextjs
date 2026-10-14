@@ -104,6 +104,25 @@
 		"notFound": {
 			"title": "Denne side er blevet væk",
 			"text": "Siden du leder efter findes ikke eller er flyttet. Måske kan en af disse hjælpe:"
+		},
+		"cookies": {
+			"title": "Vi bruger cookies",
+			"body": "Vi bruger cookies til at huske dit valg og, hvis du tillader det, til at forstå hvordan siden bruges og til at måle annoncering. Læs <privacy>privatlivspolitikken</privacy>.",
+			"showDetails": "Vis detaljer",
+			"hideDetails": "Skjul detaljer",
+			"deny": "Afvis",
+			"allowSelection": "Tillad valgte",
+			"allowAll": "Tillad alle",
+			"necessary": "Nødvendige",
+			"necessaryDesc": "Kræves for at siden kan fungere og for at huske dette valg.",
+			"alwaysOn": "Altid til",
+			"preferences": "Præferencer",
+			"preferencesDesc": "Husker valgfrie indstillinger på denne enhed.",
+			"statistics": "Statistik",
+			"statisticsDesc": "Hjælper os med at se, hvilke sider der er nyttige.",
+			"marketing": "Markedsføring",
+			"marketingDesc": "Måler annoncering, og hvilke kampagner der fører folk hertil.",
+			"settings": "Cookieindstillinger"
 		}
 	}
 }
