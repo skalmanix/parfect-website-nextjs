@@ -106,14 +106,20 @@ function toGoogleConsent(choice: ConsentChoice) {
 	};
 }
 
+/** True only when the visitor allowed at least one optional category. */
+export function hasAccepted(choice: ConsentChoice) {
+	return choice.preferences || choice.statistics || choice.marketing;
+}
+
 /**
- * Saves the choice, pushes a Consent Mode update, then loads Tag Manager.
- * Tag Manager is not requested until this runs.
+ * Saves the choice and updates Consent Mode.
+ * Tag Manager loads only after an optional category is accepted.
  */
 export function applyConsent(choice: ConsentChoice) {
 	writeConsent(choice);
+	const loadGtm = hasAccepted(choice);
 	if (typeof window.__parfectApplyConsent === "function") {
-		window.__parfectApplyConsent(choice, true);
+		window.__parfectApplyConsent(choice, loadGtm);
 		return;
 	}
 
@@ -132,14 +138,14 @@ export function applyConsent(choice: ConsentChoice) {
 		consent_statistics: granted(choice.statistics),
 		consent_marketing: granted(choice.marketing),
 	});
-	loadGoogleTagManager();
+	if (loadGtm) loadGoogleTagManager();
 }
 
 const SAFE_GTM_ID = /^GTM-[A-Z0-9]+$/;
 
 /**
- * Runs before the page hydrates. Sets Consent Mode defaults to denied,
- * and loads Tag Manager immediately only when a choice is already stored.
+ * Runs before the page hydrates. Every storage signal starts denied.
+ * Tag Manager loads only when a stored choice already accepted something.
  */
 export function consentBootstrapScript(gtmId: string) {
 	const id = SAFE_GTM_ID.test(gtmId) ? gtmId : "GTM-MHTJWPXG";
@@ -199,7 +205,8 @@ if(parts[i].indexOf(prefix)!==0)continue;
 try{
 var saved=JSON.parse(decodeURIComponent(parts[i].slice(prefix.length)));
 if(saved&&saved.v===1&&typeof saved.statistics==="boolean"&&typeof saved.marketing==="boolean"&&typeof saved.preferences==="boolean"){
-window.__parfectApplyConsent(saved,true);
+var accepted=!!(saved.preferences||saved.statistics||saved.marketing);
+window.__parfectApplyConsent(saved,accepted);
 }
 }catch(e){}
 break;

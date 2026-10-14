@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useId, useState, useSyncExternalStore } from "react";
+import { useEffect, useId, useRef, useState, useSyncExternalStore } from "react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import {
@@ -21,6 +21,7 @@ export function CookieConsent() {
 	const t = useTranslations("Common.cookies");
 	const titleId = useId();
 	const bodyId = useId();
+	const dialogRef = useRef<HTMLDivElement>(null);
 	const visibility = useSyncExternalStore(
 		subscribeConsent,
 		getConsentSnapshot,
@@ -43,11 +44,48 @@ export function CookieConsent() {
 
 	useEffect(() => {
 		document.body.toggleAttribute("data-consent-open", open);
+		if (!open) return () => document.body.removeAttribute("data-consent-open");
+
+		const previousOverflow = document.body.style.overflow;
+		document.body.style.overflow = "hidden";
+		dialogRef.current?.focus();
+
+		const onKeyDown = (event: KeyboardEvent) => {
+			if (event.key === "Escape") {
+				event.preventDefault();
+				event.stopPropagation();
+				return;
+			}
+			if (event.key !== "Tab") return;
+			const root = dialogRef.current;
+			if (!root) return;
+			const items = [
+				...root.querySelectorAll<HTMLElement>(
+					'a[href], button:not([disabled])',
+				),
+			];
+			if (items.length === 0) return;
+			const first = items[0];
+			const last = items[items.length - 1];
+			const active = document.activeElement;
+			if (event.shiftKey && (active === first || !root.contains(active))) {
+				event.preventDefault();
+				last.focus();
+			} else if (!event.shiftKey && (active === last || !root.contains(active))) {
+				event.preventDefault();
+				first.focus();
+			}
+		};
+
+		document.addEventListener("keydown", onKeyDown, true);
 		return () => {
+			document.body.style.overflow = previousOverflow;
 			document.body.removeAttribute("data-consent-open");
+			document.removeEventListener("keydown", onKeyDown, true);
 		};
 	}, [open]);
 
+	if (visibility === "closed") return <ConsentWidget />;
 	if (!open) return null;
 
 	const save = (next: ConsentChoice) => {
@@ -58,12 +96,15 @@ export function CookieConsent() {
 	};
 
 	return (
-		<div className="fixed inset-x-0 bottom-0 z-[80] p-3 sm:p-5 pointer-events-none">
+		<div className="consent-overlay">
 			<div
+				ref={dialogRef}
 				role="dialog"
+				aria-modal="true"
 				aria-labelledby={titleId}
 				aria-describedby={bodyId}
-				className="consent-banner pointer-events-auto mx-auto w-full max-w-3xl max-h-[min(85vh,40rem)] overflow-y-auto rounded-2xl border border-border/80 bg-chrome/95 shadow-[0_24px_80px_rgba(0,0,0,0.45)] backdrop-blur-xl"
+				tabIndex={-1}
+				className="consent-banner w-full max-w-3xl max-h-[min(85vh,40rem)] overflow-y-auto rounded-2xl border border-border/80 bg-chrome/95 shadow-[0_24px_80px_rgba(0,0,0,0.55)] outline-none"
 			>
 				<div className="p-5 sm:p-6">
 					<h2 id={titleId} className="font-display text-2xl leading-tight">
@@ -159,6 +200,29 @@ export function CookieConsent() {
 				</div>
 			</div>
 		</div>
+	);
+}
+
+function ConsentWidget() {
+	const t = useTranslations("Common.cookies");
+
+	return (
+		<button
+			type="button"
+			className="consent-widget"
+			aria-label={t("settings")}
+			onClick={() => window.dispatchEvent(new Event(CONSENT_OPEN_EVENT))}
+		>
+			<svg viewBox="0 0 24 24" aria-hidden="true" className="h-5 w-5">
+				<path
+					fill="currentColor"
+					d="M12 2a10 10 0 1 0 9.4 13.4 1.15 1.15 0 0 0-1.25-1.55 2.05 2.05 0 0 1-2.2-2.35 1.15 1.15 0 0 0-1.4-1.25A2.25 2.25 0 0 1 13.3 7.2 1.15 1.15 0 0 0 12.05 5.8 10 10 0 0 0 12 2Z"
+				/>
+				<circle cx="8.7" cy="10.2" r="1.05" className="consent-widget-chip" />
+				<circle cx="12.5" cy="13.7" r="1.15" className="consent-widget-chip" />
+				<circle cx="15.3" cy="9.5" r="0.9" className="consent-widget-chip" />
+			</svg>
+		</button>
 	);
 }
 
