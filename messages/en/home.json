@@ -60,8 +60,8 @@
 					"title": "Talk like it's only you two",
 					"description": "A private thread that's just yours. Set messages to disappear, speak freely, and stay close even when you're apart.",
 					"highlights": {
-						"0": "Real-time messaging for two",
-						"1": "Disappearing messages & read receipts",
+						"0": "Disappearing messages & read receipts",
+						"1": "A private gallery of your photos & videos",
 						"2": "Optional end-to-end encryption"
 					}
 				},
@@ -78,11 +78,11 @@
 				"together": {
 					"tagline": "Together",
 					"title": "Make the moments real",
-					"description": "Turn sparks into a shared bucket list, plan date nights, even line up a sitter — together.",
+					"description": "Turn sparks into a shared bucket list, plan date nights, and give each other wishes — together.",
 					"highlights": {
-						"0": "Shared bucket list & date planning",
-						"1": "Babysitter coordination built in",
-						"2": "Anniversaries & important dates"
+						"0": "Bucket list, date nights & babysitter in one plan",
+						"1": "Wishes you give each other",
+						"2": "Top 10 ideas when you need inspiration"
 					}
 				}
 			}
@@ -90,33 +90,46 @@
 		"features": {
 			"eyebrow": "Built for your relationship",
 			"heading": "More than messaging",
-			"description": "Thoughtful tools that help you check in, plan ahead, and protect what matters — without the noise of social media.",
+			"description": "Thoughtful tools that help you check in, plan ahead, and do a little more for each other — without the noise of social media.",
 			"items": {
+				"wishes": {
+					"title": "Wishes",
+					"description": "Wish for a cozy dinner or a surprise at home. Your partner sees it, says yes, and makes it happen — no deadline pressure."
+				},
+				"gallery": {
+					"title": "Photos & videos",
+					"description": "Every photo and video you've shared, gathered in one private gallery. Filter by who sent it and keep your own favourites."
+				},
+				"ideas": {
+					"title": "Top 10 ideas",
+					"description": "Not sure what to do? Start with the ten ideas couples love most — or browse all 50 by mood and time."
+				},
 				"checkin": {
 					"title": "Weekly check-ins",
-					"description": "Reflect together with thoughtful questions — revealed side by side when you're both ready."
+					"description": "One question a week. Your answers stay sealed until you've both replied — then you see them side by side."
+				},
+				"mood": {
+					"title": "Mood sharing",
+					"description": "Tell your partner how you feel with one tap, and look back at your moods together in a shared calendar."
+				},
+				"spaces": {
+					"title": "Couple spaces",
+					"description": "Connect with another couple you trust in a separate, end-to-end encrypted space. It only opens when all four say yes."
 				},
 				"calendar": {
 					"title": "Shared calendar",
 					"description": "Never miss an anniversary. Plan date nights and track the moments that matter."
 				},
-				"lock": {
-					"title": "App lock & biometrics",
-					"description": "PIN lock and biometric protection keep your relationship private on your device."
-				},
 				"constellation": {
 					"title": "Connection growth",
 					"description": "Watch your constellation grow as you share moments and build your story together."
 				},
-				"shield": {
-					"title": "Privacy-first design",
-					"description": "Content-free notifications, pause controls, and clear data policies."
-				},
-				"rings": {
-					"title": "Made for two",
-					"description": "Pair once with an invite code. No feeds, no followers, no one else."
+				"lock": {
+					"title": "App lock & biometrics",
+					"description": "PIN lock and biometric protection keep your relationship private on your device."
 				}
-			}
+			},
+			"newBadge": "New"
 		},
 		"howItWorks": {
 			"eyebrow": "How it works",
@@ -210,7 +223,7 @@
 		"faq": {
 			"0": {
 				"question": "What is Parfect?",
-				"answer": "Parfect is a private couples app that combines intimate chat, fantasy prompts, date planning, and relationship milestones in one warm, secure space made for two."
+				"answer": "Parfect is a private couples app that combines intimate chat, fantasy prompts, weekly check-ins, wishes, date planning, and a shared photo gallery in one warm, secure space made for two."
 			},
 			"1": {
 				"question": "Is Parfect private?",

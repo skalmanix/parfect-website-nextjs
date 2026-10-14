@@ -2,13 +2,13 @@ import { getTranslations } from "next-intl/server";
 import { ResponsiveImage } from "@/components/responsive-image";
 import { Logo } from "./logo";
 import { StoreBadges } from "./store-badges";
-import { AppTabs } from "./app-tabs";
-import { HomeScreen } from "./app-screens";
+import { PhoneScreenshot } from "./phone-screenshot";
 import { AvatarCluster, RatingStars } from "./testimonials";
 
 export async function Hero() {
 	const t = await getTranslations("Home.hero");
 	const tRating = await getTranslations("Common.rating");
+	const tScreens = await getTranslations("AppScreens");
 
 	return (
 		<section className="relative min-h-[100svh] overflow-hidden">
@@ -125,7 +125,13 @@ export async function Hero() {
 					</div>
 
 					<div className="animate-fade-up-delay-2 flex justify-center lg:justify-end">
-						<HeroShowcase />
+						<div className="relative w-full max-w-[300px]">
+							<PhoneScreenshot
+								screen="home"
+								alt={tScreens("alt.home")}
+								priority
+							/>
+						</div>
 					</div>
 				</div>
 
@@ -152,21 +158,5 @@ export async function Hero() {
 				</a>
 			</div>
 		</section>
-	);
-}
-
-function HeroShowcase() {
-	return (
-		<div className="relative w-full max-w-[300px]">
-			<div className="phone-frame relative">
-				<div className="phone-notch" aria-hidden="true" />
-				<div className="phone-screen">
-					<HomeScreen />
-					<div className="absolute bottom-0 inset-x-0 z-10">
-						<AppTabs active="fantasies" />
-					</div>
-				</div>
-			</div>
-		</div>
 	);
 }

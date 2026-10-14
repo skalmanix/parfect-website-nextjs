@@ -1,79 +1,44 @@
 {
 	"AppPreview": {
-		"eyebrow": "Føles som appen",
+		"eyebrow": "Ekte skjermer, ekte app",
 		"heading": "Se hva dere går inn i",
-		"description": "Utforsk skjermene akkurat slik de ser ut i Parfect — før dere i det hele tatt laster ned.",
+		"description": "Dette er ekte skjermbilder fra Parfect — ingen mockups. Klikk dere gjennom skjermene par bruker hver dag.",
 		"cta": "Prøv selv — gratis",
-		"tabLabel": "{tab}-fanen",
 		"screenLabels": {
+			"home": "Hjem",
 			"chat": "Privat chat",
 			"fantasies": "Fantasier",
-			"together": "Sammen",
-			"date": "Datekveld"
+			"together-dates": "Datekvelder",
+			"together-wishes": "Ønsker",
+			"gallery": "Bilder og videoer",
+			"relationship": "Forhold"
+		},
+		"screenCaptions": {
+			"home": "Partnerens humør, ukens spørsmål og hva som venter på deg.",
+			"chat": "Bilder, reaksjoner og fantasier flyttet inn i samtalen.",
+			"fantasies": "Spør, del og fortsett å snakke — i deres eget tempo.",
+			"together-dates": "Neste datekveld, med tid, sted og barnevakt.",
+			"together-wishes": "Ønsk deg noe. Partneren din sørger for at det skjer.",
+			"gallery": "Alle bilder og videoer dere har delt, med favorittene deres.",
+			"relationship": "Forbindelsespoeng, humørkalender og et tilbakeblikk."
 		},
 		"tablistAria": "Appskjermer"
 	},
-	"AppTabs": {
-		"chat": "Chat",
-		"fantasies": "Fantasier",
-		"together": "Sammen",
-		"ariaLabel": "Forhåndsvisning av appnavigasjon"
-	},
-	"HomeScreen": {
-		"ariaLabel": "Parfect-hjemskjerm med kveldens spørsmål og hurtighandlinger",
-		"goodEvening": "God kveld",
-		"coupleNames": "Emma & Liam",
-		"streakDays": "12 dagers streak",
-		"tonightsPrompt": "Kveldens spørsmål",
-		"promptQuestion": "Hva er en liten ting partneren din gjorde nylig som fikk deg til å føle deg elsket?",
-		"dateNightPlanned": "Datekveld planlagt",
-		"dateTime": "Lørdag · 19:30"
-	},
-	"ChatScreen": {
-		"ariaLabel": "Parfect privat chat med en intim samtale",
-		"partnerName": "Emma",
-		"onlineNow": "online nå",
-		"todayTime": "I dag 21:12",
-		"message1": "I kveld, etter at barna har sovnet… jeg har en overraskelse til deg",
-		"message2": "Nå kan jeg ikke slutte å tenke på det 😏",
-		"message3": "Bra. Ha på deg det smilet jeg elsker.",
-		"disappearingMessages": "Forsvinnende meldinger på",
-		"messagePlaceholder": "Melding…"
-	},
-	"FantasiesScreen": {
-		"ariaLabel": "Parfect fantasiskjerm med kveldens spørsmål og en invitasjon",
-		"title": "Fantasier",
-		"tonightsPrompt": "Kveldens spørsmål",
-		"promptQuestion": "Hvilken fantasi har du aldri sagt høyt?",
-		"shareYours": "Del din",
-		"inviteSent": "Emma sendte deg en invitasjon",
-		"invitePreview": "\"Noe jeg har fantasert om til vår jubileum…\"",
-		"respond": "Svar",
-		"notRightNow": "Ikke akkurat nå",
-		"bothSaidYes": "Dere sa begge ja",
-		"bucketListAdded": "En helg borte, ingen planer — den er nå på bucket listen deres."
-	},
-	"TogetherScreen": {
-		"ariaLabel": "Parfect sammen-skjerm med kommende date og bucket list",
-		"title": "Sammen",
-		"planned": "PLANLAGT",
-		"rooftopDinner": "Middag på taket",
-		"dateDetails": "Lørdag · 19:30 · Barnepasser bekreftet",
-		"bucketList": "Bucket list",
-		"itemCompleted": "Langsom dans på kjøkkenet",
-		"itemFromFantasy": "Helgetur til kystby",
-		"fromAFantasy": "FRA EN FANTASI",
-		"itemPending": "Soloppgangstur, bare oss",
-		"addSomethingNew": "Legg til noe nytt"
-	},
-	"DateScreen": {
-		"ariaLabel": "Parfect datekveld-detaljskjerm",
-		"title": "Datekveld",
-		"planned": "PLANLAGT",
-		"rooftopDinner": "Middag på taket",
-		"dateTime": "Lørdag 12. juli · 19:30",
-		"location": "Terrazza, sentrum",
-		"babysitterConfirmed": "Barnepasser bekreftet",
-		"itsADate": "Det blir en date"
+	"AppScreens": {
+		"alt": {
+			"home": "Parfects hjemskjerm med partnerens humør, ukens innsjekkspørsmål og en oppfordring til å svare",
+			"chat": "Parfects private chat med et delt bilde, reaksjoner og en fantasi flyttet inn i samtalen",
+			"fantasies": "Parfects Fantasier-fane med en forespørsel om å dele og åpne fantasier mellom partnerne",
+			"together-ideas": "Parfects Sammen-fane med parets bucket list",
+			"together-dates": "Parfects Sammen-fane med neste datekveld, tid og sted",
+			"together-wishes": "Parfects Ønsker-skjerm med ett ønske som venter og ett som pågår",
+			"relationship": "Parfects Forhold-fane med parets forbindelsespoeng og statistikk",
+			"gallery": "Parfects bilde- og videogalleri gruppert etter måned, med favoritter",
+			"ideas-top10": "Parfects idéskjerm med topp 10 date-idéer",
+			"checkin-reveal": "Parfects ukentlige innsjekk med begge partnernes svar side om side",
+			"calendar": "Parfects felles kalender med kommende datekvelder",
+			"growth": "Parfects vekstskjerm med parets stjernebilde og streak",
+			"couples": "Parfects skjerm for parrom der man kobler seg sammen med et annet par"
+		}
 	}
 }

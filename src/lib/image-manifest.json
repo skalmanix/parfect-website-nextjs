@@ -126,5 +126,57 @@
 	],
 	"/images/qr-download.png": [
 		192
+	],
+	"/images/screens/calendar.webp": [
+		320,
+		640
+	],
+	"/images/screens/chat.webp": [
+		320,
+		640
+	],
+	"/images/screens/checkin-reveal.webp": [
+		320,
+		640
+	],
+	"/images/screens/couples.webp": [
+		320,
+		640
+	],
+	"/images/screens/fantasies.webp": [
+		320,
+		640
+	],
+	"/images/screens/gallery.webp": [
+		320,
+		640
+	],
+	"/images/screens/growth.webp": [
+		320,
+		640
+	],
+	"/images/screens/home.webp": [
+		320,
+		640
+	],
+	"/images/screens/ideas-top10.webp": [
+		320,
+		640
+	],
+	"/images/screens/relationship.webp": [
+		320,
+		640
+	],
+	"/images/screens/together-dates.webp": [
+		320,
+		640
+	],
+	"/images/screens/together-ideas.webp": [
+		320,
+		640
+	],
+	"/images/screens/together-wishes.webp": [
+		320,
+		640
 	]
 }

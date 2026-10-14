@@ -13,7 +13,6 @@
 			"titleAfter": "— og ingen andre",
 			"intro": "De fleste meldingsapper bærer hele livet ditt: jobbtråder, gruppechatter, familielogistikk. Parfect gir forholdet deres sitt eget rom — kryptert, intimt og uten distraksjoner.",
 			"screen": "chat",
-			"tab": "chat",
 			"story": {
 				"heading": "Hvorfor par trenger et eget sted å snakke",
 				"paragraphs": [
@@ -144,7 +143,6 @@
 			"titleAfter": "høyt",
 			"intro": "Alle par har drømmer og ønsker som forblir usagte — ikke fordi de ikke betyr noe, men fordi det føles umulig å starte samtalen. Parfect gir dere en mild, privat måte å begynne på.",
 			"screen": "fantasies",
-			"tab": "fantasies",
 			"story": {
 				"heading": "Samtalen de fleste par aldri tar",
 				"paragraphs": [
@@ -274,8 +272,7 @@
 			"titleHighlight": "«vi burde gå ut mer»",
 			"titleAfter": "til en booket lørdag",
 			"intro": "Alle par sier det. Få kalendere viser det. Parfect gjør datekveld fra en vag intensjon til en plan med tid, sted — og barnevakt som allerede er bekreftet.",
-			"screen": "date",
-			"tab": "together",
+			"screen": "together-dates",
 			"story": {
 				"heading": "Hvorfor datekvelder aldri skjer",
 				"paragraphs": [
@@ -405,8 +402,7 @@
 			"titleHighlight": "dere to",
 			"titleAfter": "stadig snakker om",
 			"intro": "Kystbyen dere skulle stikke av til. Restauranten dere stadig passerer. Den langsomme dansen på kjøkkenet. Parfect samler hver «en dag» på ett felles sted — og hjelper dere faktisk å komme dit.",
-			"screen": "together",
-			"tab": "together",
+			"screen": "together-ideas",
 			"story": {
 				"heading": "En dag er ikke en plan",
 				"paragraphs": [
@@ -536,8 +532,7 @@
 			"titleHighlight": "partnere",
 			"titleAfter": "— ikke bare medforeldre",
 			"intro": "Dere elsker barna. Dere savner også hverandre. Parfect hjelper travle foreldre å beskytte forholdet som startet hele familien — i de ti-minutters gapene en forelders dag faktisk har.",
-			"screen": "home",
-			"tab": "together",
+			"screen": "together-dates",
 			"story": {
 				"heading": "Paret kommer vanligvis sist. La oss fikse det.",
 				"paragraphs": [
@@ -668,7 +663,6 @@
 			"titleAfter": ".",
 			"intro": "Miles fra hverandre kan dere ikke dele en sofa — men dere kan dele et ritual, en hemmelighet og en liste over alt dere skal gjøre neste gang. Parfect gir langdistansepar ett privat sted å holde seg genuint nær.",
 			"screen": "chat",
-			"tab": "chat",
 			"story": {
 				"heading": "Langdistanse feiler på drift, ikke avstand",
 				"paragraphs": [
@@ -798,8 +792,7 @@
 			"titleHighlight": "Nysgjerrig",
 			"titleAfter": "er bedre.",
 			"intro": "Mange år inn er dere kjent med hverandres kaffeordre, humør og nettleserfaner. Parfect er for det som kommer neste: å forbli nysgjerrig på personen som sover ved siden av deg — med vilje.",
-			"screen": "home",
-			"tab": "fantasies",
+			"screen": "relationship",
 			"story": {
 				"heading": "Den stille risikoen ved et godt ekteskap",
 				"paragraphs": [

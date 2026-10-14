@@ -13,7 +13,6 @@
 			"titleAfter": "gehört — und niemandem sonst",
 			"intro": "Die meisten Messenger-Apps tragen euer ganzes Leben: Arbeits-Chats, Gruppenchats, Familienlogistik. Parfect gibt eurer Beziehung ihren eigenen Raum — verschlüsselt, intim und ohne Ablenkung.",
 			"screen": "chat",
-			"tab": "chat",
 			"story": {
 				"heading": "Warum Paare einen eigenen Raum zum Reden brauchen",
 				"paragraphs": [
@@ -144,7 +143,6 @@
 			"titleAfter": "ausgesprochen habt",
 			"intro": "Jedes Paar hat Träume und Wünsche, die unausgesprochen bleiben — nicht weil sie unwichtig sind, sondern weil das Gespräch unmöglich erscheint. Parfect gibt euch einen sanften, privaten Weg, anzufangen.",
 			"screen": "fantasies",
-			"tab": "fantasies",
 			"story": {
 				"heading": "Das Gespräch, das die meisten Paare nie führen",
 				"paragraphs": [
@@ -274,8 +272,7 @@
 			"titleHighlight": "„wir sollten öfter ausgehen“",
 			"titleAfter": "zum gebuchten Samstag",
 			"intro": "Jedes Paar sagt es. Wenige Kalender zeigen es. Parfect verwandelt Date Night von einer vagen Absicht in einen Plan mit Uhrzeit, Ort — und einem Babysitter, der bereits bestätigt ist.",
-			"screen": "date",
-			"tab": "together",
+			"screen": "together-dates",
 			"story": {
 				"heading": "Warum Date Nights immer wieder ausbleiben",
 				"paragraphs": [
@@ -405,8 +402,7 @@
 			"titleHighlight": "ihr zwei",
 			"titleAfter": "immer redet",
 			"intro": "Die Strandstadt, in die ihr weglaufen würdet. Das Restaurant, an dem ihr immer vorbeigeht. Der langsame Tanz in der Küche. Parfect hält jedes „irgendwann“ an einem gemeinsamen Ort — und hilft euch, es wirklich zu tun.",
-			"screen": "together",
-			"tab": "together",
+			"screen": "together-ideas",
 			"story": {
 				"heading": "Irgendwann ist kein Plan",
 				"paragraphs": [
@@ -536,8 +532,7 @@
 			"titleHighlight": "Partner",
 			"titleAfter": "— nicht nur Co-Eltern",
 			"intro": "Ihr liebt eure Kinder. Ihr vermisst euch auch. Parfect hilft beschäftigten Eltern, die Beziehung zu schützen, mit der die ganze Familie begann — in den Zehn-Minuten-Lücken, die ein Elterntag wirklich hat.",
-			"screen": "home",
-			"tab": "together",
+			"screen": "together-dates",
 			"story": {
 				"heading": "Das Paar kommt meist zuletzt. Ändern wir das.",
 				"paragraphs": [
@@ -668,7 +663,6 @@
 			"titleAfter": ".",
 			"intro": "Kilometer trennen euch, ihr könnt keine Couch teilen — aber ein Ritual, ein Geheimnis und eine Liste von allem, was ihr beim nächsten Mal macht. Parfect gibt Fernbeziehungen einen privaten Ort, um wirklich nah zu bleiben.",
 			"screen": "chat",
-			"tab": "chat",
 			"story": {
 				"heading": "Fernbeziehungen scheitern am Abtreiben, nicht an der Distanz",
 				"paragraphs": [
@@ -798,8 +792,7 @@
 			"titleHighlight": "Neugierig",
 			"titleAfter": "ist besser.",
 			"intro": "Nach Jahren kennt ihr die Kaffeebestellung, die Stimmungen und die Browser-Tabs des anderen. Parfect ist für das, was als Nächstes kommt: bewusst neugierig auf die Person bleiben, die neben euch schläft.",
-			"screen": "home",
-			"tab": "fantasies",
+			"screen": "relationship",
 			"story": {
 				"heading": "Das stille Risiko einer guten Ehe",
 				"paragraphs": [

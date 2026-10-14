@@ -3,8 +3,7 @@ import { ResponsiveImage } from "@/components/responsive-image";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { Logo } from "@/components/logo";
-import { HomeScreen } from "@/components/app-screens";
-import { AppTabs } from "@/components/app-tabs";
+import { PhoneScreenshot } from "@/components/phone-screenshot";
 import { WaitlistForm, type WaitlistLabels } from "@/components/waitlist-form";
 import { createPageMetadata } from "@/lib/i18n/page-metadata";
 import { PRIVACY_URL, TERMS_URL, SUPPORT_URL } from "@/lib/constants";
@@ -29,6 +28,7 @@ export default async function DownloadPage({ params }: Props) {
 	const { locale } = await params;
 	setRequestLocale(locale);
 	const t = await getTranslations("Download");
+	const tScreens = await getTranslations("AppScreens");
 	const year = new Date().getFullYear();
 	const points = t.raw("points") as { title: string; description: string }[];
 	const waitlistLabels: WaitlistLabels = {
@@ -107,15 +107,7 @@ export default async function DownloadPage({ params }: Props) {
 
 							<div className="animate-fade-up-delay-2 hidden sm:flex justify-center lg:justify-end">
 								<div className="w-[280px] max-w-full">
-									<div className="phone-frame relative">
-										<div className="phone-notch" aria-hidden="true" />
-										<div className="phone-screen">
-											<HomeScreen />
-											<div className="absolute bottom-0 inset-x-0 z-10">
-												<AppTabs active="chat" />
-											</div>
-										</div>
-									</div>
+									<PhoneScreenshot screen="chat" alt={tScreens("alt.chat")} />
 								</div>
 							</div>
 						</div>

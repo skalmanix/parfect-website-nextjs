@@ -13,7 +13,6 @@
 			"titleAfter": "— och ingen annan",
 			"intro": "De flesta chattappar bär hela ditt liv: jobbtrådar, gruppchattar, familjelogistik. Parfect ger er relation ett eget rum — krypterat, intimt och utan distraktioner.",
 			"screen": "chat",
-			"tab": "chat",
 			"story": {
 				"heading": "Varför par behöver ett eget utrymme att prata i",
 				"paragraphs": [
@@ -144,7 +143,6 @@
 			"titleAfter": "högt",
 			"intro": "Varje par har drömmar och önskningar som förblir osagda — inte för att de inte betyder något, utan för att det känns omöjligt att börja samtalet. Parfect ger er ett milt, privat sätt att ta första steget.",
 			"screen": "fantasies",
-			"tab": "fantasies",
 			"story": {
 				"heading": "Samtalet de flesta par aldrig har",
 				"paragraphs": [
@@ -274,8 +272,7 @@
 			"titleHighlight": "\"vi borde gå ut mer\"",
 			"titleAfter": "till en bokad lördag",
 			"intro": "Varje par säger det. Få kalendrar visar det. Parfect förvandlar dejtkvällen från en vag avsikt till en plan med tid, plats — och en barnvakt som redan bekräftats.",
-			"screen": "date",
-			"tab": "together",
+			"screen": "together-dates",
 			"story": {
 				"heading": "Varför dejtkvällar aldrig blir av",
 				"paragraphs": [
@@ -405,8 +402,7 @@
 			"titleHighlight": "ni två",
 			"titleAfter": "alltid pratar om",
 			"intro": "Kuststaden ni skulle rymma till. Restaurangen ni alltid passerar. Den långsamma dansen i köket. Parfect samlar varje \"någon gång\" på ett gemensamt ställe — och hjälper er att faktiskt ta er dit.",
-			"screen": "together",
-			"tab": "together",
+			"screen": "together-ideas",
 			"story": {
 				"heading": "Någon gång är ingen plan",
 				"paragraphs": [
@@ -536,8 +532,7 @@
 			"titleHighlight": "partners",
 			"titleAfter": "— inte bara medföräldrar",
 			"intro": "Ni älskar era barn. Ni saknar också varandra. Parfect hjälper upptagna föräldrar att skydda relationen som startade hela familjen — i de tio minutersluckor en förälders dag faktiskt har.",
-			"screen": "home",
-			"tab": "together",
+			"screen": "together-dates",
 			"story": {
 				"heading": "Paret hamnar oftast sist. Låt oss fixa det.",
 				"paragraphs": [
@@ -668,7 +663,6 @@
 			"titleAfter": ".",
 			"intro": "Miles ifrån varandra kan ni inte dela soffa — men ni kan dela en ritual, en hemlighet och en lista över allt ni ska göra nästa gång. Parfect ger par på distans ett privat ställe att hålla sig genuint nära.",
 			"screen": "chat",
-			"tab": "chat",
 			"story": {
 				"heading": "Distansrelationer faller på drift, inte avstånd",
 				"paragraphs": [
@@ -798,8 +792,7 @@
 			"titleHighlight": "Nyfiket",
 			"titleAfter": "är bättre.",
 			"intro": "Efter många år känner ni varandras kaffeordning, humör och webbläsarflikar. Parfect är för det som kommer härnäst: att med avsikt förbli nyfikna på personen som sover bredvid er.",
-			"screen": "home",
-			"tab": "fantasies",
+			"screen": "relationship",
 			"story": {
 				"heading": "Den tysta risken med ett bra äktenskap",
 				"paragraphs": [

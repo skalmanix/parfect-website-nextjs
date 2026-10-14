@@ -15,7 +15,7 @@
 				"items": [
 					{
 						"question": "Vad är Parfect?",
-						"answer": "Parfect är en privat app för exakt två personer: du och din partner. Den kombinerar en intim chatt, en kvällsfråga att svara på tillsammans, ett utrymme för att dela fantasier, en dejtplanerare och en gemensam bucket list — utan flöden, följare eller publik."
+						"answer": "Parfect är en privat app för exakt två personer: du och din partner. Den kombinerar en intim chatt med ett gemensamt fotogalleri, en veckovis check-in-fråga, ett utrymme för att dela fantasier, önskningar ni ger varandra, en dejtplanerare och en gemensam bucket list — utan flöden, utan följare och utan publik."
 					},
 					{
 						"question": "Vem är Parfect för?",
@@ -28,6 +28,14 @@
 					{
 						"question": "Fungerar Parfect på både iPhone och Android?",
 						"answer": "Ja. Parfect finns för både iOS och Android, och parkopplingen fungerar mellan plattformarna — en av er kan ha iPhone och den andra Android utan att förlora några funktioner."
+					},
+					{
+						"question": "Vad är önskningar?",
+						"answer": "En önskan är något du gärna vill att din partner gör — planerar en mysig middag, en promenad, en överraskning hemma. Din partner ser den, accepterar den och markerar den som klar när den har blivit av. Önskningar ligger kvar tills de är klara, så det finns ingen stress att skynda."
+					},
+					{
+						"question": "Kan vi dela ett utrymme med ett annat par?",
+						"answer": "Ja, om ni vill. Med parutrymmen kan två par som känner varandra koppla ihop sig med en kod och dela en end-to-end-krypterad chatt och foton. Utrymmet öppnas först när alla fyra har accepterat, och vem som helst kan lämna när som helst — då stängs det och innehållet raderas. Ert privata utrymme som par förblir helt separat."
 					}
 				]
 			},
@@ -59,7 +67,7 @@
 				"items": [
 					{
 						"question": "Vem kan se det vi delar?",
-						"answer": "Bara ni två. Det finns inga offentliga profiler, inga flöden, och inget ni delar syns för andra användare. Ert utrymme kräver inbjudan och förblir privat."
+						"answer": "Bara ni två. Det finns inga offentliga profiler, inga flöden, och inget ni delar syns för andra användare. Om ni väljer att öppna ett parutrymme med vänner är det ett separat utrymme — er privata chatt, era fantasier och foton flyttar aldrig in dit."
 					},
 					{
 						"question": "Är våra meddelanden krypterade?",

@@ -60,8 +60,8 @@
 					"title": "Snakk som om det bare er dere to",
 					"description": "En privat tråd som bare er deres. Sett meldinger til å forsvinne, snakk fritt og hold dere nær selv når dere er fra hverandre.",
 					"highlights": {
-						"0": "Sanntidsmeldinger for to",
-						"1": "Forsvinnende meldinger og lesebekreftelser",
+						"0": "Forsvinnende meldinger og lesebekreftelser",
+						"1": "Et privat galleri med bildene og videoene deres",
 						"2": "Valgfri ende-til-ende-kryptering"
 					}
 				},
@@ -78,11 +78,11 @@
 				"together": {
 					"tagline": "Sammen",
 					"title": "Gjør øyeblikkene ekte",
-					"description": "Gjør gnister om til en felles bucket list, planlegg datekvelder, til og med ordne barnevakt — sammen.",
+					"description": "Gjør gnister om til en felles bucket list, planlegg datekvelder og gi hverandre ønsker — sammen.",
 					"highlights": {
-						"0": "Felles bucket list og dateplanlegging",
-						"1": "Barnevakt-koordinering innebygd",
-						"2": "Jubileer og viktige datoer"
+						"0": "Bucket list, datekvelder og barnevakt i én plan",
+						"1": "Ønsker dere gir hverandre",
+						"2": "Topp 10-idéer når dere trenger inspirasjon"
 					}
 				}
 			}
@@ -90,33 +90,46 @@
 		"features": {
 			"eyebrow": "Laget for forholdet deres",
 			"heading": "Mer enn meldinger",
-			"description": "Gjennomtenkte verktøy som hjelper dere å sjekke inn, planlegge fremover og beskytte det som betyr noe — uten støyen fra sosiale medier.",
+			"description": "Gjennomtenkte verktøy som hjelper dere å sjekke inn, planlegge fremover og gjøre litt mer for hverandre — uten støyen fra sosiale medier.",
 			"items": {
+				"wishes": {
+					"title": "Ønsker",
+					"description": "Ønsk deg en koselig middag eller en overraskelse hjemme. Partneren din ser det, sier ja og sørger for at det skjer — uten tidspress."
+				},
+				"gallery": {
+					"title": "Bilder og videoer",
+					"description": "Alle bilder og videoer dere har delt, samlet i ett privat galleri. Filtrer på hvem som sendte dem og ta vare på dine egne favoritter."
+				},
+				"ideas": {
+					"title": "Topp 10-idéer",
+					"description": "Usikre på hva dere skal finne på? Start med de ti idéene par liker best — eller bla gjennom alle 50 etter stemning og tid."
+				},
 				"checkin": {
 					"title": "Ukentlige innsjekk",
-					"description": "Reflekter sammen med gjennomtenkte spørsmål — avslørt side om side når dere begge er klare."
+					"description": "Ett spørsmål i uken. Svarene deres forblir forseglet til dere begge har svart — så ser dere dem side om side."
+				},
+				"mood": {
+					"title": "Del humøret",
+					"description": "Vis partneren din hvordan du har det med ett trykk, og se tilbake på humøret deres sammen i en felles kalender."
+				},
+				"spaces": {
+					"title": "Parrom",
+					"description": "Koble dere sammen med et annet par dere stoler på i et eget, ende-til-ende-kryptert rom. Det åpnes først når alle fire sier ja."
 				},
 				"calendar": {
 					"title": "Felles kalender",
 					"description": "Gå aldri glipp av et jubileum. Planlegg datekvelder og hold styr på øyeblikkene som betyr noe."
 				},
-				"lock": {
-					"title": "Applås og biometri",
-					"description": "PIN-lås og biometrisk beskyttelse holder forholdet deres privat på enheten din."
-				},
 				"constellation": {
 					"title": "Tilknytningsvekst",
 					"description": "Se konstellasjonen deres vokse etter hvert som dere deler øyeblikk og bygger historien deres sammen."
 				},
-				"shield": {
-					"title": "Personvern i fokus",
-					"description": "Innholdsfrie varsler, pausekontroller og tydelige retningslinjer for data."
-				},
-				"rings": {
-					"title": "Laget for to",
-					"description": "Koble sammen én gang med en invitasjonskode. Ingen feeds, ingen følgere, ingen andre."
+				"lock": {
+					"title": "Applås og biometri",
+					"description": "PIN-lås og biometrisk beskyttelse holder forholdet deres privat på enheten din."
 				}
-			}
+			},
+			"newBadge": "Nytt"
 		},
 		"howItWorks": {
 			"eyebrow": "Slik fungerer det",
@@ -210,7 +223,7 @@
 		"faq": {
 			"0": {
 				"question": "Hva er Parfect?",
-				"answer": "Parfect er en privat app for par som kombinerer intim chat, fantasiforslag, dateplanlegging og milepæler i forholdet — alt i ett varmt, trygt rom laget for to."
+				"answer": "Parfect er en privat app for par som samler intim chat, fantasi-prompter, ukentlige innsjekk, ønsker, dateplanlegging og et felles bildegalleri i ett varmt, trygt rom for to."
 			},
 			"1": {
 				"question": "Er Parfect privat?",

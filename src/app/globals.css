@@ -356,32 +356,6 @@ button {
 	position: relative;
 }
 
-.app-tab-bar {
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-	padding: 0.65rem 0.5rem 0.85rem;
-	background: color-mix(in srgb, var(--chrome) 92%, transparent);
-	border-top: 1px solid var(--border);
-	border-radius: 0 0 2rem 2rem;
-	backdrop-filter: blur(12px);
-}
-
-.app-tab {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	gap: 0.2rem;
-	font-size: 0.625rem;
-	font-weight: 600;
-	color: var(--muted);
-	min-width: 4.5rem;
-}
-
-.app-tab-active {
-	color: var(--primary);
-}
-
 .preview-pill {
 	padding: 1rem 1.25rem;
 	border-radius: 1rem;

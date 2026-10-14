@@ -20,7 +20,6 @@ type FeaturePageData = {
 	titleAfter: string;
 	intro: string;
 	screen: FeaturePageContent["screen"];
-	tab: FeaturePageContent["tab"];
 	story: { heading: string; paragraphs: string[] };
 	image: { src: string; alt: string; caption: string };
 	benefits: FeaturePageContent["benefits"];
@@ -58,7 +57,6 @@ function mapFeaturePage(data: FeaturePageData): FeaturePageContent {
 		title: buildTitle(data),
 		intro: data.intro,
 		screen: data.screen,
-		tab: data.tab,
 		story: data.story,
 		image: data.image,
 		benefits: data.benefits,

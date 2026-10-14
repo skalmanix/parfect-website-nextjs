@@ -1,13 +1,8 @@
 const CLIENT_NAMESPACES = [
 	"Common",
 	"GuidesUI",
-	"AppTabs",
 	"AppPreview",
-	"HomeScreen",
-	"ChatScreen",
-	"FantasiesScreen",
-	"TogetherScreen",
-	"DateScreen",
+	"AppScreens",
 ] as const;
 
 export function pickClientMessages(

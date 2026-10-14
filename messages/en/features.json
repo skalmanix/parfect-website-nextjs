@@ -13,7 +13,6 @@
 			"titleAfter": "— and no one else",
 			"intro": "Most messaging apps carry your whole life: work threads, group chats, family logistics. Parfect gives your relationship its own room — encrypted, intimate, and free of distractions.",
 			"screen": "chat",
-			"tab": "chat",
 			"story": {
 				"heading": "Why couples need a separate space to talk",
 				"paragraphs": [
@@ -144,7 +143,6 @@
 			"titleAfter": "out loud",
 			"intro": "Every couple has dreams and desires that stay unspoken — not because they don't matter, but because starting the conversation feels impossible. Parfect gives you a gentle, private way to begin.",
 			"screen": "fantasies",
-			"tab": "fantasies",
 			"story": {
 				"heading": "The conversation most couples never have",
 				"paragraphs": [
@@ -274,8 +272,7 @@
 			"titleHighlight": "\"we should go out more\"",
 			"titleAfter": "to a booked Saturday",
 			"intro": "Every couple says it. Few calendars show it. Parfect turns date night from a vague intention into a plan with a time, a place — and a babysitter who's already confirmed.",
-			"screen": "date",
-			"tab": "together",
+			"screen": "together-dates",
 			"story": {
 				"heading": "Why date nights keep not happening",
 				"paragraphs": [
@@ -405,8 +402,7 @@
 			"titleHighlight": "you two",
 			"titleAfter": "keep talking about",
 			"intro": "The beach town you'd run away to. The restaurant you keep passing. The slow dance in the kitchen. Parfect keeps every \"someday\" in one shared place — and helps you actually get to them.",
-			"screen": "together",
-			"tab": "together",
+			"screen": "together-ideas",
 			"story": {
 				"heading": "Someday is not a plan",
 				"paragraphs": [
@@ -536,8 +532,7 @@
 			"titleHighlight": "partners",
 			"titleAfter": "— not just co-parents",
 			"intro": "You love your kids. You also miss each other. Parfect helps busy parents protect the relationship that started the whole family — in the ten-minute gaps a parent's day actually has.",
-			"screen": "home",
-			"tab": "together",
+			"screen": "together-dates",
 			"story": {
 				"heading": "The couple usually comes last. Let's fix that.",
 				"paragraphs": [
@@ -668,7 +663,6 @@
 			"titleAfter": ".",
 			"intro": "Miles apart, you can't share a couch — but you can share a ritual, a secret, and a list of everything you'll do next time. Parfect gives long-distance couples one private place to stay genuinely close.",
 			"screen": "chat",
-			"tab": "chat",
 			"story": {
 				"heading": "Long-distance fails on drift, not distance",
 				"paragraphs": [
@@ -798,8 +792,7 @@
 			"titleHighlight": "Curious",
 			"titleAfter": "is better.",
 			"intro": "Years in, you know each other's coffee order, moods, and browser tabs. Parfect is for what comes next: staying curious about the person sleeping next to you — on purpose.",
-			"screen": "home",
-			"tab": "fantasies",
+			"screen": "relationship",
 			"story": {
 				"heading": "The quiet risk of a good marriage",
 				"paragraphs": [

@@ -1,79 +1,44 @@
 {
 	"AppPreview": {
-		"eyebrow": "Feels like the app",
+		"eyebrow": "Real screens, real app",
 		"heading": "See what you're stepping into",
-		"description": "Explore the screens exactly as they appear in Parfect — before you even download.",
+		"description": "These are real screenshots from Parfect — no mockups. Tap through the screens couples use every day.",
 		"cta": "Try it yourselves — free",
-		"tabLabel": "{tab} tab",
 		"screenLabels": {
+			"home": "Home",
 			"chat": "Private chat",
 			"fantasies": "Fantasies",
-			"together": "Together",
-			"date": "Date night"
+			"together-dates": "Date nights",
+			"together-wishes": "Wishes",
+			"gallery": "Photos & videos",
+			"relationship": "Relationship"
+		},
+		"screenCaptions": {
+			"home": "Your partner's mood, this week's question, and what needs you next.",
+			"chat": "Photos, reactions, and fantasies moved into the conversation.",
+			"fantasies": "Ask, share, and keep talking — at your own pace.",
+			"together-dates": "The next date night, with time, place, and sitter.",
+			"together-wishes": "Wish for something. Your partner makes it happen.",
+			"gallery": "Every photo and video you've shared, with your favourites.",
+			"relationship": "Your connection score, mood calendar, and a look back."
 		},
 		"tablistAria": "App screens"
 	},
-	"AppTabs": {
-		"chat": "Chat",
-		"fantasies": "Fantasies",
-		"together": "Together",
-		"ariaLabel": "App navigation preview"
-	},
-	"HomeScreen": {
-		"ariaLabel": "Parfect home screen with tonight's prompt and quick actions",
-		"goodEvening": "Good evening",
-		"coupleNames": "Emma & Liam",
-		"streakDays": "12-day streak",
-		"tonightsPrompt": "Tonight's prompt",
-		"promptQuestion": "What's one small thing your partner did lately that made you feel loved?",
-		"dateNightPlanned": "Date night planned",
-		"dateTime": "Saturday · 19:30"
-	},
-	"ChatScreen": {
-		"ariaLabel": "Parfect private chat screen with an intimate conversation",
-		"partnerName": "Emma",
-		"onlineNow": "online now",
-		"todayTime": "Today 21:12",
-		"message1": "Tonight, after the kids are asleep… I have a surprise for you",
-		"message2": "Now I can't stop thinking about it 😏",
-		"message3": "Good. Wear that smile I love.",
-		"disappearingMessages": "Disappearing messages on",
-		"messagePlaceholder": "Message…"
-	},
-	"FantasiesScreen": {
-		"ariaLabel": "Parfect fantasies screen with tonight's prompt and an invite",
-		"title": "Fantasies",
-		"tonightsPrompt": "Tonight's prompt",
-		"promptQuestion": "What's a fantasy you've never said out loud?",
-		"shareYours": "Share yours",
-		"inviteSent": "Emma sent you an invite",
-		"invitePreview": "\"Something I've been imagining for our anniversary…\"",
-		"respond": "Respond",
-		"notRightNow": "Not right now",
-		"bothSaidYes": "You both said yes",
-		"bucketListAdded": "A weekend away, no plans — it's now on your bucket list."
-	},
-	"TogetherScreen": {
-		"ariaLabel": "Parfect together screen with an upcoming date and bucket list",
-		"title": "Together",
-		"planned": "PLANNED",
-		"rooftopDinner": "Rooftop dinner",
-		"dateDetails": "Saturday · 19:30 · Sitter confirmed",
-		"bucketList": "Bucket list",
-		"itemCompleted": "Slow dance in the kitchen",
-		"itemFromFantasy": "Beach town getaway",
-		"fromAFantasy": "FROM A FANTASY",
-		"itemPending": "Sunrise hike, just us",
-		"addSomethingNew": "Add something new"
-	},
-	"DateScreen": {
-		"ariaLabel": "Parfect date night detail screen",
-		"title": "Date night",
-		"planned": "PLANNED",
-		"rooftopDinner": "Rooftop dinner",
-		"dateTime": "Saturday, Jul 12 · 19:30",
-		"location": "Terrazza, downtown",
-		"babysitterConfirmed": "Babysitter confirmed",
-		"itsADate": "It's a date"
+	"AppScreens": {
+		"alt": {
+			"home": "Parfect home screen showing the partner's mood, this week's check-in question, and a reply prompt",
+			"chat": "Parfect private chat with a shared photo, reactions, and a fantasy moved into the conversation",
+			"fantasies": "Parfect Fantasies tab with a request to share and open fantasies between partners",
+			"together-ideas": "Parfect Together tab with the couple's bucket list",
+			"together-dates": "Parfect Together tab showing the next date night with time and place",
+			"together-wishes": "Parfect Wishes screen with one wish waiting and one in progress",
+			"relationship": "Parfect Relationship tab with the couple's connection score and stats",
+			"gallery": "Parfect photo and video gallery grouped by month, with favourites",
+			"ideas-top10": "Parfect Browse ideas screen showing the top 10 date ideas",
+			"checkin-reveal": "Parfect weekly check-in with both partners' answers side by side",
+			"calendar": "Parfect shared calendar with upcoming date nights",
+			"growth": "Parfect growth screen with the couple's constellation and streak",
+			"couples": "Parfect couple spaces screen for connecting with another couple"
+		}
 	}
 }

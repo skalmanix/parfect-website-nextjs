@@ -13,7 +13,6 @@
 			"titleAfter": "— y a nadie más",
 			"intro": "La mayoría de apps de mensajes llevan toda vuestra vida: chats de trabajo, grupos, logística familiar. Parfect da a vuestra relación su propio espacio — cifrado, íntimo y sin distracciones.",
 			"screen": "chat",
-			"tab": "chat",
 			"story": {
 				"heading": "Por qué las parejas necesitan un espacio aparte para hablar",
 				"paragraphs": [
@@ -144,7 +143,6 @@
 			"titleAfter": "en voz alta",
 			"intro": "Toda pareja tiene sueños y deseos que quedan sin decir — no porque no importen, sino porque empezar la conversación parece imposible. Parfect os da una forma suave y privada de comenzar.",
 			"screen": "fantasies",
-			"tab": "fantasies",
 			"story": {
 				"heading": "La conversación que la mayoría de parejas nunca tienen",
 				"paragraphs": [
@@ -274,8 +272,7 @@
 			"titleHighlight": "\"deberíamos salir más\"",
 			"titleAfter": "a un sábado reservado",
 			"intro": "Toda pareja lo dice. Pocos calendarios lo muestran. Parfect convierte la cita nocturna de una intención vaga en un plan con hora, lugar — y un canguro que ya está confirmado.",
-			"screen": "date",
-			"tab": "together",
+			"screen": "together-dates",
 			"story": {
 				"heading": "Por qué las citas nocturnas siguen sin pasar",
 				"paragraphs": [
@@ -405,8 +402,7 @@
 			"titleHighlight": "vosotros dos",
 			"titleAfter": "seguís hablando",
 			"intro": "El pueblo de playa al que escaparíais. El restaurante que siempre pasáis. El baile lento en la cocina. Parfect guarda cada \"algún día\" en un lugar compartido — y os ayuda a llegar realmente.",
-			"screen": "together",
-			"tab": "together",
+			"screen": "together-ideas",
 			"story": {
 				"heading": "Algún día no es un plan",
 				"paragraphs": [
@@ -536,8 +532,7 @@
 			"titleHighlight": "pareja",
 			"titleAfter": "— no solo copadres",
 			"intro": "Amáis a vuestros hijos. También os echáis de menos. Parfect ayuda a los padres ocupados a proteger la relación que empezó toda la familia — en los huecos de diez minutos que realmente tiene el día de un padre.",
-			"screen": "home",
-			"tab": "together",
+			"screen": "together-dates",
 			"story": {
 				"heading": "La pareja suele quedar al final. Arreglemos eso.",
 				"paragraphs": [
@@ -668,7 +663,6 @@
 			"titleAfter": ".",
 			"intro": "A kilómetros de distancia, no podéis compartir un sofá — pero podéis compartir un ritual, un secreto y una lista de todo lo que haréis la próxima vez. Parfect da a las parejas a distancia un lugar privado para mantenerse genuinamente cercanas.",
 			"screen": "chat",
-			"tab": "chat",
 			"story": {
 				"heading": "La distancia falla por la deriva, no por los kilómetros",
 				"paragraphs": [
@@ -798,8 +792,7 @@
 			"titleHighlight": "Curioso",
 			"titleAfter": "es mejor.",
 			"intro": "Años después, conocéis el café del otro, los estados de ánimo y las pestañas del navegador. Parfect es para lo que viene después: seguir sintiendo curiosidad por la persona que duerme a vuestro lado — a propósito.",
-			"screen": "home",
-			"tab": "fantasies",
+			"screen": "relationship",
 			"story": {
 				"heading": "El riesgo silencioso de un buen matrimonio",
 				"paragraphs": [

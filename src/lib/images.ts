@@ -61,6 +61,10 @@ export const IMAGE_PRESETS = {
 		widths: [640, 768],
 		sizes: "(max-width: 640px) 270px, 300px",
 	},
+	screen: {
+		widths: [320, 640],
+		sizes: "(max-width: 640px) 270px, 300px",
+	},
 	featureDeco: { widths: [640, 768], sizes: "400px" },
 	qr: { widths: [192], sizes: "96px", variantExt: "webp" },
 } as const;

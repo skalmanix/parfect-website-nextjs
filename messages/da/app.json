@@ -1,79 +1,44 @@
 {
 	"AppPreview": {
-		"eyebrow": "Føles som appen",
+		"eyebrow": "Rigtige skærme, rigtig app",
 		"heading": "Se, hvad I går ind i",
-		"description": "Udforsk skærmene præcis som de ser ud i Parfect — før I overhovedet downloader.",
+		"description": "Det her er rigtige skærmbilleder fra Parfect — ingen mockups. Klik jer igennem de skærme, par bruger hver dag.",
 		"cta": "Prøv selv — gratis",
-		"tabLabel": "{tab}-fanen",
 		"screenLabels": {
+			"home": "Hjem",
 			"chat": "Privat chat",
 			"fantasies": "Fantasier",
-			"together": "Sammen",
-			"date": "Dateaften"
+			"together-dates": "Date nights",
+			"together-wishes": "Ønsker",
+			"gallery": "Billeder og videoer",
+			"relationship": "Forhold"
+		},
+		"screenCaptions": {
+			"home": "Din partners humør, ugens spørgsmål og det, der venter på dig.",
+			"chat": "Billeder, reaktioner og fantasier flyttet ind i samtalen.",
+			"fantasies": "Spørg, del og bliv ved med at tale — i jeres eget tempo.",
+			"together-dates": "Den næste date night, med tid, sted og babysitter.",
+			"together-wishes": "Ønsk dig noget. Din partner sørger for, at det sker.",
+			"gallery": "Alle billeder og videoer, I har delt, med jeres favoritter.",
+			"relationship": "Jeres forbindelsesscore, humørkalender og et tilbageblik."
 		},
 		"tablistAria": "Appskærme"
 	},
-	"AppTabs": {
-		"chat": "Chat",
-		"fantasies": "Fantasier",
-		"together": "Sammen",
-		"ariaLabel": "Forhåndsvisning af appnavigation"
-	},
-	"HomeScreen": {
-		"ariaLabel": "Parfect-hjemskærm med aftenens spørgsmål og hurtige handlinger",
-		"goodEvening": "God aften",
-		"coupleNames": "Emma & Liam",
-		"streakDays": "12 dages streak",
-		"tonightsPrompt": "Aftenens spørgsmål",
-		"promptQuestion": "Hvad er en lille ting, din partner har gjort for nylig, der fik dig til at føle dig elsket?",
-		"dateNightPlanned": "Dateaften planlagt",
-		"dateTime": "Lørdag · 19:30"
-	},
-	"ChatScreen": {
-		"ariaLabel": "Parfect privat chat med en intim samtale",
-		"partnerName": "Emma",
-		"onlineNow": "online nu",
-		"todayTime": "I dag 21:12",
-		"message1": "I aften, når børnene er faldet i søvn… jeg har en overraskelse til dig",
-		"message2": "Nu kan jeg ikke stoppe med at tænke på det 😏",
-		"message3": "Godt. Hav det smil på, jeg elsker.",
-		"disappearingMessages": "Forsvindende beskeder til",
-		"messagePlaceholder": "Besked…"
-	},
-	"FantasiesScreen": {
-		"ariaLabel": "Parfect fantasiskærm med aftenens spørgsmål og en invitation",
-		"title": "Fantasier",
-		"tonightsPrompt": "Aftenens spørgsmål",
-		"promptQuestion": "Hvilken fantasi har du aldrig sagt højt?",
-		"shareYours": "Del din",
-		"inviteSent": "Emma sendte dig en invitation",
-		"invitePreview": "\"Noget jeg har fantaseret om til vores jubilæum…\"",
-		"respond": "Svar",
-		"notRightNow": "Ikke lige nu",
-		"bothSaidYes": "I sagde begge ja",
-		"bucketListAdded": "En weekend væk, ingen planer — den er nu på jeres bucket list."
-	},
-	"TogetherScreen": {
-		"ariaLabel": "Parfect sammen-skærm med kommende date og bucket list",
-		"title": "Sammen",
-		"planned": "PLANLAGT",
-		"rooftopDinner": "Middag på taget",
-		"dateDetails": "Lørdag · 19:30 · Babysitter bekræftet",
-		"bucketList": "Bucket list",
-		"itemCompleted": "Langsom dans i køkkenet",
-		"itemFromFantasy": "Weekendtur til kystby",
-		"fromAFantasy": "FRA EN FANTASI",
-		"itemPending": "Solopgangstur, bare os",
-		"addSomethingNew": "Tilføj noget nyt"
-	},
-	"DateScreen": {
-		"ariaLabel": "Parfect dateaften-detaljeskærm",
-		"title": "Dateaften",
-		"planned": "PLANLAGT",
-		"rooftopDinner": "Middag på taget",
-		"dateTime": "Lørdag 12. juli · 19:30",
-		"location": "Terrazza, centrum",
-		"babysitterConfirmed": "Babysitter bekræftet",
-		"itsADate": "Det bliver en date"
+	"AppScreens": {
+		"alt": {
+			"home": "Parfects startskærm med partnerens humør, ugens check-in-spørgsmål og en opfordring til at svare",
+			"chat": "Parfects private chat med et delt billede, reaktioner og en fantasi flyttet ind i samtalen",
+			"fantasies": "Parfects Fantasier-fane med en anmodning om at dele og åbne fantasier mellem partnerne",
+			"together-ideas": "Parfects Sammen-fane med parrets bucket list",
+			"together-dates": "Parfects Sammen-fane med den næste date night, tid og sted",
+			"together-wishes": "Parfects Ønsker-skærm med ét ønske, der venter, og ét i gang",
+			"relationship": "Parfects Forhold-fane med parrets forbindelsesscore og statistik",
+			"gallery": "Parfects billed- og videogalleri grupperet efter måned, med favoritter",
+			"ideas-top10": "Parfects idéskærm med top 10 date-idéer",
+			"checkin-reveal": "Parfects ugentlige check-in med begge partneres svar side om side",
+			"calendar": "Parfects fælles kalender med kommende date nights",
+			"growth": "Parfects vækstskærm med parrets stjernebillede og streak",
+			"couples": "Parfects skærm for parrum, hvor man forbinder sig med et andet par"
+		}
 	}
 }

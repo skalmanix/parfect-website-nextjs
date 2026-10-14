@@ -15,7 +15,7 @@
 				"items": [
 					{
 						"question": "¿Qué es Parfect?",
-						"answer": "Parfect es una app privada para exactamente dos personas: tú y tu pareja. Combina un chat íntimo, una pregunta nocturna para responder juntos, un espacio para compartir fantasías, un planificador de citas y una bucket list compartida — sin feeds, sin seguidores y sin público."
+						"answer": "Parfect es una app privada para exactamente dos personas: tú y tu pareja. Combina un chat íntimo con una galería de fotos compartida, una pregunta semanal de check-in, un espacio para compartir fantasías, deseos que os regaláis, un planificador de citas y una bucket list compartida — sin feeds, sin seguidores y sin público."
 					},
 					{
 						"question": "¿Para quién es Parfect?",
@@ -28,6 +28,14 @@
 					{
 						"question": "¿Funciona Parfect en iPhone y Android?",
 						"answer": "Sí. Parfect funciona en iOS y Android, y la vinculación funciona entre plataformas — uno puede tener iPhone y el otro Android sin perder ninguna función."
+					},
+					{
+						"question": "¿Qué son los deseos?",
+						"answer": "Un deseo es algo que te encantaría que tu pareja hiciera — planear una cena acogedora, un paseo, una sorpresa en casa. Tu pareja lo ve, lo acepta y lo marca como hecho cuando ha ocurrido. Los deseos siguen abiertos hasta que se cumplen, así que no hay prisa."
+					},
+					{
+						"question": "¿Podemos compartir un espacio con otra pareja?",
+						"answer": "Sí, si queréis. Los espacios de pareja permiten que dos parejas que se conocen conecten con un código y compartan un chat y fotos cifrados de extremo a extremo. El espacio solo se abre cuando los cuatro han aceptado, y cualquiera puede salir en cualquier momento — entonces se cierra y su contenido se borra. Vuestro espacio privado como pareja sigue completamente separado."
 					}
 				]
 			},
@@ -59,7 +67,7 @@
 				"items": [
 					{
 						"question": "¿Quién puede ver lo que compartimos?",
-						"answer": "Solo vosotros dos. No hay perfiles públicos, ni feeds, y nada de lo que compartís es visible para otros usuarios. Vuestro espacio es solo por invitación y así se mantiene."
+						"answer": "Solo vosotros dos. No hay perfiles públicos ni feeds, y nada de lo que compartís es visible para otros usuarios. Si decidís abrir un espacio de pareja con amigos, es un espacio aparte — vuestro chat privado, vuestras fantasías y fotos nunca pasan a él."
 					},
 					{
 						"question": "¿Están cifrados nuestros mensajes?",

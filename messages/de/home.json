@@ -60,8 +60,8 @@
 					"title": "Redet, als wärt ihr allein",
 					"description": "Ein privater Thread, der nur euch gehört. Nachrichten verschwinden lassen, frei sprechen und nah bleiben — auch wenn ihr getrennt seid.",
 					"highlights": {
-						"0": "Echtzeit-Nachrichten für zwei",
-						"1": "Verschwindende Nachrichten & Lesebestätigungen",
+						"0": "Verschwindende Nachrichten & Lesebestätigungen",
+						"1": "Eine private Galerie eurer Fotos & Videos",
 						"2": "Optionale End-to-End-Verschlüsselung"
 					}
 				},
@@ -78,11 +78,11 @@
 				"together": {
 					"tagline": "Zusammen",
 					"title": "Momente wirklich werden lassen",
-					"description": "Aus Funken wird eine gemeinsame Bucket List, plant Date Nights, koordiniert sogar den Babysitter — zusammen.",
+					"description": "Aus Funken wird eine gemeinsame Bucket List, plant Date Nights und erfüllt euch gegenseitig Wünsche — zusammen.",
 					"highlights": {
-						"0": "Gemeinsame Bucket List & Date-Planung",
-						"1": "Babysitter-Koordination eingebaut",
-						"2": "Jubiläen & wichtige Termine"
+						"0": "Bucket List, Date Nights & Babysitter in einem Plan",
+						"1": "Wünsche, die ihr euch gegenseitig erfüllt",
+						"2": "Top-10-Ideen, wenn euch Inspiration fehlt"
 					}
 				}
 			}
@@ -90,33 +90,46 @@
 		"features": {
 			"eyebrow": "Für eure Beziehung gemacht",
 			"heading": "Mehr als Nachrichten",
-			"description": "Durchdachte Tools, die euch helfen, euch auszutauschen, vorauszuplanen und das zu schützen, was zählt — ohne den Lärm der sozialen Medien.",
+			"description": "Durchdachte Tools, die euch helfen, euch auszutauschen, vorauszuplanen und ein bisschen mehr füreinander zu tun — ohne den Lärm der sozialen Medien.",
 			"items": {
+				"wishes": {
+					"title": "Wünsche",
+					"description": "Wünsch dir ein gemütliches Abendessen oder eine Überraschung zu Hause. Dein Partner sieht es, sagt Ja und macht es möglich — ohne Termindruck."
+				},
+				"gallery": {
+					"title": "Fotos & Videos",
+					"description": "Alle Fotos und Videos, die ihr geteilt habt, in einer privaten Galerie. Filtert nach Absender und speichert eure eigenen Favoriten."
+				},
+				"ideas": {
+					"title": "Top-10-Ideen",
+					"description": "Keine Idee, was ihr machen sollt? Startet mit den zehn Ideen, die Paare am meisten lieben — oder stöbert in allen 50 nach Stimmung und Zeit."
+				},
 				"checkin": {
 					"title": "Wöchentliche Check-ins",
-					"description": "Gemeinsam reflektieren mit durchdachten Fragen — nebeneinander enthüllt, wenn ihr beide bereit seid."
+					"description": "Eine Frage pro Woche. Eure Antworten bleiben versiegelt, bis ihr beide geantwortet habt — dann seht ihr sie nebeneinander."
+				},
+				"mood": {
+					"title": "Stimmung teilen",
+					"description": "Zeig deinem Partner mit einem Tippen, wie es dir geht, und blickt gemeinsam in einem Stimmungskalender zurück."
+				},
+				"spaces": {
+					"title": "Paarräume",
+					"description": "Verbindet euch mit einem befreundeten Paar in einem separaten, Ende-zu-Ende-verschlüsselten Raum. Er öffnet sich erst, wenn alle vier zustimmen."
 				},
 				"calendar": {
 					"title": "Gemeinsamer Kalender",
 					"description": "Verpasst kein Jubiläum. Plant Date Nights und behaltet die Momente im Blick, die zählen."
 				},
-				"lock": {
-					"title": "App-Sperre & Biometrie",
-					"description": "PIN-Sperre und biometrischer Schutz halten eure Beziehung privat auf eurem Gerät."
-				},
 				"constellation": {
 					"title": "Verbindung wächst",
 					"description": "Seht eure Konstellation wachsen, während ihr Momente teilt und eure Geschichte gemeinsam aufbaut."
 				},
-				"shield": {
-					"title": "Datenschutz zuerst",
-					"description": "Inhaltsfreie Benachrichtigungen, Pause-Funktionen und klare Datenschutzrichtlinien."
-				},
-				"rings": {
-					"title": "Für zwei gemacht",
-					"description": "Einmal mit Einladungscode verbinden. Keine Feeds, keine Follower, niemand sonst."
+				"lock": {
+					"title": "App-Sperre & Biometrie",
+					"description": "PIN-Sperre und biometrischer Schutz halten eure Beziehung privat auf eurem Gerät."
 				}
-			}
+			},
+			"newBadge": "Neu"
 		},
 		"howItWorks": {
 			"eyebrow": "So funktioniert's",
@@ -210,7 +223,7 @@
 		"faq": {
 			"0": {
 				"question": "Was ist Parfect?",
-				"answer": "Parfect ist eine private Paar-App, die intime Chats, Fantasie-Impulse, Date-Planung und Beziehungsmeilensteine in einem warmen, sicheren Raum für zwei vereint."
+				"answer": "Parfect ist eine private Paar-App, die intimen Chat, Fantasie-Impulse, wöchentliche Check-ins, Wünsche, Date-Planung und eine gemeinsame Fotogalerie in einem warmen, sicheren Raum für zwei vereint."
 			},
 			"1": {
 				"question": "Ist Parfect privat?",

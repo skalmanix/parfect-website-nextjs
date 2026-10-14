@@ -3,35 +3,24 @@
 import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
-import { AppTabs } from "./app-tabs";
-import {
-	ChatScreen,
-	DateScreen,
-	FantasiesScreen,
-	TogetherScreen,
-} from "./app-screens";
+import { ResponsiveImage } from "@/components/responsive-image";
+import { appScreenSrc, type AppScreen } from "./phone-screenshot";
 import { DOWNLOAD_PATH } from "@/lib/nav";
 
-const screenIds = ["chat", "fantasies", "together", "date"] as const;
-const screens = {
-	chat: ChatScreen,
-	fantasies: FantasiesScreen,
-	together: TogetherScreen,
-	date: DateScreen,
-} as const;
-const tabByScreen = {
-	chat: "chat",
-	fantasies: "fantasies",
-	together: "together",
-	date: "together",
-} as const;
+const screenIds = [
+	"home",
+	"chat",
+	"fantasies",
+	"together-dates",
+	"together-wishes",
+	"gallery",
+	"relationship",
+] as const satisfies readonly AppScreen[];
 
 export function AppPreview() {
 	const t = useTranslations("AppPreview");
-	const tTabs = useTranslations("AppTabs");
+	const tScreens = useTranslations("AppScreens");
 	const [active, setActive] = useState(0);
-	const currentId = screenIds[active];
-	const currentTab = tabByScreen[currentId];
 
 	return (
 		<section
@@ -55,7 +44,7 @@ export function AppPreview() {
 
 				<div
 					data-reveal
-					className="lg:hidden overflow-x-auto pb-4 -mx-5 px-5 snap-x snap-mandatory"
+					className="lg:hidden overflow-x-auto pb-4 -mx-5 px-5 snap-x snap-mandatory [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
 				>
 					<div
 						role="tablist"
@@ -79,15 +68,19 @@ export function AppPreview() {
 					</div>
 				</div>
 
+				<p className="lg:hidden text-center text-muted text-sm max-w-xs mx-auto mb-6 min-h-[2.5rem]">
+					{t(`screenCaptions.${screenIds[active]}`)}
+				</p>
+
 				<div className="grid lg:grid-cols-[1fr_auto] gap-8 lg:gap-16 items-center max-w-5xl mx-auto">
 					<div
 						data-reveal
-						className="hidden lg:flex flex-col gap-3 order-2 lg:order-1"
+						className="hidden lg:flex flex-col gap-2.5 order-2 lg:order-1"
 					>
 						<div
 							role="tablist"
 							aria-label={t("tablistAria")}
-							className="flex flex-col gap-3"
+							className="flex flex-col gap-2.5"
 						>
 							{screenIds.map((id, index) => (
 								<button
@@ -103,8 +96,8 @@ export function AppPreview() {
 									<span className="preview-pill-label">
 										{t(`screenLabels.${id}`)}
 									</span>
-									<span className="text-muted text-sm capitalize">
-										{t("tabLabel", { tab: tTabs(tabByScreen[id]) })}
+									<span className="text-muted text-sm">
+										{t(`screenCaptions.${id}`)}
 									</span>
 								</button>
 							))}
@@ -126,25 +119,26 @@ export function AppPreview() {
 							<div className="phone-frame relative">
 								<div className="phone-notch" aria-hidden="true" />
 								<div className="phone-screen">
-									{screenIds.map((id, index) => {
-										const Screen = screens[id];
-										return (
-											<div
-												key={id}
-												className={`absolute inset-0 transition-opacity duration-300 ${
-													active === index
-														? "opacity-100"
-														: "opacity-0 pointer-events-none"
-												}`}
-												aria-hidden={active !== index}
-											>
-												<Screen />
-											</div>
-										);
-									})}
-									<div className="absolute bottom-0 inset-x-0 z-10">
-										<AppTabs active={currentTab} />
-									</div>
+									{screenIds.map((id, index) => (
+										<div
+											key={id}
+											className={`absolute inset-0 transition-opacity duration-300 ${
+												active === index
+													? "opacity-100"
+													: "opacity-0 pointer-events-none"
+											}`}
+											aria-hidden={active !== index}
+										>
+											<ResponsiveImage
+												src={appScreenSrc(id)}
+												alt={active === index ? tScreens(`alt.${id}`) : ""}
+												preset="screen"
+												fill
+												width={393}
+												height={852}
+											/>
+										</div>
+									))}
 								</div>
 							</div>
 						</div>

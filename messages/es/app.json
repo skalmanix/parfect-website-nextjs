@@ -1,79 +1,44 @@
 {
 	"AppPreview": {
-		"eyebrow": "Se siente como la app",
+		"eyebrow": "Pantallas reales, app real",
 		"heading": "Mira a lo que te estás metiendo",
-		"description": "Explora las pantallas exactamente como aparecen en Parfect — antes incluso de descargar.",
+		"description": "Son capturas reales de Parfect — nada de maquetas. Recorred las pantallas que las parejas usan cada día.",
 		"cta": "Probadlo vosotros — gratis",
-		"tabLabel": "Pestaña {tab}",
 		"screenLabels": {
+			"home": "Inicio",
 			"chat": "Chat privado",
 			"fantasies": "Fantasías",
-			"together": "Juntos",
-			"date": "Noche de cita"
+			"together-dates": "Noches de cita",
+			"together-wishes": "Deseos",
+			"gallery": "Fotos y vídeos",
+			"relationship": "Relación"
+		},
+		"screenCaptions": {
+			"home": "El ánimo de tu pareja, la pregunta de la semana y lo que te espera.",
+			"chat": "Fotos, reacciones y fantasías que pasan a la conversación.",
+			"fantasies": "Pedid, compartid y seguid hablando — a vuestro ritmo.",
+			"together-dates": "La próxima cita, con hora, lugar y canguro.",
+			"together-wishes": "Pide un deseo. Tu pareja hace que se cumpla.",
+			"gallery": "Todas las fotos y vídeos que habéis compartido, con vuestros favoritos.",
+			"relationship": "Vuestra puntuación de conexión, calendario de ánimo y un repaso."
 		},
 		"tablistAria": "Pantallas de la app"
 	},
-	"AppTabs": {
-		"chat": "Chat",
-		"fantasies": "Fantasías",
-		"together": "Juntos",
-		"ariaLabel": "Vista previa de navegación de la app"
-	},
-	"HomeScreen": {
-		"ariaLabel": "Pantalla de inicio de Parfect con la pregunta de esta noche y acciones rápidas",
-		"goodEvening": "Buenas noches",
-		"coupleNames": "Emma & Liam",
-		"streakDays": "Racha de 12 días",
-		"tonightsPrompt": "Pregunta de esta noche",
-		"promptQuestion": "¿Qué pequeña cosa hizo tu pareja últimamente que te hizo sentir amado/a?",
-		"dateNightPlanned": "Noche de cita planificada",
-		"dateTime": "Sábado · 19:30"
-	},
-	"ChatScreen": {
-		"ariaLabel": "Chat privado de Parfect con una conversación íntima",
-		"partnerName": "Emma",
-		"onlineNow": "en línea ahora",
-		"todayTime": "Hoy 21:12",
-		"message1": "Esta noche, cuando los niños se duerman… tengo una sorpresa para ti",
-		"message2": "Ahora no puedo dejar de pensar en ello 😏",
-		"message3": "Bien. Ponte esa sonrisa que amo.",
-		"disappearingMessages": "Mensajes que desaparecen activados",
-		"messagePlaceholder": "Mensaje…"
-	},
-	"FantasiesScreen": {
-		"ariaLabel": "Pantalla de fantasías de Parfect con la pregunta de esta noche y una invitación",
-		"title": "Fantasías",
-		"tonightsPrompt": "Pregunta de esta noche",
-		"promptQuestion": "¿Qué fantasía nunca has dicho en voz alta?",
-		"shareYours": "Comparte la tuya",
-		"inviteSent": "Emma te envió una invitación",
-		"invitePreview": "\"Algo que he estado imaginando para nuestro aniversario…\"",
-		"respond": "Responder",
-		"notRightNow": "Ahora no",
-		"bothSaidYes": "Los dos dijisteis que sí",
-		"bucketListAdded": "Un fin de semana fuera, sin planes — ya está en vuestra bucket list."
-	},
-	"TogetherScreen": {
-		"ariaLabel": "Pantalla juntos de Parfect con una cita próxima y bucket list",
-		"title": "Juntos",
-		"planned": "PLANIFICADO",
-		"rooftopDinner": "Cena en la azotea",
-		"dateDetails": "Sábado · 19:30 · Canguro confirmado",
-		"bucketList": "Bucket list",
-		"itemCompleted": "Baile lento en la cocina",
-		"itemFromFantasy": "Escapada a pueblo costero",
-		"fromAFantasy": "DE UNA FANTASÍA",
-		"itemPending": "Caminata al amanecer, solo nosotros",
-		"addSomethingNew": "Añadir algo nuevo"
-	},
-	"DateScreen": {
-		"ariaLabel": "Pantalla de detalle de noche de cita de Parfect",
-		"title": "Noche de cita",
-		"planned": "PLANIFICADO",
-		"rooftopDinner": "Cena en la azotea",
-		"dateTime": "Sábado, 12 jul · 19:30",
-		"location": "Terrazza, centro",
-		"babysitterConfirmed": "Canguro confirmado",
-		"itsADate": "Es una cita"
+	"AppScreens": {
+		"alt": {
+			"home": "Pantalla de inicio de Parfect con el ánimo de la pareja, la pregunta semanal y un aviso para responder",
+			"chat": "Chat privado de Parfect con una foto compartida, reacciones y una fantasía llevada a la conversación",
+			"fantasies": "Pestaña Fantasías de Parfect con una petición para compartir y fantasías abiertas entre la pareja",
+			"together-ideas": "Pestaña Juntos de Parfect con la bucket list de la pareja",
+			"together-dates": "Pestaña Juntos de Parfect con la próxima cita, hora y lugar",
+			"together-wishes": "Pantalla Deseos de Parfect con un deseo pendiente y otro en curso",
+			"relationship": "Pestaña Relación de Parfect con la puntuación de conexión y estadísticas de la pareja",
+			"gallery": "Galería de fotos y vídeos de Parfect agrupada por meses, con favoritos",
+			"ideas-top10": "Pantalla de ideas de Parfect con las 10 mejores ideas para citas",
+			"checkin-reveal": "Check-in semanal de Parfect con las respuestas de los dos lado a lado",
+			"calendar": "Calendario compartido de Parfect con las próximas citas",
+			"growth": "Pantalla de crecimiento de Parfect con la constelación y la racha de la pareja",
+			"couples": "Pantalla de espacios de pareja de Parfect para conectar con otra pareja"
+		}
 	}
 }

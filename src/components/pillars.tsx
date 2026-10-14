@@ -4,25 +4,19 @@ import {
 	FantasyIllustration,
 	TogetherIllustration,
 } from "./pillar-illustrations";
-import { AppTabs } from "./app-tabs";
-import { ChatScreen, FantasiesScreen, TogetherScreen } from "./app-screens";
+import { PhoneScreenshot, type AppScreen } from "./phone-screenshot";
 
 const pillarIds = ["chat", "fantasies", "together"] as const;
-const screens = {
-	chat: ChatScreen,
-	fantasies: FantasiesScreen,
-	together: TogetherScreen,
-} as const;
+const screens: Record<(typeof pillarIds)[number], AppScreen> = {
+	chat: "chat",
+	fantasies: "fantasies",
+	together: "together-dates",
+};
 const illustrations = {
 	chat: ChatIllustration,
 	fantasies: FantasyIllustration,
 	together: TogetherIllustration,
 } as const;
-const tabs = {
-	chat: "chat" as const,
-	fantasies: "fantasies" as const,
-	together: "together" as const,
-};
 const accentColors = {
 	chat: "text-primary border-primary/30 bg-primary/10",
 	fantasies: "text-rose border-rose/30 bg-rose/10",
@@ -36,6 +30,7 @@ const dotColors = {
 
 export async function Pillars() {
 	const t = await getTranslations("Home.pillars");
+	const tScreens = await getTranslations("AppScreens");
 
 	return (
 		<section
@@ -58,7 +53,7 @@ export async function Pillars() {
 				<div className="space-y-8 md:space-y-10">
 					{pillarIds.map((id, index) => {
 						const Illustration = illustrations[id];
-						const Screen = screens[id];
+						const screen = screens[id];
 						const highlights = [0, 1, 2].map((i) =>
 							t(`items.${id}.highlights.${i}`),
 						);
@@ -103,15 +98,7 @@ export async function Pillars() {
 								</div>
 
 								<div className="relative mx-auto w-full max-w-[300px]">
-									<div className="phone-frame">
-										<div className="phone-notch" aria-hidden="true" />
-										<div className="phone-screen relative">
-											<Screen />
-											<div className="absolute bottom-0 inset-x-0 z-10">
-												<AppTabs active={tabs[id]} />
-											</div>
-										</div>
-									</div>
+									<PhoneScreenshot screen={screen} alt={tScreens(`alt.${screen}`)} />
 								</div>
 							</article>
 						);

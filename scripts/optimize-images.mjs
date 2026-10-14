@@ -26,6 +26,26 @@ const GROUPS = [
 		quality: 82,
 	},
 	{
+		label: "screens",
+		files: [
+			"calendar",
+			"chat",
+			"checkin-reveal",
+			"couples",
+			"fantasies",
+			"gallery",
+			"growth",
+			"home",
+			"ideas-top10",
+			"relationship",
+			"together-dates",
+			"together-ideas",
+			"together-wishes",
+		].map((name) => `images/screens/${name}.webp`),
+		widths: [320, 640],
+		quality: 82,
+	},
+	{
 		label: "landscape",
 		files: [
 			...[

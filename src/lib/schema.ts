@@ -59,7 +59,9 @@ export async function getSoftwareApplicationSchema(locale: Locale) {
 			priceCurrency: "USD",
 		},
 		downloadUrl: downloadUrls,
-		screenshot: `${SITE_URL}/images/hero-home.webp`,
+		screenshot: ["home", "chat", "together-dates", "gallery"].map(
+			(screen) => `${SITE_URL}/images/screens/${screen}.webp`,
+		),
 		url: SITE_URL,
 		author: {
 			"@type": "Organization",

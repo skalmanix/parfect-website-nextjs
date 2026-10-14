@@ -15,7 +15,7 @@
 				"items": [
 					{
 						"question": "Hva er Parfect?",
-						"answer": "Parfect er en privat app for nøyaktig to personer: deg og partneren din. Den kombinerer en intim chat, et kveldsspørsmål dere svarer på sammen, et rom for å dele fantasier, en dateplanlegger og en felles bucket list — uten feeder, følgere eller publikum."
+						"answer": "Parfect er en privat app for nøyaktig to personer: deg og partneren din. Den kombinerer en intim chat med et felles bildegalleri, et ukentlig innsjekkspørsmål, et rom for å dele fantasier, ønsker dere gir hverandre, en dateplanlegger og en felles bucket list — uten feeder, uten følgere og uten publikum."
 					},
 					{
 						"question": "Hvem er Parfect for?",
@@ -28,6 +28,14 @@
 					{
 						"question": "Fungerer Parfect på både iPhone og Android?",
 						"answer": "Ja. Parfect finnes for både iOS og Android, og sammenkoblingen fungerer på tvers av plattformene — en av dere kan ha iPhone og den andre Android uten å miste noen funksjoner."
+					},
+					{
+						"question": "Hva er ønsker?",
+						"answer": "Et ønske er noe du gjerne vil at partneren din skal gjøre — planlegge en koselig middag, en tur, en overraskelse hjemme. Partneren din ser det, godtar det og markerer det som gjort når det har skjedd. Ønsker blir liggende til de er gjort, så det er ikke noe press om å skynde seg."
+					},
+					{
+						"question": "Kan vi dele et rom med et annet par?",
+						"answer": "Ja, hvis dere vil. Med parrom kan to par som kjenner hverandre koble seg sammen med en kode og dele en ende-til-ende-kryptert chat og bilder. Rommet åpnes først når alle fire har godtatt, og hvem som helst kan forlate det når som helst — da stenges det og innholdet slettes. Det private rommet deres som par forblir helt separat."
 					}
 				]
 			},
@@ -59,7 +67,7 @@
 				"items": [
 					{
 						"question": "Hvem kan se det vi deler?",
-						"answer": "Bare dere to. Det finnes ingen offentlige profiler, ingen feeder, og ingenting dere deler er synlig for andre brukere. Rommet deres krever invitasjon og forblir privat."
+						"answer": "Bare dere to. Det finnes ingen offentlige profiler, ingen feeder, og ingenting dere deler er synlig for andre brukere. Hvis dere velger å åpne et parrom med venner, er det et eget rom — den private chatten, fantasiene og bildene deres flyttes aldri dit."
 					},
 					{
 						"question": "Er meldingene våre kryptert?",

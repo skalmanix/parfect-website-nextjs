@@ -15,7 +15,7 @@
 				"items": [
 					{
 						"question": "Was ist Parfect?",
-						"answer": "Parfect ist eine private App für genau zwei Personen: dich und deinen Partner oder deine Partnerin. Sie vereint einen intimen Chat, eine abendliche Frage, die ihr gemeinsam beantwortet, einen Raum zum Teilen von Fantasien, einen Date-Planer und eine gemeinsame Bucket List — ohne Feeds, Follower oder Publikum."
+						"answer": "Parfect ist eine private App für genau zwei Menschen: dich und deinen Partner. Sie verbindet einen intimen Chat mit einer gemeinsamen Fotogalerie, einer wöchentlichen Check-in-Frage, einem Raum für Fantasien, Wünschen, die ihr euch gegenseitig erfüllt, einem Date-Planer und einer gemeinsamen Bucket List — ohne Feeds, ohne Follower und ohne Publikum."
 					},
 					{
 						"question": "Für wen ist Parfect gedacht?",
@@ -28,6 +28,14 @@
 					{
 						"question": "Funktioniert Parfect auf iPhone und Android?",
 						"answer": "Ja. Parfect läuft auf iOS und Android, und die Kopplung funktioniert plattformübergreifend — einer von euch kann ein iPhone haben und der andere Android, ohne dass Funktionen verloren gehen."
+					},
+					{
+						"question": "Was sind Wünsche?",
+						"answer": "Ein Wunsch ist etwas, das dein Partner gern für dich tun soll — ein gemütliches Abendessen planen, einen Spaziergang, eine Überraschung zu Hause. Dein Partner sieht ihn, nimmt ihn an und markiert ihn als erledigt, sobald er passiert ist. Wünsche bleiben offen, bis sie erledigt sind — es gibt also keinen Druck, sich zu beeilen."
+					},
+					{
+						"question": "Können wir einen Raum mit einem anderen Paar teilen?",
+						"answer": "Ja, wenn ihr möchtet. Mit Paarräumen können sich zwei Paare, die sich kennen, per Code verbinden und einen Ende-zu-Ende-verschlüsselten Chat und Fotos teilen. Der Raum öffnet sich erst, wenn alle vier zugestimmt haben, und jeder kann ihn jederzeit verlassen — dann wird er geschlossen und sein Inhalt gelöscht. Euer privater Raum als Paar bleibt komplett getrennt."
 					}
 				]
 			},
@@ -59,7 +67,7 @@
 				"items": [
 					{
 						"question": "Wer kann sehen, was wir teilen?",
-						"answer": "Nur ihr zwei. Es gibt keine öffentlichen Profile, keine Feeds, und nichts, was ihr teilt, ist für andere Nutzer sichtbar. Euer Raum ist nur per Einladung zugänglich und bleibt es auch."
+						"answer": "Nur ihr beide. Es gibt keine öffentlichen Profile, keine Feeds, und nichts, was ihr teilt, ist für andere Nutzer sichtbar. Wenn ihr einen Paarraum mit Freunden öffnet, ist das ein separater Raum — euer privater Chat, eure Fantasien und Fotos wandern nie dorthin."
 					},
 					{
 						"question": "Sind unsere Nachrichten verschlüsselt?",

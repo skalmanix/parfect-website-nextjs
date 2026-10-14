@@ -60,8 +60,8 @@
 					"title": "Hablad como si fuerais solo vosotros",
 					"description": "Un hilo privado que es solo vuestro. Mensajes que desaparecen, hablad con libertad y manteneos cerca aunque estéis lejos.",
 					"highlights": {
-						"0": "Mensajes en tiempo real para dos",
-						"1": "Mensajes que desaparecen y confirmaciones de lectura",
+						"0": "Mensajes que desaparecen y confirmaciones de lectura",
+						"1": "Una galería privada con vuestras fotos y vídeos",
 						"2": "Cifrado de extremo a extremo opcional"
 					}
 				},
@@ -78,11 +78,11 @@
 				"together": {
 					"tagline": "Juntos",
 					"title": "Haced los momentos reales",
-					"description": "Convertid chispas en una bucket list compartida, planead citas, incluso coordinad un canguro — juntos.",
+					"description": "Convertid chispas en una bucket list compartida, planead citas y regalaos deseos — juntos.",
 					"highlights": {
-						"0": "Bucket list compartida y planificación de citas",
-						"1": "Coordinación de canguro integrada",
-						"2": "Aniversarios y fechas importantes"
+						"0": "Bucket list, citas y canguro en un solo plan",
+						"1": "Deseos que os regaláis",
+						"2": "Top 10 ideas cuando os falta inspiración"
 					}
 				}
 			}
@@ -90,33 +90,46 @@
 		"features": {
 			"eyebrow": "Hecha para vuestra relación",
 			"heading": "Más que mensajes",
-			"description": "Herramientas pensadas para conectar, planificar y proteger lo que importa — sin el ruido de las redes sociales.",
+			"description": "Herramientas pensadas para conectar, planificar y hacer un poco más el uno por el otro — sin el ruido de las redes sociales.",
 			"items": {
+				"wishes": {
+					"title": "Deseos",
+					"description": "Pide una cena acogedora o una sorpresa en casa. Tu pareja lo ve, dice que sí y hace que ocurra — sin presión de plazos."
+				},
+				"gallery": {
+					"title": "Fotos y vídeos",
+					"description": "Todas las fotos y vídeos que habéis compartido, reunidos en una galería privada. Filtra por quién los envió y guarda tus propios favoritos."
+				},
+				"ideas": {
+					"title": "Top 10 ideas",
+					"description": "¿No sabéis qué hacer? Empezad por las diez ideas que más gustan a las parejas — o explorad las 50 por ambiente y tiempo."
+				},
 				"checkin": {
 					"title": "Check-ins semanales",
-					"description": "Reflexionad juntos con preguntas cuidadas — reveladas lado a lado cuando los dos estéis listos."
+					"description": "Una pregunta a la semana. Vuestras respuestas quedan selladas hasta que los dos hayáis contestado — y entonces las veis lado a lado."
+				},
+				"mood": {
+					"title": "Compartir el ánimo",
+					"description": "Cuéntale a tu pareja cómo te sientes con un toque y repasad juntos vuestro ánimo en un calendario compartido."
+				},
+				"spaces": {
+					"title": "Espacios de pareja",
+					"description": "Conectad con otra pareja de confianza en un espacio aparte, cifrado de extremo a extremo. Solo se abre cuando los cuatro dicen que sí."
 				},
 				"calendar": {
 					"title": "Calendario compartido",
 					"description": "No os perdáis un aniversario. Planead citas y seguid los momentos que importan."
 				},
-				"lock": {
-					"title": "Bloqueo de app y biometría",
-					"description": "PIN y protección biométrica mantienen vuestra relación privada en vuestro dispositivo."
-				},
 				"constellation": {
 					"title": "Conexión que crece",
 					"description": "Ved crecer vuestra constelación mientras compartís momentos y construís vuestra historia juntos."
 				},
-				"shield": {
-					"title": "Privacidad primero",
-					"description": "Notificaciones sin contenido, controles de pausa y políticas de datos claras."
-				},
-				"rings": {
-					"title": "Hecha para dos",
-					"description": "Emparejad una vez con un código de invitación. Sin feeds, sin seguidores, sin nadie más."
+				"lock": {
+					"title": "Bloqueo de app y biometría",
+					"description": "PIN y protección biométrica mantienen vuestra relación privada en vuestro dispositivo."
 				}
-			}
+			},
+			"newBadge": "Nuevo"
 		},
 		"howItWorks": {
 			"eyebrow": "Cómo funciona",
@@ -210,7 +223,7 @@
 		"faq": {
 			"0": {
 				"question": "¿Qué es Parfect?",
-				"answer": "Parfect es una app privada para parejas que combina chat íntimo, impulsos de fantasía, planificación de citas e hitos de relación en un espacio cálido y seguro hecho para dos."
+				"answer": "Parfect es una app privada para parejas que reúne chat íntimo, propuestas de fantasías, check-ins semanales, deseos, planificación de citas y una galería de fotos compartida en un espacio cálido y seguro para dos."
 			},
 			"1": {
 				"question": "¿Es Parfect privada?",

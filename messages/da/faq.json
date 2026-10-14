@@ -15,7 +15,7 @@
 				"items": [
 					{
 						"question": "Hvad er Parfect?",
-						"answer": "Parfect er en privat app til præcis to personer: dig og din partner. Den kombinerer en intim chat, et aftenspørgsmål I besvarer sammen, et rum til at dele fantasier, en dateplanlægger og en fælles bucket list — uden feeds, følgere eller publikum."
+						"answer": "Parfect er en privat app til præcis to personer: dig og din partner. Den kombinerer en intim chat med et fælles billedgalleri, et ugentligt check-in-spørgsmål, et rum til at dele fantasier, ønsker I giver hinanden, en dateplanlægger og en fælles bucket list — uden feeds, uden følgere og uden publikum."
 					},
 					{
 						"question": "Hvem er Parfect til?",
@@ -28,6 +28,14 @@
 					{
 						"question": "Virker Parfect på både iPhone og Android?",
 						"answer": "Ja. Parfect findes til både iOS og Android, og parringen virker på tværs af platforme — den ene kan have iPhone og den anden Android uden at miste nogen funktioner."
+					},
+					{
+						"question": "Hvad er ønsker?",
+						"answer": "Et ønske er noget, du gerne vil have, at din partner gør — planlægger en hyggelig middag, en gåtur, en overraskelse derhjemme. Din partner ser det, accepterer det og markerer det som klaret, når det er sket. Ønsker bliver liggende, indtil de er klaret, så der er intet pres for at skynde sig."
+					},
+					{
+						"question": "Kan vi dele et rum med et andet par?",
+						"answer": "Ja, hvis I vil. Med parrum kan to par, der kender hinanden, forbinde sig med en kode og dele en end-to-end krypteret chat og billeder. Rummet åbner først, når alle fire har accepteret, og alle kan forlade det når som helst — så lukkes det, og indholdet slettes. Jeres private rum som par forbliver helt adskilt."
 					}
 				]
 			},
@@ -59,7 +67,7 @@
 				"items": [
 					{
 						"question": "Hvem kan se det, vi deler?",
-						"answer": "Kun jer to. Der er ingen offentlige profiler, ingen feeds, og intet af det, I deler, er synligt for andre brugere. Jeres rum kræver invitation og forbliver privat."
+						"answer": "Kun jer to. Der er ingen offentlige profiler, ingen feeds, og intet af det, I deler, er synligt for andre brugere. Hvis I vælger at åbne et parrum med venner, er det et separat rum — jeres private chat, fantasier og billeder flytter aldrig derind."
 					},
 					{
 						"question": "Er vores beskeder krypterede?",

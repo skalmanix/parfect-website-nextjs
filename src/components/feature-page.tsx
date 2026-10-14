@@ -6,19 +6,12 @@ import { Header } from "./header";
 import { Footer } from "./footer";
 import { StoreBadges } from "./store-badges";
 import { ScrollReveal } from "./scroll-reveal";
-import { AppTabs } from "./app-tabs";
 import { SITE_URL } from "@/lib/constants";
 import { localizedUrl } from "@/lib/i18n/metadata";
 import { buildSchemaGraph } from "@/lib/schema-helpers";
 import type { Locale } from "@/i18n/routing";
 import { RatingStars } from "./testimonials";
-import {
-	ChatScreen,
-	DateScreen,
-	FantasiesScreen,
-	HomeScreen,
-	TogetherScreen,
-} from "./app-screens";
+import { PhoneScreenshot, type AppScreen } from "./phone-screenshot";
 
 /* Data-driven layout for feature and use-case landing pages. */
 
@@ -28,8 +21,7 @@ export type FeaturePageContent = {
 	titlePlain: string;
 	title: ReactNode;
 	intro: string;
-	screen: "home" | "chat" | "fantasies" | "together" | "date";
-	tab: "chat" | "fantasies" | "together";
+	screen: AppScreen;
 	story: {
 		heading: string;
 		paragraphs: string[];
@@ -62,14 +54,6 @@ export type FeaturePageContent = {
 		text: string;
 	};
 };
-
-const screens = {
-	home: HomeScreen,
-	chat: ChatScreen,
-	fantasies: FantasiesScreen,
-	together: TogetherScreen,
-	date: DateScreen,
-} as const;
 
 type IconName =
 	| "lock"
@@ -178,8 +162,8 @@ export function getFeaturePageJsonLd(
 
 export async function FeaturePage({ content }: { content: FeaturePageContent }) {
 	const t = await getTranslations("Common.featurePage");
+	const tScreens = await getTranslations("AppScreens");
 	const locale = (await getLocale()) as Locale;
-	const Screen = screens[content.screen];
 	const jsonLd = getFeaturePageJsonLd(content, locale);
 	const heroImage = content.slug.startsWith("/features/")
 		? `/images/features/${content.slug.split("/").pop()}.webp`
@@ -230,15 +214,11 @@ export async function FeaturePage({ content }: { content: FeaturePageContent }) 
 
 							<div className="animate-fade-up-delay-2 flex justify-center lg:justify-end">
 								<div className="w-[280px] max-w-full">
-									<div className="phone-frame relative">
-										<div className="phone-notch" aria-hidden="true" />
-										<div className="phone-screen">
-											<Screen />
-											<div className="absolute bottom-0 inset-x-0 z-10">
-												<AppTabs active={content.tab} />
-											</div>
-										</div>
-									</div>
+									<PhoneScreenshot
+										screen={content.screen}
+										alt={tScreens(`alt.${content.screen}`)}
+										priority
+									/>
 								</div>
 							</div>
 						</div>

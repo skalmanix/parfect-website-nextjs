@@ -15,7 +15,7 @@
 				"items": [
 					{
 						"question": "What is Parfect?",
-						"answer": "Parfect is a private app for exactly two people: you and your partner. It combines an intimate chat, a nightly question to answer together, a space for sharing fantasies, a date planner, and a shared bucket list — with no feeds, no followers, and no audience."
+						"answer": "Parfect is a private app for exactly two people: you and your partner. It combines an intimate chat with a shared photo gallery, a weekly check-in question, a space for sharing fantasies, wishes you give each other, a date planner, and a shared bucket list — with no feeds, no followers, and no audience."
 					},
 					{
 						"question": "Who is Parfect for?",
@@ -28,6 +28,14 @@
 					{
 						"question": "Does Parfect work on both iPhone and Android?",
 						"answer": "Yes. Parfect runs on both iOS and Android, and pairing works across platforms — one of you can be on iPhone and the other on Android without losing any features."
+					},
+					{
+						"question": "What are wishes?",
+						"answer": "A wish is something you'd love your partner to do — plan a cozy dinner, a walk, a surprise at home. Your partner sees it, accepts it, and marks it done when it has happened. Wishes stay open until they're done, so there's no pressure to rush."
+					},
+					{
+						"question": "Can we share a space with another couple?",
+						"answer": "Yes, if you want to. Couple spaces let two couples who know each other connect with a code and share an end-to-end encrypted chat and photos. The space only opens after all four people accept, and anyone can leave at any time — which closes it and deletes its contents. Your private space as a couple stays completely separate."
 					}
 				]
 			},
@@ -59,7 +67,7 @@
 				"items": [
 					{
 						"question": "Who can see what we share?",
-						"answer": "Only the two of you. There are no public profiles, no feeds, and nothing you share is visible to other users. Your space is invite-only and stays that way."
+						"answer": "Only the two of you. There are no public profiles, no feeds, and nothing you share is visible to other users. If you choose to open a couple space with friends, that's a separate space — your private chat, fantasies, and photos never move into it."
 					},
 					{
 						"question": "Are our messages encrypted?",
